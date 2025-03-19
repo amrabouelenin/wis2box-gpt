@@ -1,5 +1,5 @@
 ---
-title: Plantilla DAYCLI
+title: DAYCLI
 ---
 
 # Plantilla csv2bufr para datos climáticos diarios (DAYCLI)
