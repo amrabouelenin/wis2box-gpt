@@ -65,28 +65,58 @@ plugins:
             name: Русский
             build: true
             nav_translations:
-                Home: Главная
-                Practical sessions: Практические занятия
-                Connecting to WIS2 over MQTT: Подключение к WIS2 через MQTT
-                Accessing your student VM: Доступ к виртуальной машине студента
-                Initializing wis2box: Инициализация wis2box
-                Cheatsheets: Шпаргалки
-                Linux: Linux
-                Docker: Docker
-                csv2bufr templates: Шаблоны csv2bufr
+                Home: "Главная"
+                Practical sessions: "Практические занятия"
+                Connecting to WIS2 over MQTT: "Подключение к WIS2 через MQTT"
+                Accessing your student VM: "Доступ к вашей виртуальной машине студента"
+                Initializing wis2box: "Инициализация wis2box"
+                Configuring datasets in wis2box: "Настройка наборов данных в wis2box"
+                Configuring station metadata: "Настройка метаданных станции"
+                Monitoring WIS2 notifications: "Мониторинг уведомлений WIS2"
+                Converting SYNOP data to BUFR from the command line: "Конвертация данных SYNOP в BUFR через командную строку"
+                Converting SYNOP data to BUFR using the wis2box-webapp: "Конвертация данных SYNOP в BUFR с помощью веб-приложения wis2box"
+                Converting CSV data to BUFR: "Конвертация CSV в BUFR"
+                Automating data ingestion: "Автоматизация загрузки данных"
+                Adding GTS-headers to WIS2 notifications: "Добавление заголовков GTS в уведомления WIS2"
+                Setting up a recommended dataset with access control: "Настройка рекомендуемого набора данных с контролем доступа"
+                Downloading data from WIS2: "Загрузка данных из WIS2"
+                Discovering datasets from the WIS2 Global Discovery Catalogue: "Поиск наборов данных в Глобальном каталоге WIS2"
+                Querying data using the wis2box API: "Запрос данных с использованием API wis2box"
+                Cheatsheets: "Шпаргалки"
+                Linux: "Linux"
+                Docker: "Docker"
+                # WIS2 in a box: "WIS2 в коробке"
+                csv2bufr templates: "Шаблоны csv2bufr"
+                AWS hourly: "AWS почасовой"
+                DAYCLI: "DAYCLI"
           - locale: es
             name: Español
             build: true
             nav_translations:
-                Home: Inicio
-                Practical sessions: Sesiones prácticas
-                Connecting to WIS2 over MQTT: Conexión a WIS2 a través de MQTT
-                Accessing your student VM: Acceso a su VM de estudiante
-                Initializing wis2box: Inicialización de wis2box
-                Cheatsheets: Hojas de trucos
-                Linux: Linux
-                Docker: Docker
-                csv2bufr templates: Plantillas csv2bufr
+                Home: "Inicio"
+                Practical sessions: "Sesiones prácticas"
+                Connecting to WIS2 over MQTT: "Conectarse a WIS2 a través de MQTT"
+                Accessing your student VM: "Acceder a tu máquina virtual de estudiante"
+                Initializing wis2box: "Inicializando wis2box"
+                Configuring datasets in wis2box: "Configurando conjuntos de datos en wis2box"
+                Configuring station metadata: "Configurando metadatos de estación"
+                Monitoring WIS2 notifications: "Monitoreo de notificaciones de WIS2"
+                Converting SYNOP data to BUFR from the command line: "Convertir datos SYNOP a BUFR desde la línea de comandos"
+                Converting SYNOP data to BUFR using the wis2box-webapp: "Convertir datos SYNOP a BUFR usando la aplicación web wis2box"
+                Converting CSV data to BUFR: "Convertir datos CSV a BUFR"
+                Automating data ingestion: "Automatizar la ingesta de datos"
+                Adding GTS-headers to WIS2 notifications: "Añadir encabezados GTS a notificaciones de WIS2"
+                Setting up a recommended dataset with access control: "Configurar un conjunto de datos recomendado con control de acceso"
+                Downloading data from WIS2: "Descargar datos de WIS2"
+                Discovering datasets from the WIS2 Global Discovery Catalogue: "Descubrir conjuntos de datos en el Catálogo Global de Descubrimiento de WIS2"
+                Querying data using the wis2box API: "Consultar datos usando la API de wis2box"
+                Cheatsheets: "Hojas de referencia"
+                Linux: "Linux"
+                Docker: "Docker"
+                # WIS2 in a box: "WIS2 en una caja"
+                csv2bufr templates: "Plantillas csv2bufr"
+                AWS hourly: "AWS por hora"
+                DAYCLI: "DAYCLI"
     - print-site
 
 markdown_extensions:
