@@ -1,0 +1,85 @@
+site_name: WIS2 in a box training
+site_description: "WIS2 in a box (wis2box) is a Free and Open Source (FOSS) Reference Implementation of a WMO WIS2 Node. The project provides a plug and play toolset to ingest, process, and publish weather/climate/water data using standards-based approaches in alignment with the WIS2 principles. wis2box also provides access to all data in the WIS2 network. wis2box is designed to have a low barrier to entry for data providers, providing enabling infrastructure and services for data discovery, access, and visualization."
+site_author: World Meteorological Organization
+copyright: "&copy; 2023 World Meteorological Organization"
+site_url: https://training.wis2box.wis.wmo.int
+#repo_url: https://github.com/wmo-im/wis2box-training
+#edit_uri: tree/main/documentation/docs
+
+docs_dir: docs
+site_dir: /tmp/html
+
+strict: true
+
+use_directory_urls: true
+
+theme:
+    name: material
+    palette:
+        scheme: default
+    features:
+        - navigation.indexes
+        - content.code.copy
+    favicon: https://public.wmo.int/sites/all/themes/wmo/favicon.ico
+    logo: assets/img/wmo-logo.png
+
+plugins:
+    - search
+    - table-reader
+    - i18n:
+        docs_structure: folder
+        languages:
+          - locale: en
+            default: true
+            name: English
+            build: true
+            nav_translations:
+                Home: Home
+                Practical sessions: Practical sessions
+                Connecting to WIS2 over MQTT: Connecting to WIS2 over MQTT
+                Accessing your student VM: Accessing your student VM
+                Initializing wis2box: Initializing wis2box
+                Cheatsheets: Cheatsheets
+                Linux: Linux
+                Docker: Docker
+                csv2bufr templates: csv2bufr templates
+          - locale: ru
+            name: Русский
+            build: true
+            nav_translations:
+                Home: Главная
+                Practical sessions: Практические занятия
+                Connecting to WIS2 over MQTT: Подключение к WIS2 через MQTT
+                Accessing your student VM: Доступ к виртуальной машине студента
+                Initializing wis2box: Инициализация wis2box
+                Cheatsheets: Шпаргалки
+                Linux: Linux
+                Docker: Docker
+                csv2bufr templates: Шаблоны csv2bufr
+          - locale: es
+            name: Español
+            build: true
+            nav_translations:
+                Home: Inicio
+                Practical sessions: Sesiones prácticas
+                Connecting to WIS2 over MQTT: Conexión a WIS2 a través de MQTT
+                Accessing your student VM: Acceso a su VM de estudiante
+                Initializing wis2box: Inicialización de wis2box
+                Cheatsheets: Hojas de trucos
+                Linux: Linux
+                Docker: Docker
+                csv2bufr templates: Plantillas csv2bufr
+    - print-site
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - footnotes
+    - md_in_html
+    - meta
+    - pymdownx.details
+    - pymdownx.superfences
+    - tables
+
+extra_css:
+    - assets/css/custom.css

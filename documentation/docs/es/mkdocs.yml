@@ -1,0 +1,26 @@
+nav: # Navigation for Russian (will need translation)
+    - Inicio: index.md
+    - Sesiones prácticas:
+        - Conexión a WIS2 a través de MQTT: practical-sessions/connecting-to-wis2-over-mqtt.md
+        - Acceso a su VM de estudiante: practical-sessions/accessing-your-student-vm.md
+        - Inicialización de wis2box: practical-sessions/initializing-wis2box.md
+        - Configuración de conjuntos de datos en wis2box: practical-sessions/configuring-wis2box-datasets.md
+        - Configuración de metadatos de la estación: practical-sessions/configuring-station-metadata.md
+        - Monitoreo de notificaciones WIS2: practical-sessions/monitoring-wis2-notifications.md
+        - Conversión de datos SYNOP a BUFR desde la línea de comandos: practical-sessions/converting-synop-data-to-bufr.md
+        - Conversión de datos SYNOP a BUFR utilizando wis2box-webapp: practical-sessions/converting-synop-data-to-bufr-form.md
+        - Conversión de datos CSV a BUFR: practical-sessions/converting-csv-data-to-bufr.md
+        - Automatización de la ingesta de datos: practical-sessions/automating-data-ingestion.md
+        - Adición de encabezados GTS a las notificaciones WIS2: practical-sessions/adding-gts-headers-to-wis2-notifications.md
+        - Configuración de un conjunto de datos recomendado con control de acceso: practical-sessions/datasets-with-access-control.md
+        - Descarga de datos de WIS2: practical-sessions/downloading-data-from-wis2.md
+        - Descubrimiento de conjuntos de datos del Catálogo Global de Descubrimiento de WIS2: practical-sessions/discovering-datasets-from-wis2-gdc.md
+        - Consulta de datos utilizando la API de wis2box: practical-sessions/querying-data-using-the-wis2box-api.md
+        #- Trabajando con datos BUFR: practical-sessions/bufr-command-line-tools.md
+    - Hojas de trucos:
+        - Linux: cheatsheets/linux.md
+        - Docker: cheatsheets/docker.md
+        - WIS2 en una caja: cheatsheets/wis2box.md
+    - Plantillas csv2bufr:
+        - AWS hourly: csv2bufr-templates/aws-template.md
+        - DAYCLI: csv2bufr-templates/daycli-template.md
