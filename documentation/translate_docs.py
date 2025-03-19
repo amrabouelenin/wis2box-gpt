@@ -4,7 +4,7 @@ import markdown
 import time
 
 # Set your OpenAI API key
-openai.api_key = "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"
+openai.api_key = ""
 
 # Function to translate text using OpenAI
 def translate_text(text, target_language):
