@@ -3,8 +3,7 @@ import openai
 import markdown
 import time
 
-# Set your OpenAI API key
-openai.api_key = ""
+
 
 # Function to translate text using OpenAI
 def translate_text(text, target_language):
