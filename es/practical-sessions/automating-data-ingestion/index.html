@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/automating-data-ingestion/">
       
       
-        <link rel="prev" href="../adding-gts-headers-to-wis2-notifications/">
+        <link rel="prev" href="../converting-csv-data-to-bufr/">
       
       
-        <link rel="next" href="../bufr-command-line-tools/">
+        <link rel="next" href="../adding-gts-headers-to-wis2-notifications/">
       
       
       <link rel="icon" href="https://public.wmo.int/sites/all/themes/wmo/favicon.ico">
@@ -267,224 +267,12 @@
       
   
   
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Hojas de trucos
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Hojas de trucos
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cheatsheets/docker/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hoja de trucos de Docker
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cheatsheets/linux/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hoja de trucos de Linux
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cheatsheets/wis2box/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hoja de referencia rápida de WIS2 en una caja
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Csv2bufr templates
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Csv2bufr templates
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../csv2bufr-templates/aws-template/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Plantilla AWS
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../csv2bufr-templates/daycli-template/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Plantilla DAYCLI
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
   
     
     
-      
-        
       
         
       
@@ -523,10 +311,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -538,8 +326,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Sesiones prácticas
           </label>
@@ -552,11 +340,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessing-your-student-vm/" class="md-nav__link">
+      <a href="../connecting-to-wis2-over-mqtt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accediendo a tu VM de estudiante
+    Conexión a WIS2 a través de MQTT
     
   </span>
   
@@ -574,11 +362,165 @@
   
   
     <li class="md-nav__item">
-      <a href="../adding-gts-headers-to-wis2-notifications/" class="md-nav__link">
+      <a href="../accessing-your-student-vm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Añadiendo encabezados GTS a las notificaciones WIS2
+    Acceso a su VM de estudiante
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../initializing-wis2box/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicialización de wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuring-wis2box-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring datasets in wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuring-station-metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring station metadata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monitoring-wis2-notifications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monitoring WIS2 notifications
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../converting-synop-data-to-bufr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Converting SYNOP data to BUFR from the command line
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../converting-synop-data-to-bufr-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Converting SYNOP data to BUFR using the wis2box-webapp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../converting-csv-data-to-bufr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Converting CSV data to BUFR
     
   </span>
   
@@ -609,7 +551,7 @@
           
   
   <span class="md-ellipsis">
-    Automatización de la ingestión de datos
+    Automating data ingestion
     
   </span>
   
@@ -621,7 +563,7 @@
         
   
   <span class="md-ellipsis">
-    Automatización de la ingestión de datos
+    Automating data ingestion
     
   </span>
   
@@ -722,143 +664,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../bufr-command-line-tools/" class="md-nav__link">
+      <a href="../adding-gts-headers-to-wis2-notifications/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Trabajando con datos BUFR
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuring-station-metadata/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Configuración de metadatos de estaciones
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuring-wis2box-datasets/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Configuración de conjuntos de datos en wis2box
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../connecting-to-wis2-over-mqtt/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Conexión a WIS2 a través de MQTT
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../converting-csv-data-to-bufr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Convertir datos CSV a BUFR
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../converting-synop-data-to-bufr-form/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Conversión de datos SYNOP a BUFR
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../converting-synop-data-to-bufr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Conversión de datos SYNOP a BUFR
+    Adding GTS-headers to WIS2 notifications
     
   </span>
   
@@ -880,29 +690,7 @@
         
   
   <span class="md-ellipsis">
-    Configuración de un conjunto de datos recomendado con control de acceso
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../discovering-datasets-from-wis2-gdc/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Descubriendo conjuntos de datos del Catálogo Global de Descubrimiento WIS2
+    Setting up a recommended dataset with access control
     
   </span>
   
@@ -924,7 +712,7 @@
         
   
   <span class="md-ellipsis">
-    Descarga y decodificación de datos desde WIS2
+    Downloading data from WIS2
     
   </span>
   
@@ -942,33 +730,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../initializing-wis2box/" class="md-nav__link">
+      <a href="../discovering-datasets-from-wis2-gdc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Inicialización de wis2box
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../monitoring-wis2-notifications/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Monitoreo de Notificaciones WIS2
+    Discovering datasets from the WIS2 Global Discovery Catalogue
     
   </span>
   
@@ -990,7 +756,217 @@
         
   
   <span class="md-ellipsis">
-    Consulta de datos usando la API de wis2box
+    Querying data using the wis2box API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hojas de trucos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hojas de trucos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/wis2box/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WIS2 in a box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plantillas csv2bufr
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Plantillas csv2bufr
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csv2bufr-templates/aws-template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS hourly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csv2bufr-templates/daycli-template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DAYCLI
     
   </span>
   
