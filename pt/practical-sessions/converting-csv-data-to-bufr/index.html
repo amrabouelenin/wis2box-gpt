@@ -1,0 +1,1547 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="WIS2 in a box (wis2box) is a Free and Open Source (FOSS) Reference Implementation of a WMO WIS2 Node. The project provides a plug and play toolset to ingest, process, and publish weather/climate/water data using standards-based approaches in alignment with the WIS2 principles. wis2box also provides access to all data in the WIS2 network. wis2box is designed to have a low barrier to entry for data providers, providing enabling infrastructure and services for data discovery, access, and visualization.">
+      
+      
+        <meta name="author" content="World Meteorological Organization">
+      
+      
+        <link rel="canonical" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-csv-data-to-bufr/">
+      
+      
+        <link rel="prev" href="../converting-synop-data-to-bufr-form/">
+      
+      
+        <link rel="next" href="../automating-data-ingestion/">
+      
+      
+      <link rel="icon" href="https://public.wmo.int/sites/all/themes/wmo/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Convertendo dados CSV para BUFR - WIS2 in a box training</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#convertendo-dados-csv-para-bufr" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../" title="WIS2 in a box training" class="md-header__button md-logo" aria-label="WIS2 in a box training" data-md-component="logo">
+      
+  <img src="../../../assets/img/wmo-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WIS2 in a box training
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Convertendo dados CSV para BUFR
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Selecione o idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../practical-sessions/converting-csv-data-to-bufr/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ru/practical-sessions/converting-csv-data-to-bufr/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../es/practical-sessions/converting-csv-data-to-bufr/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="pt" class="md-select__link">
+              Português
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../fr/practical-sessions/converting-csv-data-to-bufr/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ar/practical-sessions/converting-csv-data-to-bufr/" hreflang="ar" class="md-select__link">
+              العربية
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../zh/practical-sessions/converting-csv-data-to-bufr/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="WIS2 in a box training" class="md-nav__button md-logo" aria-label="WIS2 in a box training" data-md-component="logo">
+      
+  <img src="../../../assets/img/wmo-logo.png" alt="logo">
+
+    </a>
+    WIS2 in a box training
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sessões práticas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Sessões práticas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connecting-to-wis2-over-mqtt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conectando ao WIS2 via MQTT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../accessing-your-student-vm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acessando sua VM de estudante
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../initializing-wis2box/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicializando o wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuring-wis2box-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurando conjuntos de dados no wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuring-station-metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurando metadados da estação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monitoring-wis2-notifications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monitorando notificações do WIS2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../converting-synop-data-to-bufr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Convertendo dados SYNOP para BUFR via linha de comando
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../converting-synop-data-to-bufr-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Convertendo dados SYNOP para BUFR usando o aplicativo web wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Convertendo dados CSV para BUFR
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Convertendo dados CSV para BUFR
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-1-usando-csv2bufr-com-o-modelo-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercício 1: Usando csv2bufr com o modelo 'AWS'
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercício 1: Usando csv2bufr com o modelo &#39;AWS&#39;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revisar-os-dados-de-entrada-do-exemplo-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revisar os dados de entrada do exemplo aws
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atualizar-o-arquivo-de-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar o arquivo de exemplo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fazer-upload-dos-dados-para-minio-e-verificar-o-resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fazer upload dos dados para MinIO e verificar o resultado
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-2-usando-o-modelo-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercício 2 - Usando o modelo 'DayCLI'
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercício 2 - Usando o modelo &#39;DayCLI&#39;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criando-um-conjunto-de-dados-wis2box-para-publicar-mensagens-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando um conjunto de dados wis2box para publicar mensagens DAYCLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revisar-os-dados-de-entrada-do-exemplo-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revisar os dados de entrada do exemplo daycli
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atualizar-o-arquivo-de-exemplo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar o arquivo de exemplo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fazer-upload-dos-dados-para-minio-e-verificar-o-resultado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fazer upload dos dados para MinIO e verificar o resultado
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-3-usando-o-formulario-csv-no-wis2box-webapp-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercício 3 - usando o formulário CSV no wis2box-webapp (opcional)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercício 3 - usando o formulário CSV no wis2box-webapp (opcional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usando-o-formulario-csv-no-aplicativo-web-wis2box" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usando o Formulário CSV no aplicativo web wis2box
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depurando-dados-de-entrada-invalidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depurando dados de entrada inválidos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automating-data-ingestion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automatizando a ingestão de dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding-gts-headers-to-wis2-notifications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adicionando cabeçalhos GTS às notificações do WIS2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets-with-access-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurando um conjunto de dados recomendado com controle de acesso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../downloading-data-from-wis2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Baixando dados do WIS2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../discovering-datasets-from-wis2-gdc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Descobrindo conjuntos de dados no Catálogo Global de Descoberta do WIS2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../querying-data-using-the-wis2box-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Consultando dados usando a API do wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guias rápidos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Guias rápidos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/wis2box/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WIS2 in a box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Modelos csv2bufr
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Modelos csv2bufr
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csv2bufr-templates/aws-template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS por hora
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csv2bufr-templates/daycli-template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DAYCLI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-1-usando-csv2bufr-com-o-modelo-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercício 1: Usando csv2bufr com o modelo 'AWS'
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercício 1: Usando csv2bufr com o modelo &#39;AWS&#39;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revisar-os-dados-de-entrada-do-exemplo-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revisar os dados de entrada do exemplo aws
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atualizar-o-arquivo-de-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar o arquivo de exemplo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fazer-upload-dos-dados-para-minio-e-verificar-o-resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fazer upload dos dados para MinIO e verificar o resultado
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-2-usando-o-modelo-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercício 2 - Usando o modelo 'DayCLI'
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercício 2 - Usando o modelo &#39;DayCLI&#39;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criando-um-conjunto-de-dados-wis2box-para-publicar-mensagens-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando um conjunto de dados wis2box para publicar mensagens DAYCLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revisar-os-dados-de-entrada-do-exemplo-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revisar os dados de entrada do exemplo daycli
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atualizar-o-arquivo-de-exemplo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar o arquivo de exemplo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fazer-upload-dos-dados-para-minio-e-verificar-o-resultado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fazer upload dos dados para MinIO e verificar o resultado
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-3-usando-o-formulario-csv-no-wis2box-webapp-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercício 3 - usando o formulário CSV no wis2box-webapp (opcional)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercício 3 - usando o formulário CSV no wis2box-webapp (opcional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usando-o-formulario-csv-no-aplicativo-web-wis2box" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usando o Formulário CSV no aplicativo web wis2box
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depurando-dados-de-entrada-invalidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depurando dados de entrada inválidos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="convertendo-dados-csv-para-bufr">Convertendo dados CSV para BUFR</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Resultados de aprendizagem</p>
+<p>Ao final desta sessão prática, você será capaz de:</p>
+<ul>
+<li>usar a <strong>MinIO UI</strong> para fazer upload de arquivos de dados CSV de entrada e monitorar o resultado</li>
+<li>conhecer o formato dos dados CSV para uso com o modelo padrão automático de estação meteorológica BUFR</li>
+<li>usar o editor de conjuntos de dados no <strong>wis2box webapp</strong> para criar um conjunto de dados para publicar mensagens DAYCLI</li>
+<li>conhecer o formato dos dados CSV para uso com o modelo DAYCLI BUFR</li>
+<li>usar <strong>wis2box webapp</strong> para validar e converter dados de amostra para estações AWS para BUFR (opcional)</li>
+</ul>
+</div>
+<h2 id="introducao">Introdução</h2>
+<p>Arquivos de dados em valores separados por vírgulas (CSV) são frequentemente usados para registrar observações e outros dados em um formato tabular.
+A maioria dos registradores de dados usados para gravar saídas de sensores é capaz de exportar as observações em arquivos delimitados, incluindo em CSV.
+Da mesma forma, quando os dados são inseridos em um banco de dados, é fácil exportar os dados necessários em arquivos formatados em CSV.
+Para auxiliar na troca de dados originalmente armazenados em formatos de dados tabulares, um conversor de CSV para BUFR foi implementado no
+wis2box usando o mesmo software que para SYNOP para BUFR.</p>
+<p>Nesta sessão, você aprenderá sobre o uso do conversor csv2bufr no wis2box para os seguintes modelos integrados:</p>
+<ul>
+<li><strong>AWS</strong> (aws-template.json) : Modelo de mapeamento para converter dados CSV de arquivo de estação meteorológica automática simplificada para sequência BUFR 301150, 307096</li>
+<li><strong>DayCLI</strong> (daycli-template.json) : Modelo de mapeamento para converter dados CSV climáticos diários para sequência BUFR 307075</li>
+</ul>
+<h2 id="preparacao">Preparação</h2>
+<p>Certifique-se de que o wis2box-stack foi iniciado com <code>python3 wis2box.py start</code></p>
+<p>Certifique-se de que você tem um navegador web aberto com a MinIO UI para sua instância acessando <code>http://&lt;seu-host&gt;:9000</code>
+Se você não se lembrar de suas credenciais MinIO, você pode encontrá-las no arquivo <code>wis2box.env</code> na pasta <code>wis2box-1.0.0rc1</code> no seu VM de estudante.</p>
+<p>Certifique-se de que você tem o MQTT Explorer aberto e conectado ao seu corretor usando as credenciais <code>everyone/everyone</code>.</p>
+<h2 id="exercicio-1-usando-csv2bufr-com-o-modelo-aws">Exercício 1: Usando csv2bufr com o modelo 'AWS'</h2>
+<p>O modelo 'AWS' fornece um modelo de mapeamento predefinido para converter dados CSV de estações AWS em apoio aos requisitos de relatório do GBON.</p>
+<p>A descrição do modelo AWS pode ser encontrada <a href="/csv2bufr-templates/aws-template">aqui</a>.</p>
+<h3 id="revisar-os-dados-de-entrada-do-exemplo-aws">Revisar os dados de entrada do exemplo aws</h3>
+<p>Baixe o exemplo para este exercício no link abaixo:</p>
+<p><a href="/sample-data/aws-example.csv">aws-example.csv</a></p>
+<p>Abra o arquivo que você baixou em um editor e inspecione o conteúdo:</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Examinando os campos de data, hora e identificação (identificadores WIGOS e tradicionais), o que você
+percebe? Como a data de hoje seria representada?</p>
+</div>
+<details class="success">
+<summary>Clique para revelar a resposta</summary>
+<p>Cada coluna contém uma única peça de informação. Por exemplo, a data é dividida em
+ano, mês e dia, espelhando como os dados são armazenados em BUFR. A data de hoje seria 
+dividida nas colunas "ano", "mês" e "dia". Da mesma forma, o tempo precisa ser
+dividido em "hora" e "minuto" e o identificador da estação WIGOS em seus respectivos componentes.</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Olhando para o arquivo de dados, como os dados ausentes são codificados?</p>
+</div>
+<details class="success">
+<summary>Clique para revelar a resposta</summary>
+<p>Dados ausentes no arquivo são representados por células vazias. Em um arquivo CSV, isso seria
+codificado por <code>,,</code>. Observe que esta é uma célula vazia e não codificada como uma string de comprimento zero, 
+por exemplo, <code>,"",</code>.</p>
+</details>
+<div class="admonition hint">
+<p class="admonition-title">Dados ausentes</p>
+<p>Reconhece-se que os dados podem estar ausentes por uma variedade de razões, seja devido a falha do sensor 
+ou o parâmetro não ser observado. Nestes casos, os dados ausentes podem ser codificados
+conforme a resposta acima, os outros dados no relatório permanecem válidos.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Quais são os identificadores da estação WIGOS para as estações que reportam dados no arquivo de exemplo? Como ele é definido no arquivo de entrada?</p>
+</div>
+<details class="success">
+<summary>Clique para revelar a resposta</summary>
+<p>O identificador da estação WIGOS é definido por 4 colunas separadas no arquivo:</p>
+<ul>
+<li><strong>wsi_series</strong>: série do identificador WIGOS</li>
+<li><strong>wsi_issuer</strong>: emissor do identificador WIGOS</li>
+<li><strong>wsi_issue_number</strong>: número da emissão WIGOS</li>
+<li><strong>wsi_local</strong>: identificador local WIGOS</li>
+</ul>
+<p>Os identificadores das estações WIGOS usados no arquivo de exemplo são <code>0-20000-0-60351</code>, <code>0-20000-0-60355</code> e <code>0-20000-0-60360</code>.    </p>
+</details>
+<h3 id="atualizar-o-arquivo-de-exemplo">Atualizar o arquivo de exemplo</h3>
+<p>Atualize o arquivo de exemplo que você baixou para usar a data e hora de hoje e altere os identificadores das estações WIGOS para usar estações que você registrou no wis2box-webapp.</p>
+<h3 id="fazer-upload-dos-dados-para-minio-e-verificar-o-resultado">Fazer upload dos dados para MinIO e verificar o resultado</h3>
+<p>Navegue até a MinIO UI e faça login usando as credenciais do arquivo <code>wis2box.env</code>.</p>
+<p>Navegue até o <strong>wis2box-incoming</strong> e clique no botão "Criar novo caminho":</p>
+<p><img alt="Imagem mostrando a MinIO UI com o botão de criar pasta destacado" src="../../assets/img/minio-create-new-path.png"/></p>
+<p>Crie uma nova pasta no bucket MinIO que corresponda ao dataset-id para o conjunto de dados que você criou com o template='weather/surface-weather-observations/synop':</p>
+<p><img alt="Imagem mostrando a MinIO UI com o botão de criar pasta destacado" src="../../assets/img/minio-create-new-path-metadata_id.png"/></p>
+<p>Faça o upload do arquivo de exemplo que você baixou para a pasta que você criou no bucket MinIO:</p>
+<p><img alt="Imagem mostrando a MinIO UI com aws-example carregado" src="../../assets/img/minio-upload-aws-example.png"/></center></p>
+<p>Verifique o painel do Grafana em <code>http://&lt;seu-host&gt;:3000</code> para ver se há algum AVISO ou ERRO. Se você vir algum, tente corrigi-los e repita o exercício.</p>
+<p>Verifique o MQTT Explorer para ver se você recebe notificações de dados WIS2.</p>
+<p>Se você tiver feito o ingestão dos dados com sucesso, você deverá ver 3 notificações no MQTT explorer no tópico <code>origin/a/wis2/&lt;centre-id&gt;/data/weather/surface-weather-observations/synop</code> para as 3 estações para as quais você relatou dados:</p>
+<p><img width="450" alt="Imagem mostrando MQTT explorer após o upload de AWS" src="../../assets/img/mqtt-explorer-aws-upload.png"/></p>
+<h2 id="exercicio-2-usando-o-modelo-daycli">Exercício 2 - Usando o modelo 'DayCLI'</h2>
+<p>No exercício anterior, usamos o conjunto de dados que você criou com Data-type='weather/surface-weather-observations/synop', que tem predefinido o modelo de conversão de CSV para BUFR para o modelo AWS.</p>
+<p>No próximo exercício, usaremos o modelo 'DayCLI' para converter dados climáticos diários para BUFR.</p>
+<p>A descrição do modelo DAYCLI pode ser encontrada <a href="/csv2bufr-templates/daycli-template">aqui</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Sobre o modelo DAYCLI</p>
+<p>Observe que a sequência BUFR DAYCLI será atualizada durante 2025 para incluir informações adicionais e bandeiras de QC revisadas. O modelo DAYCLI incluído no wis2box será atualizado para refletir essas mudanças. A OMM comunicará quando o software wis2box for atualizado para incluir o novo modelo DAYCLI, para permitir que os usuários atualizem seus sistemas de acordo.</p>
+</div>
+<h3 id="criando-um-conjunto-de-dados-wis2box-para-publicar-mensagens-daycli">Criando um conjunto de dados wis2box para publicar mensagens DAYCLI</h3>
+<p>Vá para o editor de conjuntos de dados no wis2box-webapp e crie um novo conjunto de dados. Use o mesmo centre-id que nas sessões práticas anteriores e selecione <strong>Data Type='climate/surface-based-observations/daily'</strong>:</p>
+<p><img alt="Criar um novo conjunto de dados no wis2box-webapp para DAYCLI" src="../../assets/img/wis2box-webapp-create-dataset-daycli.png"/></p>
+<p>Clique em "CONTINUAR PARA O FORMULÁRIO" e adicione uma descrição para o seu conjunto de dados, defina a caixa delimitadora e forneça as informações de contato para o conjunto de dados. Uma vez que você terminar de preencher todas as seções, clique em 'VALIDAR FORMULÁRIO' e verifique o formulário.</p>
+<p>Revise os plugins de dados para os conjuntos de dados. Clique em "ATUALIZAR" ao lado do plugin com o nome "Dados CSV convertidos para BUFR" e você verá que o modelo está definido para <strong>DayCLI</strong>:</p>
+<p><img alt="Atualizar o plugin de dados para o conjunto de dados para usar o modelo DAYCLI" src="../../assets/img/wis2box-webapp-update-data-plugin-daycli.png"/></p>
+<p>Feche a configuração do plugin e envie o formulário usando o token de autenticação que você criou na sessão prática anterior.</p>
+<p>Você agora deve ter um segundo conjunto de dados no wis2box-webapp que está configurado para usar o modelo DAYCLI para converter dados CSV para BUFR.</p>
+<h3 id="revisar-os-dados-de-entrada-do-exemplo-daycli">Revisar os dados de entrada do exemplo daycli</h3>
+<p>Baixe o exemplo para este exercício no link abaixo:</p>
+<p><a href="/sample-data/daycli-example.csv">daycli-example.csv</a></p>
+<p>Abra o arquivo que você baixou em um editor e inspecione o conteúdo:</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Quais variáveis adicionais estão incluídas no modelo daycli?</p>
+</div>
+<details class="success">
+<summary>Clique para revelar a resposta</summary>
+<p>O modelo daycli inclui metadados importantes sobre o posicionamento do instrumento e classificações de qualidade da medição para temperatura e umidade, bandeiras de controle de qualidade e informações sobre como a temperatura média diária foi calculada.</p>
+</details>
+<h3 id="atualizar-o-arquivo-de-exemplo_1">Atualizar o arquivo de exemplo</h3>
+<p>O arquivo de exemplo contém uma linha de dados para cada dia de um mês e relata dados para uma estação. Atualize o arquivo de exemplo que você baixou para usar a data e hora de hoje e altere os identificadores das estações WIGOS para usar uma estação que você registrou no wis2box-webapp.</p>
+<h3 id="fazer-upload-dos-dados-para-minio-e-verificar-o-resultado_1">Fazer upload dos dados para MinIO e verificar o resultado</h3>
+<p>Como antes, você precisará fazer o upload dos dados para o bucket 'wis2box-incoming' no MinIO para ser processado pelo conversor csv2bufr. Desta vez, você precisará criar uma nova pasta no bucket MinIO que corresponda ao dataset-id para o conjunto de dados que você criou com o template='climate/surface-based-observations/daily', que será diferente do dataset-id que você usou no exercício anterior:</p>
+<p><img alt="Imagem mostrando a MinIO UI com DAYCLI-example carregado" src="../../assets/img/minio-upload-daycli-example.png"/></center></p>
+<p>Após fazer o upload dos dados, verifique se não há AVISOS ou ERROS no painel do Grafana e verifique o MQTT Explorer para ver se você recebe notificações de dados WIS2.</p>
+<p>Se você tiver feito o ingestão dos dados com sucesso, você deverá ver 30 notificações no MQTT explorer no tópico <code>origin/a/wis2/&lt;centre-id&gt;/data/climate/surface-based-observations/daily</code> para os 30 dias do mês para os quais você relatou dados:</p>
+<p><img width="450" alt="Imagem mostrando MQTT explorer após o upload de DAYCLI" src="../../assets/img/mqtt-daycli-template-success.png"/></p>
+<h2 id="exercicio-3-usando-o-formulario-csv-no-wis2box-webapp-opcional">Exercício 3 - usando o formulário CSV no wis2box-webapp (opcional)</h2>
+<p>O aplicativo web wis2box fornece uma interface para fazer upload de dados CSV e convertê-los para BUFR antes de publicá-los no WIS2, usando o modelo AWS.</p>
+<p>O uso deste formulário é destinado a fins de depuração e validação, o método de envio recomendado para publicar dados de Estações Meteorológicas Automatizadas é configurar um processo que faça o upload automático dos dados para o bucket MinIO.</p>
+<h3 id="usando-o-formulario-csv-no-aplicativo-web-wis2box">Usando o Formulário CSV no aplicativo web wis2box</h3>
+<p>Navegue até o Formulário CSV no aplicativo web wis2box
+(<code>http://&lt;seu-nome-de-host&gt;/wis2box-webapp/csv2bufr_form</code>).
+Use o arquivo <a href="/sample-data/aws-example.csv">aws-example.csv</a> para este exercício.
+Você agora deve ser capaz de clicar em próximo para visualizar e validar o arquivo.</p>
+<p><center><img alt="Imagem mostrando a tela de upload de CSV para BUFR" src="../../assets/img/csv2bufr-ex1.png"/></center></p>
+<p>Clicar no botão próximo carrega o arquivo no navegador e valida o conteúdo contra um esquema predefinido.
+Ainda não foram convertidos ou publicados dados. Na aba de visualização/validação, você deve ser apresentado com uma lista de avisos
+sobre dados ausentes, mas neste exercício, esses podem ser ignorados.</p>
+<p><center><img alt="Imagem mostrando a página de validação de exemplo de CSV para BUFR com avisos" src="../../assets/img/csv2bufr-warnings.png"/></center></p>
+<p>Clique em <em>próximo</em> para prosseguir e você será solicitado a fornecer um dataset-id para os dados a serem publicados. Selecione o dataset-id que você criou anteriormente e clique em <em>próximo</em>.</p>
+<p>Você agora deve estar em uma página de autorização onde será solicitado a inserir o token <code>processes/wis2box</code>
+que você criou anteriormente. Insira este token e clique no botão "Publicar no WIS2" para garantir
+que "Publicar para WIS2" esteja selecionado (veja a captura de tela abaixo).</p>
+<p><center><img alt="tela de autenticação e publicação csv2bufr" src="../../assets/img/csv2bufr-toggle-publish.png"/></center></p>
+<p>Clique em próximo para transformar em BUFR e publicar, você então deverá ver a seguinte tela:</p>
+<p><center><img alt="Imagem mostrando a tela de sucesso de exemplo de CSV para BUFR" src="../../assets/img/csv2bufr-success.png"/></center></p>
+<p>Clicar na seta para baixo à direita de <code>Arquivos BUFR de saída</code> deve revelar os botões <code>Download</code> e <code>Inspecionar</code>.
+Clique em inspecionar para visualizar os dados e confirmar que os valores estão conforme o esperado.</p>
+<p><center><img alt="Imagem mostrando a inspeção de saída de CSV para BUFR" src="../../assets/img/csv2bufr-inspect.png"/></center></p>
+<h3 id="depurando-dados-de-entrada-invalidos">Depurando dados de entrada inválidos</h3>
+<p>Neste exercício, examinaremos o que acontece com dados de entrada inválidos. Baixe o próximo arquivo de exemplo clicando no
+link abaixo. Este contém os mesmos dados que o primeiro arquivo, mas com as colunas vazias removidas.
+Examine o arquivo e confirme quais colunas foram removidas e, em seguida, siga o mesmo processo para converter os dados para BUFR.</p>
+<p><a href="/sample-data/csv2bufr-ex3a.csv">csv2bufr-ex3a.csv</a></p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Com as colunas ausentes do arquivo, você conseguiu converter os dados para BUFR?
+Você notou alguma mudança nos avisos na página de validação?</p>
+</div>
+<details class="success">
+<summary>Clique para revelar a resposta</summary>
+<p>Você ainda deveria ter sido capaz de converter os dados para BUFR, mas as mensagens de aviso teriam sido atualizadas
+para indicar que as colunas estavam completamente ausentes, em vez de conter um valor ausente.</p>
+</details>
+<p>No próximo exemplo, uma coluna adicional foi adicionada ao arquivo CSV.</p>
+<p><a href="/sample-data/csv2bufr-ex3b.csv">csv2bufr-ex3b.csv</a></p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Sem fazer o upload ou enviar o arquivo, você pode prever o que acontecerá quando fizer?</p>
+</div>
+<p>Agora faça o upload e confirme se sua previsão estava correta.</p>
+<details class="success">
+<summary>Clique para revelar a resposta</summary>
+<p>Quando o arquivo for validado, você agora receberá um aviso de que a coluna <code>index</code>
+não é encontrada no esquema e que os dados serão ignorados. Você deve ser capaz de clicar
+através e converter para BUFR como no exemplo anterior.</p>
+</details>
+<p>No exemplo final deste exercício, os dados foram modificados. Examine o conteúdo do arquivo CSV.</p>
+<p><a href="/sample-data/csv2bufr-ex3c.csv">csv2bufr-ex3c.csv</a></p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>O que mudou no arquivo e o que você acha que acontecerá?</p>
+</div>
+<p>Agora faça o upload do arquivo e confirme se você estava correto.</p>
+<details class="warning">
+<summary>Clique para revelar a resposta</summary>
+<p>Os campos de pressão foram convertidos de Pa para hPa nos dados de entrada. No entanto, o conversor de CSV para BUFR
+espera as mesmas unidades que BUFR (Pa) e, como resultado, esses campos falham na validação por estarem
+fora do intervalo. Você deve ser capaz de editar o CSV para corrigir o problema e reenviar os dados retornando
+à primeira tela e fazendo o upload novamente.</p>
+</details>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>O aplicativo web wis2box</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 World Meteorological Organization
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../js/print-site.js"></script>
+      
+        <script src="../../../js/print-site.js"></script>
+      
+        <script src="../../../js/print-site.js"></script>
+      
+        <script src="../../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>

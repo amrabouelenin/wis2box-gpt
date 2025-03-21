@@ -2,530 +2,1920 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/cheatsheets/docker/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/docker/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/cheatsheets/linux/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/linux/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/cheatsheets/wis2box/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/wis2box/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/aws-template/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/daycli-template/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/accessing-your-student-vm/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/automating-data-ingestion/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/bufr-command-line-tools/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-station-metadata/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-wis2box-datasets/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/connecting-to-wis2-over-mqtt/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-csv-data-to-bufr/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/datasets-with-access-control/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/downloading-data-from-wis2/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/initializing-wis2box/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/monitoring-wis2-notifications/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/docker/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/docker/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/linux/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/linux/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/wis2box/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/wis2box/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/aws-template/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/daycli-template/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/accessing-your-student-vm/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/automating-data-ingestion/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/bufr-command-line-tools/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-station-metadata/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-wis2box-datasets/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/connecting-to-wis2-over-mqtt/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-csv-data-to-bufr/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/datasets-with-access-control/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/downloading-data-from-wis2/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/initializing-wis2box/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/monitoring-wis2-notifications/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/cheatsheets/docker/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/docker/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/cheatsheets/linux/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/linux/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/cheatsheets/wis2box/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/wis2box/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/aws-template/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/daycli-template/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/accessing-your-student-vm/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/automating-data-ingestion/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/bufr-command-line-tools/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-station-metadata/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-wis2box-datasets/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/connecting-to-wis2-over-mqtt/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-csv-data-to-bufr/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/datasets-with-access-control/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/downloading-data-from-wis2/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/initializing-wis2box/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/monitoring-wis2-notifications/"/>
     </url>
     <url>
         <loc>https://amrabouelenin.github.io/wis2docs/es/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/docker/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/docker/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/linux/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/linux/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/aws-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/aws-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/daycli-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/daycli-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/accessing-your-student-vm/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/accessing-your-student-vm/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/automating-data-ingestion/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/automating-data-ingestion/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/bufr-command-line-tools/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/bufr-command-line-tools/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-station-metadata/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-station-metadata/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-wis2box-datasets/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-wis2box-datasets/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-csv-data-to-bufr/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-csv-data-to-bufr/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr-form/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/datasets-with-access-control/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/datasets-with-access-control/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/downloading-data-from-wis2/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/downloading-data-from-wis2/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/initializing-wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/initializing-wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/monitoring-wis2-notifications/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/monitoring-wis2-notifications/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/querying-data-using-the-wis2box-api/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/2bufr-templates/aws-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/2bufr-templates/aws-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/2bufr-templates/daycli-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/2bufr-templates/daycli-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/atsheets/docker/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/atsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/atsheets/docker/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/atsheets/linux/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/atsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/atsheets/linux/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/pt/atsheets/wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/atsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/atsheets/wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/docker/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/docker/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/linux/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/linux/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/aws-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/aws-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/daycli-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/daycli-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/accessing-your-student-vm/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/accessing-your-student-vm/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/automating-data-ingestion/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/automating-data-ingestion/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/bufr-command-line-tools/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/bufr-command-line-tools/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-station-metadata/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-station-metadata/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-wis2box-datasets/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-wis2box-datasets/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-csv-data-to-bufr/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-csv-data-to-bufr/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr-form/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/datasets-with-access-control/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/datasets-with-access-control/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/downloading-data-from-wis2/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/downloading-data-from-wis2/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/initializing-wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/initializing-wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/monitoring-wis2-notifications/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/monitoring-wis2-notifications/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/querying-data-using-the-wis2box-api/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/2bufr-templates/aws-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/2bufr-templates/aws-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/2bufr-templates/daycli-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/2bufr-templates/daycli-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/atsheets/docker/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/atsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/atsheets/docker/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/atsheets/linux/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/atsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/atsheets/linux/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/fr/atsheets/wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/atsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/atsheets/wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/docker/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/docker/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/linux/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/linux/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/aws-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/aws-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/daycli-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/daycli-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/accessing-your-student-vm/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/accessing-your-student-vm/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/automating-data-ingestion/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/automating-data-ingestion/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/bufr-command-line-tools/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/bufr-command-line-tools/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-station-metadata/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-station-metadata/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-wis2box-datasets/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-wis2box-datasets/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-csv-data-to-bufr/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-csv-data-to-bufr/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr-form/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/datasets-with-access-control/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/datasets-with-access-control/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/downloading-data-from-wis2/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/downloading-data-from-wis2/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/initializing-wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/initializing-wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/monitoring-wis2-notifications/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/monitoring-wis2-notifications/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/querying-data-using-the-wis2box-api/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/docker/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/docker/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/docker/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/linux/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/linux/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/linux/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/cheatsheets/wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/cheatsheets/wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/aws-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/aws-template/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/aws-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/daycli-template/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/csv2bufr-templates/daycli-template/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/csv2bufr-templates/daycli-template/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/accessing-your-student-vm/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/accessing-your-student-vm/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/accessing-your-student-vm/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/automating-data-ingestion/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/automating-data-ingestion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/automating-data-ingestion/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/bufr-command-line-tools/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/bufr-command-line-tools/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/bufr-command-line-tools/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-station-metadata/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-station-metadata/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-station-metadata/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-wis2box-datasets/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/configuring-wis2box-datasets/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/configuring-wis2box-datasets/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/connecting-to-wis2-over-mqtt/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-csv-data-to-bufr/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-csv-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-csv-data-to-bufr/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr-form/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/converting-synop-data-to-bufr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/converting-synop-data-to-bufr/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/datasets-with-access-control/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/datasets-with-access-control/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/datasets-with-access-control/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/downloading-data-from-wis2/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/downloading-data-from-wis2/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/downloading-data-from-wis2/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/initializing-wis2box/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/initializing-wis2box/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/initializing-wis2box/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/monitoring-wis2-notifications/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/monitoring-wis2-notifications/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/monitoring-wis2-notifications/"/>
+    </url>
+    <url>
+        <loc>https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/querying-data-using-the-wis2box-api/</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://amrabouelenin.github.io/wis2docs/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://amrabouelenin.github.io/wis2docs/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://amrabouelenin.github.io/wis2docs/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://amrabouelenin.github.io/wis2docs/es/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://amrabouelenin.github.io/wis2docs/fr/practical-sessions/querying-data-using-the-wis2box-api/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://amrabouelenin.github.io/wis2docs/pt/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="https://amrabouelenin.github.io/wis2docs/ru/practical-sessions/querying-data-using-the-wis2box-api/"/>
     </url>
 </urlset>
