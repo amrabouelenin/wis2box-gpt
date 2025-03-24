@@ -226,7 +226,61 @@ plugins:
                 csv2bufr templates: "csv2bufr 模板"
                 AWS hourly: "AWS 每小时"
                 DAYCLI: "DAYCLI"
-
+            
+          - locale: it
+            name: Italiano
+            build: true
+            nav_translations:
+                Home: "Home"
+                Practical sessions: "Sessioni pratiche"
+                Connecting to WIS2 over MQTT: "Connessione a WIS2 tramite MQTT"
+                Accessing your student VM: "Accesso alla tua VM studente"
+                Initializing wis2box: "Inizializzazione di wis2box"
+                Configuring datasets in wis2box: "Configurazione dei dataset in wis2box"
+                Configuring station metadata: "Configurazione dei metadati della stazione"
+                Monitoring WIS2 notifications: "Monitoraggio delle notifiche WIS2"
+                Converting SYNOP data to BUFR from the command line: "Conversione dei dati SYNOP in BUFR da riga di comando"
+                Converting SYNOP data to BUFR using the wis2box-webapp: "Conversione dei dati SYNOP in BUFR utilizzando l'applicazione web wis2box"
+                Converting CSV data to BUFR: "Conversione dei dati CSV in BUFR"
+                Automating data ingestion: "Automazione dell'ingestione dei dati"
+                Adding GTS-headers to WIS2 notifications: "Aggiunta di intestazioni GTS alle notifiche WIS2"
+                Setting up a recommended dataset with access control: "Configurazione di un dataset consigliato con controllo dell'accesso"
+                Downloading data from WIS2: "Scaricamento dei dati da WIS2"
+                Discovering datasets from the WIS2 Global Discovery Catalogue: "Scoperta dei dataset dal Catalogo globale di scoperta di WIS2"
+                Querying data using the wis2box API: "Interrogazione dei dati utilizzando l'API di wis2box"
+                Cheatsheets: "Fogli di riferimento"
+                Linux: "Linux"
+                Docker: "Docker"
+                csv2bufr templates: "Modelli csv2bufr"
+                AWS hourly: "AWS orario"
+                DAYCLI: "DAYCLI"
+          - locale: de
+            name: Deutsch
+            build: true
+            nav_translations:
+                Home: "Startseite"
+                Practical sessions: "Praktische Sitzungen"
+                Connecting to WIS2 over MQTT: "Verbindung zu WIS2 über MQTT"
+                Accessing your student VM: "Zugriff auf Ihre Studenten-VM"
+                Initializing wis2box: "Initialisierung von wis2box"
+                Configuring datasets in wis2box: "Konfigurieren von Datensätzen in wis2box"
+                Configuring station metadata: "Konfigurieren von Stationsmetadaten"
+                Monitoring WIS2 notifications: "Überwachung von WIS2-Benachrichtigungen"
+                Converting SYNOP data to BUFR from the command line: "Konvertieren von SYNOP-Daten in BUFR von der Befehlszeile aus"
+                Converting SYNOP data to BUFR using the wis2box-webapp: "Konvertieren von SYNOP-Daten in BUFR mit der wis2box-Webanwendung"
+                Converting CSV data to BUFR: "Konvertieren von CSV-Daten in BUFR"
+                Automating data ingestion: "Automatisieren der Datenaufnahme"
+                Adding GTS-headers to WIS2 notifications: "Hinzufügen von GTS-Headern zu WIS2-Benachrichtigungen"
+                Setting up a recommended dataset with access control: "Einrichten eines empfohlenen Datensatzes mit Zugriffskontrolle"
+                Downloading data from WIS2: "Daten von WIS2 herunterladen"
+                Discovering datasets from the WIS2 Global Discovery Catalogue: "Auffinden von Datensätzen im globalen Entdeckungskatalog von WIS2"
+                Querying data using the wis2box API: "Abfragen von Daten mit der wis2box-API"
+                Cheatsheets: "Spickzettel"
+                Linux: "Linux"
+                Docker: "Docker"
+                csv2bufr templates: "CSV2BUFR-Vorlagen"
+                AWS hourly: "AWS stündlich"
+                DAYCLI: "DAYCLI"
     - print-site
 
 markdown_extensions:
