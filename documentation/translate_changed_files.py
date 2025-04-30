@@ -26,7 +26,7 @@ BASE_DIR = Path('documentation/docs')
 
 def get_changed_files():
     result = subprocess.run(
-        ['git', 'diff', '--name-only', "HEAD~1"],
+        ['git', 'diff', '--name-only', 'HEAD~1'],
         stdout=subprocess.PIPE,
         text=True,
         check=True
