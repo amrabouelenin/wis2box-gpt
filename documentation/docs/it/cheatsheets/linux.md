@@ -6,12 +6,12 @@ title: Linux cheatsheet
 
 ## Panoramica
 
-I concetti di base per lavorare in un sistema operativo Linux sono i **file** e le **directory** (cartelle) organizzati in
+I concetti di base del lavoro in un sistema operativo Linux sono **file** e **directory** (cartelle) organizzati in
 una struttura ad albero all'interno di un **ambiente**.
 
-Una volta effettuato il login in un sistema Linux, si lavora in una **shell** in cui è possibile manipolare file e directory,
-eseguendo comandi che sono installati sul sistema. La shell Bash è una shell comune e popolare che
-si trova tipicamente nei sistemi Linux.
+Una volta effettuato l'accesso a un sistema Linux, si lavora in una **shell** in cui è possibile gestire file e directory,
+eseguendo comandi installati sul sistema. La shell Bash è una shell comune e popolare che
+si trova tipicamente sui sistemi Linux.
 
 ## Bash
 
@@ -35,7 +35,7 @@ cd ./somedir
 cd ..
 ```
 
-* Spostarsi su di due directory:
+* Spostarsi su due directory:
 
 ```bash
 cd ../..
@@ -55,7 +55,7 @@ cd -
 ls
 ```
 
-* Elenca i file nella directory corrente con più dettagli:
+* Elenca i file nella directory corrente con maggiori dettagli:
 
 ```bash
 ls -l
@@ -76,7 +76,7 @@ touch foo.txt
 * Crea un file dal comando `echo`:
 
 ```bash
-echo "ciao a tutti" > test-file.txt
+echo "ciao" > test-file.txt
 ```
 
 * Visualizza il contenuto di un file:
@@ -91,7 +91,7 @@ cat test-file.txt
 cp file1 file2
 ```
 
-* Jolly: opera su modelli di file:
+* Jolly: operare su modelli di file:
 
 ```bash
 ls -l fil*  # corrisponde a file1 e file2
@@ -103,7 +103,7 @@ ls -l fil*  # corrisponde a file1 e file2
 cat file1 file2 > newfile
 ```
 
-* Aggiungi un altro file a `newfile`
+* Aggiungi un altro file a `newfile`:
 
 ```bash
 cat file3 >> newfile
@@ -121,7 +121,7 @@ rm newfile
 rm *.dat
 ```
 
-* Crea una directory
+* Crea una directory:
 
 ```bash
 mkdir dir1
@@ -132,7 +132,7 @@ mkdir dir1
 Le pipe permettono di inviare l'output di un comando a un altro utilizzando il simbolo della pipe `|`:
 
 ```bash
-echo "ciao" | sed 's/ciao/ciao/'
+echo "ciao" | sed 's/ciao/addio/'
 ```
 
 * Filtrare gli output dei comandi usando grep:

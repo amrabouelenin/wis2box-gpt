@@ -1,13 +1,13 @@
 ---
-title: WIS2 in a box - scheda di riferimento rapido
+title: Guida rapida WIS2 in a box
 ---
 
-# WIS2 in a box - scheda di riferimento rapido
+# Guida rapida WIS2 in a box
 
 ## Panoramica
 
 wis2box funziona come una suite di comandi Docker Compose. Il comando ``wis2box-ctl.py`` è uno strumento
-(scritto in Python) per eseguire comandi Docker Compose facilmente.
+(scritto in Python) per eseguire comandi Docker Compose in modo semplice.
 
 ## Comandi essenziali di wis2box
 

@@ -49,7 +49,7 @@ pip3 install pywiscat
     export PATH=$PATH:/home/$USER/.local/bin
     ```
 
-    ...dove `$USER` è il tuo nome utente sulla VM.
+    ...dove `$USER` è il tuo nome utente sulla tua VM.
 
 Verifica che l'installazione sia stata eseguita con successo:
 
@@ -57,7 +57,7 @@ Verifica che l'installazione sia stata eseguita con successo:
 pywiscat --version
 ```
 
-## Trovare dati con pywiscat
+## Ricerca di dati con pywiscat
 
 Per impostazione predefinita, pywiscat si connette al Catalogo Globale di Scoperta del Canada. Configuriamo pywiscat per interrogare il GDC di formazione impostando la variabile d'ambiente `PYWISCAT_GDC_URL`:
 
@@ -65,7 +65,7 @@ Per impostazione predefinita, pywiscat si connette al Catalogo Globale di Scoper
 export PYWISCAT_GDC_URL=http://<local-gdc-host-or-ip>
 ```
 
-Usiamo [pywiscat](https://github.com/wmo-im/pywiscat) per interrogare il GDC configurato come parte della formazione.
+Utilizziamo [pywiscat](https://github.com/wmo-im/pywiscat) per interrogare il GDC configurato come parte della formazione.
 
 ```bash
 pywiscat search --help

@@ -14,9 +14,9 @@ title: Configurazione dei metadati delle stazioni
 
 ## Introduzione
 
-Per la condivisione internazionale dei dati tra i membri dell'OMM, è importante avere una comprensione comune delle stazioni che producono i dati. Il Sistema Globale Integrato di Osservazione (WIGOS) dell'OMM fornisce un quadro per l'integrazione dei sistemi di osservazione e dei sistemi di gestione dei dati. L'**Identificatore della Stazione WIGOS (WSI)** è utilizzato come riferimento unico della stazione che ha prodotto un determinato set di dati di osservazione.
+Per la condivisione internazionale dei dati tra i membri dell'OMM, è importante avere una comprensione comune delle stazioni che producono i dati. Il Sistema Globale Integrato di Osservazione (WIGOS) dell'OMM fornisce un quadro per l'integrazione dei sistemi di osservazione e dei sistemi di gestione dei dati. L'**Identificatore di Stazione WIGOS (WSI)** è utilizzato come riferimento unico della stazione che ha prodotto un determinato set di dati di osservazione.
 
-wis2box ha una collezione di metadati delle stazioni che viene utilizzata per descrivere le stazioni che producono i dati di osservazione e dovrebbe essere recuperata da **OSCAR/Surface**. I metadati delle stazioni in wis2box sono utilizzati dagli strumenti di trasformazione BUFR per verificare che i dati di input contengano un Identificatore della Stazione WIGOS (WSI) valido e per fornire una mappatura tra il WSI e i metadati della stazione.
+wis2box possiede una raccolta di metadati delle stazioni che viene utilizzata per descrivere le stazioni che producono i dati di osservazione e dovrebbe essere recuperata da **OSCAR/Surface**. I metadati delle stazioni in wis2box sono utilizzati dagli strumenti di trasformazione BUFR per verificare che i dati di input contengano un Identificatore di Stazione WIGOS (WSI) valido e per fornire una mappatura tra il WSI e i metadati della stazione.
 
 ## Creare un token di autorizzazione per collections/stations
 
@@ -42,7 +42,7 @@ Ad esempio, per utilizzare un token generato automaticamente casuale per l'endpo
 wis2box auth add-token --path collections/stations
 ```
 
-L'output sarà il seguente:
+L'output sarà così:
 
 ```{.copy}
 Continua con il token: 7ca20386a131f0de384e6ffa288eb1ae385364b3694e47e3b451598c82e899d1 [y/N]? y
@@ -83,7 +83,7 @@ Quando fai clic su 'aggiungi nuova stazione' ti verrà chiesto di fornire l'iden
 !!! note "Aggiungi metadati delle stazioni per 3 o più stazioni"
     Aggiungi tre o più stazioni alla collezione di metadati delle stazioni di wis2box. 
       
-    Se possibile, utilizza stazioni del tuo paese, specialmente se hai portato i tuoi dati.
+    Utilizza stazioni del tuo paese se possibile, specialmente se hai portato i tuoi dati.
       
     Se il tuo paese non ha stazioni in OSCAR/Surface, puoi utilizzare le seguenti stazioni per lo scopo di questo esercizio:
 
@@ -105,9 +105,9 @@ Torna alla lista delle stazioni e vedrai la stazione che hai aggiunto:
 
 Ripeti questo processo fino a quando non avrai configurato almeno 3 stazioni.
 
-!!! tip "Derivazione delle informazioni sull'elevazione mancante"
+!!! tip "Derivazione delle informazioni sull'elevazione mancanti"
 
-    Se mancano le informazioni sull'elevazione della tua stazione, ci sono servizi online che aiutano a cercare l'elevazione utilizzando dati di elevazione aperti. Un esempio è l'[API di Open Topo Data](https://www.opentopodata.org).
+    Se l'elevazione della tua stazione è mancante, ci sono servizi online per aiutarti a cercare l'elevazione utilizzando dati di elevazione aperti. Un esempio è l'[API di Open Topo Data](https://www.opentopodata.org).
 
     Ad esempio, per ottenere l'elevazione alla latitudine -6.15558 e longitudine 106.84204, puoi copiare-incollare il seguente URL in una nuova scheda del browser:
 
@@ -164,9 +164,9 @@ Questo ti permette di caricare un gran numero di stazioni contemporaneamente e a
 
 Puoi creare il file CSV utilizzando Excel o un editor di testo e poi caricarlo nella wis2box-host-datadir per renderlo disponibile al contenitore **wis2box-management** nella directory `/data/wis2box/`.
 
-Dopo aver fatto un caricamento in blocco di stazioni, si raccomanda di rivedere le stazioni nel **wis2box-webapp** per assicurarsi che i dati siano stati caricati correttamente.
+Dopo aver fatto un caricamento in blocco delle stazioni, è consigliato rivedere le stazioni nel **wis2box-webapp** per assicurarsi che i dati siano stati caricati correttamente.
 
-Consulta la documentazione ufficiale di [wis2box](https://docs.wis2box.wis.wmo.int) per ulteriori informazioni su come utilizzare questa funzionalità.
+Consulta la documentazione ufficiale di [wis2box](https://docs.wis2box.wis.wmo.int) per maggiori informazioni su come utilizzare questa funzionalità.
 
 ## Conclusione
 

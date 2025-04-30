@@ -14,7 +14,7 @@ title: Scaricare e decodificare dati da WIS2
 
 ## Introduzione
 
-In questa sessione imparerai come configurare un'iscrizione a un Broker WIS2 e scaricare automaticamente i dati sul tuo sistema locale utilizzando il servizio "wis2downloader" incluso in wis2box.
+In questa sessione imparerai come configurare un'iscrizione a un Broker WIS2 e scaricare automaticamente i dati sul tuo sistema locale utilizzando il servizio "wis2downloader" incluso nel wis2box.
 
 !!! note "Riguardo wis2downloader"
      
@@ -31,40 +31,40 @@ In questa sessione imparerai come configurare un'iscrizione a un Broker WIS2 e s
 
 ## Preparazione
 
-Prima di iniziare, effettua il login al tuo VM studente e assicurati che la tua istanza di wis2box sia attiva e funzionante.
+Prima di iniziare, effettua il login alla tua VM studente e assicurati che la tua istanza di wis2box sia attiva e funzionante.
 
-## Esercizio 1: visualizzare la dashboard di wis2download in Grafana
+## Esercizio 1: visualizzare il dashboard di wis2download in Grafana
 
-Apri un browser web e naviga alla dashboard di Grafana per la tua istanza di wis2box andando su `http://<tuo-host>:3000`.
+Apri un browser web e naviga al dashboard di Grafana per la tua istanza di wis2box andando su `http://<il-tuo-host>:3000`.
 
-Clicca su dashboard nel menu a sinistra, e poi seleziona la **dashboard di wis2downloader**.
+Clicca su dashboard nel menu a sinistra, e poi seleziona il **dashboard di wis2downloader**.
 
-Dovresti vedere la seguente dashboard:
+Dovresti vedere il seguente dashboard:
 
 ![Dashboard di wis2downloader](../assets/img/wis2downloader-dashboard.png)
 
-Questa dashboard è basata sulle metriche pubblicate dal servizio di wis2downloader e ti mostrerà lo stato dei download attualmente in corso.
+Questo dashboard si basa sulle metriche pubblicate dal servizio wis2downloader e ti mostrerà lo stato dei download attualmente in corso.
 
 Nell'angolo in alto a sinistra puoi vedere le iscrizioni attualmente attive.
 
-Mantieni aperta questa dashboard poiché la userai per monitorare il progresso dei download nel prossimo esercizio.
+Mantieni aperto questo dashboard poiché lo utilizzerai per monitorare il progresso dei download nel prossimo esercizio.
 
 ## Esercizio 2: revisione della configurazione di wis2downloader
 
-Il servizio di wis2downloader avviato dallo stack di wis2box può essere configurato utilizzando le variabili d'ambiente definite nel tuo file wis2box.env.
+Il servizio wis2downloader avviato dallo stack wis2box può essere configurato utilizzando le variabili d'ambiente definite nel tuo file wis2box.env.
 
-Le seguenti variabili d'ambiente sono utilizzate da wis2downloader:
+Le seguenti variabili d'ambiente sono utilizzate dal wis2downloader:
 
     - DOWNLOAD_BROKER_HOST: Il nome host del broker MQTT a cui connettersi. Predefinito a globalbroker.meteo.fr
     - DOWNLOAD_BROKER_PORT: La porta del broker MQTT a cui connettersi. Predefinito a 443 (HTTPS per websockets)
     - DOWNLOAD_BROKER_USERNAME: Il nome utente da utilizzare per connettersi al broker MQTT. Predefinito a everyone
     - DOWNLOAD_BROKER_PASSWORD: La password da utilizzare per connettersi al broker MQTT. Predefinito a everyone
-    - DOWNLOAD_BROKER_TRANSPORT: websockets o tcp, il meccanismo di trasporto da utilizzare per connettersi al broker MQTT. Predefinito a websockets
+    - DOWNLOAD_BROKER_TRANSPORT: websockets o tcp, il meccanismo di trasporto da utilizzare per connettersi al broker MQTT. Predefinito a websockets,
     - DOWNLOAD_RETENTION_PERIOD_HOURS: Il periodo di conservazione in ore per i dati scaricati. Predefinito a 24
     - DOWNLOAD_WORKERS: Il numero di lavoratori di download da utilizzare. Predefinito a 8. Determina il numero di download paralleli.
     - DOWNLOAD_MIN_FREE_SPACE_GB: Lo spazio libero minimo in GB da mantenere sul volume che ospita i download. Predefinito a 1.
 
-Per rivedere la configurazione attuale di wis2downloader, puoi utilizzare il seguente comando:
+Per rivedere la configurazione attuale del wis2downloader, puoi utilizzare il seguente comando:
 
 ```bash
 cat ~/wis2box-1.0.0rc1/wis2box.env | grep DOWNLOAD
@@ -84,21 +84,21 @@ cat ~/wis2box-1.0.0rc1/wis2box.env | grep DOWNLOAD
 
 !!! note "Aggiornamento della configurazione di wis2downloader"
 
-    Per aggiornare la configurazione di wis2downloader, puoi modificare il file wis2box.env. Per applicare le modifiche puoi rieseguire il comando di avvio per lo stack di wis2box:
+    Per aggiornare la configurazione di wis2downloader, puoi modificare il file wis2box.env. Per applicare le modifiche puoi rieseguire il comando di avvio per lo stack wis2box:
 
     ```bash
     python3 wis2box-ctl.py start
     ```
 
-    E vedrai il servizio di wis2downloader riavviarsi con la nuova configurazione.
+    E vedrai il servizio wis2downloader riavviarsi con la nuova configurazione.
 
-Puoi mantenere la configurazione predefinita ai fini di questo esercizio.
+Puoi mantenere la configurazione predefinita per lo scopo di questo esercizio.
 
 ## Esercizio 3: aggiungere iscrizioni a wis2downloader
 
 All'interno del container **wis2downloader**, puoi utilizzare la riga di comando per elencare, aggiungere ed eliminare iscrizioni.
 
-Per effettuare il login al container **wis2downloader**, utilizza il seguente comando:
+Per accedere al container **wis2downloader**, utilizza il seguente comando:
 
 ```bash
 python3 wis2box-ctl.py login wis2downloader
@@ -112,7 +112,7 @@ wis2downloader list-subscriptions
 
 Questo comando restituisce un elenco vuoto poiché attualmente non ci sono iscrizioni attive.
 
-Ai fini di questo esercizio, ci iscriveremo al seguente argomento `cache/a/wis2/de-dwd-gts-to-wis2/#`, per iscriverci ai dati pubblicati dal gateway GTS-to-WIS2 ospitato da DWD e scaricare le notifiche dalla Cache Globale.
+Per lo scopo di questo esercizio, ci iscriveremo al seguente argomento `cache/a/wis2/de-dwd-gts-to-wis2/#`, per iscriversi ai dati pubblicati dal gateway GTS-to-WIS2 ospitato da DWD e scaricare le notifiche dalla Cache Globale.
 
 Per aggiungere questa iscrizione, utilizza il seguente comando:
 
@@ -126,11 +126,11 @@ Poi esci dal container **wis2downloader** digitando `exit`:
 exit
 ```
 
-Controlla la dashboard di wis2downloader in Grafana per vedere la nuova iscrizione aggiunta. Aspetta qualche minuto e dovresti vedere i primi download iniziare. Passa all'esercizio successivo una volta confermato che i download sono iniziati.
+Controlla il dashboard di wis2downloader in Grafana per vedere la nuova iscrizione aggiunta. Aspetta qualche minuto e dovresti vedere i primi download iniziare. Passa all'esercizio successivo una volta confermato che i download sono iniziati.
 
 ## Esercizio 4: visualizzare i dati scaricati
 
-Il servizio di wis2downloader nello stack di wis2box scarica i dati nella directory 'downloads' nella directory che hai definito come WIS2BOX_HOST_DATADIR nel tuo file wis2box.env. Per visualizzare i contenuti della directory dei download, puoi utilizzare il seguente comando:
+Il servizio wis2downloader nello stack wis2box scarica i dati nella directory 'downloads' nella directory che hai definito come WIS2BOX_HOST_DATADIR nel tuo file wis2box.env. Per visualizzare i contenuti della directory dei download, puoi utilizzare il seguente comando:
 
 ```bash
 ls -R ~/wis2box-data/downloads
@@ -140,7 +140,7 @@ Nota che i dati scaricati sono memorizzati in directory denominate in base all'a
 
 ## Esercizio 5: rimuovere le iscrizioni da wis2downloader
 
-Successivamente, effettua nuovamente il login al container wis2downloader:
+Successivamente, accedi nuovamente al container wis2downloader:
 
 ```bash
 python3 wis2box-ctl.py login wis2downloader
@@ -158,11 +158,11 @@ E esci dal container wis2downloader digitando `exit`:
 exit
 ```
 
-Controlla la dashboard di wis2downloader in Grafana per vedere l'iscrizione rimossa. Dovresti vedere i download fermarsi.
+Controlla il dashboard di wis2downloader in Grafana per vedere l'iscrizione rimossa. Dovresti vedere i download fermarsi.
 
-## Esercizio 6: iscriversi al wis2training-broker e configurare una nuova iscrizione
+## Esercizio 6: iscriversi al broker wis2training e configurare una nuova iscrizione
 
-Per il prossimo esercizio ci iscriveremo al wis2training-broker.
+Per il prossimo esercizio ci iscriveremo al broker wis2training.
 
 Questo dimostra come iscriversi a un broker che non è il broker predefinito e ti permetterà di scaricare alcuni dati pubblicati dal Broker di Formazione WIS2.
 
@@ -178,7 +178,7 @@ DOWNLOAD_BROKER_PASSWORD=everyone
 DOWNLOAD_BROKER_TRANSPORT=tcp
 ```
 
-Poi riavvia lo stack di wis2box per applicare le modifiche:
+Poi riavvia lo stack wis2box per applicare le modifiche:
 
 ```bash
 python3 wis2box-ctl.py start
@@ -194,14 +194,14 @@ Dovresti vedere il seguente messaggio di log:
 
 ```copy
 ...
-INFO - Connessione in corso...
-INFO - Host: wis2training-broker.wis2dev.io, porta: 1883
+INFO - Connessione...
+INFO - Host: wis2training-broker.wis2dev.io, port: 1883
 INFO - Connesso con successo
 ```
 
-Ora configureremo una nuova iscrizione all'argomento per scaricare i dati sulla traiettoria dei cicloni dal Broker di Formazione WIS2.
+Ora configureremo una nuova iscrizione all'argomento per scaricare i dati della traiettoria dei cicloni dal Broker di Formazione WIS2.
 
-Effettua il login al container **wis2downloader**:
+Accedi al container **wis2downloader**:
 
 ```bash
 python3 wis2box-ctl.py login wis2downloader
@@ -215,13 +215,13 @@ wis2downloader add-subscription --topic origin/a/wis2/int-wis2-training/data/cor
 
 Esci dal container **wis2downloader** digitando `exit`.
 
-Aspetta fino a quando non vedi i download iniziare nella dashboard di wis2downloader in Grafana.
+Aspetta fino a quando non vedi i download iniziare nel dashboard di wis2downloader in Grafana.
 
 !!! note "Scaricare dati dal Broker di Formazione WIS2"
 
     Il Broker di Formazione WIS2 è un broker di test che viene utilizzato per scopi di formazione e potrebbe non pubblicare dati tutto il tempo.
 
-    Durante le sessioni di formazione in presenza, l'istruttore locale assicurerà che il Broker di Formazione WIS2 pubblichi dati per te da scaricare.
+    Durante le sessioni di formazione in presenza, il formatore locale assicurerà che il Broker di Formazione WIS2 pubblichi dati per te da scaricare.
 
     Se stai facendo questo esercizio al di fuori di una sessione di formazione, potresti non vedere alcun dato scaricato.
 
@@ -244,7 +244,7 @@ Per dimostrare come puoi decodificare i dati scaricati, avvieremo un nuovo conta
 
 Questo container avvierà un server Jupyter notebook sulla tua istanza che include la libreria "ecCodes" che puoi utilizzare per decodificare i dati BUFR.
 
-Useremo i notebook di esempio inclusi in `~/exercise-materials/notebook-examples` per decodificare i dati scaricati per le traiettorie dei cicloni.
+Useremo i notebook di esempio inclusi in `~/exercise-materials/notebook-examples` per decodificare i dati scaricati per le traiettorie dei cicloni tropicali.
 
 Per avviare il container, utilizza il seguente comando:
 
@@ -258,13 +258,13 @@ docker run -d --name decode-bufr-jupyter \
 
 !!! note "Riguardo il container decode-bufr-jupyter"
 
-    Il container `decode-bufr-jupyter` è un container personalizzato che include la libreria ecCodes e esegue un server Jupyter notebook. Il container è basato su un'immagine che include la libreria `ecCodes` per decodificare i dati BUFR, insieme a librerie per la grafica e l'analisi dei dati.
+    Il container `decode-bufr-jupyter` è un container personalizzato che include la libreria ecCodes e esegue un server Jupyter notebook. Il container si basa su un'immagine che include la libreria `ecCodes` per decodificare i dati BUFR, insieme a librerie per la graficazione e l'analisi dei dati.
 
     Il comando sopra avvia il container in modalità distaccata, con il nome `decode-bufr-jupyter`, la porta 8888 è mappata al sistema host e la variabile d'ambiente `JUPYTER_TOKEN` è impostata su `dataismagic!`.
     
     Il comando sopra monta anche la directory `~/wis2box-data/downloads` su `/root/downloads` nel container. Questo assicura che i dati scaricati siano disponibili al server Jupyter notebook.
     
-Una volta avviato il container, puoi accedere al server Jupyter notebook navigando su `http://<tuo-host>:8888` nel tuo browser web.
+Una volta avviato il container, puoi accedere al server Jupyter notebook navigando su `http://<il-tuo-host>:8888` nel tuo browser web.
 
 Vedrai una schermata che ti chiede di inserire una "Password o token".
 
@@ -272,19 +272,19 @@ Fornisci il token `dataismagic!` per accedere al server Jupyter notebook.
 
 Dopo aver effettuato l'accesso, dovresti vedere la seguente schermata che elenca le directory nel container:
 
-![Home del notebook Jupyter](../assets/img/jupyter-files-screen1.png)
+![Home di Jupyter notebook](../assets/img/jupyter-files-screen1.png)
 
 Fai doppio clic sulla directory `example-notebooks` per aprirla.
 
 Dovresti vedere la seguente schermata che elenca i notebook di esempio, fai doppio clic sul notebook `tropical_cyclone_track.ipynb` per aprirlo:
 
-![Notebook di esempio Jupyter](../assets/img/jupyter-files-screen2.png)
+![Notebook di esempio di Jupyter notebook](../assets/img/jupyter-files-screen2.png)
 
-Ora dovresti trovarti nel notebook Jupyter per decodificare i dati sulla traiettoria dei cicloni tropicali:
+Ora dovresti trovarti nel Jupyter notebook per decodificare i dati delle traiettorie dei cicloni tropicali:
 
-![Notebook Jupyter traiettoria ciclone tropicale](../assets/img/jupyter-tropical-cyclone-track.png)
+![Jupyter notebook traiettoria ciclone tropicale](../assets/img/jupyter-tropical-cyclone-track.png)
 
-Leggi le istruzioni nel notebook ed esegui le celle per decodificare i dati scaricati per le traiettorie dei cicloni. Esegui ogni cella facendo clic sulla cella e poi cliccando sul pulsante di esecuzione nella barra degli strumenti o premendo `Shift+Enter`.
+Leggi le istruzioni nel notebook ed esegui le celle per decodificare i dati scaricati per le traiettorie dei cicloni tropicali. Esegui ogni cella facendo clic sulla cella e poi cliccando sul pulsante di esecuzione nella barra degli strumenti o premendo `Shift+Enter`.
 
 Alla fine dovresti vedere un grafico della probabilità di impatto per le traiettorie dei cicloni tropicali:
 
@@ -292,16 +292,16 @@ Alla fine dovresti vedere un grafico della probabilità di impatto per le traiet
 
 !!! question 
 
-    Il risultato mostra la probabilità prevista della traiettoria della tempesta tropicale entro 200 km. Come aggiorneresti il notebook per visualizzare la probabilità prevista della traiettoria della tempesta tropicale entro 300 km?
+    Il risultato mostra la probabilità prevista di traccia di tempesta tropicale entro 200 km. Come aggiorneresti il notebook per visualizzare la probabilità prevista di traccia di tempesta tropicale entro 300 km ?
 
 ??? success "Clicca per rivelare la risposta"
 
-    Per aggiornare il notebook per visualizzare la probabilità prevista della traiettoria della tempesta tropicale entro una distanza diversa, puoi aggiornare la variabile `distance_threshold` nel blocco di codice che calcola la probabilità di impatto.
+    Per aggiornare il notebook per visualizzare la probabilità prevista di traccia di tempesta tropicale entro una distanza diversa, puoi aggiornare la variabile `distance_threshold` nel blocco di codice che calcola la probabilità di impatto.
 
-    Per visualizzare la probabilità prevista della traiettoria della tempesta tropicale entro 300 km, 
+    Per visualizzare la probabilità prevista di traccia di tempesta tropicale entro 300 km, 
 
     ```python
-    # imposta la soglia di distanza (metri)
+    # impostare la soglia di distanza (metri)
     distance_threshold = 300000  # 300 km in metri
     ```
 
@@ -311,7 +311,8 @@ Alla fine dovresti vedere un grafico della probabilità di impatto per le traiet
 
     L'esercizio che hai appena fatto ha fornito un esempio specifico di come puoi decodificare i dati BUFR utilizzando la libreria ecCodes. Diversi tipi di dati possono richiedere passaggi di decodifica diversi e potresti dover consultare la documentazione per il tipo di dati con cui stai lavorando.
     
-    Per maggiori informazioni consulta la [documentazione di ecCodes](https://confluence.ecmwf.int/display/ECC).
+    Per maggiori informazioni consulta la [documentazione ecCodes](https://confluence.ecmwf.int/display/ECC).
+
 
 
 ## Conclusione
@@ -322,4 +323,4 @@ Alla fine dovresti vedere un grafico della probabilità di impatto per le traiet
 
     - utilizzare il 'wis2downloader' per iscriverti a un Broker WIS2 e scaricare dati sul tuo sistema locale
     - visualizzare lo stato dei download nel dashboard di Grafana
-    - decod
+    - decodificare alcuni dati scaricati utilizzando il container 'decode-bufr-jupyter

@@ -2,9 +2,9 @@
 title: Modello AWS
 ---
 
-# Modello csv2bufr per Stazioni Meteorologiche Automatiche che riportano dati GBON orari
+# Modello csv2bufr per Stazioni Meteorologiche Automatiche che riportano dati orari GBON
 
-Il **Modello AWS** utilizza un formato CSV standardizzato per l'ingestione dei dati provenienti dalle Stazioni Meteorologiche Automatiche a supporto dei requisiti di segnalazione GBON. Questo modello di mappatura converte i dati CSV in sequenza BUFR 301150, 307096.
+Il **Modello AWS** utilizza un formato CSV standardizzato per l'ingestione dei dati provenienti dalle Stazioni Meteorologiche Automatiche a supporto dei requisiti di rapporto GBON. Questo modello di mappatura converte i dati CSV in sequenza BUFR 301150, 307096.
 
 Il formato è destinato all'uso con stazioni meteorologiche automatiche che riportano un numero minimo di parametri, inclusi pressione, temperatura e umidità dell'aria, velocità e direzione del vento e precipitazioni su base oraria.
 

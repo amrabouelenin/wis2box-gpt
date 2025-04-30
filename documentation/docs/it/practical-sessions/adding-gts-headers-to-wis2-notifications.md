@@ -4,7 +4,7 @@ title: Aggiunta degli header GTS alle notifiche WIS2
 
 # Aggiunta degli header GTS alle notifiche WIS2
 
-!!! abstract "Risultati dell'apprendimento"
+!!! abstract "Risultati di apprendimento"
 
     Al termine di questa sessione pratica, sarai in grado di:
     
@@ -14,9 +14,9 @@ title: Aggiunta degli header GTS alle notifiche WIS2
 
 ## Introduzione
 
-I membri dell'OMM che desiderano interrompere la trasmissione dei loro dati su GTS durante la fase di transizione a WIS2 dovranno aggiungere gli header GTS alle loro notifiche WIS2. Questi header permettono al gateway WIS2 a GTS di inoltrare i dati alla rete GTS.
+I membri dell'OMM che desiderano interrompere la trasmissione dei loro dati su GTS durante la fase di transizione a WIS2 dovranno aggiungere gli header GTS alle loro notifiche WIS2. Questi header permettono al gateway WIS2 verso GTS di inoltrare i dati alla rete GTS.
 
-Questo consente ai membri che sono passati all'uso di un nodo WIS2 per la pubblicazione dei dati di disabilitare il loro sistema MSS e garantire che i loro dati siano ancora disponibili per i membri che non sono ancora migrati a WIS2.
+Ciò consente ai membri che sono passati all'uso di un nodo WIS2 per la pubblicazione dei dati di disabilitare il loro sistema MSS e garantire che i loro dati siano ancora disponibili per i membri che non sono ancora migrati a WIS2.
 
 La proprietà GTS nel Messaggio di Notifica WIS2 deve essere aggiunta come proprietà aggiuntiva al Messaggio di Notifica WIS2. La proprietà GTS è un oggetto JSON che contiene gli header GTS necessari affinché i dati vengano inoltrati alla rete GTS.
 
@@ -29,7 +29,7 @@ La proprietà GTS nel Messaggio di Notifica WIS2 deve essere aggiunta come propr
 }
 ```
 
-All'interno di wis2box puoi aggiungere automaticamente questo alle Notifiche WIS2 fornendo un file aggiuntivo chiamato `gts_headers_mapping.csv` che contiene le informazioni necessarie per mappare gli header GTS ai nomi dei file in arrivo.
+All'interno di wis2box puoi aggiungere automaticamente questo alle Notifiche WIS2 fornendo un file aggiuntivo denominato `gts_headers_mapping.csv` che contiene le informazioni necessarie per mappare gli header GTS ai nomi dei file in arrivo.
 
 Questo file dovrebbe essere collocato nella directory definita da `WIS2BOX_HOST_DATADIR` nel tuo `wis2box.env` e dovrebbe avere le seguenti colonne:
 
@@ -41,18 +41,18 @@ Questo file dovrebbe essere collocato nella directory definita da `WIS2BOX_HOST_
 
 Assicurati di avere accesso SSH alla tua VM studente e che la tua istanza di wis2box sia attiva e funzionante.
 
-Assicurati di essere connesso al broker MQTT della tua istanza wis2box usando MQTT Explorer. Puoi usare le credenziali pubbliche `everyone/everyone` per connetterti al broker.
+Assicurati di essere connesso al broker MQTT della tua istanza wis2box utilizzando MQTT Explorer. Puoi usare le credenziali pubbliche `everyone/everyone` per connetterti al broker.
 
-Assicurati di avere un browser web aperto con la dashboard di Grafana per la tua istanza andando su `http://<tuo-host>:3000`
+Assicurati di avere un browser web aperto con la dashboard di Grafana per la tua istanza accedendo a `http://<tuo-host>:3000`
 
 ## Creazione di `gts_headers_mapping.csv`
 
 Per aggiungere gli header GTS alle tue notifiche WIS2, è necessario un file CSV che mappi gli header GTS ai nomi dei file in arrivo.
 
-Il file CSV dovrebbe essere nominato (esattamente) `gts_headers_mapping.csv` e dovrebbe essere collocato nella directory definita da `WIS2BOX_HOST_DATADIR` nel tuo `wis2box.env`. 
+Il file CSV dovrebbe essere nominato (esattamente) `gts_headers_mapping.csv` e dovrebbe essere collocato nella directory definita da `WIS2BOX_HOST_DATADIR` nel tuo `wis2box.env`.
 
 ## Esercizio 1: fornire un file `gts_headers_mapping.csv`
-    
+
 Copia il file `exercise-materials/gts-headers-exercises/gts_headers_mapping.csv` nella tua istanza di wis2box e collocalo nella directory definita da `WIS2BOX_HOST_DATADIR` nel tuo `wis2box.env`.
 
 ```bash
@@ -73,7 +73,7 @@ Copia il file `exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZ
 cp ~/exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt ~/wis2box-data
 ```
 
-Quindi accedi al container **wis2box-management**:
+Poi accedi al container **wis2box-management**:
 
 ```bash
 cd ~/wis2box-1.0.0rc1
@@ -90,7 +90,7 @@ Assicurati di sostituire l'opzione `metadata-id` con l'identificatore corretto p
 
 Controlla la dashboard di Grafana per vedere se i dati sono stati inseriti correttamente. Se vedi degli AVVISI o ERRORI, prova a risolverli e ripeti l'esercizio del comando `wis2box data ingest`.
 
-## Esercizio 3: Visualizzazione degli header GTS nella Notifica WIS2
+## Esercizio 3: Visualizzazione degli header GTS nelle Notifiche WIS2
 
 Vai su MQTT Explorer e controlla il Messaggio di Notifica WIS2 per i dati che hai appena inserito.
 
@@ -99,6 +99,8 @@ Il Messaggio di Notifica WIS2 dovrebbe contenere gli header GTS che hai fornito 
 ## Conclusione
 
 !!! success "Congratulazioni!"
-    In questa sessione pratica, hai imparato a:
+    In questa sessione pratica, hai imparato come:
       - aggiungere gli header GTS alle tue notifiche WIS2
-      - verificare che gli header GTS siano resi disponibili tramite la tua installazione di wis2box
+      - verificare che gli header GTS siano disponibili tramite la tua installazione di wis2box
+
+    

@@ -4,7 +4,7 @@ title: Interrogazione dei dati tramite l'API wis2box
 
 # Interrogazione dei dati tramite l'API wis2box
 
-!!! abstract "Risultati dell'apprendimento"
+!!! abstract "Risultati di apprendimento"
     Al termine di questa sessione pratica, sarai in grado di:
 
     - utilizzare l'API wis2box per interrogare e filtrare le tue stazioni
@@ -12,41 +12,41 @@ title: Interrogazione dei dati tramite l'API wis2box
 
 ## Introduzione
 
-L'API wis2box fornisce accesso alla scoperta e all'interrogazione in modo leggibile da macchina ai dati che sono stati inseriti in wis2box. L'API si basa sullo standard OGC API - Features ed è implementata utilizzando [pygeoapi](https://pygeoapi.io).
+L'API wis2box offre accesso alla scoperta e all'interrogazione in modo leggibile da macchina dei dati che sono stati inseriti in wis2box. L'API si basa sullo standard OGC API - Features ed è implementata utilizzando [pygeoapi](https://pygeoapi.io).
 
-L'API wis2box offre accesso alle seguenti collezioni:
+L'API wis2box fornisce accesso alle seguenti collezioni:
 
 - Stazioni
 - Metadati di scoperta
 - Notifiche di dati
-- più una collezione per dataset configurato, che memorizza i risultati da bufr2geojson (il plugin `bufr2geojson` deve essere abilitato nella configurazione delle mappature dei dati per riempire gli elementi nella collezione del dataset).
+- più una collezione per ciascun dataset configurato, che memorizza i risultati da bufr2geojson (il plugin `bufr2geojson` deve essere abilitato nella configurazione delle mappature dei dati per riempire gli elementi nella collezione del dataset).
 
-In questa sessione pratica imparerai a utilizzare l'API dei dati per sfogliare e interrogare i dati che sono stati inseriti in wis2box.
+In questa sessione pratica imparerai come utilizzare l'API dei dati per navigare e interrogare i dati che sono stati inseriti in wis2box.
 
 ## Preparazione
 
 !!! note
-    Naviga alla pagina iniziale dell'API wis2box nel tuo browser web:
+    Naviga alla pagina di atterraggio dell'API wis2box nel tuo browser web:
 
     `http://<tuo-host>/oapi`
 
-<img alt="pagina iniziale dell'API wis2box" src="../../assets/img/wis2box-api-landing-page.png" width="600">
+<img alt="pagina-di-atterraggio-api-wis2box" src="../../assets/img/wis2box-api-landing-page.png" width="600">
 
 ## Ispezione delle collezioni
 
-Dalla pagina iniziale, clicca sul link 'Collezioni'.
+Dalla pagina di atterraggio, clicca sul link 'Collezioni'.
 
 !!! question
     Quante collezioni di dataset vedi nella pagina risultante? Cosa pensi che rappresenti ciascuna collezione?
 
 ??? success "Clicca per rivelare la risposta"
-    Dovrebbero essere visualizzate 4 collezioni, incluse "Stazioni", "Metadati di scoperta" e "Notifiche di dati"
+    Dovrebbero essere visualizzate 4 collezioni, inclusi "Stazioni", "Metadati di scoperta" e "Notifiche di dati"
 
 ## Ispezione delle stazioni
 
-Dalla pagina iniziale, clicca sul link 'Collezioni', poi clicca sul link 'Stazioni'.
+Dalla pagina di atterraggio, clicca sul link 'Collezioni', poi clicca sul link 'Stazioni'.
 
-<img alt="collezioni API wis2box-stazioni" src="../../assets/img/wis2box-api-collections-stations.png" width="600">
+<img alt="collezioni-api-wis2box-stazioni" src="../../assets/img/wis2box-api-collections-stations.png" width="600">
 
 Clicca sul link 'Sfoglia', poi clicca sul link 'json'.
 
@@ -70,21 +70,21 @@ Clicca sul link 'Sfoglia', poi clicca sul link 'json'.
 !!! note
     L'esempio sopra è basato sui dati di test del Malawi. Prova a testare contro le osservazioni che hai inserito come parte degli esercizi.
 
-Dalla pagina iniziale, clicca sul link 'Collezioni', poi clicca sul link 'Osservazioni meteorologiche di superficie dal Malawi'.
+Dalla pagina di atterraggio, clicca sul link 'Collezioni', poi clicca sul link 'Osservazioni meteorologiche di superficie dal Malawi'.
 
-<img alt="collezioni API wis2box-osservazioni Malawi" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600">
+<img alt="collezioni-api-wis2box-osservazioni-malawi" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600">
 
 Clicca sul link 'Interrogabili'.
 
-<img alt="interrogabili osservazioni Malawi API wis2box" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600">
+<img alt="collezioni-api-wis2box-osservazioni-malawi-interrogabili" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600">
 
 !!! question
-    Quale interrogabile sarebbe usato per filtrare per identificatore di stazione?
+    Quale interrogabile verrebbe utilizzato per filtrare per identificatore di stazione?
 
 ??? success "Clicca per rivelare la risposta"
     L'`identificatore_stazione_wigos` è l'interrogabile corretto.
 
-Naviga alla pagina precedente (ovvero `http://<tuo-host>/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations`)
+Naviga alla pagina precedente (cioè `http://<tuo-host>/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations`)
 
 Clicca sul link 'Sfoglia'.
 
@@ -115,7 +115,7 @@ Ispeziona la risposta JSON delle osservazioni.
     Come possiamo filtrare le osservazioni per una singola stazione?
 
 ??? success "Clicca per rivelare la risposta"
-    Aggiungi `wigos_station_identifier=<WSI>` alla richiesta API.
+    Aggiungi `identificatore_stazione_wigos=<WSI>` alla richiesta API.
 
 !!! question
     Come possiamo ricevere le osservazioni come un CSV?
@@ -136,3 +136,4 @@ Ispeziona la risposta JSON delle osservazioni.
 
     - utilizzare l'API wis2box per interrogare e filtrare le tue stazioni
     - utilizzare l'API wis2box per interrogare e filtrare i tuoi dati
+

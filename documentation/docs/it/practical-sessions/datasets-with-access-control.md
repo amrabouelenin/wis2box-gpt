@@ -1,45 +1,45 @@
 ---
-title: Configurazione di un dataset raccomandato con controllo degli accessi
+title: Configurazione di un dataset consigliato con controllo degli accessi
 ---
 
-# Configurazione di un dataset raccomandato con controllo degli accessi
+# Configurazione di un dataset consigliato con controllo degli accessi
 
 !!! abstract "Risultati di apprendimento"
     Al termine di questa sessione pratica, sarai in grado di:
 
-    - creare un nuovo dataset con politica dei dati 'raccomandata'
+    - creare un nuovo dataset con politica dei dati 'consigliata'
     - aggiungere un token di accesso al dataset
-    - verificare che il dataset non possa essere accessibile senza il token di accesso
+    - validare che il dataset non possa essere accessibile senza il token di accesso
     - aggiungere il token di accesso agli header HTTP per accedere al dataset
 
 ## Introduzione
 
-I dataset che non sono considerati 'core' nell'ambito della WMO possono essere configurati opzionalmente con una politica di controllo degli accessi. wis2box fornisce un meccanismo per aggiungere un token di accesso a un dataset che impedirà agli utenti di scaricare dati a meno che non forniscano il token di accesso negli header HTTP.
+I dataset che non sono considerati 'core' nel WMO possono essere configurati opzionalmente con una politica di controllo degli accessi. wis2box fornisce un meccanismo per aggiungere un token di accesso a un dataset che impedirà agli utenti di scaricare dati a meno che non forniscano il token di accesso negli header HTTP.
 
 ## Preparazione
 
 Assicurati di avere accesso SSH alla tua VM studente e che la tua istanza di wis2box sia attiva e funzionante.
 
-Assicurati di essere connesso al broker MQTT della tua istanza wis2box utilizzando MQTT Explorer. Puoi usare le credenziali pubbliche `everyone/everyone` per connetterti al broker.
+Assicurati di essere connesso al broker MQTT della tua istanza wis2box usando MQTT Explorer. Puoi utilizzare le credenziali pubbliche `everyone/everyone` per connetterti al broker.
 
 Assicurati di avere un browser web aperto con la wis2box-webapp per la tua istanza accedendo a `http://<tuo-host>/wis2box-webapp`.
 
-## Esercizio 1: creare un nuovo dataset con politica dei dati 'raccomandata'
+## Esercizio 1: creare un nuovo dataset con politica dei dati 'consigliata'
 
 Vai alla pagina 'editor di dataset' nella wis2box-webapp e crea un nuovo dataset. Usa lo stesso centro-id delle sessioni pratiche precedenti e usa il template='surface-weather-observations/synop'.
 
 Clicca 'OK' per procedere.
 
-Nell'editor di dataset, imposta la politica dei dati su 'raccomandata' (nota che cambiare la politica dei dati aggiornerà la 'Gerarchia degli Argomenti').
-Sostituisci l'ID locale generato automaticamente con un nome descrittivo per il dataset, ad esempio 'dati-raccomandati-con-controllo-accessi':
+Nell'editor di dataset, imposta la politica dei dati su 'consigliata' (nota che cambiare la politica dei dati aggiornerà la 'Gerarchia degli Argomenti').
+Sostituisci l'ID locale generato automaticamente con un nome descrittivo per il dataset, ad esempio 'dati-consigliati-con-controllo-accessi':
 
-<img alt="crea-dataset-raccomandato" src="../../assets/img/create-dataset-recommended.png" width="800">
+<img alt="crea-dataset-consigliato" src="../../assets/img/create-dataset-recommended.png" width="800">
 
 Continua a compilare i campi richiesti per le Proprietà Spaziali e le Informazioni di Contatto, e 'Valida il modulo' per controllare eventuali errori.
 
-Infine, invia il dataset, utilizzando il token di autenticazione creato in precedenza, e verifica che il nuovo dataset sia stato creato nella wis2box-webapp.
+Infine, invia il dataset, utilizzando il token di autenticazione creato precedentemente, e verifica che il nuovo dataset sia creato nella wis2box-webapp.
 
-Controlla MQTT-explorer per vedere se ricevi il Messaggio di Notifica WIS2 che annuncia il nuovo record di Metadati di Scoperta sul topic `origin/a/wis2/<tuo-centro-id>/metadata`.
+Controlla MQTT-explorer per vedere che ricevi il Messaggio di Notifica WIS2 che annuncia il nuovo record di Metadati di Scoperta sul topic `origin/a/wis2/<tuo-centro-id>/metadata`.
 
 ## Esercizio 2: aggiungere un token di accesso al dataset
 
@@ -50,7 +50,7 @@ cd ~/wis2box-1.0.0rc1
 python3 wis2box-ctl.py login
 ```
 
-Dalla linea di comando all'interno del container puoi proteggere un dataset usando il comando `wis2box auth add-token`, utilizzando il flag `--metadata-id` per specificare l'identificatore dei metadati del dataset e il token di accesso come argomento.
+Dalla linea di comando all'interno del container puoi proteggere un dataset usando il comando `wis2box auth add-token`, usando il flag `--metadata-id` per specificare l'identificatore dei metadati del dataset e il token di accesso come argomento.
 
 Ad esempio, per aggiungere il token di accesso `S3cr3tT0k3n` al dataset con identificatore dei metadati `urn:wmo:md:not-my-centre:core.surface-based-observations.synop`:
 
@@ -76,7 +76,7 @@ Poi usa WinSCP o un editor da linea di comando per modificare il file `aws-examp
 
 Successivamente, vai all'editor di stazioni nella wis2box-webapp. Per ogni stazione che hai usato in `aws-example2.csv`, aggiorna il campo 'topic' per corrispondere al 'topic' del dataset che hai creato nell'esercizio precedente.
 
-Questa stazione sarà ora associata a 2 topic, uno per il dataset 'core' e uno per il dataset 'raccomandato':
+Questa stazione sarà ora associata a 2 topic, uno per il dataset 'core' e uno per il dataset 'consigliato':
 
 <img alt="modifica-stazioni-aggiungi-topic" src="../../assets/img/edit-stations-add-topics.png" width="600">
 
@@ -99,7 +99,7 @@ Assicurati di fornire l'identificatore dei metadati corretto per il tuo dataset 
 
 Controlla il link canonico nel Messaggio di Notifica WIS2 e copia/incolla il link nel browser per provare a scaricare i dati.
 
-Dovresti vedere un errore 403 Forbidden.
+Dovresti vedere un errore 403 Proibito.
 
 ## Esercizio 4: aggiungere il token di accesso agli header HTTP per accedere al dataset
 
@@ -111,7 +111,7 @@ Dalla linea di comando nella tua VM studente, usa il comando `wget` con il link 
 wget <canonical-link>
 ```
 
-Vedrai che la richiesta HTTP ritorna con *401 Unauthorized* e i dati non vengono scaricati.
+Dovresti vedere che la richiesta HTTP ritorna con *401 Non autorizzato* e i dati non vengono scaricati.
 
 Ora aggiungi il token di accesso agli header HTTP per accedere al dataset.
 
@@ -126,7 +126,7 @@ Ora i dati dovrebbero essere scaricati con successo.
 !!! success "Congratulazioni!"
     In questa sessione pratica, hai imparato come:
 
-    - creare un nuovo dataset con politica dei dati 'raccomandata'
+    - creare un nuovo dataset con politica dei dati 'consigliata'
     - aggiungere un token di accesso al dataset
-    - verificare che il dataset non possa essere accessibile senza il token di accesso
+    - validare che il dataset non possa essere accessibile senza il token di accesso
     - aggiungere il token di accesso agli header HTTP per accedere al dataset

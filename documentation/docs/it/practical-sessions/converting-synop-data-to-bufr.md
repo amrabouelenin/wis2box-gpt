@@ -4,7 +4,7 @@ title: Conversione dei dati SYNOP in BUFR
 
 # Conversione dei dati SYNOP in BUFR dalla riga di comando
 
-!!! abstract "Risultati di apprendimento"
+!!! abstract "Risultati dell'apprendimento"
     Al termine di questa sessione pratica, sarai in grado di:
 
     - utilizzare lo strumento synop2bufr per convertire i rapporti SYNOP FM-12 in BUFR;
@@ -21,7 +21,7 @@ Volume I.1 (WMO-No. 306, Volume I.1).
 
 [Manuale WMO sui Codici, Volume I.1](https://library.wmo.int/records/item/35713-manual-on-codes-international-codes-volume-i-1)
 
-Per aiutare a completare la migrazione a BUFR, sono stati sviluppati alcuni strumenti per
+Per facilitare il completamento della migrazione a BUFR, sono stati sviluppati alcuni strumenti per
 codificare i rapporti SYNOP FM-12 in BUFR, in questa sessione imparerai come utilizzare questi strumenti così
 come la relazione tra le informazioni contenute nei rapporti SYNOP FM-12 e i messaggi BUFR.
 
@@ -30,7 +30,7 @@ come la relazione tra le informazioni contenute nei rapporti SYNOP FM-12 e i mes
 !!! warning "Prerequisiti"
 
     - Assicurati che il tuo wis2box sia stato configurato e avviato.
-    - Conferma lo stato visitando l'API wis2box (`http://<your-host-name>/oapi`) e verificando che l'API sia in esecuzione.
+    - Conferma lo stato visitando l'API wis2box (``http://<your-host-name>/oapi``) e verificando che l'API sia in esecuzione.
     - Assicurati di leggere le sezioni **synop2bufr primer** e **ecCodes primer** prima di iniziare gli esercizi.
 
 ## synop2bufr primer
@@ -54,13 +54,14 @@ Nota che se le opzioni metadata, output directory, year e month non sono specifi
 | --month | Il mese corrente. |
 
 !!! note
-    Bisogna essere cauti nell'usare l'anno e il mese predefiniti, poiché il giorno del mese specificato nel rapporto potrebbe non corrispondere (ad esempio, giugno non ha 31 giorni).
+    Bisogna essere cauti nell'uso dell'anno e del mese predefiniti, poiché il giorno del mese specificato nel rapporto potrebbe non corrispondere (ad esempio, giugno non ha 31 giorni).
 
 Negli esempi, l'anno e il mese non sono dati, quindi sentiti libero di specificare una data tu stesso o di utilizzare i valori predefiniti.
 
 ## ecCodes primer
 
-ecCodes fornisce sia strumenti da riga di comando sia può essere incorporato nelle tue applicazioni. Di seguito sono riportati alcuni utili strumenti da riga di comando per lavorare con i dati BUFR.
+ecCodes fornisce sia strumenti da riga di comando sia può essere incorporato nelle tue applicazioni. Di seguito sono riportati alcuni utili comandi
+da riga di comando per lavorare con i dati BUFR.
 
 ### bufr_dump
 
@@ -70,13 +71,13 @@ Il comando `bufr_dump` è uno strumento generico di informazioni BUFR. Ha molte 
 bufr_dump -p my_bufr.bufr4
 ```
 
-Questo mostrerà il contenuto BUFR sul tuo schermo. Se sei interessato ai valori presi da una variabile in particolare, usa il comando `egrep`:
+Questo mostrerà il contenuto BUFR sul tuo schermo. Se sei interessato ai valori assunti da una variabile in particolare, usa il comando `egrep`:
 
 ```bash
 bufr_dump -p my_bufr.bufr4 | egrep -i temperature
 ```
 
-Questo mostrerà le variabili relative alla temperatura nei tuoi dati BUFR. Se vuoi farlo per più tipi di variabili, filtra l'output usando un pipe (`|`):
+Questo mostrerà le variabili relative alla temperatura nei tuoi dati BUFR. Se vuoi farlo per più tipi di variabili, filtra l'output usando una pipe (`|`):
 
 ```bash
 bufr_dump -p my_bufr.bufr4 | egrep -i 'temperature|wind'
@@ -84,7 +85,7 @@ bufr_dump -p my_bufr.bufr4 | egrep -i 'temperature|wind'
 
 ## Conversione di SYNOP FM-12 in BUFR usando synop2bufr dalla riga di comando
 
-La libreria eccodes e il modulo synop2bufr sono installati nel contenitore wis2box-api. Per fare i prossimi esercizi copieremo la directory synop2bufr-exercises nel contenitore wis2box-api ed eseguiremo gli esercizi da lì.
+La libreria eccodes e il modulo synop2bufr sono installati nel contenitore wis2box-api. Per fare i prossimi esercizi copieremo la directory synop2bufr-exercises nel contenitore wis2box-api e eseguiremo gli esercizi da lì.
 
 ```bash
 docker cp ~/exercise-materials/synop2bufr-exercises wis2box-api:/root
@@ -265,7 +266,7 @@ more station_list.csv
 
 ??? success "Clicca per rivelare la risposta"
 
-    No, questo non è un problema a patto che esista una riga nel file dell'elenco delle stazioni con un TSI della stazione corrispondente a quello del rapporto SYNOP che stiamo cercando di convertire.
+    No, questo non è un problema a condizione che esista una riga nel file dell'elenco delle stazioni con un TSI della stazione corrispondente a quello del rapporto SYNOP che stiamo cercando di convertire.
 
 !!! note
 
@@ -276,7 +277,7 @@ more station_list.csv
 
 ??? success "Clicca per rivelare la risposta"
 
-    Questo è fatto usando il comando `transform`, per esempio:
+    Questo si fa usando il comando `transform`, per esempio:
 
     ```bash
     synop2bufr data transform --metadata station_list.csv --output-dir ./ --year 2024 --month 09 message.txt
@@ -290,7 +291,7 @@ Ispeziona i dati BUFR risultanti usando `bufr_dump`.
 
     - Temperatura dell'aria (K) del rapporto
     - Copertura nuvolosa totale (%) del rapporto
-    - Periodo totale di sole (min) del rapporto
+    - Periodo totale di sole (minuti) del rapporto
     - Velocità del vento (m/s) del rapporto
 
 ??? success "Clicca per rivelare la risposta"
@@ -326,7 +327,7 @@ more message_incorrect.txt
 
 ??? success "Clicca per rivelare la risposta"
 
-    Il rapporto SYNOP per 15015 manca del delimitatore (`=`) che permette a `synop2bufr` di distinguere questo rapporto dal successivo.
+    Il rapporto SYNOP per 15015 manca del delimitatore (`=`) che consente a `synop2bufr` di distinguere questo rapporto dal successivo.
 
 Tenta di convertire `message_incorrect.txt` usando `station_list.csv`
 

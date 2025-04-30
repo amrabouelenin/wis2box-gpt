@@ -4,13 +4,13 @@ title: Accesso alla tua VM studente
 
 # Accesso alla tua VM studente
 
-!!! abstract "Risultati di apprendimento"
+!!! abstract "Risultati dell'apprendimento"
 
     Al termine di questa sessione pratica, sarai in grado di:
 
     - accedere alla tua VM studente tramite SSH e WinSCP
     - verificare che il software necessario per gli esercizi pratici sia installato
-    - verificare di avere accesso ai materiali di esercizio per questa formazione sulla tua VM studente locale
+    - verificare di avere accesso ai materiali di esercizio per questo training sulla tua VM studente locale
 
 ## Introduzione
 
@@ -30,13 +30,13 @@ La tua VM studente ha il seguente software preinstallato:
 
     - GCP (Google Cloud Platform) istanza VM `e2-medium`
     - AWS (Amazon Web Services) istanza ec2 `t3a.medium`
-    - Azure (Microsoft) Macchina Virtuale Azure `standard_b2s`
+    - Azure (Microsoft) Azure Virtual Machine `standard_b2s`
 
     Seleziona Ubuntu Server 22.0.4 LTS come sistema operativo.
     
     Dopo aver creato la tua VM assicurati di aver installato python, docker e docker compose, come descritto in [wis2box-software-dependencies](https://docs.wis2box.wis.wmo.int/en/latest/user/getting-started.html#software-dependencies).
     
-    L'archivio di rilascio per wis2box utilizzato in questa formazione può essere scaricato come segue:
+    L'archivio di rilascio per wis2box utilizzato in questo training può essere scaricato come segue:
 
     ```bash
     wget https://github.com/wmo-im/wis2box/releases/download/1.0.0rc1/wis2box-setup-1.0.0rc1.zip
@@ -45,7 +45,7 @@ La tua VM studente ha il seguente software preinstallato:
     
     Puoi sempre trovare l'ultimo archivio 'wis2box-setup' su [https://github.com/wmo-im/wis2box/releases](https://github.com/wmo-im/wis2box/releases).
 
-    I materiali di esercizio utilizzati in questa formazione possono essere scaricati come segue:
+    I materiali di esercizio utilizzati in questo training possono essere scaricati come segue:
 
     ```bash
     wget https://training.wis2box.wis.wmo.int/exercise-materials.zip
@@ -60,9 +60,9 @@ La tua VM studente ha il seguente software preinstallato:
 
     Se stai utilizzando la VM studente fornita durante le sessioni di formazione WIS2 locali, il software richiesto sarà già installato.
 
-## Connetti alla tua VM studente sulla rete di formazione locale
+## Connettiti alla tua VM studente sulla rete di formazione locale
 
-Collega il tuo PC alla rete Wi-Fi trasmessa nella sala durante la formazione WIS2 secondo le istruzioni fornite dal formatore.
+Collega il tuo PC alla rete Wi-Fi trasmessa nella sala durante la formazione WIS2 seguendo le istruzioni fornite dal formatore.
 
 Usa un client SSH per connetterti alla tua VM studente utilizzando i seguenti dati:
 
@@ -87,7 +87,7 @@ passwd: password aggiornata con successo
 
 ## Verifica le versioni del software
 
-Per poter eseguire wis2box, sulla VM studente dovrebbero essere preinstallati Python, Docker e Docker Compose.
+Per poter eseguire wis2box, la VM studente dovrebbe avere Python, Docker e Docker Compose preinstallati. 
 
 Verifica la versione di Python:
 ```bash
@@ -116,7 +116,7 @@ restituisce:
 Docker Compose version v2.21.0
 ```
 
-Per assicurarti che il tuo utente possa eseguire i comandi Docker, il tuo utente è stato aggiunto al gruppo `docker`.
+Per assicurarti che il tuo utente possa eseguire i comandi Docker, il tuo utente è stato aggiunto al gruppo `docker`. 
 
 Per testare che il tuo utente possa eseguire docker hello-world, esegui il seguente comando:
 ```bash
@@ -136,7 +136,7 @@ Questo messaggio mostra che la tua installazione sembra funzionare correttamente
 
 ## Ispeziona i materiali di esercizio
 
-Ispeziona i contenuti della tua directory home; questi sono i materiali utilizzati come parte della formazione e delle sessioni pratiche.
+Ispeziona il contenuto della tua directory home; questi sono i materiali utilizzati come parte della formazione e delle sessioni pratiche.
 
 ```bash
 ls ~/
@@ -156,7 +156,7 @@ Apri WinSCP e clicca su "Nuovo sito". Puoi creare una nuova connessione SCP alla
 
 <img alt="winscp-student-vm-scp.png" src="../../assets/img/winscp-student-vm-scp.png" width="400">
 
-Clicca su 'Salva' e poi su 'Login' per connetterti alla tua VM.
+Clicca 'Salva' e poi 'Login' per connetterti alla tua VM.
 
 E dovresti essere in grado di vedere il seguente contenuto:
 
@@ -169,4 +169,4 @@ E dovresti essere in grado di vedere il seguente contenuto:
 
     - accedere alla tua VM studente tramite SSH e WinSCP
     - verificare che il software necessario per gli esercizi pratici sia installato
-    - verificare di avere accesso ai materiali di esercizio per questa formazione sulla tua VM studente locale
+    - verificare di avere accesso ai materiali di esercizio per questo training sulla tua VM studente locale

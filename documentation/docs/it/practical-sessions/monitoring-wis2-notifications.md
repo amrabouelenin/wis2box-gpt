@@ -4,17 +4,17 @@ title: Monitoraggio delle Notifiche WIS2
 
 # Monitoraggio delle Notifiche WIS2
 
-!!! abstract "Risultati di apprendimento"
+!!! abstract "Risultati dell'apprendimento"
 
     Al termine di questa sessione pratica, sarai in grado di:
     
-    - attivare il flusso di lavoro di wis2box caricando dati in MinIO usando il comando `wis2box data ingest`
+    - attivare il flusso di lavoro di wis2box caricando dati in MinIO utilizzando il comando `wis2box data ingest`
     - visualizzare avvisi ed errori mostrati nella dashboard di Grafana
     - verificare il contenuto dei dati pubblicati
 
 ## Introduzione
 
-La **dashboard di Grafana** utilizza dati provenienti da Prometheus e Loki per mostrare lo stato del tuo wis2box. Prometheus memorizza dati di serie temporali dalle metriche raccolte, mentre Loki memorizza i log dei container in esecuzione sulla tua istanza di wis2box. Questi dati ti permettono di controllare quanto dati sono ricevuti su MinIO e quante notifiche WIS2 sono pubblicate, e se sono stati rilevati errori nei log.
+La **dashboard di Grafana** utilizza dati provenienti da Prometheus e Loki per mostrare lo stato del tuo wis2box. Prometheus archivia dati di serie temporali raccolti dalle metriche, mentre Loki archivia i log dei container in esecuzione sulla tua istanza wis2box. Questi dati ti permettono di controllare quanto dati sono ricevuti su MinIO e quante notifiche WIS2 sono pubblicate, e se sono stati rilevati errori nei log.
 
 Per vedere il contenuto delle notifiche WIS2 che vengono pubblicate su diversi argomenti del tuo wis2box puoi utilizzare la scheda 'Monitor' nella **wis2box-webapp**.
 
@@ -22,7 +22,7 @@ Per vedere il contenuto delle notifiche WIS2 che vengono pubblicate su diversi a
 
 Questa sezione utilizzerà il dataset "surface-based-observations/synop" precedentemente creato nella sessione pratica [Configurazione dei dataset in wis2box](/practical-sessions/configuring-wis2box-datasets).
 
-Accedi alla tua VM studente usando il tuo client SSH (PuTTY o altro).
+Accedi alla tua VM studente utilizzando il tuo client SSH (PuTTY o altro).
 
 Assicurati che wis2box sia attivo e funzionante:
 
@@ -32,9 +32,9 @@ python3 wis2box-ctl.py start
 python3 wis2box-ctl.py status
 ```
 
-Assicurati di avere MQTT Explorer in esecuzione e connesso alla tua istanza usando le credenziali pubbliche `everyone/everyone` con un abbonamento all'argomento `origin/a/wis2/#`.
+Assicurati di avere MQTT Explorer in esecuzione e connesso alla tua istanza utilizzando le credenziali pubbliche `everyone/everyone` con un abbonamento all'argomento `origin/a/wis2/#`.
 
-Assicurati di avere accesso all'interfaccia web di MinIO andando su `http://<your-host>:9000` e che tu sia loggato (usando `WIS2BOX_STORAGE_USERNAME` e `WIS2BOX_STORAGE_PASSWORD` dal tuo file `wis2box.env`).
+Assicurati di avere accesso all'interfaccia web di MinIO andando su `http://<your-host>:9000` e che tu sia loggato (utilizzando `WIS2BOX_STORAGE_USERNAME` e `WIS2BOX_STORAGE_PASSWORD` dal tuo file `wis2box.env`).
 
 Assicurati di avere un browser web aperto con la dashboard di Grafana per la tua istanza andando su `http://<your-host>:3000`.
 
@@ -62,19 +62,19 @@ ls -lh /data/wis2box/aws-example.csv
 ```
 
 !!! note
-    `WIS2BOX_HOST_DATADIR` è montato come `/data/wis2box/` all'interno del container di gestione wis2box dal file `docker-compose.yml` incluso nella directory `wis2box-1.0.0rc1`.
+    Il `WIS2BOX_HOST_DATADIR` è montato come `/data/wis2box/` all'interno del container di gestione wis2box dal file `docker-compose.yml` incluso nella directory `wis2box-1.0.0rc1`.
     
     Questo ti permette di condividere dati tra l'host e il container.
 
 !!! question "Esercizio 1: inserimento dati usando `wis2box data ingest`"
 
-    Esegui il seguente comando per inserire il file di dati di esempio `aws-example.csv` nella tua istanza di wis2box:
+    Esegui il seguente comando per inserire il file di dati di esempio `aws-example.csv` nella tua istanza wis2box:
 
     ```bash
     wis2box data ingest -p /data/wis2box/aws-example.csv --metadata-id urn:wmo:md:not-my-centre:core.surface-based-observations.synop
     ```
 
-    I dati sono stati inseriti con successo? In caso contrario, qual è stato il messaggio di errore e come puoi risolverlo?
+    I dati sono stati inseriti con successo? In caso contrario, quale è stato il messaggio di errore e come puoi risolverlo?
 
 ??? success "Clicca per rivelare la risposta"
 
@@ -84,7 +84,7 @@ ls -lh /data/wis2box/aws-example.csv
     Error: metadata_id=urn:wmo:md:not-my-centre:core.surface-based-observations.synop not found in data mappings
     ```
 
-    Il messaggio di errore indica che l'identificatore dei metadati che hai fornito non corrisponde a nessuno dei dataset che hai configurato nella tua istanza di wis2box.
+    Il messaggio di errore indica che l'identificatore dei metadati che hai fornito non corrisponde a nessuno dei dataset che hai configurato nella tua istanza wis2box.
 
     Fornisci l'id dei metadati corretto che corrisponde al dataset che hai creato nella sessione pratica precedente e ripeti il comando di inserimento dei dati finché non vedrai il seguente output:
 
@@ -104,31 +104,31 @@ Vai alla dashboard di Grafana nel tuo browser e controlla lo stato dell'inserime
 
 !!! question "Esercizio 2: verifica lo stato dell'inserimento dei dati"
     
-    Vai alla dashboard di Grafana nel tuo browser e controlla lo stato dell'inserimento dei dati.
+    Vai alla dashboard di Grafana nel tuo browser e verifica lo stato dell'inserimento dei dati.
     
     I dati sono stati inseriti con successo?
 
 ??? success "Clicca per rivelare la risposta"
-    Il pannello in basso nella dashboard di Grafana riporta i seguenti avvisi:    
+    Il pannello in fondo alla dashboard di Grafana riporta i seguenti avvisi:    
     
     `WARNING - input=aws-example.csv warning=Station 0-20000-0-60355 not in station list; skipping`
     `WARNING - input=aws-example.csv warning=Station 0-20000-0-60360 not in station list; skipping`
 
-    Questo avviso indica che le stazioni non sono definite nell'elenco delle stazioni del tuo wis2box. Nessuna notifica WIS2 sarà pubblicata per questa stazione fino a quando non la aggiungi all'elenco delle stazioni e la associ all'argomento per il tuo dataset.
+    Questo avviso indica che le stazioni non sono definite nella lista delle stazioni del tuo wis2box. Nessuna notifica WIS2 sarà pubblicata per questa stazione finché non la aggiungi alla lista delle stazioni e la associ all'argomento per il tuo dataset.
 
 !!! question "Esercizio 3: aggiungi le stazioni di test e ripeti l'inserimento dei dati"
 
-    Aggiungi le stazioni al tuo wis2box usando l'editor di stazioni in **wis2box-webapp**, e associa le stazioni all'argomento per il tuo dataset.
+    Aggiungi le stazioni al tuo wis2box utilizzando l'editor di stazioni in **wis2box-webapp**, e associa le stazioni all'argomento per il tuo dataset.
 
     Ora ricarica il file di dati di esempio `aws-example.csv` nello stesso percorso in MinIO che hai usato nell'esercizio precedente.
 
-    Controlla la dashboard di Grafana, ci sono nuovi errori o avvisi? Come puoi vedere che i dati di test sono stati inseriti e pubblicati con successo?
+    Controlla la dashboard di Grafana, ci sono nuovi errori o avvisi? Come puoi vedere che i dati di test sono stati inseriti con successo e pubblicati?
 
 ??? success "Clicca per rivelare la risposta"
 
-    Puoi controllare i grafici sulla dashboard di Grafana per vedere se i dati di test sono stati inseriti e pubblicati con successo.
+    Puoi controllare i grafici sulla dashboard di Grafana per vedere se i dati di test sono stati inseriti con successo e pubblicati.
     
-    Se tutto è andato a buon fine, dovresti vedere quanto segue:
+    In caso di successo, dovresti vedere quanto segue:
 
     <img alt="grafana_success" src="../../assets/img/grafana_success.png" width="800">
 
@@ -170,16 +170,16 @@ Nella scheda di monitoraggio seleziona il tuo id del dataset e clicca "AGGIORNA"
 
     Se hai inserito con successo i dati di test, dovresti vedere 6 notifiche di dati WIS2 pubblicate dal tuo wis2box.
 
-    Per vedere la temperatura dell'aria misurata per la stazione con l'identificatore WIGOS=0-20000-0-60355, clicca sul pulsante "ISPEZIONA" accanto al file per quella stazione per aprire una finestra pop-up che mostra il contenuto analizzato del file di dati. La temperatura dell'aria misurata in questa stazione era di 25,0 gradi Celsius.
+    Per vedere la temperatura dell'aria misurata per la stazione con l'identificatore WIGOS=0-20000-0-60355, clicca sul pulsante "ISPEZIONA" accanto al file per quella stazione per aprire una finestra popup che mostra il contenuto analizzato del file di dati. La temperatura dell'aria misurata in questa stazione era di 25,0 gradi Celsius.
 
 !!! Note
-    Il container wis2box-api include strumenti per analizzare i file BUFR e visualizzare il contenuto in un formato leggibile dall'uomo. Questo non è un requisito fondamentale per l'implementazione di WIS2.0, ma è stato incluso nel wis2box per aiutare i pubblicatori di dati a verificare il contenuto dei dati che stanno pubblicando.
+    Il container wis2box-api include strumenti per analizzare i file BUFR e visualizzare il contenuto in un formato leggibile dall'uomo. Questo non è un requisito fondamentale per l'implementazione di WIS2.0, ma è stato incluso nel wis2box per aiutare gli editori di dati a verificare il contenuto dei dati che stanno pubblicando.
 
 ## Conclusione
 
 !!! success "Congratulazioni!"
-    In questa sessione pratica, hai imparato come:
+    In questa sessione pratica, hai imparato a:
 
     - attivare il flusso di lavoro di wis2box caricando dati in MinIO usando il comando `wis2box data ingest`
     - visualizzare le notifiche WIS2 pubblicate dal tuo wis2box nella dashboard di Grafana e in MQTT Explorer
-    - verificare il contenuto dei dati pubblicati usando la **wis2box-webapp**
+    - verificare il contenuto dei dati pubblicati utilizzando la **wis2box-webapp**

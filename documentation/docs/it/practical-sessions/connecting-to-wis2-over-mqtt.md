@@ -14,7 +14,7 @@ title: Connessione a WIS2 tramite MQTT
 
 ## Introduzione
 
-WIS2 utilizza il protocollo MQTT per pubblicizzare la disponibilità di dati meteorologici/climatici/idrici. Il Global Broker WIS2 si iscrive a tutti i nodi WIS2 nella rete e ripubblica i messaggi che riceve. La Cache Globale si iscrive al Global Broker, scarica i dati nel messaggio e poi ripubblica il messaggio sull'argomento `cache` con un nuovo URL. Il Catalogo di Scoperta Globale pubblica metadati di scoperta dal Broker e fornisce un'API di ricerca.
+WIS2 utilizza il protocollo MQTT per pubblicizzare la disponibilità di dati meteorologici/climatici/idrici. Il Global Broker WIS2 si abbona a tutti i nodi WIS2 nella rete e ripubblica i messaggi che riceve. La Cache Globale si abbona al Global Broker, scarica i dati nel messaggio e poi ripubblica il messaggio sull'argomento `cache` con un nuovo URL. Il Catalogo Globale di Scoperta pubblica metadati di scoperta dal Broker e fornisce un'API di ricerca.
 
 Questo è un esempio della struttura del messaggio di notifica WIS2 per un messaggio ricevuto sull'argomento `origin/a/wis2/br-inmet/data/core/weather/surface-based-observations/synop`:	
 
@@ -59,13 +59,13 @@ Questo è un esempio della struttura del messaggio di notifica WIS2 per un messa
 
 In questa sessione pratica imparerai come utilizzare lo strumento MQTT Explorer per configurare una connessione client MQTT a un Global Broker WIS2 e visualizzare i messaggi di notifica WIS2.
 
-MQTT Explorer è uno strumento utile per esplorare e esaminare la struttura degli argomenti per un dato broker MQTT per rivedere i dati pubblicati.
+MQTT Explorer è uno strumento utile per navigare ed esaminare la struttura degli argomenti per un dato broker MQTT per rivedere i dati pubblicati.
 
-Nota che MQTT è principalmente utilizzato per la comunicazione "macchina a macchina"; ciò significa che normalmente ci sarebbe un client che analizza automaticamente i messaggi man mano che vengono ricevuti. Per lavorare con MQTT a livello di programmazione (ad esempio, in Python), puoi utilizzare le librerie client MQTT come [paho-mqtt](https://pypi.org/project/paho-mqtt) per connetterti a un broker MQTT ed elaborare i messaggi in arrivo. Esistono numerosi software client e server MQTT, a seconda delle tue esigenze e dell'ambiente tecnico.
+Nota che MQTT è utilizzato principalmente per la comunicazione "macchina a macchina"; ciò significa che normalmente ci sarebbe un client che analizza automaticamente i messaggi man mano che vengono ricevuti. Per lavorare con MQTT a livello di programmazione (ad esempio, in Python), puoi utilizzare le librerie client MQTT come [paho-mqtt](https://pypi.org/project/paho-mqtt) per connetterti a un broker MQTT ed elaborare i messaggi in arrivo. Esistono numerosi software client e server MQTT, a seconda delle tue esigenze e dell'ambiente tecnico.
 
 ## Utilizzo di MQTT Explorer per connettersi al Global Broker
 
-Per visualizzare i messaggi pubblicati da un Global Broker WIS2 puoi utilizzare "MQTT Explorer" che può essere scaricato dal [sito web di MQTT Explorer](https://mqtt-explorer.com).
+Per visualizzare i messaggi pubblicati da un Global Broker WIS2 puoi utilizzare "MQTT Explorer", che può essere scaricato dal [sito web di MQTT Explorer](https://mqtt-explorer.com).
 
 Apri MQTT Explorer e aggiungi una nuova connessione al Global Broker ospitato da MeteoFrance utilizzando i seguenti dettagli:
 
@@ -76,7 +76,7 @@ Apri MQTT Explorer e aggiungi una nuova connessione al Global Broker ospitato da
 
 <img alt="mqtt-explorer-global-broker-connection" src="../../assets/img/mqtt-explorer-global-broker-connection.png" width="800">
 
-Clicca sul pulsante 'ADVANCED', rimuovi gli argomenti preconfigurati e aggiungi i seguenti argomenti a cui iscriverti:
+Fai clic sul pulsante 'AVANZATE', rimuovi gli argomenti preconfigurati e aggiungi i seguenti argomenti a cui iscriverti:
 
 - `origin/a/wis2/#`
 
@@ -88,9 +88,9 @@ Clicca sul pulsante 'ADVANCED', rimuovi gli argomenti preconfigurati e aggiungi 
     - **Singolo livello (+)**: un carattere jolly di singolo livello sostituisce un livello di argomento
     - **Multi-livello (#)**: un carattere jolly multi-livello sostituisce più livelli di argomento
 
-    In questo caso `origin/a/wis2/#` si iscriverà a tutti gli argomenti sotto l'argomento `origin/a/wis2`.
+    In questo caso `origin/a/wis2/#` ti iscriverà a tutti gli argomenti sotto l'argomento `origin/a/wis2`.
 
-Clicca 'BACK', poi 'SAVE' per salvare i dettagli della tua connessione e iscrizione. Poi clicca 'CONNECT':
+Fai clic su 'INDIETRO', poi 'SALVA' per salvare i dettagli della tua connessione e iscrizione.  Poi fai clic su 'CONNETTI':
 
 I messaggi dovrebbero iniziare a comparire nella tua sessione di MQTT Explorer come segue:
 
@@ -100,7 +100,7 @@ Ora sei pronto per iniziare ad esplorare gli argomenti e la struttura dei messag
 
 ## Esercizio 1: Esaminare la struttura degli argomenti WIS2
 
-Usa MQTT per esplorare la struttura degli argomenti sotto gli argomenti `origin`.
+Utilizza MQTT per navigare la struttura degli argomenti sotto gli argomenti `origin`.
 
 !!! question
     
@@ -108,13 +108,13 @@ Usa MQTT per esplorare la struttura degli argomenti sotto gli argomenti `origin`
 
 ??? success "Clicca per rivelare la risposta"
 
-    Puoi cliccare sulla finestra di sinistra in MQTT Explorer per espandere la struttura degli argomenti.
+    Puoi fare clic sulla finestra sul lato sinistro in MQTT Explorer per espandere la struttura degli argomenti.
     
-    Possiamo distinguere il centro WIS che ha pubblicato i dati guardando il quarto livello della struttura degli argomenti. Per esempio, l'argomento seguente:
+    Possiamo distinguere il centro WIS che ha pubblicato i dati guardando il quarto livello della struttura degli argomenti.  Ad esempio, l'argomento seguente:
 
     `origin/a/wis2/br-inmet/data/core/weather/surface-based-observations/synop`
 
-    ci dice che i dati sono stati pubblicati da un centro WIS con l'id del centro `br-inmet`, che è l'id del centro per l'Instituto Nacional de Meteorologia - INMET, Brasile.
+    ci dice che i dati sono stati pubblicati da un centro WIS con l'ID del centro `br-inmet`, che è l'ID del centro per l'Instituto Nacional de Meteorologia - INMET, Brasile.
 
 !!! question
 
@@ -122,15 +122,15 @@ Usa MQTT per esplorare la struttura degli argomenti sotto gli argomenti `origin`
 
 ??? success "Clicca per rivelare la risposta"
 
-    Possiamo distinguere i messaggi provenienti dal gateway GTS-to-WIS2 guardando l'id del centro nella struttura dell'argomento. Per esempio, l'argomento seguente:
+    Possiamo distinguere i messaggi provenienti da un gateway GTS-to-WIS2 guardando l'ID del centro nella struttura dell'argomento. Ad esempio, l'argomento seguente:
 
     `origin/a/wis2/de-dwd-gts-to-wis2/data/core/I/S/A/I/01/sbbr`
 
-    ci dice che i dati sono stati pubblicati dal gateway GTS-to-WIS2 ospitato dal Deutscher Wetterdienst (DWD), Germania. Il gateway GTS-to-WIS2 è un tipo speciale di pubblicatore di dati che pubblica dati dal Sistema di Telecomunicazione Globale (GTS) a WIS2. La struttura dell'argomento è composta dagli header TTAAii CCCC per i messaggi GTS.
+    ci dice che i dati sono stati pubblicati dal gateway GTS-to-WIS2 ospitato dal Deutscher Wetterdienst (DWD), Germania. Il gateway GTS-to-WIS2 è un tipo speciale di editore di dati che pubblica dati dal Sistema di Telecomunicazione Globale (GTS) a WIS2. La struttura dell'argomento è composta dagli header TTAAii CCCC per i messaggi GTS.
 
 ## Esercizio 2: Esaminare la struttura dei messaggi WIS2
 
-Disconnettiti da MQTT Explorer e aggiorna le sezioni 'Advanced' per cambiare l'iscrizione ai seguenti argomenti:
+Disconnettiti da MQTT Explorer e aggiorna le sezioni 'Avanzate' per cambiare l'iscrizione ai seguenti argomenti:
 
 * `origin/a/wis2/+/data/core/weather/surface-based-observations/synop`
 * `cache/a/wis2/+/data/core/weather/surface-based-observations/synop`
@@ -142,7 +142,7 @@ Disconnettiti da MQTT Explorer e aggiorna le sezioni 'Advanced' per cambiare l'i
 
 Riconnettiti al Global Broker e attendi che appaiano i messaggi.
 
-Puoi visualizzare il contenuto del messaggio WIS2 nella sezione "Value" sul lato destro. Prova ad espandere la struttura dell'argomento per vedere i diversi livelli del messaggio fino a raggiungere l'ultimo livello e rivedere il contenuto del messaggio di uno dei messaggi.
+Puoi visualizzare il contenuto del messaggio WIS2 nella sezione "Valore" sul lato destro. Prova ad espandere la struttura dell'argomento per vedere i diversi livelli del messaggio fino a raggiungere l'ultimo livello e rivedere il contenuto del messaggio di uno dei messaggi.
 
 !!! question
 
@@ -170,7 +170,7 @@ Puoi visualizzare il contenuto del messaggio WIS2 nella sezione "Value" sul lato
 
 Assicurati di essere ancora connesso al Global Broker utilizzando le iscrizioni agli argomenti `origin/a/wis2/+/data/core/weather/surface-based-observations/synop` e `cache/a/wis2/+/data/core/weather/surface-based-observations/synop` come descritto nell'Esercizio 2.
 
-Prova a identificare un messaggio per lo stesso id del centro pubblicato sia sugli argomenti `origin` che `cache`.
+Prova a identificare un messaggio per lo stesso ID del centro pubblicato sia sugli argomenti `origin` che `cache`.
 
 
 !!! question
@@ -181,11 +181,11 @@ Prova a identificare un messaggio per lo stesso id del centro pubblicato sia sug
 
     I messaggi pubblicati sugli argomenti `origin` sono i messaggi originali che il Global Broker ripubblica dai nodi WIS2 nella rete. 
 
-    I messaggi pubblicati sugli argomenti `cache` sono i messaggi per i dati sono stati scaricati dalla Cache Globale. Se controlli il contenuto del messaggio dall'argomento che inizia con `cache`, vedrai che il link 'canonical' è stato aggiornato con un nuovo URL.
+    I messaggi pubblicati sugli argomenti `cache` sono i messaggi per cui i dati sono stati scaricati dalla Cache Globale. Se controlli il contenuto del messaggio dall'argomento che inizia con `cache`, vedrai che il link 'canonico' è stato aggiornato con un nuovo URL.
     
     Ci sono molteplici Cache Globali nella rete WIS2, quindi riceverai un messaggio da ogni Cache Globale che ha scaricato il messaggio.
 
-    La Cache Globale scaricherà e ripubblicherà solo i messaggi che sono stati pubblicati sull'argomento `../data/core/...`.
+    La Cache Globale scaricherà e ripubblicherà solo i messaggi che sono stati pubblicati sulla gerarchia degli argomenti `../data/core/...`.
 
 ## Conclusione
 
@@ -196,5 +196,5 @@ Prova a identificare un messaggio per lo stesso id del centro pubblicato sia sug
     - la struttura degli argomenti WIS2
     - la struttura dei messaggi di notifica WIS2
     - la differenza tra dati core e dati raccomandati
-    - la struttura dell'argomento utilizzata dal gateway GTS-to-WIS2
+    - la struttura degli argomenti utilizzata dal gateway GTS-to-WIS2
     - la differenza tra i messaggi del Global Broker pubblicati sugli argomenti `origin` e `cache`
