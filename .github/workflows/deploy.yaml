@@ -8,6 +8,8 @@ jobs:
 
   setup:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Add this line to grant write access
     outputs:
       translated: ${{ steps.check.outputs.translated }}
     steps:
