@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'documentation/docs/en/**'
-
 jobs:
 
   setup:
