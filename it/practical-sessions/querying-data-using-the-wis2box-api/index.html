@@ -1129,7 +1129,7 @@
 
 <h1 id="interrogazione-dei-dati-tramite-lapi-wis2box">Interrogazione dei dati tramite l'API wis2box</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Risultati dell'apprendimento</p>
+<p class="admonition-title">Risultati di apprendimento</p>
 <p>Al termine di questa sessione pratica, sarai in grado di:</p>
 <ul>
 <li>utilizzare l'API wis2box per interrogare e filtrare le tue stazioni</li>
@@ -1137,35 +1137,35 @@
 </ul>
 </div>
 <h2 id="introduzione">Introduzione</h2>
-<p>L'API wis2box fornisce accesso alla scoperta e all'interrogazione in modo leggibile da macchina ai dati che sono stati inseriti in wis2box. L'API si basa sullo standard OGC API - Features ed è implementata utilizzando <a href="https://pygeoapi.io">pygeoapi</a>.</p>
-<p>L'API wis2box offre accesso alle seguenti collezioni:</p>
+<p>L'API wis2box offre accesso alla scoperta e all'interrogazione in modo leggibile da macchina dei dati che sono stati inseriti in wis2box. L'API si basa sullo standard OGC API - Features ed è implementata utilizzando <a href="https://pygeoapi.io">pygeoapi</a>.</p>
+<p>L'API wis2box fornisce accesso alle seguenti collezioni:</p>
 <ul>
 <li>Stazioni</li>
 <li>Metadati di scoperta</li>
 <li>Notifiche di dati</li>
-<li>più una collezione per dataset configurato, che memorizza i risultati da bufr2geojson (il plugin <code>bufr2geojson</code> deve essere abilitato nella configurazione delle mappature dei dati per riempire gli elementi nella collezione del dataset).</li>
+<li>più una collezione per ciascun dataset configurato, che memorizza i risultati da bufr2geojson (il plugin <code>bufr2geojson</code> deve essere abilitato nella configurazione delle mappature dei dati per riempire gli elementi nella collezione del dataset).</li>
 </ul>
-<p>In questa sessione pratica imparerai a utilizzare l'API dei dati per sfogliare e interrogare i dati che sono stati inseriti in wis2box.</p>
+<p>In questa sessione pratica imparerai come utilizzare l'API dei dati per navigare e interrogare i dati che sono stati inseriti in wis2box.</p>
 <h2 id="preparazione">Preparazione</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Naviga alla pagina iniziale dell'API wis2box nel tuo browser web:</p>
+<p>Naviga alla pagina di atterraggio dell'API wis2box nel tuo browser web:</p>
 <p><code>http://&lt;tuo-host&gt;/oapi</code></p>
 </div>
-<p><img alt="pagina iniziale dell'API wis2box" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
+<p><img alt="pagina-di-atterraggio-api-wis2box" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
 <h2 id="ispezione-delle-collezioni">Ispezione delle collezioni</h2>
-<p>Dalla pagina iniziale, clicca sul link 'Collezioni'.</p>
+<p>Dalla pagina di atterraggio, clicca sul link 'Collezioni'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Quante collezioni di dataset vedi nella pagina risultante? Cosa pensi che rappresenti ciascuna collezione?</p>
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Dovrebbero essere visualizzate 4 collezioni, incluse "Stazioni", "Metadati di scoperta" e "Notifiche di dati"</p>
+<p>Dovrebbero essere visualizzate 4 collezioni, inclusi "Stazioni", "Metadati di scoperta" e "Notifiche di dati"</p>
 </details>
 <h2 id="ispezione-delle-stazioni">Ispezione delle stazioni</h2>
-<p>Dalla pagina iniziale, clicca sul link 'Collezioni', poi clicca sul link 'Stazioni'.</p>
-<p><img alt="collezioni API wis2box-stazioni" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
+<p>Dalla pagina di atterraggio, clicca sul link 'Collezioni', poi clicca sul link 'Stazioni'.</p>
+<p><img alt="collezioni-api-wis2box-stazioni" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
 <p>Clicca sul link 'Sfoglia', poi clicca sul link 'json'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1192,19 +1192,19 @@
 <p class="admonition-title">Note</p>
 <p>L'esempio sopra è basato sui dati di test del Malawi. Prova a testare contro le osservazioni che hai inserito come parte degli esercizi.</p>
 </div>
-<p>Dalla pagina iniziale, clicca sul link 'Collezioni', poi clicca sul link 'Osservazioni meteorologiche di superficie dal Malawi'.</p>
-<p><img alt="collezioni API wis2box-osservazioni Malawi" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
+<p>Dalla pagina di atterraggio, clicca sul link 'Collezioni', poi clicca sul link 'Osservazioni meteorologiche di superficie dal Malawi'.</p>
+<p><img alt="collezioni-api-wis2box-osservazioni-malawi" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
 <p>Clicca sul link 'Interrogabili'.</p>
-<p><img alt="interrogabili osservazioni Malawi API wis2box" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
+<p><img alt="collezioni-api-wis2box-osservazioni-malawi-interrogabili" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Quale interrogabile sarebbe usato per filtrare per identificatore di stazione?</p>
+<p>Quale interrogabile verrebbe utilizzato per filtrare per identificatore di stazione?</p>
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
 <p>L'<code>identificatore_stazione_wigos</code> è l'interrogabile corretto.</p>
 </details>
-<p>Naviga alla pagina precedente (ovvero <code>http://&lt;tuo-host&gt;/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
+<p>Naviga alla pagina precedente (cioè <code>http://&lt;tuo-host&gt;/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
 <p>Clicca sul link 'Sfoglia'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1241,7 +1241,7 @@
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Aggiungi <code>wigos_station_identifier=&lt;WSI&gt;</code> alla richiesta API.</p>
+<p>Aggiungi <code>identificatore_stazione_wigos=&lt;WSI&gt;</code> alla richiesta API.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>

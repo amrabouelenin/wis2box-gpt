@@ -1040,7 +1040,7 @@
 <ul>
 <li>come ispezionare gli header nel file BUFR usando il comando <code>bufr_ls</code></li>
 <li>come estrarre e ispezionare i dati all'interno di un file bufr usando <code>bufr_dump</code></li>
-<li>la struttura di base dei template bufr usati in csv2bufr e come utilizzare lo strumento da linea di comando</li>
+<li>la struttura di base dei template bufr utilizzati in csv2bufr e come utilizzare lo strumento da linea di comando</li>
 <li>e come apportare modifiche di base ai template bufr e come aggiornare il wis2box per utilizzare la versione rivista</li>
 </ul>
 </div>
@@ -1048,14 +1048,14 @@
 <p>I plugin che producono notifiche con dati BUFR utilizzano processi nel wis2box-api per lavorare con i dati BUFR, ad esempio per trasformare i dati da CSV a BUFR o da BUFR a geojson.</p>
 <p>Il contenitore wis2box-api include numerosi strumenti per lavorare con i dati BUFR.</p>
 <p>Questi includono gli strumenti sviluppati dall'ECMWF e inclusi nel software ecCodes, maggiori informazioni su questi possono essere trovate sul <a href="https://confluence.ecmwf.int/display/ECC/BUFR+tools">sito web ecCodes</a>.</p>
-<p>In questa sessione verrai introdotto ai comandi <code>bufr_ls</code> e <code>bufr_dump</code> del pacchetto software ecCodes e alla configurazione avanzata dello strumento csv2bufr.</p>
+<p>In questa sessione verrai introdotto ai comandi <code>bufr_ls</code> e <code>bufr_dump</code> dal pacchetto software ecCodes e alla configurazione avanzata dello strumento csv2bufr.</p>
 <h2 id="preparazione">Preparazione</h2>
-<p>Per utilizzare gli strumenti da linea di comando BUFR avrai bisogno di essere loggato nel contenitore wis2box-api e, a meno che non sia specificato diversamente, tutti i comandi dovrebbero essere eseguiti su questo contenitore. Avrai anche bisogno di avere MQTT Explorer aperto e connesso al tuo broker.</p>
+<p>Per utilizzare gli strumenti da linea di comando BUFR dovrai essere loggato nel contenitore wis2box-api e, a meno che non sia specificato diversamente, tutti i comandi dovrebbero essere eseguiti su questo contenitore. Avrai anche bisogno di avere MQTT Explorer aperto e connesso al tuo broker.</p>
 <p>Prima connettiti alla tua VM studente tramite il tuo client ssh e poi accedi al contenitore wis2box-api:</p>
 <div class="highlight"><pre><span></span><code>cd ~/wis2box-1.0.0rc1
 python3 wis2box-ctl.py login wis2box-api
 </code></pre></div>
-<p>Conferma che gli strumenti siano disponibili, iniziando con ecCodes:</p>
+<p>Conferma che gli strumenti sono disponibili, iniziando con ecCodes:</p>
 <p><div class="highlight"><pre><span></span><code>bufr_dump -V
 </code></pre></div>
 Dovresti ottenere la seguente risposta:</p>
@@ -1067,7 +1067,7 @@ Dovresti ottenere la seguente risposta:</p>
 <p>Dovresti ottenere la seguente risposta:</p>
 <div class="highlight"><pre><span></span><code>csv2bufr, version 0.7.4
 </code></pre></div>
-<p>Infine, crea una directory di lavoro in cui operare:</p>
+<p>Infine, crea una directory di lavoro in cui lavorare:</p>
 <div class="highlight"><pre><span></span><code>cd /data/wis2box
 mkdir -p working/bufr-cli
 cd working/bufr-cli
@@ -1142,7 +1142,7 @@ cd working/bufr-cli
 </tr>
 </tbody>
 </table>
-<p>Scarica il file di esempio direttamente nel contenitore di gestione wis2box usando il seguente comando:</p>
+<p>Scarica il file di esempio direttamente nel contenitore di gestione wis2box utilizzando il seguente comando:</p>
 <div class="highlight"><pre><span></span><code>curl https://training.wis2box.wis.wmo.int/sample-data/bufr-cli-ex1.bufr4 --output bufr-cli-ex1.bufr4
 </code></pre></div>
 <p>Ora usa il seguente comando per eseguire <code>bufr_ls</code> su questo file:</p>
@@ -1162,59 +1162,60 @@ cnmc<span class="w">                       </span><span class="m">29</span><span
 <div class="highlight"><pre><span></span><code>bufr_ls
 </code></pre></div>
 <p>Dovresti vedere il seguente output:</p>
-<div class="highlight"><pre><span></span><code>NOME    bufr_ls
+<div class="highlight"><pre><span></span><code>NAME    bufr_ls
 
-DESCRIZIONE
-        Elenca il contenuto dei file BUFR stampando i valori di alcune chiavi dell&#39;header.
-        Possono essere stampate solo chiavi scalari.
-        Non fallisce quando una chiave non viene trovata.
+DESCRIPTION
+        List content of BUFR files printing values of some header keys.
+        Only scalar keys can be printed.
+        It does not fail when a key is not found.
 
-USO
-        bufr_ls [opzioni] bufr_file bufr_file ...
+USAGE
+        bufr_ls [options] bufr_file bufr_file ...
 
-OPZIONI
-        -p chiave[:{s|d|i}],chiave[:{s|d|i}],...
-                Dichiarazione delle chiavi da stampare.
-                Per ogni chiave può essere richiesto un tipo stringa (chiave:s), doppio (chiave:d) o intero (chiave:i).
-                Il tipo predefinito è stringa.
-        -F formato
-                Formato in stile C per valori in virgola mobile.
-        -P chiave[:{s|d|i}],chiave[:{s|d|i}],...
-                Come -p aggiungendo le chiavi dichiarate all&#39;elenco predefinito.
-        -w chiave[:{s|d|i}]{=|!=}valore,chiave[:{s|d|i}]{=|!=}valore,...
-                Clausola where.
-                I messaggi vengono elaborati solo se corrispondono a tutte le restrizioni chiave/valore.
-                Una restrizione valida è di tipo chiave=valore o chiave!=valore.
-                Per ogni chiave può essere specificato un tipo stringa (chiave:s), doppio (chiave:d) o intero (chiave:i).
-                Nel valore puoi anche usare il carattere barra &#39;/&#39; per specificare una condizione OR (cioè una disgiunzione logica)
-                Nota: è consentita solo una clausola -w.
-        -j      Output JSON
-        -s chiave[:{s|d|i}]=valore,chiave[:{s|d|i}]=valore,...
-                Chiavi/valori da impostare.
-                Per ogni chiave può essere definito un tipo stringa (chiave:s), doppio (chiave:d) o intero (chiave:i).
-                Di default viene impostato il tipo nativo.
+OPTIONS
+        -p key[:{s|d|i}],key[:{s|d|i}],...
+                Declaration of keys to print.
+                For each key a string (key:s), a double (key:d) or an integer (key:i)
+                type can be requested. Default type is string.
+        -F format
+                C style format for floating-point values.
+        -P key[:{s|d|i}],key[:{s|d|i}],...
+                As -p adding the declared keys to the default list.
+        -w key[:{s|d|i}]{=|!=}value,key[:{s|d|i}]{=|!=}value,...
+                Where clause.
+                Messages are processed only if they match all the key/value constraints.
+                A valid constraint is of type key=value or key!=value.
+                For each key a string (key:s), a double (key:d) or an integer (key:i)
+                type can be specified. Default type is string.
+                In the value you can also use the forward-slash character &#39;/&#39; to specify an OR condition (i.e. a logical disjunction)
+                Note: only one -w clause is allowed.
+        -j      JSON output
+        -s key[:{s|d|i}]=value,key[:{s|d|i}]=value,...
+                Key/values to set.
+                For each key a string (key:s), a double (key:d) or an integer (key:i)
+                type can be defined. By default the native type is set.
         -n namespace
-                Vengono stampate tutte le chiavi appartenenti al namespace dato.
-        -m      Vengono stampate le chiavi Mars.
-        -V      Versione.
-        -W larghezza
-                Larghezza minima di ogni colonna nell&#39;output. Predefinito è 10.
-        -g      Copia l&#39;intestazione GTS.
-        -7      Non fallisce quando il messaggio ha lunghezza errata
+                All the keys belonging to the given namespace are printed.
+        -m      Mars keys are printed.
+        -V      Version.
+        -W width
+                Minimum width of each column in output. Default is 10.
+        -g      Copy GTS header.
+        -7      Does not fail when the message has wrong length
 
-VEDI ANCHE
-        Documentazione completa ed esempi su:
+SEE ALSO
+        Full documentation and examples at:
         &lt;https://confluence.ecmwf.int/display/ECC/bufr_ls&gt;
 </code></pre></div>
 <p>Ora esegui lo stesso comando sul file di esempio ma visualizza le informazioni in formato JSON.</p>
-<div class="admonition domanda">
-<p class="admonition-title">Domanda</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
 <p>Quale flag passi al comando <code>bufr_ls</code> per visualizzare l'output in formato JSON?</p>
 </div>
-<details class="successo">
+<details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Puoi cambiare il formato dell'output in json usando il flag <code>-j</code>, ad es.
-<code>bufr_ls -j &lt;file-di-input&gt;</code>. Questo può essere più leggibile rispetto al formato di output predefinito. Vedi l'output di esempio qui sotto:</p>
+<p>Puoi cambiare il formato di output in json usando il flag <code>-j</code>, ad es.
+<code>bufr_ls -j &lt;input-file&gt;</code>. Questo può essere più leggibile rispetto al formato di output predefinito. Vedi l'output di esempio qui sotto:</p>
 <div class="highlight"><pre><span></span><code>{ &quot;messages&quot; : [
   {
     &quot;centre&quot;: &quot;cnmc&quot;,
@@ -1227,28 +1228,28 @@ VEDI ANCHE
 ]}
 </code></pre></div>
 </details>
-<p>Quando esaminiamo un file BUFR spesso vogliamo determinare il tipo di dati contenuti nel file e la data / ora tipica dei dati nel file. Queste informazioni possono essere elencate usando il flag <code>-p</code> per selezionare gli header da output. Più header possono essere inclusi usando una lista separata da virgole.</p>
-<p>Usando il comando <code>bufr_ls</code> ispeziona il file di test e identifica il tipo di dati contenuti nel file e la data e l'ora tipiche per quei dati.</p>
-<details class="suggerimento">
-<summary>Suggerimento</summary>
-<p>Le chiavi ecCodes sono date nella tabella sopra. Possiamo usare il seguente per elencare la dataCategory e
+<p>Quando esaminiamo un file BUFR spesso vogliamo determinare il tipo di dati contenuti nel file e la data/ora tipica dei dati nel file. Queste informazioni possono essere elencate utilizzando il flag <code>-p</code> per selezionare gli header da output. Più header possono essere inclusi usando una lista separata da virgole.</p>
+<p>Usando il comando <code>bufr_ls</code> ispeziona il file di test e identifica il tipo di dati contenuti nel file e la data e l'ora tipiche per tali dati.</p>
+<details class="hint">
+<summary>Hint</summary>
+<p>Le chiavi ecCodes sono date nella tabella sopra. Possiamo usare le seguenti per elencare la dataCategory e
 internationalDataSubCategory dei dati BUFR:</p>
 <div class="highlight"><pre><span></span><code>bufr_ls -p dataCategory,internationalDataSubCategory bufr-cli-ex1.bufr4
 </code></pre></div>
-<p>Chiavi aggiuntive possono essere aggiunte come richiesto.</p>
+<p>È possibile aggiungere ulteriori chiavi come richiesto.</p>
 </details>
-<div class="admonition domanda">
-<p class="admonition-title">Domanda</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
 <p>Quale tipo di dati (categoria dei dati e sottocategoria) sono contenuti nel file? Qual è la data e l'ora tipiche
 per i dati?</p>
 </div>
-<details class="successo">
+<details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Il comando che avresti dovuto eseguire dovrebbe essere stato simile a:</p>
+<p>Il comando che dovresti aver eseguito dovrebbe essere stato simile a:</p>
 <div class="highlight"><pre><span></span><code>bufr_ls -p dataCategory,internationalDataSubCategory,typicalDate,typicalTime -j bufr-cli-ex1.bufr4
 </code></pre></div>
-<p>Potresti avere chiavi aggiuntive, o elencato l'anno, il mese, il giorno ecc. individualmente. L'output dovrebbe
-essere simile a quello qui sotto, a seconda che tu abbia selezionato l'output JSON o predefinito.</p>
+<p>Potresti aver aggiunto ulteriori chiavi, o elencato l'anno, il mese, il giorno ecc. individualmente. L'output dovrebbe
+essere simile a quello qui sotto, a seconda che tu abbia selezionato l'output JSON o l'output predefinito.</p>
 <div class="highlight"><pre><span></span><code>{ &quot;messages&quot; : [
   {
     &quot;dataCategory&quot;: 2,
@@ -1262,66 +1263,74 @@ essere simile a quello qui sotto, a seconda che tu abbia selezionato l'output JS
 <ul>
 <li>La categoria dei dati è 2, dalla <a href="https://github.com/wmo-im/BUFR4/blob/master/BUFR_TableA_en.csv">Tabella A BUFR</a>
   possiamo vedere che questo file contiene dati "Vertical soundings (other than satellite)".</li>
-<li>La sottocategoria internazionale è 4, indicando
-  "Upper-level temperature/humidity/wind reports from fixed-land stations (TEMP)" dati. Questa informazione può essere cercata
+<li>La sottocategoria internazionale è 4, indicando 
+  "Upper-level temperature/humidity/wind reports from fixed-land stations (TEMP)" dati. Queste informazioni possono essere cercate
   nella <a href="https://github.com/wmo-im/CCT/blob/master/C13.csv">Tabella dei codici comuni C-13</a> (riga 33). Nota la combinazione
   di categoria e sottocategoria.</li>
-<li>La data e l'ora tipiche sono 2023/10/02 e 00:00:00z rispettivamente.</li>
+<li>La data e l'ora tipiche sono rispettivamente 2023/10/02 e 00:00:00z.</li>
 </ul>
 </details>
 <h3 id="esercizio-2-bufr_dump">Esercizio 2 - bufr_dump</h3>
 <p>Il comando <code>bufr_dump</code> può essere utilizzato per elencare ed esaminare i contenuti di un file BUFR, inclusi i dati stessi.</p>
-<p>In questo esercizio utilizzeremo un file BUFR che è lo stesso che hai creato durante la sessione pratica iniziale di csv2bufr utilizzando il wis2box-webapp.</p>
+<p>In questo esercizio utilizzeremo un file BUFR che è lo stesso creato durante la sessione pratica iniziale csv2bufr utilizzando il wis2box-webapp.</p>
 <p>Scarica il file di esempio direttamente nel contenitore di gestione wis2box con il seguente comando:</p>
 <div class="highlight"><pre><span></span><code>curl https://training.wis2box.wis.wmo.int/sample-data/bufr-cli-ex2.bufr4 --output bufr-cli-ex2.bufr4
 </code></pre></div>
-<p>Ora esegui il comando <code>bufr_dump</code> sul file, usando il flag <code>-p</code> per outputtare i dati in formato di testo semplice (formato chiave=valore):</p>
+<p>Ora esegui il comando <code>bufr_dump</code> sul file, utilizzando il flag <code>-p</code> per output i dati in formato di testo semplice (formato chiave=valore):</p>
 <div class="highlight"><pre><span></span><code>bufr_dump -p bufr-cli-ex2.bufr4
 </code></pre></div>
-<p>Dovresti vedere circa 240 chiavi outputtate, molte delle quali mancanti. Questo è tipico con i dati del mondo reale poiché non tutte le chiavi eccodes sono popolate con dati riportati.</p>
-<div class="admonition suggerimento">
-<p class="admonition-title">Suggerimento</p>
-<p>I valori mancanti possono essere filtrati usando strumenti come <code>grep</code>:
+<p>Dovresti vedere circa 240 chiavi in output, molte delle quali sono mancanti. Questo è tipico con i dati del mondo reale poiché non tutte le chiavi eccodes sono popolate con dati segnalati.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>I valori mancanti possono essere filtrati utilizzando strumenti come <code>grep</code>:
 <div class="highlight"><pre><span></span><code>bufr_dump -p bufr-cli-ex2.bufr4 | grep -v MISSING
 </code></pre></div></p>
 </div>
-<p>Il file BUFR di esempio per questo esercizio proviene dalla sessione pratica csv2bufr. Si prega di scaricare il file CSV originale nella tua posizione attuale come segue:</p>
+<p>Il file BUFR di esempio per questo esercizio proviene dalla sessione pratica csv2bufr. Si prega di scaricare il file CSV originale nella tua posizione corrente come segue:</p>
 <div class="highlight"><pre><span></span><code>curl https://training.wis2box.wis.wmo.int/sample-data/csv2bufr-ex1.csv --output csv2bufr-ex1.csv
 </code></pre></div>
 <p>E visualizza il contenuto del file con:</p>
 <div class="highlight"><pre><span></span><code>more csv2bufr-ex1.csv
 </code></pre></div>
-<div class="admonition domanda">
-<p class="admonition-title">Domanda</p>
-<p>Usa il seguente comando per visualizzare la colonna 18 nel file CSV e troverai la pressione media del livello del mare riportata (msl_pressure):</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Usa il seguente comando per visualizzare la colonna 18 nel file CSV e troverai la pressione media del livello del mare segnalata (msl_pressure):</p>
 <div class="highlight"><pre><span></span><code>more csv2bufr-ex1.csv | cut -d &#39;,&#39; -f 18
 </code></pre></div>
 <p>Quale chiave nell'output BUFR corrisponde alla pressione media del livello del mare?</p>
 </div>
-<details class="suggerimento">
-<summary>Suggerimento</summary>
-<p>Strumenti come <code>grep</code> possono essere usati in combinazione con <code>bufr_dump</code>. Ad esempio:</p>
+<details class="hint">
+<summary>Hint</summary>
+<p>Strumenti come <code>grep</code> possono essere utilizzati in combinazione con <code>bufr_dump</code>. Ad esempio:</p>
 <div class="highlight"><pre><span></span><code>bufr_dump -p bufr-cli-ex2.bufr4 | grep -i &quot;pressure&quot;
 </code></pre></div>
-<p>filtrerebbe i contenuti di <code>bufr_dump</code> solo per quelle righe contenenti la parola pressure. In alternativa,
+<p>filtrerebbe i contenuti di <code>bufr_dump</code> solo per quelle righe contenenti la parola pressione. In alternativa, 
 l'output potrebbe essere filtrato su un valore.</p>
 </details>
-<details class="successo">
+<details class="success">
 <summary>Clicca per rivelare la risposta</summary>
 <p>La chiave "pressureReducedToMeanSeaLevel" corrisponde alla colonna msl_pressure nel file CSV di input.</p>
 </details>
 <p>Trascorri qualche minuto esaminando il resto dell'output, confrontandolo con il file CSV di input prima di passare all'esercizio successivo. Ad esempio, puoi provare a trovare le chiavi nell'output BUFR che corrispondono all'umidità relativa (colonna 23 nel file CSV) e alla temperatura dell'aria (colonna 21 nel file CSV).</p>
 <h3 id="esercizio-3-file-di-mappatura-csv2bufr">Esercizio 3 - file di mappatura csv2bufr</h3>
-<p>Lo strumento csv2bufr può essere configurato per elaborare dati tabellari con diverse colonne e sequenze BUFR.</p>
+<p>Lo strumento csv2bufr può essere configurato per elaborare dati tabellari con colonne e sequenze BUFR diverse.</p>
 <p>Questo viene fatto tramite un file di configurazione scritto in formato JSON.</p>
-<p>Come i dati BUFR stessi, il file JSON contiene una sezione header e una sezione dati, che corrispondono in modo ampio alle stesse sezioni in BUFR.</p>
+<p>Come i dati BUFR stessi, il file JSON contiene una sezione di intestazione e una sezione di dati, che corrispondono in modo approssimativo alle stesse sezioni in BUFR.</p>
 <p>Inoltre, alcune opzioni di formattazione sono specificate all'interno del file JSON.</p>
-<p>Il file JSON per la mappatura predefinita può essere visualizzato tramite il link qui sotto (clic destro e apri in una nuova scheda):</p>
+<p>Il file JSON per il mapping predefinito può essere visualizzato tramite il link qui sotto (clic destro e apri in una nuova scheda):</p>
 <p><a href="https://raw.githubusercontent.com/wmo-im/csv2bufr/main/csv2bufr/templates/resources/aws-template.json">aws-template.json</a></p>
-<p>Esamina la sezione <code>header</code> del file di mappatura (mostrata qui sotto) e confrontala con la tabella dell'esercizio 1 (colonna chiave ecCodes):</p>
+<p>Esamina la sezione <code>header</code> del file di mappatura (mostrata di seguito) e confrontala con la tabella dell'esercizio 1 (colonna chiave ecCodes):</p>
 <p>```
 "header":[
-    {"eccodes_key": "edition", "value": "const</p>
+    {"eccodes_key": "edition", "value": "const:4"},
+    {"eccodes_key": "masterTableNumber", "value": "const:0"},
+    {"eccodes_key": "bufrHeaderCentre", "value": "const:0"},
+    {"eccodes_key": "bufrHeaderSubCentre", "value": "const:0"},
+    {"eccodes_key": "updateSequenceNumber", "value": "const:0"},
+    {"eccodes_key": "dataCategory", "value": "const:0"},
+    {"eccodes_key": "internationalDataSubCategory", "value": "const:2"},
+    {"eccodes_key": "masterTablesVersionNumber", "value": "const:30"},
+    {"eccodes_key":</p>
 
 
 

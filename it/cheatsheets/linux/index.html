@@ -1123,11 +1123,11 @@
 
 <h1 id="linux-cheatsheet">Linux cheatsheet</h1>
 <h2 id="panoramica">Panoramica</h2>
-<p>I concetti di base per lavorare in un sistema operativo Linux sono i <strong>file</strong> e le <strong>directory</strong> (cartelle) organizzati in
+<p>I concetti di base del lavoro in un sistema operativo Linux sono <strong>file</strong> e <strong>directory</strong> (cartelle) organizzati in
 una struttura ad albero all'interno di un <strong>ambiente</strong>.</p>
-<p>Una volta effettuato il login in un sistema Linux, si lavora in una <strong>shell</strong> in cui è possibile manipolare file e directory,
-eseguendo comandi che sono installati sul sistema. La shell Bash è una shell comune e popolare che
-si trova tipicamente nei sistemi Linux.</p>
+<p>Una volta effettuato l'accesso a un sistema Linux, si lavora in una <strong>shell</strong> in cui è possibile gestire file e directory,
+eseguendo comandi installati sul sistema. La shell Bash è una shell comune e popolare che
+si trova tipicamente sui sistemi Linux.</p>
 <h2 id="bash">Bash</h2>
 <h3 id="navigazione-nelle-directory">Navigazione nelle directory</h3>
 <ul>
@@ -1146,7 +1146,7 @@ si trova tipicamente nei sistemi Linux.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>..
 </code></pre></div>
 <ul>
-<li>Spostarsi su di due directory:</li>
+<li>Spostarsi su due directory:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>../..
 </code></pre></div>
@@ -1162,7 +1162,7 @@ si trova tipicamente nei sistemi Linux.</p>
 <div class="highlight"><pre><span></span><code>ls
 </code></pre></div>
 <ul>
-<li>Elenca i file nella directory corrente con più dettagli:</li>
+<li>Elenca i file nella directory corrente con maggiori dettagli:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l
 </code></pre></div>
@@ -1179,7 +1179,7 @@ si trova tipicamente nei sistemi Linux.</p>
 <ul>
 <li>Crea un file dal comando <code>echo</code>:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ciao a tutti&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>test-file.txt
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ciao&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Visualizza il contenuto di un file:</li>
@@ -1192,7 +1192,7 @@ si trova tipicamente nei sistemi Linux.</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>file1<span class="w"> </span>file2
 </code></pre></div>
 <ul>
-<li>Jolly: opera su modelli di file:</li>
+<li>Jolly: operare su modelli di file:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l<span class="w"> </span>fil*<span class="w">  </span><span class="c1"># corrisponde a file1 e file2</span>
 </code></pre></div>
@@ -1202,7 +1202,7 @@ si trova tipicamente nei sistemi Linux.</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>file1<span class="w"> </span>file2<span class="w"> </span>&gt;<span class="w"> </span>newfile
 </code></pre></div>
 <ul>
-<li>Aggiungi un altro file a <code>newfile</code></li>
+<li>Aggiungi un altro file a <code>newfile</code>:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>file3<span class="w"> </span>&gt;&gt;<span class="w"> </span>newfile
 </code></pre></div>
@@ -1217,13 +1217,13 @@ si trova tipicamente nei sistemi Linux.</p>
 <div class="highlight"><pre><span></span><code>rm<span class="w"> </span>*.dat
 </code></pre></div>
 <ul>
-<li>Crea una directory</li>
+<li>Crea una directory:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>dir1
 </code></pre></div>
 <h3 id="concatenazione-di-comandi-con-le-pipe">Concatenazione di comandi con le pipe</h3>
 <p>Le pipe permettono di inviare l'output di un comando a un altro utilizzando il simbolo della pipe <code>|</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ciao&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/ciao/ciao/&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ciao&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/ciao/addio/&#39;</span>
 </code></pre></div>
 <ul>
 <li>Filtrare gli output dei comandi usando grep:</li>

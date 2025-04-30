@@ -690,9 +690,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creazione-di-un-dataset-wis2box-per-la-pubblicazione-di-messaggi-daycli" class="md-nav__link">
+  <a href="#creazione-di-un-dataset-wis2box-per-la-pubblicazione-dei-messaggi-daycli" class="md-nav__link">
     <span class="md-ellipsis">
-      Creazione di un dataset wis2box per la pubblicazione di messaggi DAYCLI
+      Creazione di un dataset wis2box per la pubblicazione dei messaggi DAYCLI
     </span>
   </a>
   
@@ -1218,9 +1218,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creazione-di-un-dataset-wis2box-per-la-pubblicazione-di-messaggi-daycli" class="md-nav__link">
+  <a href="#creazione-di-un-dataset-wis2box-per-la-pubblicazione-dei-messaggi-daycli" class="md-nav__link">
     <span class="md-ellipsis">
-      Creazione di un dataset wis2box per la pubblicazione di messaggi DAYCLI
+      Creazione di un dataset wis2box per la pubblicazione dei messaggi DAYCLI
     </span>
   </a>
   
@@ -1310,29 +1310,29 @@
 <h1 id="conversione-dati-csv-in-bufr">Conversione dati CSV in BUFR</h1>
 <div class="admonition abstract">
 <p class="admonition-title">Risultati di apprendimento</p>
-<p>Alla fine di questa sessione pratica, sarai in grado di:</p>
+<p>Al termine di questa sessione pratica, sarai in grado di:</p>
 <ul>
 <li>utilizzare l'<strong>interfaccia utente MinIO</strong> per caricare file di dati CSV in input e monitorare il risultato</li>
-<li>conoscere il formato dei dati CSV da utilizzare con il template BUFR della stazione meteorologica automatica predefinito</li>
+<li>conoscere il formato dei dati CSV per l'uso con il template automatico di stazione meteorologica BUFR predefinito</li>
 <li>utilizzare l'editor di dataset nell'<strong>applicazione web wis2box</strong> per creare un dataset per la pubblicazione dei messaggi DAYCLI</li>
-<li>conoscere il formato dei dati CSV da utilizzare con il template BUFR DAYCLI</li>
+<li>conoscere il formato dei dati CSV per l'uso con il template BUFR DAYCLI</li>
 <li>utilizzare <strong>l'applicazione web wis2box</strong> per validare e convertire dati di esempio per stazioni AWS in BUFR (opzionale)</li>
 </ul>
 </div>
 <h2 id="introduzione">Introduzione</h2>
-<p>I file di dati con valori separati da virgole (CSV) sono spesso utilizzati per registrare osservazioni e altri dati in un formato tabellare.
+<p>I file di dati in valori separati da virgola (CSV) sono spesso utilizzati per registrare osservazioni e altri dati in formato tabellare.
 La maggior parte dei data logger utilizzati per registrare l'output dei sensori è in grado di esportare le osservazioni in file delimitati, inclusi i CSV.
-Allo stesso modo, quando i dati vengono inseriti in un database, è facile esportare i dati richiesti in file formattati CSV.
-Per facilitare lo scambio di dati originariamente memorizzati in formati di dati tabellari è stato implementato un convertitore da CSV a BUFR
-nel wis2box utilizzando lo stesso software di SYNOP a BUFR.</p>
-<p>In questa sessione imparerai ad utilizzare il convertitore csv2bufr nel wis2box per i seguenti template integrati:</p>
+Analogamente, quando i dati vengono inseriti in un database, è facile esportare i dati richiesti in file formattati CSV.
+Per facilitare lo scambio di dati originariamente memorizzati in formati di dati tabellari è stato implementato un convertitore da CSV a BUFR nel
+wis2box utilizzando lo stesso software di SYNOP a BUFR.</p>
+<p>In questa sessione imparerai a utilizzare il convertitore csv2bufr nel wis2box per i seguenti template integrati:</p>
 <ul>
 <li><strong>AWS</strong> (aws-template.json) : Template di mappatura per convertire dati CSV da file di stazione meteorologica automatica semplificata a sequenza BUFR 301150, 307096"</li>
 <li><strong>DayCLI</strong> (daycli-template.json) : Template di mappatura per convertire dati CSV climatici giornalieri in sequenza BUFR 307075</li>
 </ul>
 <h2 id="preparazione">Preparazione</h2>
 <p>Assicurati che lo stack wis2box sia stato avviato con <code>python3 wis2box.py start</code></p>
-<p>Assicurati di avere un browser web aperto con l'interfaccia utente MinIO per la tua istanza andando su <code>http://&lt;tuo-host&gt;:9000</code>
+<p>Assicurati di avere un browser web aperto con l'interfaccia utente MinIO per la tua istanza accedendo a <code>http://&lt;tuo-host&gt;:9000</code>
 Se non ricordi le tue credenziali MinIO, puoi trovarle nel file <code>wis2box.env</code> nella directory <code>wis2box-1.0.0rc1</code> sul tuo VM studente.</p>
 <p>Assicurati di avere MQTT Explorer aperto e connesso al tuo broker utilizzando le credenziali <code>everyone/everyone</code>.</p>
 <h2 id="esercizio-1-utilizzo-di-csv2bufr-con-il-template-aws">Esercizio 1: Utilizzo di csv2bufr con il template 'AWS'</h2>
@@ -1344,7 +1344,7 @@ Se non ricordi le tue credenziali MinIO, puoi trovarle nel file <code>wis2box.en
 <p>Apri il file che hai scaricato in un editor e ispeziona il contenuto:</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Esaminando i campi data, ora e identificazione (identificatori WIGOS e tradizionali) cosa
+<p>Esaminando i campi data, ora e identificativo (identificatori WIGOS e tradizionali) cosa
 noti? Come sarebbe rappresentata la data di oggi?</p>
 </div>
 <details class="success">
@@ -1360,9 +1360,8 @@ divisa in "ora" e "minuto" e l'identificatore della stazione WIGOS nei suoi risp
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>I dati mancanti nel file sono rappresentati da celle vuote. In un file CSV questo sarebbe
-codificato da <code>,,</code>. Nota che si tratta di una cella vuota e non di una stringa di lunghezza zero, 
-ad esempio <code>,"",</code>.</p>
+<p>I dati mancanti nel file sono rappresentati da celle vuote. In un file CSV questo sarebbe codificato da <code>,,</code>. Nota che si tratta di una cella vuota e non di una stringa di lunghezza zero, 
+ad es. <code>,"",</code>.</p>
 </details>
 <div class="admonition hint">
 <p class="admonition-title">Dati mancanti</p>
@@ -1394,20 +1393,20 @@ come per la risposta sopra, gli altri dati nel rapporto rimangono validi.</p>
 <p><img alt="Immagine che mostra l'interfaccia utente MinIO con il pulsante crea cartella evidenziato" src="../../assets/img/minio-create-new-path-metadata_id.png"/></p>
 <p>Carica il file di esempio che hai scaricato nella cartella che hai creato nel bucket MinIO:</p>
 <p><img alt="Immagine che mostra l'interfaccia utente MinIO con aws-example caricato" src="../../assets/img/minio-upload-aws-example.png"/></center></p>
-<p>Controlla la dashboard Grafana su <code>http://&lt;tuo-host&gt;:3000</code> per vedere se ci sono AVVISI o ERRORI. Se vedi qualcosa, prova a correggerlo e ripeti l'esercizio.</p>
+<p>Controlla la dashboard di Grafana a <code>http://&lt;tuo-host&gt;:3000</code> per vedere se ci sono AVVISI o ERRORI. Se ne vedi, prova a risolverli e ripeti l'esercizio.</p>
 <p>Controlla MQTT Explorer per vedere se ricevi notifiche di dati WIS2.</p>
-<p>Se hai inserito correttamente i dati, dovresti vedere 3 notifiche in MQTT Explorer sull'argomento <code>origin/a/wis2/&lt;id-centro&gt;/data/weather/surface-weather-observations/synop</code> per le 3 stazioni per cui hai riportato i dati:</p>
+<p>Se hai inserito correttamente i dati, dovresti vedere 3 notifiche in MQTT Explorer sull'argomento <code>origin/a/wis2/&lt;id-centro&gt;/data/weather/surface-weather-observations/synop</code> per le 3 stazioni per cui hai riportato dati:</p>
 <p><img width="450" alt="Immagine che mostra MQTT Explorer dopo il caricamento di AWS" src="../../assets/img/mqtt-explorer-aws-upload.png"/></p>
 <h2 id="esercizio-2-utilizzo-del-template-daycli">Esercizio 2 - Utilizzo del template 'DayCLI'</h2>
 <p>Nell'esercizio precedente abbiamo utilizzato il dataset che hai creato con Data-type='weather/surface-weather-observations/synop', che ha preconfigurato il template di conversione CSV a BUFR al template AWS.</p>
 <p>Nel prossimo esercizio utilizzeremo il template 'DayCLI' per convertire i dati climatici giornalieri in BUFR.</p>
 <p>La descrizione del template DAYCLI può essere trovata <a href="/csv2bufr-templates/daycli-template">qui</a>.</p>
 <div class="admonition note">
-<p class="admonition-title">Informazioni sul template DAYCLI</p>
-<p>Si prega di notare che la sequenza BUFR DAYCLI sarà aggiornata nel 2025 per includere informazioni aggiuntive e bandiere QC riviste. Il template DAYCLI incluso nel wis2box sarà aggiornato per riflettere questi cambiamenti. L'OMM comunicherà quando il software wis2box sarà aggiornato per includere il nuovo template DAYCLI, per permettere agli utenti di aggiornare i loro sistemi di conseguenza.</p>
+<p class="admonition-title">Riguardo al template DAYCLI</p>
+<p>Si prega di notare che la sequenza BUFR DAYCLI sarà aggiornata durante il 2025 per includere informazioni aggiuntive e bandiere di controllo di qualità riviste. Il template DAYCLI incluso nel wis2box sarà aggiornato per riflettere questi cambiamenti. L'OMM comunicherà quando il software wis2box sarà aggiornato per includere il nuovo template DAYCLI, per permettere agli utenti di aggiornare i loro sistemi di conseguenza.</p>
 </div>
-<h3 id="creazione-di-un-dataset-wis2box-per-la-pubblicazione-di-messaggi-daycli">Creazione di un dataset wis2box per la pubblicazione di messaggi DAYCLI</h3>
-<p>Vai all'editor di dataset nell'applicazione web wis2box e crea un nuovo dataset. Usa lo stesso id-centro come nelle sessioni pratiche precedenti e seleziona <strong>Tipo di Dato='climate/surface-based-observations/daily'</strong>:</p>
+<h3 id="creazione-di-un-dataset-wis2box-per-la-pubblicazione-dei-messaggi-daycli">Creazione di un dataset wis2box per la pubblicazione dei messaggi DAYCLI</h3>
+<p>Vai all'editor di dataset nell'applicazione web wis2box e crea un nuovo dataset. Utilizza lo stesso id-centro come nelle sessioni pratiche precedenti e seleziona <strong>Tipo di Dato='climate/surface-based-observations/daily'</strong>:</p>
 <p><img alt="Crea un nuovo dataset nell'applicazione web wis2box per DAYCLI" src="../../assets/img/wis2box-webapp-create-dataset-daycli.png"/></p>
 <p>Clicca "CONTINUA AL MODULO" e aggiungi una descrizione per il tuo dataset, imposta il riquadro di delimitazione e fornisci le informazioni di contatto per il dataset. Una volta completate tutte le sezioni, clicca 'VALIDA MODULO' e controlla il modulo.</p>
 <p>Rivedi i plugin di dati per i dataset. Clicca su "AGGIORNA" accanto al plugin con nome "Dati CSV convertiti in BUFR" e vedrai che il template è impostato su <strong>DayCLI</strong>:</p>
@@ -1424,35 +1423,35 @@ come per la risposta sopra, gli altri dati nel rapporto rimangono validi.</p>
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Il template daycli include importanti metadati sulla posizione degli strumenti e sulle classificazioni della qualità delle misurazioni per temperatura e umidità, bandiere di controllo della qualità e informazioni su come è stata calcolata la temperatura media giornaliera.</p>
+<p>Il template daycli include importanti metadati sulla posizione degli strumenti e sulle classificazioni della qualità delle misurazioni per temperatura e umidità, bandiere di controllo di qualità e informazioni su come è stata calcolata la temperatura media giornaliera.</p>
 </details>
 <h3 id="aggiorna-il-file-di-esempio_1">Aggiorna il file di esempio</h3>
-<p>Il file di esempio contiene una riga di dati per ogni giorno in un mese e riporta dati per una stazione. Aggiorna il file di esempio che hai scaricato per utilizzare la data e l'ora odierne e cambia gli identificatori delle stazioni WIGOS per utilizzare una stazione che hai registrato nell'applicazione web wis2box.</p>
+<p>Il file di esempio contiene una riga di dati per ogni giorno di un mese e riporta dati per una stazione. Aggiorna il file di esempio che hai scaricato per utilizzare la data e l'ora odierne e cambia gli identificatori delle stazioni WIGOS per utilizzare una stazione che hai registrato nell'applicazione web wis2box.</p>
 <h3 id="carica-i-dati-su-minio-e-controlla-il-risultato_1">Carica i dati su MinIO e controlla il risultato</h3>
 <p>Come prima, dovrai caricare i dati nel bucket 'wis2box-incoming' in MinIO per essere elaborati dal convertitore csv2bufr. Questa volta dovrai creare una nuova cartella nel bucket MinIO che corrisponde all'id del dataset per il dataset che hai creato con il template='climate/surface-based-observations/daily' che sarà diverso dall'id del dataset che hai utilizzato nell'esercizio precedente:</p>
 <p><img alt="Immagine che mostra l'interfaccia utente MinIO con DAYCLI-example caricato" src="../../assets/img/minio-upload-daycli-example.png"/></center></p>
-<p>Dopo aver caricato i dati controlla che non ci siano AVVISI o ERRORI nella dashboard Grafana e controlla MQTT Explorer per vedere se ricevi notifiche di dati WIS2.</p>
-<p>Se hai inserito correttamente i dati, dovresti vedere 30 notifiche in MQTT Explorer sull'argomento <code>origin/a/wis2/&lt;id-centro&gt;/data/climate/surface-based-observations/daily</code> per i 30 giorni del mese per cui hai riportato i dati:</p>
+<p>Dopo aver caricato i dati controlla che non ci siano AVVISI o ERRORI nella dashboard di Grafana e controlla MQTT Explorer per vedere se ricevi notifiche di dati WIS2.</p>
+<p>Se hai inserito correttamente i dati, dovresti vedere 30 notifiche in MQTT Explorer sull'argomento <code>origin/a/wis2/&lt;id-centro&gt;/data/climate/surface-based-observations/daily</code> per i 30 giorni del mese per cui hai riportato dati:</p>
 <p><img width="450" alt="Immagine che mostra MQTT Explorer dopo il caricamento di DAYCLI" src="../../assets/img/mqtt-daycli-template-success.png"/></p>
 <h2 id="esercizio-3-utilizzo-del-modulo-csv-nellapplicazione-web-wis2box-opzionale">Esercizio 3 - utilizzo del modulo CSV nell'applicazione web wis2box (opzionale)</h2>
 <p>L'applicazione web wis2box fornisce un'interfaccia per caricare dati CSV e convertirli in BUFR prima di pubblicarli su WIS2, utilizzando il template AWS.</p>
-<p>L'utilizzo di questo modulo è inteso per scopi di debug e validazione, il metodo di invio raccomandato per la pubblicazione di dati da stazioni meteorologiche automatiche è impostare un processo che carica automaticamente i dati nel bucket MinIO.</p>
+<p>L'uso di questo modulo è inteso per scopi di debug e validazione, il metodo di invio raccomandato per la pubblicazione di dati da stazioni meteorologiche automatizzate è impostare un processo che carichi automaticamente i dati nel bucket MinIO.</p>
 <h3 id="utilizzo-del-modulo-csv-nellapplicazione-web-wis2box">Utilizzo del modulo CSV nell'applicazione web wis2box</h3>
 <p>Naviga al modulo CSV sull'applicazione web wis2box
-(<code>http://&lt;tuo-nome-host&gt;/wis2box-webapp/csv2bufr_form</code>).
+(<code>http://&lt;nome-host&gt;/wis2box-webapp/csv2bufr_form</code>).
 Utilizza il file <a href="/sample-data/aws-example.csv">aws-example.csv</a> per questo esercizio.
-Ora dovresti essere in grado di cliccare accanto per visualizzare in anteprima e validare il file.</p>
-<p><center><img alt="Immagine che mostra la schermata di caricamento CSV a BUFR" src="../../assets/img/csv2bufr-ex1.png"/></center></p>
-<p>Cliccando sul pulsante successivo, il file viene caricato nel browser e validato contro uno schema predefinito.
+Ora dovresti essere in grado di cliccare su avanti per visualizzare in anteprima e validare il file.</p>
+<p><center><img alt="Immagine che mostra la schermata di caricamento da CSV a BUFR" src="../../assets/img/csv2bufr-ex1.png"/></center></p>
+<p>Cliccando sul pulsante avanti, il file viene caricato nel browser e validato contro uno schema predefinito.
 Ancora nessun dato è stato convertito o pubblicato. Nella scheda anteprima/valida dovresti essere presentato con un elenco di avvisi
 sui dati mancanti ma in questo esercizio possono essere ignorati.</p>
 <p><center><img alt="Immagine che mostra la pagina di validazione dell'esempio CSV a BUFR con avvisi" src="../../assets/img/csv2bufr-warnings.png"/></center></p>
-<p>Clicca <em>successivo</em> per procedere e ti verrà chiesto di fornire un id del dataset per i dati da pubblicare. Seleziona l'id del dataset che hai creato in precedenza e clicca <em>successivo</em>.</p>
+<p>Clicca <em>avanti</em> per procedere e ti verrà chiesto di fornire un id del dataset per i dati da pubblicare. Seleziona l'id del dataset che hai creato in precedenza e clicca <em>avanti</em>.</p>
 <p>Ora dovresti essere su una pagina di autorizzazione dove ti verrà chiesto di inserire il token <code>processes/wis2box</code>
 che hai precedentemente creato. Inserisci questo token e clicca sull'interruttore "Pubblica su WIS2" per assicurarti
 che "Pubblica su WIS2" sia selezionato (vedi screenshot sotto).</p>
 <p><center><img alt="schermata di autenticazione e pubblicazione csv2bufr" src="../../assets/img/csv2bufr-toggle-publish.png"/></center></p>
-<p>Clicca successivo per trasformare in BUFR e pubblicare, dovresti quindi vedere la seguente schermata:</p>
+<p>Clicca avanti per trasformare in BUFR e pubblicare, dovresti quindi vedere la seguente schermata:</p>
 <p><center><img alt="Immagine che mostra la schermata di successo dell'esempio CSV a BUFR" src="../../assets/img/csv2bufr-success.png"/></center></p>
 <p>Cliccando sulla freccia in basso a destra di <code>File BUFR di output</code> dovrebbero apparire i pulsanti <code>Scarica</code> e <code>Ispeziona</code>.
 Clicca ispeziona per visualizzare i dati e confermare che i valori siano come previsto.</p>
@@ -1469,8 +1468,8 @@ Hai notato qualche cambiamento agli avvisi nella pagina di validazione?</p>
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Avresti dovuto ancora essere in grado di convertire i dati in BUFR ma i messaggi di avviso saranno stati aggiornati
-per indicare che le colonne erano completamente mancanti piuttosto che contenere un valore mancante.</p>
+<p>Avresti ancora dovuto essere in grado di convertire i dati in BUFR ma i messaggi di avviso saranno stati aggiornati
+per indicare che le colonne mancavano completamente piuttosto che contenere un valore mancante.</p>
 </details>
 <p>Nel prossimo esempio è stata aggiunta una colonna aggiuntiva al file CSV.</p>
 <p><a href="/sample-data/csv2bufr-ex3b.csv">csv2bufr-ex3b.csv</a></p>
@@ -1482,7 +1481,7 @@ per indicare che le colonne erano completamente mancanti piuttosto che contenere
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
 <p>Quando il file viene validato ora riceverai un avviso che la colonna <code>index</code>
-non è trovata nello schema e che i dati sar</p>
+non è trovata nello schema</p>
 </details>
 
 

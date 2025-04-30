@@ -1105,8 +1105,7 @@
 
 <h1 id="docker-cheatsheet">Docker cheatsheet</h1>
 <h2 id="panoramica">Panoramica</h2>
-<p>Docker permette la creazione di ambienti virtuali in modo isolato a supporto della virtualizzazione delle risorse informatiche. Il concetto di base dietro Docker è la containerizzazione,
-dove il software può funzionare come servizi, interagendo con altri container di software, ad esempio.</p>
+<p>Docker permette la creazione di ambienti virtuali in modo isolato a supporto della virtualizzazione delle risorse di calcolo. Il concetto di base dietro Docker è la containerizzazione, dove il software può essere eseguito come servizi, interagendo con altri container di software, ad esempio.</p>
 <p>Il flusso di lavoro tipico di Docker coinvolge la creazione e la costruzione di <strong>immagini</strong>, che vengono poi eseguite come <strong>container</strong> attivi.</p>
 <p>Docker è utilizzato per eseguire la suite di servizi che compongono wis2box utilizzando immagini pre-costruite.</p>
 <h3 id="gestione-delle-immagini">Gestione delle immagini</h3>
@@ -1160,9 +1159,9 @@ dove il software può funzionare come servizi, interagendo con altri container d
 <ul>
 <li>Entra nel terminale interattivo di un container in esecuzione:</li>
 </ul>
-<div class="admonition suggerimento">
-<p class="admonition-title">Suggerimento</p>
-<p>usa <code>docker ps</code> per usare l'id del container nel comando sottostante</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>usa <code>docker ps</code> per utilizzare l'id del container nel comando sottostante</p>
 </div>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>my-container<span class="w"> </span>/bin/bash
 </code></pre></div>

@@ -1138,8 +1138,8 @@
 </ul>
 </div>
 <h2 id="introduzione">Introduzione</h2>
-<p>Per la condivisione internazionale dei dati tra i membri dell'OMM, è importante avere una comprensione comune delle stazioni che producono i dati. Il Sistema Globale Integrato di Osservazione (WIGOS) dell'OMM fornisce un quadro per l'integrazione dei sistemi di osservazione e dei sistemi di gestione dei dati. L'<strong>Identificatore della Stazione WIGOS (WSI)</strong> è utilizzato come riferimento unico della stazione che ha prodotto un determinato set di dati di osservazione.</p>
-<p>wis2box ha una collezione di metadati delle stazioni che viene utilizzata per descrivere le stazioni che producono i dati di osservazione e dovrebbe essere recuperata da <strong>OSCAR/Surface</strong>. I metadati delle stazioni in wis2box sono utilizzati dagli strumenti di trasformazione BUFR per verificare che i dati di input contengano un Identificatore della Stazione WIGOS (WSI) valido e per fornire una mappatura tra il WSI e i metadati della stazione.</p>
+<p>Per la condivisione internazionale dei dati tra i membri dell'OMM, è importante avere una comprensione comune delle stazioni che producono i dati. Il Sistema Globale Integrato di Osservazione (WIGOS) dell'OMM fornisce un quadro per l'integrazione dei sistemi di osservazione e dei sistemi di gestione dei dati. L'<strong>Identificatore di Stazione WIGOS (WSI)</strong> è utilizzato come riferimento unico della stazione che ha prodotto un determinato set di dati di osservazione.</p>
+<p>wis2box possiede una raccolta di metadati delle stazioni che viene utilizzata per descrivere le stazioni che producono i dati di osservazione e dovrebbe essere recuperata da <strong>OSCAR/Surface</strong>. I metadati delle stazioni in wis2box sono utilizzati dagli strumenti di trasformazione BUFR per verificare che i dati di input contengano un Identificatore di Stazione WIGOS (WSI) valido e per fornire una mappatura tra il WSI e i metadati della stazione.</p>
 <h2 id="creare-un-token-di-autorizzazione-per-collectionsstations">Creare un token di autorizzazione per collections/stations</h2>
 <p>Per modificare le stazioni tramite il <strong>wis2box-webapp</strong> dovrai prima creare un token di autorizzazione.</p>
 <p>Accedi alla tua VM studente e assicurati di essere nella directory <code>wis2box-1.0.0rc1</code>:</p>
@@ -1152,7 +1152,7 @@
 <p>Ad esempio, per utilizzare un token generato automaticamente casuale per l'endpoint <code>collections/stations</code>:</p>
 <div class="highlight"><pre><span></span><code>wis2box auth add-token --path collections/stations
 </code></pre></div>
-<p>L'output sarà il seguente:</p>
+<p>L'output sarà così:</p>
 <div class="highlight"><pre><span></span><code>Continua con il token: 7ca20386a131f0de384e6ffa288eb1ae385364b3694e47e3b451598c82e899d1 [y/N]? y
 Token creato con successo
 </code></pre></div>
@@ -1175,7 +1175,7 @@ Token creato con successo
 <div class="admonition note">
 <p class="admonition-title">Aggiungi metadati delle stazioni per 3 o più stazioni</p>
 <p>Aggiungi tre o più stazioni alla collezione di metadati delle stazioni di wis2box. </p>
-<p>Se possibile, utilizza stazioni del tuo paese, specialmente se hai portato i tuoi dati.</p>
+<p>Utilizza stazioni del tuo paese se possibile, specialmente se hai portato i tuoi dati.</p>
 <p>Se il tuo paese non ha stazioni in OSCAR/Surface, puoi utilizzare le seguenti stazioni per lo scopo di questo esercizio:</p>
 <ul>
 <li>0-20000-0-91334</li>
@@ -1191,8 +1191,8 @@ Token creato con successo
 <p><img alt="wis2box-webapp-stations-with-one-station" src="../../assets/img/wis2box-webapp-stations-with-one-station.png" width="800"></p>
 <p>Ripeti questo processo fino a quando non avrai configurato almeno 3 stazioni.</p>
 <div class="admonition tip">
-<p class="admonition-title">Derivazione delle informazioni sull'elevazione mancante</p>
-<p>Se mancano le informazioni sull'elevazione della tua stazione, ci sono servizi online che aiutano a cercare l'elevazione utilizzando dati di elevazione aperti. Un esempio è l'<a href="https://www.opentopodata.org">API di Open Topo Data</a>.</p>
+<p class="admonition-title">Derivazione delle informazioni sull'elevazione mancanti</p>
+<p>Se l'elevazione della tua stazione è mancante, ci sono servizi online per aiutarti a cercare l'elevazione utilizzando dati di elevazione aperti. Un esempio è l'<a href="https://www.opentopodata.org">API di Open Topo Data</a>.</p>
 <p>Ad esempio, per ottenere l'elevazione alla latitudine -6.15558 e longitudine 106.84204, puoi copiare-incollare il seguente URL in una nuova scheda del browser:</p>
 <div class="highlight"><pre><span></span><code>https://api.opentopodata.org/v1/aster30m?locations=-6.15558,106.84204
 </code></pre></div>
@@ -1232,8 +1232,8 @@ wis2box<span class="w"> </span>metadata<span class="w"> </span>station<span clas
 </code></pre></div>
 <p>Questo ti permette di caricare un gran numero di stazioni contemporaneamente e associarle a un argomento specifico.</p>
 <p>Puoi creare il file CSV utilizzando Excel o un editor di testo e poi caricarlo nella wis2box-host-datadir per renderlo disponibile al contenitore <strong>wis2box-management</strong> nella directory <code>/data/wis2box/</code>.</p>
-<p>Dopo aver fatto un caricamento in blocco di stazioni, si raccomanda di rivedere le stazioni nel <strong>wis2box-webapp</strong> per assicurarsi che i dati siano stati caricati correttamente.</p>
-<p>Consulta la documentazione ufficiale di <a href="https://docs.wis2box.wis.wmo.int">wis2box</a> per ulteriori informazioni su come utilizzare questa funzionalità.</p>
+<p>Dopo aver fatto un caricamento in blocco delle stazioni, è consigliato rivedere le stazioni nel <strong>wis2box-webapp</strong> per assicurarsi che i dati siano stati caricati correttamente.</p>
+<p>Consulta la documentazione ufficiale di <a href="https://docs.wis2box.wis.wmo.int">wis2box</a> per maggiori informazioni su come utilizzare questa funzionalità.</p>
 <h2 id="conclusione">Conclusione</h2>
 <div class="admonition success">
 <p class="admonition-title">Congratulazioni!</p>

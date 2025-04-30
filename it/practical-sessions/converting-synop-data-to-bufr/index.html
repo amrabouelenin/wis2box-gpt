@@ -1291,7 +1291,7 @@
 
 <h1 id="conversione-dei-dati-synop-in-bufr-dalla-riga-di-comando">Conversione dei dati SYNOP in BUFR dalla riga di comando</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Risultati di apprendimento</p>
+<p class="admonition-title">Risultati dell'apprendimento</p>
 <p>Al termine di questa sessione pratica, sarai in grado di:</p>
 <ul>
 <li>utilizzare lo strumento synop2bufr per convertire i rapporti SYNOP FM-12 in BUFR;</li>
@@ -1306,7 +1306,7 @@ fosse programmata per essere completata entro il 2012, un gran numero di rapport
 FM-12 SYNOP. Ulteriori informazioni sul formato FM-12 SYNOP possono essere trovate nel Manuale WMO sui Codici, 
 Volume I.1 (WMO-No. 306, Volume I.1).</p>
 <p><a href="https://library.wmo.int/records/item/35713-manual-on-codes-international-codes-volume-i-1">Manuale WMO sui Codici, Volume I.1</a></p>
-<p>Per aiutare a completare la migrazione a BUFR, sono stati sviluppati alcuni strumenti per
+<p>Per facilitare il completamento della migrazione a BUFR, sono stati sviluppati alcuni strumenti per
 codificare i rapporti SYNOP FM-12 in BUFR, in questa sessione imparerai come utilizzare questi strumenti così
 come la relazione tra le informazioni contenute nei rapporti SYNOP FM-12 e i messaggi BUFR.</p>
 <h2 id="preparazione">Preparazione</h2>
@@ -1353,23 +1353,24 @@ come la relazione tra le informazioni contenute nei rapporti SYNOP FM-12 e i mes
 </table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Bisogna essere cauti nell'usare l'anno e il mese predefiniti, poiché il giorno del mese specificato nel rapporto potrebbe non corrispondere (ad esempio, giugno non ha 31 giorni).</p>
+<p>Bisogna essere cauti nell'uso dell'anno e del mese predefiniti, poiché il giorno del mese specificato nel rapporto potrebbe non corrispondere (ad esempio, giugno non ha 31 giorni).</p>
 </div>
 <p>Negli esempi, l'anno e il mese non sono dati, quindi sentiti libero di specificare una data tu stesso o di utilizzare i valori predefiniti.</p>
 <h2 id="eccodes-primer">ecCodes primer</h2>
-<p>ecCodes fornisce sia strumenti da riga di comando sia può essere incorporato nelle tue applicazioni. Di seguito sono riportati alcuni utili strumenti da riga di comando per lavorare con i dati BUFR.</p>
+<p>ecCodes fornisce sia strumenti da riga di comando sia può essere incorporato nelle tue applicazioni. Di seguito sono riportati alcuni utili comandi
+da riga di comando per lavorare con i dati BUFR.</p>
 <h3 id="bufr_dump">bufr_dump</h3>
 <p>Il comando <code>bufr_dump</code> è uno strumento generico di informazioni BUFR. Ha molte opzioni, ma le seguenti saranno le più applicabili agli esercizi:</p>
 <div class="highlight"><pre><span></span><code>bufr_dump<span class="w"> </span>-p<span class="w"> </span>my_bufr.bufr4
 </code></pre></div>
-<p>Questo mostrerà il contenuto BUFR sul tuo schermo. Se sei interessato ai valori presi da una variabile in particolare, usa il comando <code>egrep</code>:</p>
+<p>Questo mostrerà il contenuto BUFR sul tuo schermo. Se sei interessato ai valori assunti da una variabile in particolare, usa il comando <code>egrep</code>:</p>
 <div class="highlight"><pre><span></span><code>bufr_dump<span class="w"> </span>-p<span class="w"> </span>my_bufr.bufr4<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span>-i<span class="w"> </span>temperature
 </code></pre></div>
-<p>Questo mostrerà le variabili relative alla temperatura nei tuoi dati BUFR. Se vuoi farlo per più tipi di variabili, filtra l'output usando un pipe (<code>|</code>):</p>
+<p>Questo mostrerà le variabili relative alla temperatura nei tuoi dati BUFR. Se vuoi farlo per più tipi di variabili, filtra l'output usando una pipe (<code>|</code>):</p>
 <div class="highlight"><pre><span></span><code>bufr_dump<span class="w"> </span>-p<span class="w"> </span>my_bufr.bufr4<span class="w"> </span><span class="p">|</span><span class="w"> </span>egrep<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;temperature|wind&#39;</span>
 </code></pre></div>
 <h2 id="conversione-di-synop-fm-12-in-bufr-usando-synop2bufr-dalla-riga-di-comando">Conversione di SYNOP FM-12 in BUFR usando synop2bufr dalla riga di comando</h2>
-<p>La libreria eccodes e il modulo synop2bufr sono installati nel contenitore wis2box-api. Per fare i prossimi esercizi copieremo la directory synop2bufr-exercises nel contenitore wis2box-api ed eseguiremo gli esercizi da lì.</p>
+<p>La libreria eccodes e il modulo synop2bufr sono installati nel contenitore wis2box-api. Per fare i prossimi esercizi copieremo la directory synop2bufr-exercises nel contenitore wis2box-api e eseguiremo gli esercizi da lì.</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>cp<span class="w"> </span>~/exercise-materials/synop2bufr-exercises<span class="w"> </span>wis2box-api:/root
 </code></pre></div>
 <p>Ora possiamo entrare nel contenitore ed eseguire gli esercizi:</p>
@@ -1508,7 +1509,7 @@ more<span class="w"> </span>message.txt
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>No, questo non è un problema a patto che esista una riga nel file dell'elenco delle stazioni con un TSI della stazione corrispondente a quello del rapporto SYNOP che stiamo cercando di convertire.</p>
+<p>No, questo non è un problema a condizione che esista una riga nel file dell'elenco delle stazioni con un TSI della stazione corrispondente a quello del rapporto SYNOP che stiamo cercando di convertire.</p>
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1520,7 +1521,7 @@ more<span class="w"> </span>message.txt
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Questo è fatto usando il comando <code>transform</code>, per esempio:</p>
+<p>Questo si fa usando il comando <code>transform</code>, per esempio:</p>
 <div class="highlight"><pre><span></span><code>synop2bufr<span class="w"> </span>data<span class="w"> </span>transform<span class="w"> </span>--metadata<span class="w"> </span>station_list.csv<span class="w"> </span>--output-dir<span class="w"> </span>./<span class="w"> </span>--year<span class="w"> </span><span class="m">2024</span><span class="w"> </span>--month<span class="w"> </span><span class="m">09</span><span class="w"> </span>message.txt
 </code></pre></div>
 </details>
@@ -1531,7 +1532,7 @@ more<span class="w"> </span>message.txt
 <ul>
 <li>Temperatura dell'aria (K) del rapporto</li>
 <li>Copertura nuvolosa totale (%) del rapporto</li>
-<li>Periodo totale di sole (min) del rapporto</li>
+<li>Periodo totale di sole (minuti) del rapporto</li>
 <li>Velocità del vento (m/s) del rapporto</li>
 </ul>
 </div>
@@ -1559,7 +1560,7 @@ more<span class="w"> </span>message_incorrect.txt
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Il rapporto SYNOP per 15015 manca del delimitatore (<code>=</code>) che permette a <code>synop2bufr</code> di distinguere questo rapporto dal successivo.</p>
+<p>Il rapporto SYNOP per 15015 manca del delimitatore (<code>=</code>) che consente a <code>synop2bufr</code> di distinguere questo rapporto dal successivo.</p>
 </details>
 <p>Tenta di convertire <code>message_incorrect.txt</code> usando <code>station_list.csv</code></p>
 <div class="admonition question">
