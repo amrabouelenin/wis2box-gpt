@@ -4,7 +4,7 @@ title: AWS Template
 
 # csv2bufr template for Automated Weather Stations reporting hourly GBON data
 
-The **AWS Template** uses a standardized CSV format to ingest data from Automatic Weather Stations in support of GBON reporting requirements. This mapping template converts CSV data to BUFR sequence 301150, 307096.
+The **AWS Template** uses the standardized CSV format to ingest data from Automatic Weather Stations in support of GBON reporting requirements. This mapping template converts CSV data to BUFR sequence 301150, 307096.
 
 The format is intended for use with automatic weather stations reporting a minimum number of parameters, including pressure, air temperature and humidity, wind speed and direction and precipitation on an hourly basis.
 
