@@ -17,7 +17,7 @@ lang_dict = {
 OPENAI_API_KEY= os.getenv("OPENAI_API_KEY")
 
 openai.api_key = OPENAI_API_KEY
-TARGET_LANGS = ['ru']  # Update as needed
+TARGET_LANGS = ['ru', 'es', 'it', 'fr', 'ar', 'zh', 'pt', 'de']  # Update as needed
 # TARGET_LANGS = ['ru', 'es', 'it', 'fr', 'ar', 'zh', 'pt', 'de']  # Update as needed
 
 EN_DIR = Path('documentation/docs/en')
