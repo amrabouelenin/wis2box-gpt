@@ -7,21 +7,21 @@ title: 使用 wis2box API 查询数据
 !!! abstract "学习成果"
     通过本实践课程，您将能够：
 
-    - 使用 wis2box API 查询和筛选您的气象站
+    - 使用 wis2box API 查询和筛选您的站点
     - 使用 wis2box API 查询和筛选您的数据
 
 ## 引言
 
 wis2box API 提供了一种机器可读的方式，用于发现和查询已经输入到 wis2box 中的数据。该 API 基于 OGC API - Features 标准，并使用 [pygeoapi](https://pygeoapi.io) 实现。
 
-wis2box API 提供以下集合的访问权限：
+wis2box API 提供以下集合的访问：
 
-- 气象站
+- 站点
 - 发现元数据
 - 数据通知
-- 每个配置的数据集一个集合，存储来自 bufr2geojson 的输出（需要在数据映射配置中启用插件 `bufr2geojson` 来填充数据集合中的项目）。
+- 每个配置的数据集一个集合，存储来自 bufr2geojson（插件 `bufr2geojson` 需要在数据映射配置中启用以填充数据集合中的项目）的输出。
 
-在本实践课程中，您将学习如何使用数据 API 浏览和查询已经输入到 wis2box 中的数据。
+在这个实践课程中，您将学习如何使用数据 API 浏览和查询已经输入到 wis2box 中的数据。
 
 ## 准备
 
@@ -40,9 +40,9 @@ wis2box API 提供以下集合的访问权限：
     在结果页面上您看到多少个数据集合？您认为每个集合代表什么？
 
 ??? success "点击以显示答案"
-    应该显示 4 个集合，包括 "Stations", "Discovery metadata", 和 "Data notifications"
+    应该显示 4 个集合，包括 "Stations"、"Discovery metadata" 和 "Data notifications"
 
-## 检查气象站
+## 检查站点
 
 从登陆页面，点击 'Collections' 链接，然后点击 'Stations' 链接。
 
@@ -51,19 +51,19 @@ wis2box API 提供以下集合的访问权限：
 点击 'Browse' 链接，然后点击 'json' 链接。
 
 !!! question
-    返回了多少个气象站？将这个数字与 `http://<your-host>/wis2box-webapp/station` 中的气象站列表进行比较。
+    返回了多少个站点？将这个数字与 `http://<your-host>/wis2box-webapp/station` 中的站点列表进行比较。
 
 ??? success "点击以显示答案"
-    API 中的气象站数量应该与您在 wis2box webapp 中看到的气象站数量相等。
+    API 中的站点数量应该与您在 wis2box webapp 中看到的站点数量相等。
 
 !!! question
-    我们如何查询单个气象站（例如 `Balaka`）？
+    我们如何查询单个站点（例如 `Balaka`）？
 
 ??? success "点击以显示答案"
     使用 `http://<your-host>/oapi/collections/stations/items?q=Balaka` 查询 API。
 
 !!! note
-    上述示例基于马拉维测试数据。尝试针对您在之前练习中输入的气象站进行测试。
+    上述示例基于马拉维测试数据。尝试针对您在之前练习中输入的站点进行测试。
 
 ## 检查观测数据
 
@@ -79,7 +79,7 @@ wis2box API 提供以下集合的访问权限：
 <img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600">
 
 !!! question
-    哪个可查询项会被用来按气象站标识符过滤？
+    哪个可查询项可用于按站点标识符过滤？
 
 ??? success "点击以显示答案"
     正确的可查询项是 `wigos_station_identifer`。
@@ -112,7 +112,7 @@ wis2box API 提供以下集合的访问权限：
     在 API 请求中添加 `sortby=-resultTime`（注意 `-` 符号表示降序排序）。对于按最早的观测数据排序，更新请求以包含 `sortby=resultTime`。
 
 !!! question
-    我们如何按单个气象站过滤观测数据？
+    我们如何按单个站点过滤观测数据？
 
 ??? success "点击以显示答案"
     在 API 请求中添加 `wigos_station_identifier=<WSI>`。
@@ -132,9 +132,9 @@ wis2box API 提供以下集合的访问权限：
 ## 结论
 
 !!! success "恭喜！"
-    在本实践课程中，您学习了如何：
+    在这个实践课程中，您学习了如何：
 
-    - 使用 wis2box API 查询和筛选您的气象站
+    - 使用 wis2box API 查询和筛选您的站点
     - 使用 wis2box API 查询和筛选您的数据
 
     

@@ -19,9 +19,9 @@ A API wis2box oferece acesso às seguintes coleções:
 - Estações
 - Metadados de descoberta
 - Notificações de dados
-- mais uma coleção por conjunto de dados configurado, que armazena a saída de bufr2geojson (o plugin `bufr2geojson` precisa estar ativado na configuração de mapeamentos de dados para preencher os itens na coleção de conjunto de dados).
+- mais uma coleção por conjunto de dados configurado, que armazena a saída de bufr2geojson (o plugin `bufr2geojson` precisa estar habilitado na configuração de mapeamento de dados para preencher os itens na coleção de conjunto de dados).
 
-Nesta sessão prática, você aprenderá a usar a API de dados para navegar e consultar dados que foram ingeridos no wis2box.
+Nesta sessão prática você aprenderá a usar a API de dados para navegar e consultar dados que foram ingeridos no wis2box.
 
 ## Preparação
 
@@ -37,7 +37,7 @@ Nesta sessão prática, você aprenderá a usar a API de dados para navegar e co
 Da página inicial, clique no link 'Coleções'.
 
 !!! question
-    Quantas coleções de conjuntos de dados você vê na página resultante? O que você acha que cada coleção representa?
+    Quantas coleções de conjunto de dados você vê na página resultante? O que você acha que cada coleção representa?
 
 ??? success "Clique para revelar a resposta"
     Deveriam ser exibidas 4 coleções, incluindo "Estações", "Metadados de descoberta" e "Notificações de dados"
@@ -63,12 +63,12 @@ Clique no link 'Navegar', depois clique no link 'json'.
     Consulte a API com `http://<your-host>/oapi/collections/stations/items?q=Balaka`.
 
 !!! note
-    O exemplo acima é baseado nos dados de teste do Malawi. Tente testar contra as estações que você inseriu como parte dos exercícios anteriores.
+    O exemplo acima é baseado nos dados de teste do Malawi. Tente testar contra as estações que você ingeriu como parte dos exercícios anteriores.
 
 ## Inspecionando observações
 
 !!! note
-    O exemplo acima é baseado nos dados de teste do Malawi. Tente testar contra a observação que você inseriu como parte dos exercícios.
+    O exemplo acima é baseado nos dados de teste do Malawi. Tente testar contra a observação que você ingeriu como parte dos exercícios.
 
 Da página inicial, clique no link 'Coleções', depois clique no link 'Observações meteorológicas de superfície do Malawi'.
 

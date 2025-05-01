@@ -19,9 +19,9 @@ L'API wis2box offre accesso alle seguenti collezioni:
 - Stazioni
 - Metadati di scoperta
 - Notifiche dati
-- più una collezione per dataset configurato, che memorizza l'output da bufr2geojson (il plugin `bufr2geojson` deve essere abilitato nella configurazione delle mappature dati per riempire gli elementi nella collezione del dataset).
+- più una collezione per dataset configurato, che memorizza l'output da bufr2geojson (il plugin `bufr2geojson` deve essere abilitato nella configurazione dei mapping dei dati per riempire gli elementi nella collezione del dataset).
 
-In questa sessione pratica imparerai a utilizzare l'API dei dati per sfogliare e interrogare i dati che sono stati inseriti in wis2box.
+In questa sessione pratica imparerai come utilizzare l'API dei dati per sfogliare e interrogare i dati che sono stati inseriti in wis2box.
 
 ## Preparazione
 
@@ -37,7 +37,7 @@ In questa sessione pratica imparerai a utilizzare l'API dei dati per sfogliare e
 Dalla pagina di atterraggio, clicca sul link 'Collezioni'.
 
 !!! question
-    Quante collezioni di dataset vedi nella pagina risultante? Cosa pensi che rappresenti ogni collezione?
+    Quante collezioni di dataset vedi nella pagina risultante? Cosa pensi che rappresenti ciascuna collezione?
 
 ??? success "Clicca per rivelare la risposta"
     Dovrebbero essere visualizzate 4 collezioni, inclusi "Stazioni", "Metadati di scoperta" e "Notifiche dati"
@@ -57,7 +57,7 @@ Clicca sul link 'Sfoglia', poi clicca sul link 'json'.
     Il numero di stazioni dall'API dovrebbe essere uguale al numero di stazioni che vedi nella webapp wis2box.
 
 !!! question
-    Come possiamo interrogare per una singola stazione (ad esempio `Balaka`)?
+    Come possiamo interrogare per una singola stazione (es. `Balaka`)?
 
 ??? success "Clicca per rivelare la risposta"
     Interroga l'API con `http://<your-host>/oapi/collections/stations/items?q=Balaka`.
@@ -79,7 +79,7 @@ Clicca sul link 'Interrogabili'.
 <img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600">
 
 !!! question
-    Quale interrogabile sarebbe usato per filtrare per identificatore di stazione?
+    Quale interrogabile verrebbe utilizzato per filtrare per identificatore di stazione?
 
 ??? success "Clicca per rivelare la risposta"
     Il `wigos_station_identifer` è l'interrogabile corretto.
@@ -109,7 +109,7 @@ Ispeziona la risposta JSON delle osservazioni.
     Come possiamo ordinare la risposta per le osservazioni più recenti?
 
 ??? success "Clicca per rivelare la risposta"
-    Aggiungi `sortby=-resultTime` alla richiesta API (notare il segno `-` per denotare l'ordine decrescente). Per ordinare per le osservazioni più vecchie, aggiorna la richiesta includendo `sortby=resultTime`.
+    Aggiungi `sortby=-resultTime` alla richiesta API (nota il segno `-` per denotare l'ordine decrescente). Per ordinare per le osservazioni più vecchie, aggiorna la richiesta includendo `sortby=resultTime`.
 
 !!! question
     Come possiamo filtrare le osservazioni per una singola stazione?
@@ -136,5 +136,3 @@ Ispeziona la risposta JSON delle osservazioni.
 
     - utilizzare l'API wis2box per interrogare e filtrare le tue stazioni
     - utilizzare l'API wis2box per interrogare e filtrare i tuoi dati
-
-    
