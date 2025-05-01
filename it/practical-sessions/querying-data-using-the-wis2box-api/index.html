@@ -1137,20 +1137,20 @@
 </ul>
 </div>
 <h2 id="introduzione">Introduzione</h2>
-<p>L'API wis2box fornisce accesso alla scoperta e all'interrogazione in modo leggibile da macchina dei dati che sono stati inseriti in wis2box. L'API si basa sullo standard OGC API - Features ed è implementata utilizzando <a href="https://pygeoapi.io">pygeoapi</a>.</p>
+<p>L'API wis2box fornisce accesso alla scoperta e all'interrogazione in modo leggibile da macchina ai dati che sono stati inseriti in wis2box. L'API si basa sullo standard OGC API - Features ed è implementata utilizzando <a href="https://pygeoapi.io">pygeoapi</a>.</p>
 <p>L'API wis2box offre accesso alle seguenti collezioni:</p>
 <ul>
 <li>Stazioni</li>
 <li>Metadati di scoperta</li>
-<li>Notifiche di dati</li>
-<li>più una collezione per ogni dataset configurato, che memorizza l'output da bufr2geojson (il plugin <code>bufr2geojson</code> deve essere abilitato nella configurazione delle mappature dei dati per riempire gli elementi nella collezione del dataset).</li>
+<li>Notifiche dati</li>
+<li>più una collezione per dataset configurato, che memorizza l'output da bufr2geojson (il plugin <code>bufr2geojson</code> deve essere abilitato nella configurazione delle mappature dati per riempire gli elementi nella collezione del dataset).</li>
 </ul>
-<p>In questa sessione pratica imparerai come utilizzare l'API dei dati per sfogliare e interrogare i dati che sono stati inseriti in wis2box.</p>
+<p>In questa sessione pratica imparerai a utilizzare l'API dei dati per sfogliare e interrogare i dati che sono stati inseriti in wis2box.</p>
 <h2 id="preparazione">Preparazione</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Naviga alla pagina di atterraggio dell'API wis2box nel tuo browser web:</p>
-<p><code>http://&lt;tuo-host&gt;/oapi</code></p>
+<p><code>http://&lt;your-host&gt;/oapi</code></p>
 </div>
 <p><img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
 <h2 id="ispezione-delle-collezioni">Ispezione delle collezioni</h2>
@@ -1161,7 +1161,7 @@
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Dovrebbero essere visualizzate 4 collezioni, incluse "Stazioni", "Metadati di scoperta" e "Notifiche di dati"</p>
+<p>Dovrebbero essere visualizzate 4 collezioni, inclusi "Stazioni", "Metadati di scoperta" e "Notifiche dati"</p>
 </details>
 <h2 id="ispezione-delle-stazioni">Ispezione delle stazioni</h2>
 <p>Dalla pagina di atterraggio, clicca sul link 'Collezioni', poi clicca sul link 'Stazioni'.</p>
@@ -1169,7 +1169,7 @@
 <p>Clicca sul link 'Sfoglia', poi clicca sul link 'json'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Quante stazioni vengono restituite? Confronta questo numero con l'elenco delle stazioni in <code>http://&lt;tuo-host&gt;/wis2box-webapp/station</code></p>
+<p>Quante stazioni vengono restituite? Confronta questo numero con l'elenco delle stazioni in <code>http://&lt;your-host&gt;/wis2box-webapp/station</code></p>
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
@@ -1177,11 +1177,11 @@
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Come possiamo interrogare per una singola stazione (es. <code>Balaka</code>)?</p>
+<p>Come possiamo interrogare per una singola stazione (ad esempio <code>Balaka</code>)?</p>
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Interroga l'API con <code>http://&lt;tuo-host&gt;/oapi/collections/stations/items?q=Balaka</code>.</p>
+<p>Interroga l'API con <code>http://&lt;your-host&gt;/oapi/collections/stations/items?q=Balaka</code>.</p>
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1202,9 +1202,9 @@
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>L'<code>identificatore_di_stazione_wigos</code> è l'interrogabile corretto.</p>
+<p>Il <code>wigos_station_identifer</code> è l'interrogabile corretto.</p>
 </details>
-<p>Naviga alla pagina precedente (i.e. <code>http://&lt;tuo-host&gt;/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
+<p>Naviga alla pagina precedente (i.e. <code>http://&lt;your-host&gt;/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
 <p>Clicca sul link 'Sfoglia'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1233,7 +1233,7 @@
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Aggiungi <code>sortby=-resultTime</code> alla richiesta API (nota il segno <code>-</code> per denotare l'ordine decrescente). Per ordinare per le osservazioni più vecchie, aggiorna la richiesta includendo <code>sortby=resultTime</code>.</p>
+<p>Aggiungi <code>sortby=-resultTime</code> alla richiesta API (notare il segno <code>-</code> per denotare l'ordine decrescente). Per ordinare per le osservazioni più vecchie, aggiorna la richiesta includendo <code>sortby=resultTime</code>.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1241,7 +1241,7 @@
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Aggiungi <code>identificatore_di_stazione_wigos=&lt;WSI&gt;</code> alla richiesta API.</p>
+<p>Aggiungi <code>wigos_station_identifier=&lt;WSI&gt;</code> alla richiesta API.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1257,7 +1257,7 @@
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Utilizzando l'identificatore della caratteristica da una richiesta API contro le osservazioni, interroga l'API per <code>http://&lt;tuo-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code>, dove <code>{collectionId}</code> è il nome della tua collezione di osservazioni e <code>{itemId}</code> è l'identificatore della singola osservazione di interesse.</p>
+<p>Utilizzando l'identificatore della caratteristica da una richiesta API contro le osservazioni, interroga l'API per <code>http://&lt;your-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code>, dove <code>{collectionId}</code> è il nome della tua collezione di osservazioni e <code>{itemId}</code> è l'identificatore della singola osservazione di interesse.</p>
 </details>
 <h2 id="conclusione">Conclusione</h2>
 <div class="admonition success">
