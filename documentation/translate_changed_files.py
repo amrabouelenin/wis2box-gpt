@@ -20,7 +20,7 @@ OPENAI_API_KEY= os.getenv("OPENAI_API_KEY")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 openai.api_key = OPENAI_API_KEY
-# TARGET_LANGS = ['it']  # Update as needed
+# TARGET_LANGS = ['pt']  # Update as needed
 TARGET_LANGS = ['ru', 'es', 'it', 'fr', 'ar', 'zh', 'pt', 'de']  # Update as needed
 
 EN_DIR = Path('documentation/docs/en')
@@ -56,6 +56,8 @@ def translate_text_gpt(text, target_language):
         - All headings, code blocks, links, and formatting are preserved exactly.
         - Technical and domain-specific terms are translated with care, not literally.
         - Sentences and paragraphs remain semantically equivalent to the original English.
+        - Do NOT translate text inside backticks (`...`), single quotes ('...'), or angle brackets (<...>) — they may represent code, UI labels, or placeholders, and must be left as-is.
+        - Preserve all Markdown formatting, including lists, links, and code blocks.
 
         Here is the Markdown content to translate:
 
@@ -80,12 +82,8 @@ def translate_text_claude(text, target_language):
     prompt = f"""
         You are a professional translator specializing in technical Markdown documentation.
 
-        Translate the following content **into {lang_dict[target_language]} only**. Do not use or mix in other languages.
+        Translate the following content **into {lang_dict[target_language]} only**. Do not use or mix in other languages and Follow these rules:
 
-        Ensure that:
-        - All headings, code blocks, links, and formatting are preserved exactly.
-        - Technical and domain-specific terms are translated with care, not literally.
-        - Sentences and paragraphs remain semantically equivalent to the original English.
 
         Here is the Markdown content to translate:
 
