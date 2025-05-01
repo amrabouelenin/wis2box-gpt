@@ -12,7 +12,7 @@ title: Interrogazione dei dati tramite l'API wis2box
 
 ## Introduzione
 
-L'API wis2box fornisce accesso alla scoperta e all'interrogazione in modo leggibile da macchina ai dati che sono stati inseriti in wis2box. L'API si basa sullo standard OGC API - Features ed è implementata utilizzando [pygeoapi](https://pygeoapi.io).
+L'API wis2box fornisce accesso alla scoperta e all'interrogazione in modo leggibile da macchina dei dati che sono stati inseriti in wis2box. L'API si basa sullo standard OGC API - Features ed è implementata utilizzando [pygeoapi](https://pygeoapi.io).
 
 L'API wis2box offre accesso alle seguenti collezioni:
 
@@ -21,14 +21,14 @@ L'API wis2box offre accesso alle seguenti collezioni:
 - Notifiche di dati
 - più una collezione per ogni dataset configurato, che memorizza l'output da bufr2geojson (il plugin `bufr2geojson` deve essere abilitato nella configurazione delle mappature dei dati per riempire gli elementi nella collezione del dataset).
 
-In questa sessione pratica imparerai come utilizzare l'API dei dati per esplorare e interrogare i dati che sono stati inseriti in wis2box.
+In questa sessione pratica imparerai come utilizzare l'API dei dati per sfogliare e interrogare i dati che sono stati inseriti in wis2box.
 
 ## Preparazione
 
 !!! note
     Naviga alla pagina di atterraggio dell'API wis2box nel tuo browser web:
 
-    `http://<your-host>/oapi`
+    `http://<tuo-host>/oapi`
 
 <img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600">
 
@@ -51,16 +51,16 @@ Dalla pagina di atterraggio, clicca sul link 'Collezioni', poi clicca sul link '
 Clicca sul link 'Sfoglia', poi clicca sul link 'json'.
 
 !!! question
-    Quante stazioni vengono restituite? Confronta questo numero con l'elenco delle stazioni in `http://<your-host>/wis2box-webapp/station`
+    Quante stazioni vengono restituite? Confronta questo numero con l'elenco delle stazioni in `http://<tuo-host>/wis2box-webapp/station`
 
 ??? success "Clicca per rivelare la risposta"
     Il numero di stazioni dall'API dovrebbe essere uguale al numero di stazioni che vedi nella webapp wis2box.
 
 !!! question
-    Come possiamo interrogare per una singola stazione (ad esempio `Balaka`)?
+    Come possiamo interrogare per una singola stazione (es. `Balaka`)?
 
 ??? success "Clicca per rivelare la risposta"
-    Interroga l'API con `http://<your-host>/oapi/collections/stations/items?q=Balaka`.
+    Interroga l'API con `http://<tuo-host>/oapi/collections/stations/items?q=Balaka`.
 
 !!! note
     L'esempio sopra è basato sui dati di test del Malawi. Prova a testare contro le stazioni che hai inserito come parte degli esercizi precedenti.
@@ -84,7 +84,7 @@ Clicca sul link 'Interrogabili'.
 ??? success "Clicca per rivelare la risposta"
     L'`identificatore_di_stazione_wigos` è l'interrogabile corretto.
 
-Naviga alla pagina precedente (ovvero `http://<your-host>/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations`)
+Naviga alla pagina precedente (i.e. `http://<tuo-host>/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations`)
 
 Clicca sul link 'Sfoglia'.
 
@@ -127,7 +127,7 @@ Ispeziona la risposta JSON delle osservazioni.
     Come possiamo mostrare una singola osservazione (id)?
 
 ??? success "Clicca per rivelare la risposta"
-    Utilizzando l'identificatore della caratteristica da una richiesta API contro le osservazioni, interroga l'API per `http://<your-host>/oapi/collections/{collectionId}/items/{featureId}`, dove `{collectionId}` è il nome della tua collezione di osservazioni e `{itemId}` è l'identificatore della singola osservazione di interesse.
+    Utilizzando l'identificatore della caratteristica da una richiesta API contro le osservazioni, interroga l'API per `http://<tuo-host>/oapi/collections/{collectionId}/items/{featureId}`, dove `{collectionId}` è il nome della tua collezione di osservazioni e `{itemId}` è l'identificatore della singola osservazione di interesse.
 
 ## Conclusione
 

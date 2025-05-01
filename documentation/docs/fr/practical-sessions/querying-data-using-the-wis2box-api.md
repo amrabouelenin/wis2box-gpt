@@ -12,25 +12,25 @@ title: Interroger des données à l'aide de l'API wis2box
 
 ## Introduction
 
-L'API wis2box offre un accès à la découverte et à l'interrogation des données de manière lisible par machine, qui ont été ingérées dans wis2box. L'API est basée sur la norme OGC API - Features et est mise en œuvre à l'aide de [pygeoapi](https://pygeoapi.io).
+L'API wis2box fournit un accès à la découverte et à l'interrogation des données de manière lisible par machine qui ont été ingérées dans wis2box. L'API est basée sur la norme OGC API - Features et est implémentée en utilisant [pygeoapi](https://pygeoapi.io).
 
 L'API wis2box donne accès aux collections suivantes :
 
 - Stations
 - Métadonnées de découverte
 - Notifications de données
-- plus une collection par jeu de données configuré, qui stocke les résultats de bufr2geojson (le plugin `bufr2geojson` doit être activé dans la configuration des mappages de données pour remplir les éléments de la collection de données).
+- plus une collection par jeu de données configuré, qui stocke les résultats de bufr2geojson (le plugin `bufr2geojson` doit être activé dans la configuration des mappages de données pour remplir les éléments de la collection de jeux de données).
 
 Dans cette session pratique, vous apprendrez à utiliser l'API de données pour parcourir et interroger les données qui ont été ingérées dans wis2box.
 
 ## Préparation
 
 !!! note
-    Naviguez jusqu'à la page d'accueil de l'API wis2box dans votre navigateur web :
+    Naviguez vers la page d'accueil de l'API wis2box dans votre navigateur web :
 
     `http://<votre-hôte>/oapi`
 
-<img alt="page d'accueil de l'API wis2box" src="../../assets/img/wis2box-api-landing-page.png" width="600">
+<img alt="page-d'accueil-api-wis2box" src="../../assets/img/wis2box-api-landing-page.png" width="600">
 
 ## Inspection des collections
 
@@ -46,7 +46,7 @@ Depuis la page d'accueil, cliquez sur le lien 'Collections'.
 
 Depuis la page d'accueil, cliquez sur le lien 'Collections', puis cliquez sur le lien 'Stations'.
 
-<img alt="collections de l'API wis2box - stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600">
+<img alt="collections-api-wis2box-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600">
 
 Cliquez sur le lien 'Parcourir', puis cliquez sur le lien 'json'.
 
@@ -72,11 +72,11 @@ Cliquez sur le lien 'Parcourir', puis cliquez sur le lien 'json'.
 
 Depuis la page d'accueil, cliquez sur le lien 'Collections', puis cliquez sur le lien 'Observations météorologiques de surface du Malawi'.
 
-<img alt="collections de l'API wis2box - obs du Malawi" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600">
+<img alt="collections-api-wis2box-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600">
 
 Cliquez sur le lien 'Interrogeables'.
 
-<img alt="interrogeables des collections de l'API wis2box - obs du Malawi" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600">
+<img alt="interrogeables-collections-api-wis2box-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600">
 
 !!! question
     Quel interrogeable serait utilisé pour filtrer par identifiant de station ?
@@ -92,7 +92,7 @@ Cliquez sur le lien 'Parcourir'.
     Comment pouvons-nous visualiser la réponse JSON ?
 
 ??? success "Cliquez pour révéler la réponse"
-    En cliquant sur le lien 'JSON' en haut à droite de la page, ou en ajoutant `f=json` à la requête API sur le navigateur web.
+    En cliquant sur le lien 'JSON' en haut à droite de la page, ou en ajoutant `f=json` à la requête API dans le navigateur web.
 
 Inspectez la réponse JSON des observations.
 
@@ -127,7 +127,7 @@ Inspectez la réponse JSON des observations.
     Comment pouvons-nous afficher une seule observation (id) ?
 
 ??? success "Cliquez pour révéler la réponse"
-    En utilisant l'identifiant de fonctionnalité d'une requête API contre les observations, interrogez l'API pour `http://<votre-hôte>/oapi/collections/{collectionId}/items/{featureId}`, où `{collectionId}` est le nom de votre collection d'observations et `{itemId}` est l'identifiant de la seule observation d'intérêt.
+    En utilisant l'identifiant de fonctionnalité d'une requête API contre les observations, interrogez l'API pour `http://<votre-hôte>/oapi/collections/{collectionId}/items/{featureId}`, où `{collectionId}` est le nom de votre collection d'observations et `{itemId}` est l'identifiant de l'observation unique d'intérêt.
 
 ## Conclusion
 
@@ -136,3 +136,5 @@ Inspectez la réponse JSON des observations.
 
     - utiliser l'API wis2box pour interroger et filtrer vos stations
     - utiliser l'API wis2box pour interroger et filtrer vos données
+
+    
