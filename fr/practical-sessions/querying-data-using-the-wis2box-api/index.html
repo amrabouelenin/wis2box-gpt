@@ -26,7 +26,7 @@
     
     
       
-        <title>Interroger des données à l'aide de l'API wis2box - WIS2 in a box training</title>
+        <title>Interroger les données en utilisant l'API wis2box - WIS2 in a box training</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interroger-des-donnees-a-laide-de-lapi-wis2box" class="md-skip">
+        <a href="#interroger-les-donnees-en-utilisant-lapi-wis2box" class="md-skip">
           Aller au contenu
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interroger des données à l'aide de l'API wis2box
+              Interroger les données en utilisant l'API wis2box
             
           </span>
         </div>
@@ -1115,7 +1115,7 @@
 
 
 
-<h1 id="interroger-des-donnees-a-laide-de-lapi-wis2box">Interroger des données à l'aide de l'API wis2box</h1>
+<h1 id="interroger-les-donnees-en-utilisant-lapi-wis2box">Interroger les données en utilisant l'API wis2box</h1>
 <div class="admonition abstract">
 <p class="admonition-title">Résultats d'apprentissage</p>
 <p>À la fin de cette session pratique, vous serez capable de :</p>
@@ -1125,22 +1125,22 @@
 </ul>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>L'API wis2box fournit un accès à la découverte et à l'interrogation des données de manière lisible par machine qui ont été ingérées dans wis2box. L'API est basée sur la norme OGC API - Features et est implémentée en utilisant <a href="https://pygeoapi.io">pygeoapi</a>.</p>
+<p>L'API wis2box offre un accès à la découverte et à l'interrogation des données qui ont été ingérées dans wis2box de manière lisible par machine. L'API est basée sur la norme OGC API - Features et est implémentée en utilisant <a href="https://pygeoapi.io">pygeoapi</a>.</p>
 <p>L'API wis2box donne accès aux collections suivantes :</p>
 <ul>
 <li>Stations</li>
 <li>Métadonnées de découverte</li>
 <li>Notifications de données</li>
-<li>plus une collection par jeu de données configuré, qui stocke les résultats de bufr2geojson (le plugin <code>bufr2geojson</code> doit être activé dans la configuration des mappages de données pour remplir les éléments de la collection de jeux de données).</li>
+<li>plus une collection par jeu de données configuré, qui stocke les résultats de bufr2geojson (le plugin <code>bufr2geojson</code> doit être activé dans la configuration des mappages de données pour remplir les éléments de la collection de données).</li>
 </ul>
 <p>Dans cette session pratique, vous apprendrez à utiliser l'API de données pour parcourir et interroger les données qui ont été ingérées dans wis2box.</p>
 <h2 id="preparation">Préparation</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Naviguez vers la page d'accueil de l'API wis2box dans votre navigateur web :</p>
-<p><code>http://&lt;votre-hôte&gt;/oapi</code></p>
+<p><code>http://&lt;your-host&gt;/oapi</code></p>
 </div>
-<p><img alt="page-d'accueil-api-wis2box" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
+<p><img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
 <h2 id="inspection-des-collections">Inspection des collections</h2>
 <p>Depuis la page d'accueil, cliquez sur le lien 'Collections'.</p>
 <div class="admonition question">
@@ -1153,11 +1153,11 @@
 </details>
 <h2 id="inspection-des-stations">Inspection des stations</h2>
 <p>Depuis la page d'accueil, cliquez sur le lien 'Collections', puis cliquez sur le lien 'Stations'.</p>
-<p><img alt="collections-api-wis2box-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
+<p><img alt="wis2box-api-collections-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
 <p>Cliquez sur le lien 'Parcourir', puis cliquez sur le lien 'json'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Combien de stations sont retournées ? Comparez ce nombre à la liste des stations dans <code>http://&lt;votre-hôte&gt;/wis2box-webapp/station</code></p>
+<p>Combien de stations sont retournées ? Comparez ce nombre à la liste des stations dans <code>http://&lt;your-host&gt;/wis2box-webapp/station</code></p>
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
@@ -1169,7 +1169,7 @@
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>Interrogez l'API avec <code>http://&lt;votre-hôte&gt;/oapi/collections/stations/items?q=Balaka</code>.</p>
+<p>Interrogez l'API avec <code>http://&lt;your-host&gt;/oapi/collections/stations/items?q=Balaka</code>.</p>
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1181,18 +1181,18 @@
 <p>L'exemple ci-dessus est basé sur les données de test du Malawi. Essayez de tester avec les observations que vous avez ingérées dans le cadre des exercices.</p>
 </div>
 <p>Depuis la page d'accueil, cliquez sur le lien 'Collections', puis cliquez sur le lien 'Observations météorologiques de surface du Malawi'.</p>
-<p><img alt="collections-api-wis2box-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
+<p><img alt="wis2box-api-collections-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
 <p>Cliquez sur le lien 'Interrogeables'.</p>
-<p><img alt="interrogeables-collections-api-wis2box-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
+<p><img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Quel interrogeable serait utilisé pour filtrer par identifiant de station ?</p>
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>L'<code>identifiant_station_wigos</code> est l'interrogeable correct.</p>
+<p>Le <code>wigos_station_identifer</code> est l'interrogeable correct.</p>
 </details>
-<p>Naviguez vers la page précédente (c.-à-d. <code>http://&lt;votre-hôte&gt;/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
+<p>Naviguez vers la page précédente (c.-à-d. <code>http://&lt;your-host&gt;/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
 <p>Cliquez sur le lien 'Parcourir'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1200,7 +1200,7 @@
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>En cliquant sur le lien 'JSON' en haut à droite de la page, ou en ajoutant <code>f=json</code> à la requête API dans le navigateur web.</p>
+<p>En cliquant sur le lien 'JSON' en haut à droite de la page, ou en ajoutant <code>f=json</code> à la requête API sur le navigateur web.</p>
 </details>
 <p>Inspectez la réponse JSON des observations.</p>
 <div class="admonition question">
@@ -1233,7 +1233,7 @@
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Comment pouvons-nous recevoir les observations en CSV ?</p>
+<p>Comment pouvons-nous recevoir les observations en format CSV ?</p>
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
@@ -1245,7 +1245,7 @@
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>En utilisant l'identifiant de fonctionnalité d'une requête API contre les observations, interrogez l'API pour <code>http://&lt;votre-hôte&gt;/oapi/collections/{collectionId}/items/{featureId}</code>, où <code>{collectionId}</code> est le nom de votre collection d'observations et <code>{itemId}</code> est l'identifiant de l'observation unique d'intérêt.</p>
+<p>En utilisant l'identifiant de fonctionnalité d'une requête API contre les observations, interrogez l'API pour <code>http://&lt;your-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code>, où <code>{collectionId}</code> est le nom de votre collection d'observations et <code>{itemId}</code> est l'identifiant de l'observation unique d'intérêt.</p>
 </details>
 <h2 id="conclusion">Conclusion</h2>
 <div class="admonition success">

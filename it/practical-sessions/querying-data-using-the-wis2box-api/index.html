@@ -1143,9 +1143,9 @@
 <li>Stazioni</li>
 <li>Metadati di scoperta</li>
 <li>Notifiche dati</li>
-<li>più una collezione per dataset configurato, che memorizza l'output da bufr2geojson (il plugin <code>bufr2geojson</code> deve essere abilitato nella configurazione delle mappature dati per riempire gli elementi nella collezione del dataset).</li>
+<li>più una collezione per dataset configurato, che memorizza l'output da bufr2geojson (il plugin <code>bufr2geojson</code> deve essere abilitato nella configurazione dei mapping dei dati per riempire gli elementi nella collezione del dataset).</li>
 </ul>
-<p>In questa sessione pratica imparerai a utilizzare l'API dei dati per sfogliare e interrogare i dati che sono stati inseriti in wis2box.</p>
+<p>In questa sessione pratica imparerai come utilizzare l'API dei dati per sfogliare e interrogare i dati che sono stati inseriti in wis2box.</p>
 <h2 id="preparazione">Preparazione</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1157,7 +1157,7 @@
 <p>Dalla pagina di atterraggio, clicca sul link 'Collezioni'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Quante collezioni di dataset vedi nella pagina risultante? Cosa pensi che rappresenti ogni collezione?</p>
+<p>Quante collezioni di dataset vedi nella pagina risultante? Cosa pensi che rappresenti ciascuna collezione?</p>
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
@@ -1177,7 +1177,7 @@
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Come possiamo interrogare per una singola stazione (ad esempio <code>Balaka</code>)?</p>
+<p>Come possiamo interrogare per una singola stazione (es. <code>Balaka</code>)?</p>
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
@@ -1198,7 +1198,7 @@
 <p><img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Quale interrogabile sarebbe usato per filtrare per identificatore di stazione?</p>
+<p>Quale interrogabile verrebbe utilizzato per filtrare per identificatore di stazione?</p>
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
@@ -1233,7 +1233,7 @@
 </div>
 <details class="success">
 <summary>Clicca per rivelare la risposta</summary>
-<p>Aggiungi <code>sortby=-resultTime</code> alla richiesta API (notare il segno <code>-</code> per denotare l'ordine decrescente). Per ordinare per le osservazioni più vecchie, aggiorna la richiesta includendo <code>sortby=resultTime</code>.</p>
+<p>Aggiungi <code>sortby=-resultTime</code> alla richiesta API (nota il segno <code>-</code> per denotare l'ordine decrescente). Per ordinare per le osservazioni più vecchie, aggiorna la richiesta includendo <code>sortby=resultTime</code>.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>

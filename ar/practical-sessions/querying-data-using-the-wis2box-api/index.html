@@ -26,7 +26,7 @@
     
     
       
-        <title>الاستعلام عن البيانات باستخدام واجهة برمجة تطبيقات wis2box - WIS2 in a box training</title>
+        <title>استعلام البيانات باستخدام واجهة برمجة تطبيقات wis2box - WIS2 in a box training</title>
       
     
     
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              الاستعلام عن البيانات باستخدام واجهة برمجة تطبيقات wis2box
+              استعلام البيانات باستخدام واجهة برمجة تطبيقات wis2box
             
           </span>
         </div>
@@ -1119,7 +1119,7 @@
 
 
 
-<h1 id="wis2box">الاستعلام عن البيانات باستخدام واجهة برمجة تطبيقات wis2box</h1>
+<h1 id="wis2box">استعلام البيانات باستخدام واجهة برمجة تطبيقات wis2box</h1>
 <div class="admonition abstract">
 <p class="admonition-title">نتائج التعلم</p>
 <p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
@@ -1133,39 +1133,39 @@
 <p>توفر واجهة برمجة تطبيقات wis2box الوصول إلى المجموعات التالية:</p>
 <ul>
 <li>المحطات</li>
-<li>بيانات الاكتشاف الوصفية</li>
+<li>بيانات الاكتشاف</li>
 <li>إشعارات البيانات</li>
 <li>بالإضافة إلى مجموعة واحدة لكل مجموعة بيانات مُعدة، والتي تخزن الناتج من bufr2geojson (يجب تفعيل الإضافة <code>bufr2geojson</code> في تكوين تعيينات البيانات لملء العناصر في مجموعة البيانات).</li>
 </ul>
-<p>في هذه الجلسة العملية، ستتعلم كيفية استخدام واجهة بيانات API لتصفح واستعلام البيانات التي تم استيعابها في wis2box.</p>
+<p>في هذه الجلسة العملية ستتعلم كيفية استخدام واجهة بيانات API لتصفح واستعلام البيانات التي تم استيعابها في wis2box.</p>
 <h2 id="_2">التحضير</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>انتقل إلى صفحة الهبوط الخاصة بواجهة برمجة تطبيقات wis2box في متصفح الويب الخاص بك:</p>
+<p>انتقل إلى صفحة البداية لواجهة برمجة تطبيقات wis2box في متصفح الويب الخاص بك:</p>
 <p><code>http://&lt;your-host&gt;/oapi</code></p>
 </div>
 <p><img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
 <h2 id="_3">فحص المجموعات</h2>
-<p>من صفحة الهبوط، انقر على رابط 'المجموعات'.</p>
+<p>من صفحة البداية، انقر على رابط 'المجموعات'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>كم عدد مجموعات البيانات التي تراها في الصفحة الناتجة؟ ماذا تعتقد أن كل مجموعة تمثل؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>يجب أن يتم عرض 4 مجموعات، بما في ذلك "المحطات"، "بيانات الاكتشاف الوصفية"، و"إشعارات البيانات"</p>
+<p>يجب أن يتم عرض 4 مجموعات، بما في ذلك "المحطات"، "بيانات الاكتشاف"، و"إشعارات البيانات"</p>
 </details>
 <h2 id="_4">فحص المحطات</h2>
-<p>من صفحة الهبوط، انقر على رابط 'المجموعات'، ثم انقر على رابط 'المحطات'.</p>
+<p>من صفحة البداية، انقر على رابط 'المجموعات'، ثم انقر على رابط 'المحطات'.</p>
 <p><img alt="wis2box-api-collections-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
 <p>انقر على رابط 'تصفح'، ثم انقر على رابط 'json'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كم عدد المحطات التي يتم إرجاعها؟ قارن هذا العدد بقائمة المحطات في <code>http://&lt;your-host&gt;/wis2box-webapp/station</code></p>
+<p>كم عدد المحطات المُرجعة؟ قارن هذا العدد بقائمة المحطات في <code>http://&lt;your-host&gt;/wis2box-webapp/station</code></p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>يجب أن يكون عدد المحطات من الواجهة مساويًا لعدد المحطات التي تراها في تطبيق wis2box الويب.</p>
+<p>يجب أن يكون عدد المحطات من الواجهة مساويًا لعدد المحطات التي تراها في تطبيق الويب wis2box.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1177,14 +1177,14 @@
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>المثال أعلاه مبني على بيانات اختبار مالاوي. جرب الاختبار ضد المحطات التي قمت بإدخالها كجزء من التمارين السابقة.</p>
+<p>المثال أعلاه يعتمد على بيانات اختبار مالاوي. جرب الاختبار ضد المحطات التي قمت بإدخالها كجزء من التمارين السابقة.</p>
 </div>
 <h2 id="_5">فحص الملاحظات</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>المثال أعلاه مبني على بيانات اختبار مالاوي. جرب الاختبار ضد الملاحظات التي قمت بإدخالها كجزء من التمارين.</p>
+<p>المثال أعلاه يعتمد على بيانات اختبار مالاوي. جرب الاختبار ضد الملاحظات التي قمت بإدخالها كجزء من التمارين.</p>
 </div>
-<p>من صفحة الهبوط، انقر على رابط 'المجموعات'، ثم انقر على رابط 'ملاحظات الطقس السطحية من مالاوي'.</p>
+<p>من صفحة البداية، انقر على رابط 'المجموعات'، ثم انقر على رابط 'ملاحظات الطقس السطحية من مالاوي'.</p>
 <p><img alt="wis2box-api-collections-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
 <p>انقر على رابط 'القابليات للاستعلام'.</p>
 <p><img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
@@ -1213,7 +1213,7 @@
 </div>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كيف يمكننا تحديد الاستجابة إلى 3 ملاحظات؟</p>
+<p>كيف يمكننا تقييد الاستجابة إلى 3 ملاحظات؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
@@ -1249,7 +1249,7 @@
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>باستخدام معرف الخاصية من طلب واجهة ضد الملاحظات، استعلم عن الواجهة لـ <code>http://&lt;your-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code>، حيث <code>{collectionId}</code> هو اسم مجموعة الملاحظات الخاصة بك و<code>{itemId}</code> هو معرف الملاحظة المفردة ذات الاهتمام.</p>
+<p>باستخدام معرف الميزة من طلب واجهة ضد الملاحظات، استعلم عن الواجهة لـ <code>http://&lt;your-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code>، حيث <code>{collectionId}</code> هو اسم مجموعة الملاحظات الخاصة بك و<code>{itemId}</code> هو معرف الملاحظة المفردة ذات الاهتمام.</p>
 </details>
 <h2 id="_6">خاتمة</h2>
 <div class="admonition success">

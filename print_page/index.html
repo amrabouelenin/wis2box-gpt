@@ -3408,14 +3408,14 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 </div></section><section class="print-page" id="de-practical-sessions-querying-data-using-the-wis2box-api" heading-number="2.15"><h1 id="de-practical-sessions-querying-data-using-the-wis2box-api-datenabfrage-mit-der-wis2box-api">Datenabfrage mit der wis2box API</h1>
 <div class="admonition abstract">
 <p class="admonition-title">Lernergebnisse</p>
-<p>Am Ende dieser praktischen Einheit werden Sie in der Lage sein:</p>
+<p>Am Ende dieser praktischen Sitzung werden Sie in der Lage sein:</p>
 <ul>
 <li>die wis2box API zu nutzen, um Ihre Stationen abzufragen und zu filtern</li>
 <li>die wis2box API zu nutzen, um Ihre Daten abzufragen und zu filtern</li>
 </ul>
 </div>
 <h2 id="de-practical-sessions-querying-data-using-the-wis2box-api-einfuhrung">Einführung</h2>
-<p>Die wis2box API bietet Zugriff auf Entdeckung und Abfrage in maschinenlesbarer Form für die Daten, die in wis2box eingegangen sind. Die API basiert auf dem OGC API - Features Standard und wird mit <a href="https://pygeoapi.io">pygeoapi</a> implementiert.</p>
+<p>Die wis2box API bietet Zugriff auf Entdeckung und Abfrage in maschinenlesbarer Form für die Daten, die in wis2box aufgenommen wurden. Die API basiert auf dem OGC API - Features Standard und wird mit <a href="https://pygeoapi.io">pygeoapi</a> implementiert.</p>
 <p>Die wis2box API bietet Zugriff auf die folgenden Sammlungen:</p>
 <ul>
 <li>Stationen</li>
@@ -3423,7 +3423,7 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <li>Datenbenachrichtigungen</li>
 <li>plus eine Sammlung pro konfiguriertem Datensatz, die die Ausgabe von bufr2geojson speichert (das Plugin <code>bufr2geojson</code> muss in der Datenmappingskonfiguration aktiviert sein, um die Elemente in der Datensatzsammlung zu füllen).</li>
 </ul>
-<p>In dieser praktischen Sitzung lernen Sie, wie Sie die Daten-API verwenden, um Daten, die in wis2box eingegangen sind, zu durchsuchen und abzufragen.</p>
+<p>In dieser praktischen Sitzung lernen Sie, wie Sie die Daten-API verwenden, um Daten, die in wis2box aufgenommen wurden, zu durchsuchen und abzufragen.</p>
 <h2 id="de-practical-sessions-querying-data-using-the-wis2box-api-vorbereitung">Vorbereitung</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3438,7 +3438,7 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>Wie viele Datensatzsammlungen sehen Sie auf der resultierenden Seite? Was denken Sie, was jede Sammlung darstellt?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
+<summary>Klicken, um Antwort zu enthüllen</summary>
 <p>Es sollten 4 Sammlungen angezeigt werden, einschließlich "Stationen", "Entdeckungsmetadaten" und "Datenbenachrichtigungen"</p>
 </details>
 <h2 id="de-practical-sessions-querying-data-using-the-wis2box-api-stationen-inspizieren">Stationen inspizieren</h2>
@@ -3450,25 +3450,25 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>Wie viele Stationen werden zurückgegeben? Vergleichen Sie diese Zahl mit der Stationsliste in <code>http://&lt;your-host&gt;/wis2box-webapp/station</code></p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
+<summary>Klicken, um Antwort zu enthüllen</summary>
 <p>Die Anzahl der Stationen aus der API sollte gleich der Anzahl der Stationen sein, die Sie in der wis2box Webapp sehen.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Wie können wir nach einer einzelnen Station (z.B. <code>Balaka</code>) suchen?</p>
+<p>Wie können wir eine einzelne Station (z.B. <code>Balaka</code>) abfragen?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
+<summary>Klicken, um Antwort zu enthüllen</summary>
 <p>Abfragen Sie die API mit <code>http://&lt;your-host&gt;/oapi/collections/stations/items?q=Balaka</code>.</p>
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Das obige Beispiel basiert auf den Malawi-Testdaten. Versuchen Sie, gegen die Stationen zu testen, die Sie als Teil der vorherigen Übungen eingespeist haben.</p>
+<p>Das obige Beispiel basiert auf den Testdaten aus Malawi. Versuchen Sie, gegen die Stationen zu testen, die Sie als Teil der vorherigen Übungen aufgenommen haben.</p>
 </div>
 <h2 id="de-practical-sessions-querying-data-using-the-wis2box-api-beobachtungen-inspizieren">Beobachtungen inspizieren</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Das obige Beispiel basiert auf den Malawi-Testdaten. Versuchen Sie, gegen die Beobachtungen zu testen, die Sie als Teil der Übungen eingespeist haben.</p>
+<p>Das obige Beispiel basiert auf den Testdaten aus Malawi. Versuchen Sie, gegen die Beobachtungen zu testen, die Sie als Teil der Übungen aufgenommen haben.</p>
 </div>
 <p>Von der Startseite aus klicken Sie auf den Link 'Sammlungen', dann auf den Link 'Oberflächenwetterbeobachtungen aus Malawi'.</p>
 <p><img alt="wis2box-api-collections-malawi-obs" src="../de/assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
@@ -3476,11 +3476,11 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p><img alt="wis2box-api-collections-malawi-obs-queryables" src="../de/assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Welches Abfragbare würde verwendet, um nach Stationskennung zu filtern?</p>
+<p>Welches abfragbare würde verwendet, um nach Stationskennung zu filtern?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
-<p>Der <code>wigos_station_identifer</code> ist das richtige Abfragbare.</p>
+<summary>Klicken, um Antwort zu enthüllen</summary>
+<p>Das <code>wigos_station_identifer</code> ist das richtige Abfragbare.</p>
 </details>
 <p>Navigieren Sie zur vorherigen Seite (d.h. <code>http://&lt;your-host&gt;/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
 <p>Klicken Sie auf den Link 'Durchsuchen'.</p>
@@ -3489,8 +3489,8 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>Wie können wir die JSON-Antwort visualisieren?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
-<p>Indem Sie auf den Link 'JSON' oben rechts auf der Seite klicken, oder indem Sie <code>f=json</code> zur API-Anfrage im Webbrowser hinzufügen.</p>
+<summary>Klicken, um Antwort zu enthüllen</summary>
+<p>Indem Sie auf den Link 'JSON' oben rechts auf der Seite klicken oder <code>f=json</code> zur API-Anfrage im Webbrowser hinzufügen.</p>
 </details>
 <p>Überprüfen Sie die JSON-Antwort der Beobachtungen.</p>
 <div class="admonition question">
@@ -3502,7 +3502,7 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>Wie können wir die Antwort auf 3 Beobachtungen begrenzen?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
+<summary>Klicken, um Antwort zu enthüllen</summary>
 <p>Fügen Sie <code>limit=3</code> zur API-Anfrage hinzu.</p>
 </details>
 <div class="admonition question">
@@ -3510,7 +3510,7 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>Wie können wir die Antwort nach den neuesten Beobachtungen sortieren?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
+<summary>Klicken, um Antwort zu enthüllen</summary>
 <p>Fügen Sie <code>sortby=-resultTime</code> zur API-Anfrage hinzu (beachten Sie das <code>-</code>-Zeichen, um die absteigende Sortierreihenfolge anzugeben). Um nach den frühesten Beobachtungen zu sortieren, aktualisieren Sie die Anfrage, um <code>sortby=resultTime</code> einzuschließen.</p>
 </details>
 <div class="admonition question">
@@ -3518,7 +3518,7 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>Wie können wir die Beobachtungen nach einer einzelnen Station filtern?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
+<summary>Klicken, um Antwort zu enthüllen</summary>
 <p>Fügen Sie <code>wigos_station_identifier=&lt;WSI&gt;</code> zur API-Anfrage hinzu.</p>
 </details>
 <div class="admonition question">
@@ -3526,7 +3526,7 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>Wie können wir die Beobachtungen als CSV erhalten?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
+<summary>Klicken, um Antwort zu enthüllen</summary>
 <p>Fügen Sie <code>f=csv</code> zur API-Anfrage hinzu.</p>
 </details>
 <div class="admonition question">
@@ -3534,8 +3534,8 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>Wie können wir eine einzelne Beobachtung (id) anzeigen?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
-<p>Verwenden Sie den Merkmalskennzeichner aus einer API-Anfrage gegen die Beobachtungen, um die API für <code>http://&lt;your-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code> abzufragen, wobei <code>{collectionId}</code> der Name Ihrer Beobachtungssammlung und <code>{itemId}</code> der Kennzeichner der einzelnen Beobachtung von Interesse ist.</p>
+<summary>Klicken, um Antwort zu enthüllen</summary>
+<p>Verwenden Sie den Merkmalsidentifikator aus einer API-Anfrage gegen die Beobachtungen, um die API für <code>http://&lt;your-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code> abzufragen, wobei <code>{collectionId}</code> der Name Ihrer Beobachtungssammlung und <code>{itemId}</code> der Identifikator der einzelnen Beobachtung von Interesse ist.</p>
 </details>
 <h2 id="de-practical-sessions-querying-data-using-the-wis2box-api-schlussfolgerung">Schlussfolgerung</h2>
 <div class="admonition success">
