@@ -1110,14 +1110,14 @@
 <h1 id="consulta-de-datos-usando-la-api-de-wis2box">Consulta de datos usando la API de wis2box</h1>
 <div class="admonition abstract">
 <p class="admonition-title">Resultados de aprendizaje</p>
-<p>Al final de esta sesión práctica, serás capaz de:</p>
+<p>Al final de esta sesión práctica, podrás:</p>
 <ul>
-<li>usar la API de wis2box para consultar y filtrar tus estaciones</li>
-<li>usar la API de wis2box para consultar y filtrar tus datos</li>
+<li>utilizar la API de wis2box para consultar y filtrar tus estaciones</li>
+<li>utilizar la API de wis2box para consultar y filtrar tus datos</li>
 </ul>
 </div>
 <h2 id="introduccion">Introducción</h2>
-<p>La API de wis2box proporciona acceso de descubrimiento y consulta de manera legible por máquina a los datos que han sido ingeridos en wis2box. La API se basa en el estándar OGC API - Features y está implementada usando <a href="https://pygeoapi.io">pygeoapi</a>.</p>
+<p>La API de wis2box proporciona acceso de descubrimiento y consulta de manera legible por máquina a los datos que han sido ingestados en wis2box. La API se basa en el estándar OGC API - Features y está implementada usando <a href="https://pygeoapi.io">pygeoapi</a>.</p>
 <p>La API de wis2box proporciona acceso a las siguientes colecciones:</p>
 <ul>
 <li>Estaciones</li>
@@ -1125,14 +1125,14 @@
 <li>Notificaciones de datos</li>
 <li>más una colección por conjunto de datos configurado, que almacena la salida de bufr2geojson (el complemento <code>bufr2geojson</code> debe estar habilitado en la configuración de mapeo de datos para llenar los elementos en la colección de conjunto de datos).</li>
 </ul>
-<p>En esta sesión práctica aprenderás a utilizar la API de datos para navegar y consultar datos que han sido ingeridos en wis2box.</p>
+<p>En esta sesión práctica aprenderás a utilizar la API de datos para navegar y consultar datos que han sido ingestados en wis2box.</p>
 <h2 id="preparacion">Preparación</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Navega a la página de inicio de la API de wis2box en tu navegador web:</p>
 <p><code>http://&lt;tu-host&gt;/oapi</code></p>
 </div>
-<p><img alt="wis2box-api-página-de-inicio" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
+<p><img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
 <h2 id="inspeccionando-colecciones">Inspeccionando colecciones</h2>
 <p>Desde la página de inicio, haz clic en el enlace 'Colecciones'.</p>
 <div class="admonition question">
@@ -1141,11 +1141,11 @@
 </div>
 <details class="success">
 <summary>Haz clic para revelar la respuesta</summary>
-<p>Debería haber 4 colecciones mostradas, incluyendo "Estaciones", "Metadatos de descubrimiento" y "Notificaciones de datos"</p>
+<p>Deberían mostrarse 4 colecciones, incluyendo "Estaciones", "Metadatos de descubrimiento" y "Notificaciones de datos"</p>
 </details>
 <h2 id="inspeccionando-estaciones">Inspeccionando estaciones</h2>
 <p>Desde la página de inicio, haz clic en el enlace 'Colecciones', luego haz clic en el enlace 'Estaciones'.</p>
-<p><img alt="wis2box-api-colecciones-estaciones" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
+<p><img alt="wis2box-api-collections-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
 <p>Haz clic en el enlace 'Explorar', luego haz clic en el enlace 'json'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1165,17 +1165,17 @@
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>El ejemplo anterior está basado en los datos de prueba de Malawi. Intenta probarlo con las estaciones que has ingerido como parte de los ejercicios anteriores.</p>
+<p>El ejemplo anterior se basa en los datos de prueba de Malawi. Intenta probar contra las estaciones que has ingestado como parte de los ejercicios anteriores.</p>
 </div>
 <h2 id="inspeccionando-observaciones">Inspeccionando observaciones</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>El ejemplo anterior está basado en los datos de prueba de Malawi. Intenta probarlo con las observaciones que has ingerido como parte de los ejercicios.</p>
+<p>El ejemplo anterior se basa en los datos de prueba de Malawi. Intenta probar contra la observación que has ingestado como parte de los ejercicios.</p>
 </div>
 <p>Desde la página de inicio, haz clic en el enlace 'Colecciones', luego haz clic en el enlace 'Observaciones meteorológicas de superficie de Malawi'.</p>
-<p><img alt="wis2box-api-colecciones-observaciones-de-malawi" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
+<p><img alt="wis2box-api-collections-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
 <p>Haz clic en el enlace 'Consultables'.</p>
-<p><img alt="wis2box-api-colecciones-observaciones-de-malawi-consultables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
+<p><img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>¿Qué consultable se usaría para filtrar por identificador de estación?</p>
@@ -1237,15 +1237,15 @@
 </div>
 <details class="success">
 <summary>Haz clic para revelar la respuesta</summary>
-<p>Usando el identificador de característica de una solicitud de API contra las observaciones, consulta la API para <code>http://&lt;tu-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code>, donde <code>{collectionId}</code> es el nombre de tu colección de observaciones y <code>{itemId}</code> es el identificador de la única observación de interés.</p>
+<p>Usando el identificador de característica de una solicitud de API contra las observaciones, consulta la API para <code>http://&lt;tu-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code>, donde <code>{collectionId}</code> es el nombre de tu colección de observaciones y <code>{itemId}</code> es el identificador de la observación única de interés.</p>
 </details>
 <h2 id="conclusion">Conclusión</h2>
 <div class="admonition success">
 <p class="admonition-title">¡Felicidades!</p>
-<p>En esta sesión práctica, aprendiste cómo:</p>
+<p>En esta sesión práctica, aprendiste a:</p>
 <ul>
-<li>usar la API de wis2box para consultar y filtrar tus estaciones</li>
-<li>usar la API de wis2box para consultar y filtrar tus datos</li>
+<li>utilizar la API de wis2box para consultar y filtrar tus estaciones</li>
+<li>utilizar la API de wis2box para consultar y filtrar tus datos</li>
 </ul>
 </div>
 

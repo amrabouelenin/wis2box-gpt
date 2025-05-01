@@ -1125,22 +1125,22 @@
 </ul>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>L'API wis2box offre un accès à la découverte et à l'interrogation des données de manière lisible par machine, qui ont été ingérées dans wis2box. L'API est basée sur la norme OGC API - Features et est mise en œuvre à l'aide de <a href="https://pygeoapi.io">pygeoapi</a>.</p>
+<p>L'API wis2box fournit un accès à la découverte et à l'interrogation des données de manière lisible par machine qui ont été ingérées dans wis2box. L'API est basée sur la norme OGC API - Features et est implémentée en utilisant <a href="https://pygeoapi.io">pygeoapi</a>.</p>
 <p>L'API wis2box donne accès aux collections suivantes :</p>
 <ul>
 <li>Stations</li>
 <li>Métadonnées de découverte</li>
 <li>Notifications de données</li>
-<li>plus une collection par jeu de données configuré, qui stocke les résultats de bufr2geojson (le plugin <code>bufr2geojson</code> doit être activé dans la configuration des mappages de données pour remplir les éléments de la collection de données).</li>
+<li>plus une collection par jeu de données configuré, qui stocke les résultats de bufr2geojson (le plugin <code>bufr2geojson</code> doit être activé dans la configuration des mappages de données pour remplir les éléments de la collection de jeux de données).</li>
 </ul>
 <p>Dans cette session pratique, vous apprendrez à utiliser l'API de données pour parcourir et interroger les données qui ont été ingérées dans wis2box.</p>
 <h2 id="preparation">Préparation</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Naviguez jusqu'à la page d'accueil de l'API wis2box dans votre navigateur web :</p>
+<p>Naviguez vers la page d'accueil de l'API wis2box dans votre navigateur web :</p>
 <p><code>http://&lt;votre-hôte&gt;/oapi</code></p>
 </div>
-<p><img alt="page d'accueil de l'API wis2box" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
+<p><img alt="page-d'accueil-api-wis2box" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
 <h2 id="inspection-des-collections">Inspection des collections</h2>
 <p>Depuis la page d'accueil, cliquez sur le lien 'Collections'.</p>
 <div class="admonition question">
@@ -1153,7 +1153,7 @@
 </details>
 <h2 id="inspection-des-stations">Inspection des stations</h2>
 <p>Depuis la page d'accueil, cliquez sur le lien 'Collections', puis cliquez sur le lien 'Stations'.</p>
-<p><img alt="collections de l'API wis2box - stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
+<p><img alt="collections-api-wis2box-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
 <p>Cliquez sur le lien 'Parcourir', puis cliquez sur le lien 'json'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1181,9 +1181,9 @@
 <p>L'exemple ci-dessus est basé sur les données de test du Malawi. Essayez de tester avec les observations que vous avez ingérées dans le cadre des exercices.</p>
 </div>
 <p>Depuis la page d'accueil, cliquez sur le lien 'Collections', puis cliquez sur le lien 'Observations météorologiques de surface du Malawi'.</p>
-<p><img alt="collections de l'API wis2box - obs du Malawi" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
+<p><img alt="collections-api-wis2box-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
 <p>Cliquez sur le lien 'Interrogeables'.</p>
-<p><img alt="interrogeables des collections de l'API wis2box - obs du Malawi" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
+<p><img alt="interrogeables-collections-api-wis2box-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Quel interrogeable serait utilisé pour filtrer par identifiant de station ?</p>
@@ -1200,7 +1200,7 @@
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>En cliquant sur le lien 'JSON' en haut à droite de la page, ou en ajoutant <code>f=json</code> à la requête API sur le navigateur web.</p>
+<p>En cliquant sur le lien 'JSON' en haut à droite de la page, ou en ajoutant <code>f=json</code> à la requête API dans le navigateur web.</p>
 </details>
 <p>Inspectez la réponse JSON des observations.</p>
 <div class="admonition question">
@@ -1245,7 +1245,7 @@
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>En utilisant l'identifiant de fonctionnalité d'une requête API contre les observations, interrogez l'API pour <code>http://&lt;votre-hôte&gt;/oapi/collections/{collectionId}/items/{featureId}</code>, où <code>{collectionId}</code> est le nom de votre collection d'observations et <code>{itemId}</code> est l'identifiant de la seule observation d'intérêt.</p>
+<p>En utilisant l'identifiant de fonctionnalité d'une requête API contre les observations, interrogez l'API pour <code>http://&lt;votre-hôte&gt;/oapi/collections/{collectionId}/items/{featureId}</code>, où <code>{collectionId}</code> est le nom de votre collection d'observations et <code>{itemId}</code> est l'identifiant de l'observation unique d'intérêt.</p>
 </details>
 <h2 id="conclusion">Conclusion</h2>
 <div class="admonition success">
