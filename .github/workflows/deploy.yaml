@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install openai==0.28
+          pip install openai==0.28 anthropic
 
       - name: Run translation script
         id: check
