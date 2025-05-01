@@ -96,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#formation-wis2-en-boite" class="md-skip">
+        <a href="#formation-wis2-dans-une-boite" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1196,11 +1196,11 @@
 
 
 <p><img alt="Logo OMM" src="assets/img/wmo-logo.png" width="200"></p>
-<h1 id="formation-wis2-en-boite">Formation WIS2 en boîte</h1>
-<p>WIS2 en boîte (<a href="https://docs.wis2box.wis.wmo.int">wis2box</a>) est une mise en œuvre de référence libre et open source (FOSS) d'un nœud WMO WIS2. Le projet fournit un ensemble d'outils prêt à l'emploi pour ingérer, traiter et publier des données météorologiques/climatiques/hydrologiques en utilisant des approches basées sur des normes, en accord avec les principes WIS2. wis2box offre également un accès à toutes les données du réseau WIS2. wis2box est conçu pour avoir un faible obstacle à l'entrée pour les fournisseurs de données, fournissant une infrastructure et des services facilitant la découverte, l'accès et la visualisation des données.</p>
-<p>Cette formation fournit des explications étape par étape sur divers aspects du projet wis2box ainsi qu'un certain nombre d'exercices pour vous aider à publier et télécharger des données depuis WIS2. La formation est fournie sous forme de présentations d'ensemble ainsi que d'exercices pratiques.</p>
-<p>Les participants pourront travailler avec des données et métadonnées d'essai, ainsi qu'intégrer leurs propres données et métadonnées.</p>
-<p>Cette formation couvre une large gamme de sujets (installation/configuration/publication/téléchargement de données, etc.).</p>
+<h1 id="formation-wis2-dans-une-boite">Formation WIS2 dans une boîte</h1>
+<p>WIS2 dans une boîte (<a href="https://docs.wis2box.wis.wmo.int">wis2box</a>) est une Implémentation de Référence Libre et Open Source (FOSS) d'un Nœud WIS2 de l'OMM. Le projet fournit un ensemble d'outils prêts à l'emploi pour ingérer, traiter et publier des données météorologiques/climatiques/hydrologiques en utilisant des approches basées sur des normes, conformément aux principes de WIS2. wis2box offre également un accès à toutes les données du réseau WIS2. wis2box est conçu pour avoir un faible seuil d'entrée pour les fournisseurs de données, fournissant une infrastructure et des services facilitant la découverte, l'accès et la visualisation des données.</p>
+<p>Cette formation fournit des explications étape par étape sur divers aspects du projet wis2box ainsi que plusieurs exercices pour vous aider à publier et télécharger des données depuis WIS2. La formation est dispensée sous forme de présentations générales ainsi que d'exercices pratiques.</p>
+<p>Les participants pourront travailler avec des données et métadonnées de test, ainsi qu'intégrer leurs propres données et métadonnées.</p>
+<p>Cette formation couvre une large gamme de sujets (installation/configuration/publication, téléchargement de données, etc.).</p>
 <h2 id="objectifs-et-resultats-dapprentissage">Objectifs et résultats d'apprentissage</h2>
 <p>Les objectifs de cette formation sont de se familiariser avec les éléments suivants :</p>
 <ul>
@@ -1217,7 +1217,7 @@
 </li>
 </ul>
 <h2 id="navigation">Navigation</h2>
-<p>La navigation à gauche fournit une table des matières pour toute la formation.</p>
+<p>La navigation à gauche fournit une table des matières pour l'ensemble de la formation.</p>
 <p>La navigation à droite fournit une table des matières pour une page spécifique.</p>
 <h2 id="prerequis">Prérequis</h2>
 <h3 id="connaissances">Connaissances</h3>
@@ -1231,21 +1231,21 @@
 <li>Une instance exécutant le système d'exploitation Ubuntu (fournie par les formateurs de l'OMM lors des sessions de formation locales) voir <a href="practical-sessions/accessing-your-student-vm/#introduction">Accéder à votre VM étudiant</a></li>
 <li>Client SSH pour accéder à votre instance</li>
 <li>MQTT Explorer sur votre machine locale</li>
-<li>Client SCP et FTP pour copier des fichiers depuis votre machine locale</li>
+<li>Clients SCP et FTP pour copier des fichiers depuis votre machine locale</li>
 </ul>
 <h2 id="conventions">Conventions</h2>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Une section marquée comme cela vous invite à répondre à une question.</p>
+<p>Une section marquée comme celle-ci vous invite à répondre à une question.</p>
 </div>
 <p>Vous remarquerez également des sections de conseils et de notes dans le texte :</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Les conseils partagent de l'aide sur la manière d'accomplir au mieux les tâches.</p>
+<p>Les conseils partagent de l'aide sur la meilleure façon d'accomplir les tâches.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Les notes fournissent des informations supplémentaires sur le sujet couvert par la session pratique, ainsi que sur la manière d'accomplir au mieux les tâches.</p>
+<p>Les notes fournissent des informations supplémentaires sur le sujet couvert par la session pratique, ainsi que sur la meilleure façon d'accomplir les tâches.</p>
 </div>
 <p>Les exemples sont indiqués comme suit :</p>
 <p>Configuration
@@ -1254,7 +1254,7 @@
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">my-collection-defined-in-yaml</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">collection</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mon titre défini comme un attribut yaml nommé title</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mon titre défini comme un attribut yaml nommé titre</span>
 <span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ma description comme un attribut yaml nommé description</span>
 </code></pre></div></td></tr></table></div></p>
 <p>Les extraits qui doivent être tapés dans un terminal/console sont indiqués comme :</p>
@@ -1271,9 +1271,9 @@ Fichier &gt; Imprimer &gt; Enregistrer en PDF.</p>
 <h2 id="support">Support</h2>
 <p>Pour les problèmes/bugs/suggestions ou améliorations/contributions à cette formation, veuillez utiliser le <a href="https://github.com/wmo-im/wis2box-training/issues">suivi des problèmes GitHub</a>.</p>
 <p>Tous les bugs, améliorations et problèmes de wis2box peuvent être signalés sur <a href="https://github.com/wmo-im/wis2box/issues">GitHub</a>.</p>
-<p>Pour un support supplémentaire ou des questions, veuillez contacter wis2-support@wmo.int.</p>
+<p>Pour un soutien supplémentaire ou des questions, veuillez contacter wis2-support@wmo.int.</p>
 <p>Comme toujours, la documentation principale de wis2box peut toujours être trouvée à <a href="https://docs.wis2box.wis.wmo.int">https://docs.wis2box.wis.wmo.int</a>.</p>
-<p>Les contributions sont toujours encouragées et bienvenues !</p>
+<p>Les contributions sont toujours encouragées et bienvenues!</p>
 
 
 
@@ -1341,6 +1341,8 @@ Fichier &gt; Imprimer &gt; Enregistrer en PDF.</p>
         <script src="../js/print-site.js"></script>
       
         <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/js/disclaimer.js"></script>
       
     
   </body>

@@ -1224,28 +1224,28 @@
         </section>
         <section class="print-page" id="de" heading-number="1"><p><img alt="WMO-Logo" src="../de/assets/img/wmo-logo.png" width="200"></p>
 <h1 id="de-wis2-in-a-box-schulung">WIS2 in a box Schulung</h1>
-<p>WIS2 in a box (<a href="https://docs.wis2box.wis.wmo.int">wis2box</a>) ist eine freie und quelloffene (FOSS) Referenzimplementierung eines WMO WIS2-Knotens. Das Projekt bietet ein Plug-and-Play-Toolset zum Erfassen, Verarbeiten und Veröffentlichen von Wetter-/Klima-/Wasserdaten unter Verwendung von standardbasierten Ansätzen, die mit den WIS2-Prinzipien übereinstimmen. wis2box bietet auch Zugang zu allen Daten im WIS2-Netzwerk. wis2box ist so konzipiert, dass es für Datenanbieter leicht zugänglich ist und eine unterstützende Infrastruktur sowie Dienste für die Datenentdeckung, den Zugriff und die Visualisierung bereitstellt.</p>
+<p>WIS2 in a box (<a href="https://docs.wis2box.wis.wmo.int">wis2box</a>) ist eine freie und offene Referenzimplementierung eines WMO WIS2-Knotens. Das Projekt bietet ein Plug-and-Play-Toolset zum Erfassen, Verarbeiten und Veröffentlichen von Wetter-/Klima-/Wasserdaten unter Verwendung von standardbasierten Ansätzen in Übereinstimmung mit den WIS2-Prinzipien. wis2box ermöglicht außerdem den Zugriff auf alle Daten im WIS2-Netzwerk. wis2box ist so konzipiert, dass es für Datenanbieter leicht zugänglich ist und Infrastruktur sowie Dienste für die Datenentdeckung, den Zugriff und die Visualisierung bereitstellt.</p>
 <p>Diese Schulung bietet schrittweise Erklärungen zu verschiedenen Aspekten des wis2box-Projekts sowie eine Reihe von Übungen, um Ihnen zu helfen, Daten von WIS2 zu veröffentlichen und herunterzuladen. Die Schulung wird in Form von Übersichtspräsentationen sowie praktischen Übungen angeboten.</p>
 <p>Teilnehmer werden in der Lage sein, mit Beispieltestdaten und Metadaten zu arbeiten sowie ihre eigenen Daten und Metadaten zu integrieren.</p>
-<p>Diese Schulung umfasst eine breite Palette von Themen (Installation/Einrichtung/Konfiguration, Veröffentlichung/Herunterladen von Daten usw.).</p>
+<p>Diese Schulung deckt eine breite Palette von Themen ab (Installation/Konfiguration/Konfiguration, Veröffentlichung/Herunterladen von Daten usw.).</p>
 <h2 id="de-ziele-und-lernergebnisse">Ziele und Lernergebnisse</h2>
 <p>Die Ziele dieser Schulung sind, sich mit den folgenden Punkten vertraut zu machen:</p>
 <ul>
 <li>Kernkonzepte und Komponenten der WIS2-Architektur</li>
 <li>Daten- und Metadatenformate, die in WIS2 für Entdeckung und Zugriff verwendet werden</li>
-<li>Architektur und Umgebung von wis2box</li>
+<li>wis2box Architektur und Umgebung</li>
 <li>Kernfunktionen von wis2box:<ul>
 <li>Verwaltung von Metadaten</li>
-<li>Datenerfassung und Umwandlung ins BUFR-Format</li>
+<li>Datenerfassung und -umwandlung in das BUFR-Format</li>
 <li>MQTT-Broker für die Veröffentlichung von WIS2-Nachrichten</li>
-<li>HTTP-Endpunkt für den Datendownload</li>
+<li>HTTP-Endpunkt für den Daten-Download</li>
 <li>API-Endpunkt für den programmatischen Zugriff auf Daten</li>
 </ul>
 </li>
 </ul>
 <h2 id="de-navigation">Navigation</h2>
-<p>Die Navigation auf der linken Seite bietet ein Inhaltsverzeichnis für die gesamte Schulung.</p>
-<p>Die Navigation auf der rechten Seite bietet ein Inhaltsverzeichnis für eine spezifische Seite.</p>
+<p>Die linke Navigation bietet ein Inhaltsverzeichnis für die gesamte Schulung.</p>
+<p>Die rechte Navigation bietet ein Inhaltsverzeichnis für eine spezifische Seite.</p>
 <h2 id="de-voraussetzungen">Voraussetzungen</h2>
 <h3 id="de-wissen">Wissen</h3>
 <ul>
@@ -1253,9 +1253,9 @@
 <li>Grundkenntnisse über Netzwerke und Internetprotokolle</li>
 </ul>
 <h3 id="de-software">Software</h3>
-<p>Diese Schulung erfordert die folgenden Werkzeuge:</p>
+<p>Für diese Schulung werden folgende Tools benötigt:</p>
 <ul>
-<li>Eine Instanz mit Ubuntu-Betriebssystem (wird von WMO-Trainern während lokaler Schulungssitzungen bereitgestellt) siehe <a href="#de-practical-sessions-accessing-your-student-vm-introduction">Zugriff auf Ihr Studenten-VM</a></li>
+<li>Eine Instanz mit Ubuntu-Betriebssystem (wird von WMO-Trainer während lokaler Schulungssitzungen bereitgestellt) siehe <a href="#de-practical-sessions-accessing-your-student-vm-introduction">Zugriff auf Ihr Studenten-VM</a></li>
 <li>SSH-Client für den Zugriff auf Ihre Instanz</li>
 <li>MQTT Explorer auf Ihrem lokalen Rechner</li>
 <li>SCP- und FTP-Client zum Kopieren von Dateien von Ihrem lokalen Rechner</li>
@@ -1263,16 +1263,16 @@
 <h2 id="de-konventionen">Konventionen</h2>
 <div class="admonition frage">
 <p class="admonition-title">Frage</p>
-<p>Ein Abschnitt, der so markiert ist, fordert Sie auf, eine Frage zu beantworten.</p>
+<p>Ein Abschnitt wie dieser fordert Sie auf, eine Frage zu beantworten.</p>
 </div>
-<p>Außerdem werden Sie Hinweise und Tipps innerhalb des Textes bemerken:</p>
+<p>Außerdem werden Sie Tipps und Hinweise innerhalb des Textes bemerken:</p>
 <div class="admonition tipp">
 <p class="admonition-title">Tipp</p>
 <p>Tipps geben Hilfe, wie man Aufgaben am besten bewältigt.</p>
 </div>
 <div class="admonition hinweis">
 <p class="admonition-title">Hinweis</p>
-<p>Hinweise bieten zusätzliche Informationen zum Thema der praktischen Sitzung sowie darüber, wie Aufgaben am besten bewältigt werden können.</p>
+<p>Hinweise bieten zusätzliche Informationen zum Thema der praktischen Sitzung sowie dazu, wie Aufgaben am besten bewältigt werden.</p>
 </div>
 <p>Beispiele werden wie folgt angezeigt:</p>
 <p>Konfiguration
@@ -1281,23 +1281,23 @@
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">my-collection-defined-in-yaml</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">collection</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mein Titel, definiert als ein YAML-Attribut namens title</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mein Titel definiert als ein YAML-Attribut namens title</span>
 <span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meine Beschreibung als ein YAML-Attribut namens description</span>
 </code></pre></div></td></tr></table></div></p>
-<p>Code-Schnipsel, die in einem Terminal/Konsole eingegeben werden müssen, sind wie folgt gekennzeichnet:</p>
+<p>Code-Schnipsel, die in einem Terminal/Konsole eingegeben werden müssen, werden angezeigt als:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;Hallo Welt&#39;</span>
 </code></pre></div>
-<p>Container-Namen (laufende Bilder) sind in <strong>fett</strong> gekennzeichnet.</p>
+<p>Container-Namen (laufende Images) werden in <strong>fett</strong> dargestellt.</p>
 <h2 id="de-schulungsort-und-materialien">Schulungsort und -materialien</h2>
 <p>Die Schulungsinhalte, das Wiki und der Issue Tracker werden auf GitHub unter <a href="https://github.com/wmo-im/wis2box-training">https://github.com/wmo-im/wis2box-training</a> verwaltet.</p>
 <h2 id="de-drucken-des-materials">Drucken des Materials</h2>
 <p>Diese Schulung kann als PDF exportiert werden. Um dieses Schulungsmaterial zu speichern oder zu drucken, gehen Sie zur <a href="#de-print_page">Druckseite</a> und wählen
 Datei &gt; Drucken &gt; Als PDF speichern.</p>
 <h2 id="de-ubungsmaterialien">Übungsmaterialien</h2>
-<p>Übungsmaterialien können aus der <a href="/exercise-materials.zip">exercise-materials.zip</a> Zip-Datei heruntergeladen werden.</p>
+<p>Übungsmaterialien können von der <a href="/exercise-materials.zip">exercise-materials.zip</a> Zip-Datei heruntergeladen werden.</p>
 <h2 id="de-unterstutzung">Unterstützung</h2>
-<p>Bei Problemen/Bugs/Vorschlägen oder Verbesserungen/Beiträgen zu dieser Schulung verwenden Sie bitte den <a href="https://github.com/wmo-im/wis2box-training/issues">GitHub-Issue-Tracker</a>.</p>
-<p>Alle Bugs, Verbesserungen und Probleme von wis2box können auf <a href="https://github.com/wmo-im/wis2box/issues">GitHub</a> gemeldet werden.</p>
+<p>Für Probleme/Bugs/Vorschläge oder Verbesserungen/Beiträge zu dieser Schulung nutzen Sie bitte den <a href="https://github.com/wmo-im/wis2box-training/issues">GitHub-Issue-Tracker</a>.</p>
+<p>Alle wis2box-Bugs, Verbesserungen und Probleme können auf <a href="https://github.com/wmo-im/wis2box/issues">GitHub</a> gemeldet werden.</p>
 <p>Für zusätzliche Unterstützung oder Fragen kontaktieren Sie bitte wis2-support@wmo.int.</p>
 <p>Wie immer kann die Kern-Dokumentation von wis2box immer unter <a href="https://docs.wis2box.wis.wmo.int">https://docs.wis2box.wis.wmo.int</a> gefunden werden.</p>
 <p>Beiträge sind immer ermutigt und willkommen!</p></section>
@@ -4697,6 +4697,8 @@ cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">
         <script src="../js/print-site.js"></script>
       
         <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/js/disclaimer.js"></script>
       
     
   </body>

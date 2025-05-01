@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wis2-in-a-box" class="md-skip">
+        <a href="#wis2" class="md-skip">
           跳转至
         </a>
       
@@ -349,7 +349,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      目标和学习成果
+      培训目标和学习成果
     </span>
   </a>
   
@@ -1094,7 +1094,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      目标和学习成果
+      培训目标和学习成果
     </span>
   </a>
   
@@ -1204,23 +1204,23 @@
 
 
 <p><img alt="WMO logo" src="assets/img/wmo-logo.png" width="200"></p>
-<h1 id="wis2-in-a-box">WIS2 in a box 培训</h1>
-<p>WIS2 in a box (<a href="https://docs.wis2box.wis.wmo.int">wis2box</a>) 是世界气象组织(WMO) WIS2节点的一个自由和开源(FOSS)参考实现。该项目提供了一个即插即用的工具集，用于使用基于标准的方法摄取、处理和发布天气/气候/水数据，符合WIS2原则。wis2box还提供对WIS2网络中所有数据的访问。wis2box旨在为数据提供者降低进入门槛，提供数据发现、访问和可视化的基础设施和服务。</p>
-<p>本培训提供了关于wis2box项目各个方面的逐步解释以及多个练习，帮助您发布和下载WIS2的数据。培训以概述演示和实践练习的形式提供。</p>
-<p>参与者将能够使用示例测试数据和元数据，以及整合他们自己的数据和元数据。</p>
+<h1 id="wis2">WIS2一体化培训</h1>
+<p>WIS2一体化（<a href="https://docs.wis2box.wis.wmo.int">wis2box</a>）是世界气象组织（WMO）WIS2节点的免费开源（FOSS）参考实现。该项目提供了一个即插即用的工具集，用于使用基于标准的方法处理、发布气象/气候/水文数据，符合WIS2原则。wis2box还提供访问WIS2网络中所有数据的功能。wis2box旨在为数据提供者降低入门门槛，提供数据发现、访问和可视化的基础设施和服务。</p>
+<p>本培训提供了关于wis2box项目各个方面的逐步解释，以及多个练习，帮助您发布和下载WIS2的数据。培训以概述演示和实践练习的形式提供。</p>
+<p>参与者将能够使用样本测试数据和元数据，以及整合他们自己的数据和元数据。</p>
 <p>本培训涵盖了广泛的主题（安装/设置/配置、发布/下载数据等）。</p>
-<h2 id="_1">目标和学习成果</h2>
+<h2 id="_1">培训目标和学习成果</h2>
 <p>本培训的目标是熟悉以下内容：</p>
 <ul>
 <li>WIS2架构的核心概念和组件</li>
 <li>WIS2中用于发现和访问的数据和元数据格式</li>
 <li>wis2box架构和环境</li>
-<li>wis2box的核心功能：<ul>
+<li>wis2box核心功能：<ul>
 <li>元数据管理</li>
 <li>数据摄取和转换为BUFR格式</li>
-<li>MQTT代理用于WIS2消息发布</li>
-<li>HTTP端点用于数据下载</li>
-<li>API端点用于程序化访问数据</li>
+<li>用于WIS2消息发布的MQTT代理</li>
+<li>数据下载的HTTP端点</li>
+<li>用于程序化访问数据的API端点</li>
 </ul>
 </li>
 </ul>
@@ -1231,12 +1231,12 @@
 <h3 id="_4">知识</h3>
 <ul>
 <li>基本的Linux命令（见<a href="cheatsheets/linux/">备忘单</a>）</li>
-<li>网络和互联网协议的基本知识</li>
+<li>网络和互联网协议的基础知识</li>
 </ul>
 <h3 id="_5">软件</h3>
 <p>本培训需要以下工具：</p>
 <ul>
-<li>运行Ubuntu OS的实例（在本地培训会议期间由WMO培训师提供），见<a href="practical-sessions/accessing-your-student-vm/#introduction">访问您的学生VM</a></li>
+<li>运行Ubuntu OS的实例（在本地培训会议中由WMO培训师提供），见<a href="practical-sessions/accessing-your-student-vm/#introduction">访问您的学生VM</a></li>
 <li>SSH客户端访问您的实例</li>
 <li>在您的本地机器上的MQTT Explorer</li>
 <li>SCP和FTP客户端从您的本地机器复制文件</li>
@@ -1244,7 +1244,7 @@
 <h2 id="_6">约定</h2>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>这样标记的部分邀请您回答一个问题。</p>
+<p>标记为这样的部分邀请您回答一个问题。</p>
 </div>
 <p>您还会注意到文本中有提示和注释部分：</p>
 <div class="admonition tip">
@@ -1253,7 +1253,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>注释提供了关于实践课程所涵盖主题的额外信息，以及如何最好地完成任务。</p>
+<p>注释提供了实践课程所涵盖主题的额外信息，以及如何最好地完成任务。</p>
 </div>
 <p>示例如下所示：</p>
 <p>配置
@@ -1265,22 +1265,22 @@
 <span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my title defined as a yaml attribute named title</span>
 <span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my description as a yaml attribute named description</span>
 </code></pre></div></td></tr></table></div></p>
-<p>需要在终端/控制台上输入的代码片段表示为：</p>
+<p>需要在终端/控制台上键入的代码片段如下所示：</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;Hello world&#39;</span>
 </code></pre></div>
-<p>运行中的容器名称（运行的镜像）用<strong>粗体</strong>表示。</p>
+<p>运行的容器名称用<strong>粗体</strong>表示。</p>
 <h2 id="_7">培训地点和材料</h2>
-<p>培训内容、wiki和问题跟踪器在GitHub上管理，网址为<a href="https://github.com/wmo-im/wis2box-training">https://github.com/wmo-im/wis2box-training</a>。</p>
+<p>培训内容、wiki和问题跟踪器在GitHub上进行管理，网址为<a href="https://github.com/wmo-im/wis2box-training">https://github.com/wmo-im/wis2box-training</a>。</p>
 <h2 id="_8">打印材料</h2>
-<p>这个培训可以导出为PDF。要保存或打印这个培训材料，请转到<a href="print_page">打印页面</a>，然后选择
+<p>此培训可以导出为PDF。要保存或打印此培训材料，请转到<a href="print_page">打印页面</a>，然后选择
 文件 &gt; 打印 &gt; 保存为PDF。</p>
 <h2 id="_9">练习材料</h2>
 <p>练习材料可以从<a href="/exercise-materials.zip">exercise-materials.zip</a>压缩文件下载。</p>
 <h2 id="_10">支持</h2>
-<p>对于问题/错误/建议或对本培训的改进/贡献，请使用<a href="https://github.com/wmo-im/wis2box-training/issues">GitHub问题跟踪器</a>。</p>
+<p>如有问题/错误/建议或对本培训的改进/贡献，请使用<a href="https://github.com/wmo-im/wis2box-training/issues">GitHub问题跟踪器</a>。</p>
 <p>所有wis2box的错误、增强和问题可以在<a href="https://github.com/wmo-im/wis2box/issues">GitHub</a>上报告。</p>
-<p>如需额外支持或有问题，请联系 wis2-support@wmo.int。</p>
-<p>如常，wis2box的核心文档始终可以在<a href="https://docs.wis2box.wis.wmo.int">https://docs.wis2box.wis.wmo.int</a>找到。</p>
+<p>如需额外支持或有问题，请联系wis2-support@wmo.int。</p>
+<p>如常，wis2box的核心文档始终可在<a href="https://docs.wis2box.wis.wmo.int">https://docs.wis2box.wis.wmo.int</a>找到。</p>
 <p>欢迎并鼓励贡献！</p>
 
 
@@ -1353,6 +1353,8 @@
         <script src="../js/print-site.js"></script>
       
         <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/js/disclaimer.js"></script>
       
     
   </body>
