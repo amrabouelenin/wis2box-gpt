@@ -20,8 +20,8 @@ OPENAI_API_KEY= os.getenv("OPENAI_API_KEY")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 openai.api_key = OPENAI_API_KEY
-TARGET_LANGS = ['it']  # Update as needed
-# TARGET_LANGS = ['ru', 'es', 'it', 'fr', 'ar', 'zh', 'pt', 'de']  # Update as needed
+# TARGET_LANGS = ['it']  # Update as needed
+TARGET_LANGS = ['ru', 'es', 'it', 'fr', 'ar', 'zh', 'pt', 'de']  # Update as needed
 
 EN_DIR = Path('documentation/docs/en')
 BASE_DIR = Path('documentation/docs')
