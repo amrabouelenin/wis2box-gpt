@@ -105,6 +105,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#wis2box-api" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -701,6 +706,20 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    使用 wis2box API 查询数据
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -712,6 +731,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      引言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      准备
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      检查集合
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      检查气象站
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      检查观测数据
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      结论
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -952,6 +1044,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      引言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      准备
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      检查集合
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      检查气象站
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      检查观测数据
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      结论
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -967,153 +1123,156 @@
 
 
 
-  <h1>使用 wis2box API 查询数据</h1>
-
-<div class="highlight"><pre><span></span><code>---
-<span class="gu">title: 使用 wis2box API 查询数据</span>
-<span class="gu">---</span>
-
-<span class="gh"># 使用 wis2box API 查询数据</span>
-
-!!! abstract &quot;学习成果&quot;
-    在本实践课程结束时，您将能够：
-
-<span class="w">    </span><span class="k">-</span><span class="w"> </span>使用 wis2box API 查询和筛选您的站点
-<span class="w">    </span><span class="k">-</span><span class="w"> </span>使用 wis2box API 查询和筛选您的数据
-
-<span class="gu">## 引言</span>
-
-wis2box API 提供了一种机器可读的方式，用于发现和查询已经输入到 wis2box 中的数据。该 API 基于 OGC API - Features 标准，并使用 [<span class="nt">pygeoapi</span>](<span class="na">https://pygeoapi.io</span>) 实现。
-
-wis2box API 提供以下集合的访问：
-
-<span class="k">-</span><span class="w"> </span>站点
-<span class="k">-</span><span class="w"> </span>发现元数据
-<span class="k">-</span><span class="w"> </span>数据通知
-<span class="k">-</span><span class="w"> </span>每个配置的数据集一个集合，存储来自 bufr2geojson 的输出（需要在数据映射配置中启用插件 <span class="sb">`bufr2geojson`</span> 来填充数据集合中的项目）。
-
-在这个实践课程中，您将学习如何使用数据 API 浏览和查询已经输入到 wis2box 中的数据。
-
-<span class="gu">## 准备</span>
-
-!!! note
-    在您的网络浏览器中导航到 wis2box API 登陆页面：
-
-    <span class="sb">`http://&lt;your-host&gt;/oapi`</span>
-
-&lt;img alt=&quot;wis2box-api-landing-page&quot; src=&quot;../../assets/img/wis2box-api-landing-page.png&quot; width=&quot;600&quot;&gt;
-
-<span class="gu">## 检查集合</span>
-
-从登陆页面，点击 &#39;Collections&#39; 链接。
-
-!!! question
-    在结果页面上您看到多少个数据集合？您认为每个集合代表什么？
-
-??? success &quot;点击以显示答案&quot;
-    应该显示 4 个集合，包括“站点”，“发现元数据”和“数据通知”
-
-<span class="gu">## 检查站点</span>
-
-从登陆页面，点击 &#39;Collections&#39; 链接，然后点击 &#39;Stations&#39; 链接。
-
-&lt;img alt=&quot;wis2box-api-collections-stations&quot; src=&quot;../../assets/img/wis2box-api-collections-stations.png&quot; width=&quot;600&quot;&gt;
-
-点击 &#39;Browse&#39; 链接，然后点击 &#39;json&#39; 链接。
-
-!!! question
-    返回了多少个站点？将这个数字与 <span class="sb">`http://&lt;your-host&gt;/wis2box-webapp/station`</span> 中的站点列表进行比较。
-
-??? success &quot;点击以显示答案&quot;
-    API 中的站点数量应该与您在 wis2box webapp 中看到的站点数量相等。
-
-!!! question
-    我们如何查询单个站点（例如 <span class="sb">`Balaka`</span>）？
-
-??? success &quot;点击以显示答案&quot;
-    使用 <span class="sb">`http://&lt;your-host&gt;/oapi/collections/stations/items?q=Balaka`</span> 查询 API。
-
-!!! note
-    上述示例基于马拉维测试数据。尝试针对您在之前练习中输入的站点进行测试。
-
-<span class="gu">## 检查观测数据</span>
-
-!!! note
-    上述示例基于马拉维测试数据。尝试针对您在练习中输入的观测数据进行测试。
-
-从登陆页面，点击 &#39;Collections&#39; 链接，然后点击 &#39;来自马拉维的地面天气观测&#39; 链接。
-
-&lt;img alt=&quot;wis2box-api-collections-malawi-obs&quot; src=&quot;../../assets/img/wis2box-api-collections-malawi-obs.png&quot; width=&quot;600&quot;&gt;
-
-点击 &#39;Queryables&#39; 链接。
-
-&lt;img alt=&quot;wis2box-api-collections-malawi-obs-queryables&quot; src=&quot;../../assets/img/wis2box-api-collections-malawi-obs-queryables.png&quot; width=&quot;600&quot;&gt;
-
-!!! question
-    哪个可查询项用于按站点标识符过滤？
-
-??? success &quot;点击以显示答案&quot;
-    正确的可查询项是 <span class="sb">`wigos_station_identifer`</span>。
-
-导航回前一页（即 <span class="sb">`http://&lt;your-host&gt;/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations`</span>）
-
-点击 &#39;Browse&#39; 链接。
-
-!!! question
-    我们如何可视化 JSON 响应？
-
-??? success &quot;点击以显示答案&quot;
-    通过点击页面右上角的 &#39;JSON&#39; 链接，或在网络浏览器中向 API 请求添加 <span class="sb">`f=json`</span>。
-
-检查观测数据的 JSON 响应。
-
-!!! question
-    返回了多少条记录？
-
-!!! question
-    我们如何将响应限制为 3 条观测数据？
-
-??? success &quot;点击以显示答案&quot;
-    在 API 请求中添加 <span class="sb">`limit=3`</span>。
-
-!!! question
-    我们如何按最新的观测数据对响应进行排序？
-
-??? success &quot;点击以显示答案&quot;
-    在 API 请求中添加 <span class="sb">`sortby=-resultTime`</span>（注意 <span class="sb">`-`</span> 符号表示降序排序）。对于按最早的观测数据排序，更新请求以包含 <span class="sb">`sortby=resultTime`</span>。
-
-!!! question
-    我们如何按单个站点过滤观测数据？
-
-??? success &quot;点击以显示答案&quot;
-    在 API 请求中添加 <span class="sb">`wigos_station_identifier=&lt;WSI&gt;`</span>。
-
-!!! question
-    我们如何以 CSV 格式接收观测数据？
-
-??? success &quot;点击以显示答案&quot;
-    在 API 请求中添加 <span class="sb">`f=csv`</span>。
-
-!!! question
-    我们如何显示单个观测数据（id）？
-
-??? success &quot;点击以显示答案&quot;
-    使用针对观测数据的 API 请求中的特征标识符，查询 API <span class="sb">`http://&lt;your-host&gt;/oapi/collections/{collectionId}/items/{featureId}`</span>，其中 <span class="sb">`{collectionId}`</span> 是您的观测数据集合的名称，`{itemId}` 是感兴趣的单个观测的标识符。
-
-<span class="gu">## 结论</span>
-
-!!! success &quot;恭喜！&quot;
-    在这个实践课程中，您学会了：
-
-<span class="w">    </span><span class="k">-</span><span class="w"> </span>使用 wis2box API 查询和筛选您的站点
-<span class="w">    </span><span class="k">-</span><span class="w"> </span>使用 wis2box API 查询和筛选您的数据
-</code></pre></div>
-
-
+<h1 id="wis2box-api">使用 wis2box API 查询数据</h1>
+<div class="admonition abstract">
+<p class="admonition-title">学习成果</p>
+<p>通过本实践课程，您将能够：</p>
+<ul>
+<li>使用 wis2box API 查询和筛选您的气象站</li>
+<li>使用 wis2box API 查询和筛选您的数据</li>
+</ul>
+</div>
+<h2 id="_1">引言</h2>
+<p>wis2box API 提供了一种机器可读的方式，用于发现和查询已经输入到 wis2box 中的数据。该 API 基于 OGC API - Features 标准，并使用 <a href="https://pygeoapi.io">pygeoapi</a> 实现。</p>
+<p>wis2box API 提供以下集合的访问权限：</p>
+<ul>
+<li>气象站</li>
+<li>发现元数据</li>
+<li>数据通知</li>
+<li>每个配置的数据集一个集合，存储来自 bufr2geojson 的输出（需要在数据映射配置中启用插件 <code>bufr2geojson</code> 来填充数据集合中的项目）。</li>
+</ul>
+<p>在本实践课程中，您将学习如何使用数据 API 浏览和查询已经输入到 wis2box 中的数据。</p>
+<h2 id="_2">准备</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>在您的网络浏览器中导航到 wis2box API 登陆页面：</p>
+<p><code>http://&lt;your-host&gt;/oapi</code></p>
+</div>
+<p><img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
+<h2 id="_3">检查集合</h2>
+<p>从登陆页面，点击 'Collections' 链接。</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>在结果页面上您看到多少个数据集合？您认为每个集合代表什么？</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>应该显示 4 个集合，包括 "Stations", "Discovery metadata", 和 "Data notifications"</p>
+</details>
+<h2 id="_4">检查气象站</h2>
+<p>从登陆页面，点击 'Collections' 链接，然后点击 'Stations' 链接。</p>
+<p><img alt="wis2box-api-collections-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
+<p>点击 'Browse' 链接，然后点击 'json' 链接。</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>返回了多少个气象站？将这个数字与 <code>http://&lt;your-host&gt;/wis2box-webapp/station</code> 中的气象站列表进行比较。</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>API 中的气象站数量应该与您在 wis2box webapp 中看到的气象站数量相等。</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>我们如何查询单个气象站（例如 <code>Balaka</code>）？</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>使用 <code>http://&lt;your-host&gt;/oapi/collections/stations/items?q=Balaka</code> 查询 API。</p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>上述示例基于马拉维测试数据。尝试针对您在之前练习中输入的气象站进行测试。</p>
+</div>
+<h2 id="_5">检查观测数据</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>上述示例基于马拉维测试数据。尝试针对您在练习中输入的观测数据进行测试。</p>
+</div>
+<p>从登陆页面，点击 'Collections' 链接，然后点击 'Malawi 的地面天气观测' 链接。</p>
+<p><img alt="wis2box-api-collections-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
+<p>点击 'Queryables' 链接。</p>
+<p><img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>哪个可查询项会被用来按气象站标识符过滤？</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>正确的可查询项是 <code>wigos_station_identifer</code>。</p>
+</details>
+<p>导航回前一页（即 <code>http://&lt;your-host&gt;/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>）</p>
+<p>点击 'Browse' 链接。</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>我们如何可视化 JSON 响应？</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>通过点击页面右上角的 'JSON' 链接，或在网络浏览器中向 API 请求添加 <code>f=json</code>。</p>
+</details>
+<p>检查观测数据的 JSON 响应。</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>返回了多少条记录？</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>我们如何将响应限制为 3 条观测数据？</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>在 API 请求中添加 <code>limit=3</code>。</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>我们如何按最新的观测数据对响应进行排序？</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>在 API 请求中添加 <code>sortby=-resultTime</code>（注意 <code>-</code> 符号表示降序排序）。对于按最早的观测数据排序，更新请求以包含 <code>sortby=resultTime</code>。</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>我们如何按单个气象站过滤观测数据？</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>在 API 请求中添加 <code>wigos_station_identifier=&lt;WSI&gt;</code>。</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>我们如何以 CSV 格式接收观测数据？</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>在 API 请求中添加 <code>f=csv</code>。</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>我们如何显示单个观测数据（id）？</p>
+</div>
+<details class="success">
+<summary>点击以显示答案</summary>
+<p>使用针对观测数据的 API 请求中的特征标识符，查询 API <code>http://&lt;your-host&gt;/oapi/collections/{collectionId}/items/{featureId}</code>，其中 <code>{collectionId}</code> 是您的观测数据集合的名称，<code>{itemId}</code> 是感兴趣的单个观测数据的标识符。</p>
+</details>
+<h2 id="_6">结论</h2>
+<div class="admonition success">
+<p class="admonition-title">恭喜！</p>
+<p>在本实践课程中，您学习了如何：</p>
+<ul>
+<li>使用 wis2box API 查询和筛选您的气象站</li>
+<li>使用 wis2box API 查询和筛选您的数据</li>
+</ul>
+</div>
 
 
 
 
+
+
+
+  
+  
 
 
 
