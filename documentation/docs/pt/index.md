@@ -1,23 +1,23 @@
 ---
-title: Início
+title: Página Inicial
 ---
 
 <img alt="Logotipo da WMO" src="assets/img/wmo-logo.png" width="200">
 # Treinamento WIS2 em uma caixa
 
-WIS2 em uma caixa ([wis2box](https://docs.wis2box.wis.wmo.int)) é uma Implementação de Referência Livre e de Código Aberto (FOSS) de um Nó WMO WIS2. O projeto fornece um conjunto de ferramentas plug and play para ingestão, processamento e publicação de dados de clima/meteorologia/água usando abordagens baseadas em padrões, alinhadas com os princípios do WIS2. O wis2box também oferece acesso a todos os dados na rede WIS2. O wis2box é projetado para ter uma barreira baixa de entrada para provedores de dados, fornecendo infraestrutura e serviços que possibilitam a descoberta, acesso e visualização de dados.
+WIS2 em uma caixa ([wis2box](https://docs.wis2box.wis.wmo.int)) é uma Implementação de Referência Livre e de Código Aberto (FOSS) de um Nó WMO WIS2. O projeto oferece um conjunto de ferramentas plug and play para ingestão, processamento e publicação de dados meteorológicos/climáticos/hídricos utilizando abordagens baseadas em padrões, alinhadas com os princípios do WIS2. O wis2box também proporciona acesso a todos os dados na rede WIS2. O wis2box é projetado para ter uma barreira baixa de entrada para provedores de dados, fornecendo infraestrutura e serviços que facilitam a descoberta, acesso e visualização de dados.
 
 Este treinamento fornece explicações passo a passo sobre vários aspectos do projeto wis2box, bem como uma série de exercícios
-para ajudá-lo a publicar e baixar dados do WIS2. O treinamento é fornecido na forma de apresentações gerais e também
+para ajudá-lo a publicar e baixar dados do WIS2. O treinamento é oferecido na forma de apresentações gerais e também
 exercícios práticos.
 
-Os participantes poderão trabalhar com dados de teste e metadados de exemplo, bem como integrar seus próprios dados e metadados.
+Os participantes poderão trabalhar com dados e metadados de teste, bem como integrar seus próprios dados e metadados.
 
-Este treinamento abrange uma ampla gama de tópicos (instalação/configuração/publicação/baixa de dados, etc.).
+Este treinamento abrange uma ampla gama de tópicos (instalação/configuração/configuração, publicação/baixa de dados, etc.).
 
 ## Objetivos e resultados de aprendizagem
 
-Os objetivos deste treinamento são se familiarizar com o seguinte:
+Os objetivos deste treinamento são familiarizar-se com o seguinte:
 
 - Conceitos e componentes centrais da arquitetura WIS2
 - Formatos de dados e metadados usados no WIS2 para descoberta e acesso
@@ -26,8 +26,8 @@ Os objetivos deste treinamento são se familiarizar com o seguinte:
     - Gestão de metadados
     - Ingestão de dados e transformação para o formato BUFR
     - Broker MQTT para publicação de mensagens WIS2
-    - Ponto de acesso HTTP para baixa de dados
-    - Ponto de acesso API para acesso programático aos dados
+    - Ponto final HTTP para download de dados
+    - Ponto final da API para acesso programático aos dados
 
 ## Navegação
 
@@ -53,17 +53,17 @@ Este treinamento requer as seguintes ferramentas:
 
 ## Convenções
 
-!!! question
+!!! pergunta
 
     Uma seção marcada assim convida você a responder uma pergunta.
 
 Você também notará seções de dicas e notas dentro do texto:
 
-!!! tip
+!!! dica
 
     Dicas compartilham ajuda sobre como realizar tarefas da melhor forma.
 
-!!! note
+!!! nota
 
     Notas fornecem informações adicionais sobre o tópico coberto pela sessão prática, bem como sobre como realizar tarefas da melhor forma.
 
@@ -94,17 +94,17 @@ Os conteúdos do treinamento, wiki e rastreador de problemas são gerenciados no
 Este treinamento pode ser exportado para PDF. Para salvar ou imprimir este material de treinamento, vá para a [página de impressão](print_page), e selecione
 Arquivo > Imprimir > Salvar como PDF.
 
-## Materiais de exercício
+## Materiais do exercício
 
-Os materiais de exercício podem ser baixados do arquivo zip [exercise-materials.zip](/exercise-materials.zip).
+Os materiais do exercício podem ser baixados do arquivo [exercise-materials.zip](/exercise-materials.zip).
 
 ## Suporte
 
-Para problemas/bugs/sugestões ou melhorias/contribuições para este treinamento, por favor use o [rastreador de problemas do GitHub](https://github.com/wmo-im/wis2box-training/issues).
+Para problemas/bugs/sugestões ou melhorias/contribuições para este treinamento, por favor, use o [rastreador de problemas do GitHub](https://github.com/wmo-im/wis2box-training/issues).
 
 Todos os bugs, melhorias e problemas do wis2box podem ser relatados no [GitHub](https://github.com/wmo-im/wis2box/issues).
 
-Para suporte adicional ou perguntas, por favor contate wis2-support@wmo.int.
+Para suporte adicional ou perguntas, por favor, contate wis2-support@wmo.int.
 
 Como sempre, a documentação principal do wis2box pode ser encontrada em [https://docs.wis2box.wis.wmo.int](https://docs.wis2box.wis.wmo.int).
 

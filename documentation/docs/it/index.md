@@ -1,109 +1,109 @@
 ---
-title: Home
+title: Formación de WIS2 en una caja
 ---
 
-<img alt="Logo WMO" src="assets/img/wmo-logo.png" width="200">
-# Formazione WIS2 in a box
+<img alt="Logotipo de WMO" src="assets/img/wmo-logo.png" width="200">
+# Formación de WIS2 en una caja
 
-WIS2 in a box ([wis2box](https://docs.wis2box.wis.wmo.int)) è un'implementazione di riferimento libera e open source (FOSS) di un nodo WMO WIS2. Il progetto fornisce un set di strumenti plug and play per l'ingestione, l'elaborazione e la pubblicazione di dati meteorologici/climatici/idrici utilizzando approcci basati su standard in linea con i principi WIS2. wis2box offre anche accesso a tutti i dati nella rete WIS2. wis2box è progettato per avere una bassa barriera all'ingresso per i fornitori di dati, fornendo infrastrutture e servizi abilitanti per la scoperta, l'accesso e la visualizzazione dei dati.
+WIS2 en una caja ([wis2box](https://docs.wis2box.wis.wmo.int)) es una Implementación de Referencia de Código Abierto y Gratuito (FOSS) de un Nodo WIS2 de la OMM. El proyecto proporciona un conjunto de herramientas listo para usar para ingerir, procesar y publicar datos de clima, agua y meteorología utilizando enfoques basados en estándares alineados con los principios de WIS2. wis2box también proporciona acceso a todos los datos en la red WIS2. wis2box está diseñado para tener una barrera baja de entrada para los proveedores de datos, proporcionando infraestructura y servicios que habilitan el descubrimiento, acceso y visualización de datos.
 
-Questa formazione fornisce spiegazioni passo passo su vari aspetti del progetto wis2box, nonché una serie di esercizi per aiutarti a pubblicare e scaricare dati da WIS2. La formazione è fornita sotto forma di presentazioni panoramiche e di esercitazioni pratiche.
+Esta formación ofrece explicaciones paso a paso de varios aspectos del proyecto wis2box, así como una serie de ejercicios para ayudarte a publicar y descargar datos de WIS2. La formación se proporciona en forma de presentaciones generales y ejercicios prácticos.
 
-I partecipanti potranno lavorare con dati di test e metadati di esempio, oltre a integrare i propri dati e metadati.
+Los participantes podrán trabajar con datos de prueba y metadatos de muestra, así como integrar sus propios datos y metadatos.
 
-Questa formazione copre un'ampia gamma di argomenti (installazione/configurazione/pubblicazione, scaricamento dati, ecc.).
+Esta formación abarca una amplia gama de temas (instalación/configuración/configuración, publicación/descarga de datos, etc.).
 
-## Obiettivi e risultati di apprendimento
+## Objetivos y resultados de aprendizaje
 
-Gli obiettivi di questa formazione sono di familiarizzare con i seguenti:
+Los objetivos de esta formación son familiarizarse con lo siguiente:
 
-- Concetti e componenti fondamentali dell'architettura WIS2
-- Formati di dati e metadati utilizzati in WIS2 per la scoperta e l'accesso
-- Architettura e ambiente wis2box
-- Funzioni principali di wis2box:
-    - gestione dei metadati
-    - ingestione dati e trasformazione in formato BUFR
-    - broker MQTT per la pubblicazione di messaggi WIS2
-    - endpoint HTTP per il download dei dati
-    - endpoint API per l'accesso programmatico ai dati
+- Conceptos y componentes centrales de la arquitectura WIS2
+- Formatos de datos y metadatos utilizados en WIS2 para el descubrimiento y acceso
+- Arquitectura y entorno de wis2box
+- Funciones principales de wis2box:
+    - Gestión de metadatos
+    - Ingesta de datos y transformación al formato BUFR
+    - Broker MQTT para la publicación de mensajes de WIS2
+    - Punto final HTTP para la descarga de datos
+    - Punto final de API para acceso programático a los datos
 
-## Navigazione
+## Navegación
 
-La navigazione a sinistra fornisce un indice per l'intera formazione.
+La navegación izquierda proporciona una tabla de contenidos para toda la formación.
 
-La navigazione a destra fornisce un indice per una pagina specifica.
+La navegación derecha proporciona una tabla de contenidos para una página específica.
 
-## Prerequisiti
+## Prerrequisitos
 
-### Conoscenze
+### Conocimientos
 
-- Comandi Linux di base (vedi il [cheatsheet](cheatsheets/linux.md))
-- Conoscenze di base di networking e protocolli Internet
+- Comandos básicos de Linux (ver la [hoja de trucos](cheatsheets/linux.md))
+- Conocimientos básicos de redes y protocolos de Internet
 
 ### Software
 
-Questa formazione richiede i seguenti strumenti:
+Esta formación requiere las siguientes herramientas:
 
-- Un'istanza con sistema operativo Ubuntu (fornita dai formatori WMO durante le sessioni di formazione locali) vedi [Accesso al tuo VM studente](practical-sessions/accessing-your-student-vm.md#introduction)
-- Client SSH per accedere alla tua istanza
-- MQTT Explorer sul tuo computer locale
-- Client SCP e FTP per copiare file dal tuo computer locale
+- Una instancia ejecutando el sistema operativo Ubuntu (proporcionado por los formadores de la OMM durante las sesiones de formación locales) ver [Accediendo a tu VM de estudiante](practical-sessions/accessing-your-student-vm.md#introduction)
+- Cliente SSH para acceder a tu instancia
+- MQTT Explorer en tu máquina local
+- Cliente SCP y FTP para copiar archivos desde tu máquina local
 
-## Convenzioni
+## Convenciones
 
-!!! domanda
+!!! pregunta
 
-    Una sezione contrassegnata in questo modo ti invita a rispondere a una domanda.
+    Una sección marcada de esta manera te invita a responder una pregunta.
 
-Noterai anche sezioni di suggerimenti e note all'interno del testo:
+También notarás secciones de consejos y notas dentro del texto:
 
-!!! suggerimento
+!!! consejo
 
-    I suggerimenti condividono aiuti su come eseguire al meglio le attività.
+    Los consejos ofrecen ayuda sobre cómo realizar mejor las tareas.
 
 !!! nota
 
-    Le note forniscono informazioni aggiuntive sull'argomento trattato dalla sessione pratica, oltre a come eseguire al meglio le attività.
+    Las notas proporcionan información adicional sobre el tema cubierto por la sesión práctica, así como cómo realizar mejor las tareas.
 
-Gli esempi sono indicati come segue:
+Los ejemplos se indican de la siguiente manera:
 
-Configurazione
+Configuración
 ``` {.yaml linenums="1"}
 my-collection-defined-in-yaml:
     type: collection
-    title: il mio titolo definito come attributo yaml denominato title
-    description: la mia descrizione come attributo yaml denominato description
+    title: mi título definido como un atributo yaml llamado title
+    description: mi descripción como un atributo yaml llamado description
 ```
 
-I frammenti che devono essere digitati in un terminale/console sono indicati come:
+Los fragmentos que necesitan ser escritos en un terminal/consola se indican como:
 
 ```bash
-echo 'Ciao mondo'
+echo 'Hola mundo'
 ```
 
-I nomi dei container (immagini in esecuzione) sono denotati in **grassetto**.
+Los nombres de contenedores (imágenes en ejecución) se denotan en **negrita**.
 
-## Luogo e materiali della formazione
+## Ubicación y materiales de la formación
 
-I contenuti della formazione, il wiki e il tracker di problemi sono gestiti su GitHub a [https://github.com/wmo-im/wis2box-training](https://github.com/wmo-im/wis2box-training).
+Los contenidos de la formación, el wiki y el rastreador de problemas se gestionan en GitHub en [https://github.com/wmo-im/wis2box-training](https://github.com/wmo-im/wis2box-training).
 
-## Stampa del materiale
+## Impresión del material
 
-Questa formazione può essere esportata in PDF. Per salvare o stampare questo materiale didattico, vai alla [pagina di stampa](print_page), e seleziona
-File > Stampa > Salva come PDF.
+Esta formación puede exportarse a PDF. Para guardar o imprimir este material de formación, ve a la [página de impresión](print_page), y selecciona
+Archivo > Imprimir > Guardar como PDF.
 
-## Materiali per gli esercizi
+## Materiales de los ejercicios
 
-I materiali per gli esercizi possono essere scaricati dal file zip [exercise-materials.zip](/exercise-materials.zip).
+Los materiales de los ejercicios se pueden descargar desde el archivo [exercise-materials.zip](/exercise-materials.zip).
 
-## Supporto
+## Soporte
 
-Per problemi/bug/suggerimenti o miglioramenti/contributi a questa formazione, utilizza il [GitHub issue tracker](https://github.com/wmo-im/wis2box-training/issues).
+Para problemas/bugs/sugerencias o mejoras/contribuciones a esta formación, por favor utiliza el [rastreador de problemas de GitHub](https://github.com/wmo-im/wis2box-training/issues).
 
-Tutti i bug, i miglioramenti e i problemi di wis2box possono essere segnalati su [GitHub](https://github.com/wmo-im/wis2box/issues).
+Todos los bugs, mejoras y problemas de wis2box pueden ser reportados en [GitHub](https://github.com/wmo-im/wis2box/issues).
 
-Per ulteriore supporto o domande, contatta wis2-support@wmo.int.
+Para soporte adicional o preguntas, por favor contacta a wis2-support@wmo.int.
 
-Come sempre, la documentazione principale di wis2box può sempre essere trovata su [https://docs.wis2box.wis.wmo.int](https://docs.wis2box.wis.wmo.int).
+Como siempre, la documentación principal de wis2box siempre se puede encontrar en [https://docs.wis2box.wis.wmo.int](https://docs.wis2box.wis.wmo.int).
 
-I contributi sono sempre incoraggiati e benvenuti!
+¡Las contribuciones siempre son alentadas y bienvenidas!

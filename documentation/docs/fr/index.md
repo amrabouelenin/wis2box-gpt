@@ -3,15 +3,15 @@ title: Accueil
 ---
 
 <img alt="Logo OMM" src="assets/img/wmo-logo.png" width="200">
-# Formation WIS2 en boîte
+# Formation WIS2 dans une boîte
 
-WIS2 en boîte ([wis2box](https://docs.wis2box.wis.wmo.int)) est une mise en œuvre de référence libre et open source (FOSS) d'un nœud WMO WIS2. Le projet fournit un ensemble d'outils prêt à l'emploi pour ingérer, traiter et publier des données météorologiques/climatiques/hydrologiques en utilisant des approches basées sur des normes, en accord avec les principes WIS2. wis2box offre également un accès à toutes les données du réseau WIS2. wis2box est conçu pour avoir un faible obstacle à l'entrée pour les fournisseurs de données, fournissant une infrastructure et des services facilitant la découverte, l'accès et la visualisation des données.
+WIS2 dans une boîte ([wis2box](https://docs.wis2box.wis.wmo.int)) est une Implémentation de Référence Libre et Open Source (FOSS) d'un Nœud WIS2 de l'OMM. Le projet fournit un ensemble d'outils prêts à l'emploi pour ingérer, traiter et publier des données météorologiques/climatiques/hydrologiques en utilisant des approches basées sur des normes, conformément aux principes de WIS2. wis2box offre également un accès à toutes les données du réseau WIS2. wis2box est conçu pour avoir un faible seuil d'entrée pour les fournisseurs de données, fournissant une infrastructure et des services facilitant la découverte, l'accès et la visualisation des données.
 
-Cette formation fournit des explications étape par étape sur divers aspects du projet wis2box ainsi qu'un certain nombre d'exercices pour vous aider à publier et télécharger des données depuis WIS2. La formation est fournie sous forme de présentations d'ensemble ainsi que d'exercices pratiques.
+Cette formation fournit des explications étape par étape sur divers aspects du projet wis2box ainsi que plusieurs exercices pour vous aider à publier et télécharger des données depuis WIS2. La formation est dispensée sous forme de présentations générales ainsi que d'exercices pratiques.
 
-Les participants pourront travailler avec des données et métadonnées d'essai, ainsi qu'intégrer leurs propres données et métadonnées.
+Les participants pourront travailler avec des données et métadonnées de test, ainsi qu'intégrer leurs propres données et métadonnées.
 
-Cette formation couvre une large gamme de sujets (installation/configuration/publication/téléchargement de données, etc.).
+Cette formation couvre une large gamme de sujets (installation/configuration/publication, téléchargement de données, etc.).
 
 ## Objectifs et résultats d'apprentissage
 
@@ -29,7 +29,7 @@ Les objectifs de cette formation sont de se familiariser avec les éléments sui
 
 ## Navigation
 
-La navigation à gauche fournit une table des matières pour toute la formation.
+La navigation à gauche fournit une table des matières pour l'ensemble de la formation.
 
 La navigation à droite fournit une table des matières pour une page spécifique.
 
@@ -47,23 +47,23 @@ Cette formation nécessite les outils suivants :
 - Une instance exécutant le système d'exploitation Ubuntu (fournie par les formateurs de l'OMM lors des sessions de formation locales) voir [Accéder à votre VM étudiant](practical-sessions/accessing-your-student-vm.md#introduction)
 - Client SSH pour accéder à votre instance
 - MQTT Explorer sur votre machine locale
-- Client SCP et FTP pour copier des fichiers depuis votre machine locale
+- Clients SCP et FTP pour copier des fichiers depuis votre machine locale
 
 ## Conventions
 
 !!! question
 
-    Une section marquée comme cela vous invite à répondre à une question.
+    Une section marquée comme celle-ci vous invite à répondre à une question.
 
 Vous remarquerez également des sections de conseils et de notes dans le texte :
 
 !!! tip
 
-    Les conseils partagent de l'aide sur la manière d'accomplir au mieux les tâches.
+    Les conseils partagent de l'aide sur la meilleure façon d'accomplir les tâches.
 
 !!! note
 
-    Les notes fournissent des informations supplémentaires sur le sujet couvert par la session pratique, ainsi que sur la manière d'accomplir au mieux les tâches.
+    Les notes fournissent des informations supplémentaires sur le sujet couvert par la session pratique, ainsi que sur la meilleure façon d'accomplir les tâches.
 
 Les exemples sont indiqués comme suit :
 
@@ -71,7 +71,7 @@ Configuration
 ``` {.yaml linenums="1"}
 my-collection-defined-in-yaml:
     type: collection
-    title: mon titre défini comme un attribut yaml nommé title
+    title: mon titre défini comme un attribut yaml nommé titre
     description: ma description comme un attribut yaml nommé description
 ```
 
@@ -102,8 +102,8 @@ Pour les problèmes/bugs/suggestions ou améliorations/contributions à cette fo
 
 Tous les bugs, améliorations et problèmes de wis2box peuvent être signalés sur [GitHub](https://github.com/wmo-im/wis2box/issues).
 
-Pour un support supplémentaire ou des questions, veuillez contacter wis2-support@wmo.int.
+Pour un soutien supplémentaire ou des questions, veuillez contacter wis2-support@wmo.int.
 
 Comme toujours, la documentation principale de wis2box peut toujours être trouvée à [https://docs.wis2box.wis.wmo.int](https://docs.wis2box.wis.wmo.int).
 
-Les contributions sont toujours encouragées et bienvenues !
+Les contributions sont toujours encouragées et bienvenues!
