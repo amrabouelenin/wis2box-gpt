@@ -1,61 +1,63 @@
+Here's the Chinese translation while preserving all the specified requirements:
+
 ---
-title: 主页
+title: 首页
 ---
 
-<img alt="WMO logo" src="assets/img/wmo-logo.png" width="200">
-# WIS2一体化培训
+<img alt="WMO logo" src="../assets/img/wmo-logo.png" width="200">
+# WIS2 in a box 培训
 
-WIS2一体化（[wis2box](https://docs.wis2box.wis.wmo.int)）是世界气象组织（WMO）WIS2节点的免费开源（FOSS）参考实现。该项目提供了一个即插即用的工具集，用于使用基于标准的方法处理、发布气象/气候/水文数据，符合WIS2原则。wis2box还提供访问WIS2网络中所有数据的功能。wis2box旨在为数据提供者降低入门门槛，提供数据发现、访问和可视化的基础设施和服务。
+WIS2 in a box ([wis2box](https://docs.wis2box.wis.wmo.int)) 是一个免费开源的 WMO WIS2 Node 参考实现。该项目提供了一套即插即用的工具集，用于按照 WIS2 原则，采用基于标准的方法来摄取、处理和发布天气/气候/水文数据。wis2box 还提供对 WIS2 网络中所有数据的访问。wis2box 的设计目标是降低数据提供者的使用门槛，为数据发现、访问和可视化提供基础设施和服务。
 
-本培训提供了关于wis2box项目各个方面的逐步解释，以及多个练习，帮助您发布和下载WIS2的数据。培训以概述演示和实践练习的形式提供。
+本培训通过一系列演示和实践练习，提供了有关 wis2box 项目各个方面的逐步说明，帮助您发布和下载 WIS2 中的数据。
 
-参与者将能够使用样本测试数据和元数据，以及整合他们自己的数据和元数据。
+参与者可以使用样本测试数据和元数据进行操作，也可以集成自己的数据和元数据。
 
-本培训涵盖了广泛的主题（安装/设置/配置、发布/下载数据等）。
+本培训涵盖广泛的主题（安装/设置/配置、发布/下载数据等）。
 
-## 培训目标和学习成果
+## 目标和学习成果
 
 本培训的目标是熟悉以下内容：
 
-- WIS2架构的核心概念和组件
-- WIS2中用于发现和访问的数据和元数据格式
-- wis2box架构和环境
-- wis2box核心功能：
+- WIS2 架构核心概念和组件
+- WIS2 中用于发现和访问的数据和元数据格式
+- wis2box 架构和环境
+- wis2box 核心功能：
     - 元数据管理
-    - 数据摄取和转换为BUFR格式
-    - 用于WIS2消息发布的MQTT代理
-    - 数据下载的HTTP端点
-    - 用于程序化访问数据的API端点
+    - 数据摄取和转换为 BUFR 格式
+    - 用于 WIS2 消息发布的 MQTT 代理
+    - 用于数据下载的 HTTP 端点
+    - 用于程序化访问数据的 API 端点
 
 ## 导航
 
-左侧导航提供了整个培训的目录。
+左侧导航提供整个培训的目录。
 
-右侧导航提供了特定页面的目录。
+右侧导航提供特定页面的目录。
 
 ## 先决条件
 
-### 知识
+### 知识要求
 
-- 基本的Linux命令（见[备忘单](cheatsheets/linux.md)）
+- 基本的 Linux 命令（参见[速查表](cheatsheets/linux.md)）
 - 网络和互联网协议的基础知识
 
-### 软件
+### 软件要求
 
 本培训需要以下工具：
 
-- 运行Ubuntu OS的实例（在本地培训会议中由WMO培训师提供），见[访问您的学生VM](practical-sessions/accessing-your-student-vm.md#introduction)
-- SSH客户端访问您的实例
-- 在您的本地机器上的MQTT Explorer
-- SCP和FTP客户端从您的本地机器复制文件
+- 运行 Ubuntu 操作系统的实例（在本地培训课程中由 WMO 培训师提供）参见[访问您的学员虚拟机](practical-sessions/accessing-your-student-vm.md#introduction)
+- SSH 客户端以访问您的实例
+- 本地机器上的 MQTT Explorer
+- SCP 和 SFTP 客户端用于从本地机器复制文件
 
 ## 约定
 
 !!! question
 
-    标记为这样的部分邀请您回答一个问题。
+    这样标记的部分邀请您回答问题。
 
-您还会注意到文本中有提示和注释部分：
+您还会在文本中注意到提示和注释部分：
 
 !!! tip
 
@@ -63,7 +65,7 @@ WIS2一体化（[wis2box](https://docs.wis2box.wis.wmo.int)）是世界气象组
 
 !!! note
 
-    注释提供了实践课程所涵盖主题的额外信息，以及如何最好地完成任务。
+    注释提供有关实践课程所涵盖主题的附加信息，以及如何最好地完成任务。
 
 示例如下所示：
 
@@ -75,35 +77,34 @@ my-collection-defined-in-yaml:
     description: my description as a yaml attribute named description
 ```
 
-需要在终端/控制台上键入的代码片段如下所示：
+需要在终端/控制台中输入的代码片段表示为：
 
 ```bash
 echo 'Hello world'
 ```
 
-运行的容器名称用**粗体**表示。
+容器名称（运行镜像）用**粗体**表示。
 
-## 培训地点和材料
+## 培训位置和材料
 
-培训内容、wiki和问题跟踪器在GitHub上进行管理，网址为[https://github.com/wmo-im/wis2box-training](https://github.com/wmo-im/wis2box-training)。
+培训内容、维基和问题跟踪器在 GitHub 上管理，地址为 [https://github.com/World-Meteorological-Organization/wis2box-training](https://github.com/World-Meteorological-Organization/wis2box-training)。
 
 ## 打印材料
 
-此培训可以导出为PDF。要保存或打印此培训材料，请转到[打印页面](print_page)，然后选择
-文件 > 打印 > 保存为PDF。
+本培训可以导出为 PDF。要保存或打印本培训材料，请转到[打印页面](print_page)，然后选择文件 > 打印 > 保存为 PDF。
 
 ## 练习材料
 
-练习材料可以从[exercise-materials.zip](/exercise-materials.zip)压缩文件下载。
+练习材料可以从 [exercise-materials.zip](/exercise-materials.zip) 压缩文件下载。
 
 ## 支持
 
-如有问题/错误/建议或对本培训的改进/贡献，请使用[GitHub问题跟踪器](https://github.com/wmo-im/wis2box-training/issues)。
+对于本培训的问题/错误/建议或改进/贡献，请使用 [GitHub 问题跟踪器](https://github.com/World-Meteorological-Organization/wis2box-training/issues)。
 
-所有wis2box的错误、增强和问题可以在[GitHub](https://github.com/wmo-im/wis2box/issues)上报告。
+所有 wis2box 错误、增强和问题都可以在 [GitHub](https://github.com/World-Meteorological-Organization/wis2box/issues) 上报告。
 
-如需额外支持或有问题，请联系wis2-support@wmo.int。
+如需额外支持或咨询，请联系 wis2-support@wmo.int。
 
-如常，wis2box的核心文档始终可在[https://docs.wis2box.wis.wmo.int](https://docs.wis2box.wis.wmo.int)找到。
+wis2box 核心文档始终可以在 [https://docs.wis2box.wis.wmo.int](https://docs.wis2box.wis.wmo.int) 找到。
 
-欢迎并鼓励贡献！
+我们始终鼓励并欢迎贡献！

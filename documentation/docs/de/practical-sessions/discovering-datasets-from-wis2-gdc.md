@@ -1,31 +1,33 @@
+Here's the German translation while preserving all specified requirements:
+
 ---
-title: Entdecken von Datensätzen aus dem WIS2 Global Discovery Katalog
+title: Datensätze aus dem WIS2 Global Discovery Catalogue entdecken
 ---
 
-# Entdecken von Datensätzen aus dem WIS2 Global Discovery Katalog
+# Datensätze aus dem WIS2 Global Discovery Catalogue entdecken
 
-!!! abstract "Lernergebnisse!"
+!!! abstract "Lernziele!"
 
-    Am Ende dieser praktischen Sitzung werden Sie in der Lage sein:
+    Nach Abschluss dieser praktischen Übung werden Sie in der Lage sein:
 
-    - pywiscat zu verwenden, um Datensätze aus dem Global Discovery Katalog (GDC) zu entdecken
+    - pywiscat zu verwenden, um Datensätze aus dem Global Discovery Catalogue (GDC) zu entdecken
 
 ## Einführung
 
-In dieser Sitzung lernen Sie, wie man Daten aus dem WIS2 Global Discovery Katalog (GDC) entdeckt.
+In dieser Sitzung lernen Sie, wie Sie Daten aus dem WIS2 Global Discovery Catalogue (GDC) entdecken können.
 
-Derzeit sind die folgenden GDCs verfügbar:
+Derzeit sind folgende GDCs verfügbar:
 
-- Umwelt und Klimawandel Kanada, Meteorologischer Dienst von Kanada: <https://wis2-gdc.weather.gc.ca>
-- China Meteorological Administration: <https://gdc.wis.cma.cn/api>
+- Environment and Climate Change Canada, Meteorological Service of Canada: <https://wis2-gdc.weather.gc.ca>
+- China Meteorological Administration: <https://gdc.wis.cma.cn>
 - Deutscher Wetterdienst: <https://wis2.dwd.de/gdc>
 
-Während lokaler Trainingssitzungen wird ein lokaler GDC eingerichtet, um den Teilnehmern zu ermöglichen, den GDC nach den von ihnen aus ihren wis2box-Instanzen veröffentlichten Metadaten zu durchsuchen. In diesem Fall werden die Trainer die URL zum lokalen GDC bereitstellen.
+Während lokaler Schulungen wird ein lokaler GDC eingerichtet, damit die Teilnehmer den GDC nach den Metadaten abfragen können, die sie von ihren wis2box-Instanzen veröffentlicht haben. In diesem Fall stellen die Trainer die URL zum lokalen GDC zur Verfügung.
 
 ## Vorbereitung
 
 !!! note
-    Bitte loggen Sie sich vor Beginn in Ihre Studenten-VM ein.
+    Bitte melden Sie sich vor dem Start an Ihrer Student-VM an.
 
 ## Installation von pywiscat
 
@@ -36,14 +38,14 @@ pip3 install pywiscat
 
 !!! note
 
-    Wenn Sie auf den folgenden Fehler stoßen:
+    Wenn Sie folgenden Fehler sehen:
 
     ```
     WARNING: The script pywiscat is installed in '/home/username/.local/bin' which is not on PATH.
     Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
     ```
 
-    Dann führen Sie den folgenden Befehl aus:
+    Führen Sie dann den folgenden Befehl aus:
 
     ```bash
     export PATH=$PATH:/home/$USER/.local/bin
@@ -57,21 +59,21 @@ pip3 install pywiscat
 pywiscat --version
 ```
 
-## Daten finden mit pywiscat
+## Daten mit pywiscat finden
 
-Standardmäßig verbindet sich pywiscat mit Kanadas Global Discovery Katalog. Konfigurieren wir pywiscat, um den Trainings-GDC abzufragen, indem wir die Umgebungsvariable `PYWISCAT_GDC_URL` setzen:
+Standardmäßig verbindet sich pywiscat mit dem Global Discovery Catalogue von Kanada. Lassen Sie uns pywiscat so konfigurieren, dass es den Schulungs-GDC abfragt, indem wir die Umgebungsvariable `PYWISCAT_GDC_URL` setzen:
 
 ```bash
-export PYWISCAT_GDC_URL=http://<local-gdc-host-or-ip>
+export PYWISCAT_GDC_URL=http://gdc.wis2.training:5002
 ```
 
-Verwenden wir [pywiscat](https://github.com/wmo-im/pywiscat), um den GDC im Rahmen des Trainings abzufragen.
+Verwenden wir [pywiscat](https://github.com/wmo-im/pywiscat), um den im Rahmen der Schulung eingerichteten GDC abzufragen.
 
 ```bash
 pywiscat search --help
 ```
 
-Suchen Sie jetzt im GDC nach allen Datensätzen:
+Suchen Sie nun im GDC nach allen Datensätzen:
 
 ```bash
 pywiscat search
@@ -79,10 +81,10 @@ pywiscat search
 
 !!! question
 
-    Wie viele Datensätze werden von der Suche zurückgegeben?
+    Wie viele Datensätze werden bei der Suche zurückgegeben?
 
-??? success "Klicken, um die Antwort zu enthüllen"
-    Die Anzahl der Datensätze hängt vom abgefragten GDC ab. Wenn Sie den lokalen Trainings-GDC verwenden, sollten Sie sehen, dass die Anzahl der Datensätze gleich der Anzahl der Datensätze ist, die während der anderen praktischen Sitzungen in den GDC eingespeist wurden.
+??? success "Klicken Sie hier für die Antwort"
+    Die Anzahl der Datensätze hängt von dem GDC ab, den Sie abfragen. Bei Verwendung des lokalen Schulungs-GDC sollten Sie sehen, dass die Anzahl der Datensätze der Anzahl der Datensätze entspricht, die während der anderen praktischen Sitzungen in den GDC aufgenommen wurden.
 
 Versuchen wir, den GDC mit einem Schlüsselwort abzufragen:
 
@@ -92,27 +94,27 @@ pywiscat search -q observations
 
 !!! question
 
-    Wie lautet die Datenrichtlinie der Ergebnisse?
+    Wie lautet die Datenpolitik der Ergebnisse?
 
-??? success "Klicken, um die Antwort zu enthüllen"
-    Alle zurückgegebenen Daten sollten als "Kerndaten" gekennzeichnet sein
+??? success "Klicken Sie hier für die Antwort"
+    Alle zurückgegebenen Daten sollten als "core" Daten gekennzeichnet sein
 
-Versuchen Sie zusätzliche Abfragen mit `-q`
+Probieren Sie weitere Abfragen mit `-q` aus
 
 !!! tip
 
-    Das `-q` Flag ermöglicht die folgende Syntax:
+    Der `-q` Parameter ermöglicht folgende Syntax:
 
     - `-q synop`: findet alle Datensätze mit dem Wort "synop"
     - `-q temp`: findet alle Datensätze mit dem Wort "temp"
-    - `-q "observations AND fiji"`: findet alle Datensätze mit den Wörtern "observations" und "fiji"
-    - `-q "observations NOT fiji"`: findet alle Datensätze, die das Wort "observations" enthalten, aber nicht das Wort "fiji"
-    - `-q "synop OR temp"`: findet alle Datensätze mit "synop" oder "temp"
-    - `-q "obs~"`: unscharfe Suche
+    - `-q "observations AND oman"`: findet alle Datensätze mit den Wörtern "observations" und "oman"
+    - `-q "observations NOT oman"`: findet alle Datensätze, die das Wort "observations", aber nicht das Wort "oman" enthalten
+    - `-q "synop OR temp"`: findet alle Datensätze mit entweder "synop" oder "temp"
+    - `-q "obs*"`: Unschärfesuche
 
-    Bei der Suche nach Begriffen mit Leerzeichen setzen Sie diese in Anführungszeichen.
+    Bei der Suche nach Begriffen mit Leerzeichen diese in doppelte Anführungszeichen setzen.
 
-Lassen Sie uns mehr Details zu einem spezifischen Suchergebnis erhalten, das uns interessiert:
+Lassen Sie uns mehr Details zu einem bestimmten Suchergebnis abrufen, das uns interessiert:
 
 ```bash
 pywiscat get <id>
@@ -122,12 +124,10 @@ pywiscat get <id>
 
     Verwenden Sie den `id`-Wert aus der vorherigen Suche.
 
-
-## Schlussfolgerung
+## Fazit
 
 !!! success "Herzlichen Glückwunsch!"
 
-    In dieser praktischen Sitzung haben Sie gelernt, wie man:
+    In dieser praktischen Übung haben Sie gelernt:
 
-    - pywiscat verwendet, um Datensätze aus dem WIS2 Global Discovery Katalog zu entdecken
-
+    - pywiscat zu verwenden, um Datensätze aus dem WIS2 Global Discovery Catalogue zu entdecken
