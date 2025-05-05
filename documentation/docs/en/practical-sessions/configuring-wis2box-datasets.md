@@ -39,7 +39,7 @@ Instead of using your internal broker credentials, use the public credentials `e
     
     The 'everyone' user will not see internal topics or be able to publish messages.
     
-Open a browser and open a page to `http://<your-host>/wis2box-webapp`. Make sure you are logged in and can access the 'dataset editor' page.
+Open a browser and open a page to `http://YOUR-HOST/wis2box-webapp`. Make sure you are logged in and can access the 'dataset editor' page.
 
 See the section on [Initializing wis2box](/practical-sessions/initializing-wis2box) if you need to remember how to connect to the broker or access the wis2box-webapp.
 
@@ -50,7 +50,7 @@ You will need an authorization token for the 'processes/wis2box' endpoint to pub
 To create an authorization token, access your training VM over SSH and use the following commands to login to the wis2box-management container:
 
 ```bash
-cd ~/wis2box-1.0.0rc1
+cd ~/wis2box
 python3 wis2box-ctl.py login
 ```
 
@@ -76,7 +76,7 @@ exit
 
 ## Creating a new dataset in the wis2box-webapp
 
-Navigate to the 'dataset editor' page in the wis2box-webapp of your wis2box instance by going to `http://<your-host>/wis2box-webapp` and selecting 'dataset editor' from the menu on the left hand side.
+Navigate to the 'dataset editor' page in the wis2box-webapp of your wis2box instance by going to `http://YOUR-HOST/wis2box-webapp` and selecting 'dataset editor' from the menu on the left hand side.
 
 On the 'dataset editor' page, under the 'Datasets' tab, click on "Create New ...":
 
@@ -189,13 +189,17 @@ Inspect the content of the WIS2 notification you published. You should see a JSO
 
 ??? success "Click to reveal answer"
 
-    Note that the title, description, and keywords you provided in the discovery metadata are **not** present in the WIS2 notification payload! 
+    **The title, description, and keywords you provided in the discovery metadata are not present in the WIS2 notification payload!** 
     
     Instead, try to look for the canonical link  in the "links"-section in the WIS2 notification:
 
     <img alt="WIS2 notification for metadata, links sections" src="../../assets/img/wis2-notification-metadata-links.png" width="800">
 
-    The WIS2 notification contains a canonical link to the WCMP2 record that was published. If you copy-paste this link into a browser, you will download the WCMP2 record and see the title, description, and keywords you provided.
+    **The WIS2 notification contains a canonical link to the WCMP2 record that was published.** 
+    
+    Copy-paste this canonical link into your browser to access the WCMP2 record, depending on your browser settings, you may be prompted to download the file or it may be displayed directly in your browser.
+
+    You will find the title, description, and keywords your provided inside the WCMP2 record.
 
 ## Conclusion
 

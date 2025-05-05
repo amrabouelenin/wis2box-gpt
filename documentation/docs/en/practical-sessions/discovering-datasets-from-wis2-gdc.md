@@ -17,7 +17,7 @@ In this session you will learn how to discover data from the WIS2 Global Discove
 At the moment, the following GDCs are available:
 
 - Environment and Climate Change Canada, Meteorological Service of Canada: <https://wis2-gdc.weather.gc.ca>
-- China Meteorological Administration: <https://gdc.wis.cma.cn/api>
+- China Meteorological Administration: <https://gdc.wis.cma.cn>
 - Deutscher Wetterdienst: <https://wis2.dwd.de/gdc>
 
 
@@ -63,7 +63,7 @@ pywiscat --version
 By default, pywiscat connects to Canada's Global Discovery Catalogue.  Let's configure pywiscat to query the training GDC by setting the `PYWISCAT_GDC_URL` environment variable:
 
 ```bash
-export PYWISCAT_GDC_URL=http://<local-gdc-host-or-ip>
+export PYWISCAT_GDC_URL=http://gdc.wis2.training:5002
 ```
 
 Let's use [pywiscat](https://github.com/wmo-im/pywiscat) to query the GDC setup as part of the training.
@@ -106,10 +106,10 @@ Try additional queries with `-q`
 
     - `-q synop`: find all records with the word "synop"
     - `-q temp`: find all records with the word "temp"
-    - `-q "observations AND fiji"`: find all records with the words "observations" and "fiji"
-    - `-q "observations NOT fiji"`: find all records that contain the word "observations" but not the word "fiji"
+    - `-q "observations AND oman"`: find all records with the words "observations" and "oman"
+    - `-q "observations NOT oman"`: find all records that contain the word "observations" but not the word "oman"
     - `-q "synop OR temp"`: find all records with both "synop" or "temp"
-    - `-q "obs~"`: fuzzy search
+    - `-q "obs*"`: fuzzy search
 
     When searching for terms with spaces, enclose in double quotes.
 

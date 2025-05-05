@@ -39,11 +39,11 @@ Your student VM has the following software pre-installed:
     The release archive for wis2box used in this training can be downloaded as follows:
 
     ```bash
-    wget https://github.com/wmo-im/wis2box/releases/download/1.0.0rc1/wis2box-setup-1.0.0rc1.zip
-    unzip wis2box-setup-1.0.0rc1.zip
+    wget https://github.com/World-Meteorological-Organization/wis2box-release/releases/download/1.0.0/wis2box-setup.zip
+    unzip wis2box-setup.zip
     ```
     
-    You can always find the latest 'wis2box-setup' archive at [https://github.com/wmo-im/wis2box/releases](https://github.com/wmo-im/wis2box/releases).
+    You can always find the latest 'wis2box-setup' archive at [https://github.com/World-Meteorological-Organization/wis2box/releases](https://github.com/World-Meteorological-Organization/wis2box-release/releases).
 
     The exercise material used in this training can be downloaded as follows:
 
@@ -56,6 +56,7 @@ Your student VM has the following software pre-installed:
 
     ```bash
     pip3 install minio
+    pip3 install pywiscat==0.2.2
     ```
 
     If you are using the student VM provided during local WIS2 training sessions, the required software will already be installed.
@@ -143,7 +144,7 @@ ls ~/
 ```
 returns:
 ```console
-exercise-materials  wis2box-1.0.0rc1
+exercise-materials  wis2box
 ```
 
 If you have WinSCP installed on your local PC, you can use it to connect to your student VM and inspect the contents of your home directory and download or upload files between your VM and your local PC. 
