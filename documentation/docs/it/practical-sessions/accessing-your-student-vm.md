@@ -1,5 +1,3 @@
-Here's the Italian translation while preserving all the specified requirements:
-
 ---
 title: Accesso alla VM dello studente
 ---

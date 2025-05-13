@@ -1,5 +1,3 @@
-Here's the German translation while maintaining all the specified requirements:
-
 ---
 title: Konfiguration von Datensätzen in wis2box
 ---

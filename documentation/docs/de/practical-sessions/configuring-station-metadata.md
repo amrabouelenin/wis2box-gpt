@@ -1,5 +1,3 @@
-Here's the German translation while preserving all the specified requirements:
-
 ---
 title: Konfiguration von Stationsmetadaten
 ---

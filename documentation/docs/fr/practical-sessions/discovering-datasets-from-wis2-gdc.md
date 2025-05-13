@@ -1,5 +1,3 @@
-Here's the French translation while preserving all the specified requirements:
-
 ---
 title: Découverte des jeux de données depuis le WIS2 Global Discovery Catalogue
 ---

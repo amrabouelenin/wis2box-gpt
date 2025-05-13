@@ -1,5 +1,3 @@
-Here's the Portuguese translation while preserving all the specified requirements:
-
 ---
 title: Acessando sua VM de estudante
 ---
