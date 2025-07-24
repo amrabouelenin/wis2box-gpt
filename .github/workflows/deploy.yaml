@@ -21,11 +21,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.11
+          python-version: 3.x
 
       - name: Install dependencies
         run: |
-          pip install openai==0.28 anthropic tiktoken python-dotenv azure-ai-openai
+          pip install openai==1.65.3 anthropic tiktoken python-dotenv
 
       - name: Run translation script
         id: check
