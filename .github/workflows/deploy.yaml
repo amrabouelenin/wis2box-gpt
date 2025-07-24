@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install openai==0.28 anthropic
+          pip install openai==0.28 anthropic tiktoken
 
       - name: Run translation script
         id: check
