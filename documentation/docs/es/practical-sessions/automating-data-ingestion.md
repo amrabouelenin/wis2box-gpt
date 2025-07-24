@@ -20,7 +20,7 @@ Los plugins de datos definen los módulos de Python que son cargados por el cont
 
 En el ejercicio anterior deberías haber creado un conjunto de datos usando la plantilla `surface-based-observations/synop` que incluía los siguientes plugins de datos:
 
-<img alt="mapeos de datos" src="../../assets/img/wis2box-data-mappings.png" width="800">
+<img alt="mapeos de datos" src="/../assets/img/wis2box-data-mappings.png" width="800">
 
 Cuando se sube un archivo a MinIO, wis2box coincidirá el archivo con un conjunto de datos cuando la ruta del archivo contenga el id del conjunto de datos (`metadata_id`) y determinará los plugins de datos a usar basándose en la extensión del archivo y el patrón de archivo definido en los mapeos del conjunto de datos.
 
@@ -138,7 +138,7 @@ En la sesión anterior usamos el formulario SYNOP en la **wis2box-webapp** para 
 
 En la sesión anterior deberías haber creado un conjunto de datos que incluyera el plugin 'FM-12 data converted to BUFR' para los mapeos del conjunto de datos:
 
-<img alt="mapeos del conjunto de datos" src="../../assets/img/wis2box-data-mappings.png" width="800">
+<img alt="mapeos del conjunto de datos" src="/../assets/img/wis2box-data-mappings.png" width="800">
 
 Este plugin carga el módulo `wis2box.data.synop2bufr.ObservationDataSYNOP2BUFR` para ingresar los datos.
 
@@ -189,7 +189,7 @@ Para acceder a MinIO a través de SFTP puedes usar cualquier software cliente SF
 
 Usando WinSCP, tu conexión se vería de la siguiente manera:
 
-<img alt="conexión sftp-winscp" src="../../assets/img/winscp-sftp-connection.png" width="400">
+<img alt="conexión sftp-winscp" src="/../assets/img/winscp-sftp-connection.png" width="400">
 
 Para el nombre de usuario y contraseña, usa los valores de las variables de entorno `WIS2BOX_STORAGE_USERNAME` y `WIS2BOX_STORAGE_PASSWORD` de tu archivo `wis2box.env`. Haz clic en 'guardar' para guardar la sesión y luego en 'iniciar sesión' para conectar.
 

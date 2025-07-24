@@ -30,7 +30,7 @@ wis2box API提供对以下集合的访问：
 
     `http://YOUR-HOST/oapi`
 
-<img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600">
+<img alt="wis2box-api-landing-page" src="/../assets/img/wis2box-api-landing-page.png" width="600">
 
 ## 检查集合
 
@@ -46,7 +46,7 @@ wis2box API提供对以下集合的访问：
 
 从登录页面，点击"Collections"链接，然后点击"Stations"链接。
 
-<img alt="wis2box-api-collections-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600">
+<img alt="wis2box-api-collections-stations" src="/../assets/img/wis2box-api-collections-stations.png" width="600">
 
 点击"Browse"链接，然后点击"json"链接。
 
@@ -72,11 +72,11 @@ wis2box API提供对以下集合的访问：
 
 从登录页面，点击"Collections"链接，然后点击"Surface weather observations from Malawi"链接。
 
-<img alt="wis2box-api-collections-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600">
+<img alt="wis2box-api-collections-malawi-obs" src="/../assets/img/wis2box-api-collections-malawi-obs.png" width="600">
 
 点击"Queryables"链接。
 
-<img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600">
+<img alt="wis2box-api-collections-malawi-obs-queryables" src="/../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600">
 
 !!! question
     使用哪个查询参数可以按站点标识符进行过滤？

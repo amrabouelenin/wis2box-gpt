@@ -39,13 +39,13 @@ Asegúrate de que tienes MQTT Explorer abierto y conectado a tu broker usando la
 
 La plantilla 'AWS' proporciona una plantilla de mapeo predefinida para convertir datos CSV de estaciones AWS en apoyo a los requisitos de informes de GBON.
 
-La descripción de la plantilla AWS se puede encontrar [aquí](/csv2bufr-templates/aws-template).
+La descripción de la plantilla AWS se puede encontrar [aquí](./../csv2bufr-templates/aws-template.md).
 
 ### Revisar los datos de entrada de ejemplo aws
 
 Descarga el ejemplo para este ejercicio desde el enlace a continuación:
 
-[aws-example.csv](/sample-data/aws-example.csv)
+[aws-example.csv](./../../sample-data/aws-example.csv)
 
 Abre el archivo que descargaste en un editor e inspecciona el contenido:
 
@@ -96,15 +96,15 @@ Navega a la Interfaz de Usuario de MinIO y inicia sesión usando las credenciale
 
 Navega a **wis2box-incoming** y haz clic en el botón "Crear nueva ruta":
 
-<img alt="Imagen mostrando la Interfaz de Usuario de MinIO con el botón de crear carpeta destacado" src="../../assets/img/minio-create-new-path.png"/>
+<img alt="Imagen mostrando la Interfaz de Usuario de MinIO con el botón de crear carpeta destacado" src="/../assets/img/minio-create-new-path.png"/>
 
 Crea una nueva carpeta en el bucket de MinIO que coincida con el id de conjunto de datos para el conjunto de datos que creaste con la plantilla='weather/surface-weather-observations/synop':
 
-<img alt="Imagen mostrando la Interfaz de Usuario de MinIO con el botón de crear carpeta destacado" src="../../assets/img/minio-create-new-path-metadata_id.png"/>
+<img alt="Imagen mostrando la Interfaz de Usuario de MinIO con el botón de crear carpeta destacado" src="/../assets/img/minio-create-new-path-metadata_id.png"/>
 
 Sube el archivo de ejemplo que descargaste a la carpeta que creaste en el bucket de MinIO:
 
-<img alt="Imagen mostrando la Interfaz de Usuario de MinIO con aws-example subido" src="../../assets/img/minio-upload-aws-example.png"/></center>
+<img alt="Imagen mostrando la Interfaz de Usuario de MinIO con aws-example subido" src="/../assets/img/minio-upload-aws-example.png"/></center>
 
 Revisa el tablero de Grafana en `http://<tu-host>:3000` para ver si hay alguna ADVERTENCIA o ERROR. Si ves alguno, intenta solucionarlo y repite el ejercicio.
 
@@ -112,7 +112,7 @@ Revisa el MQTT Explorer para ver si recibes notificaciones de datos WIS2.
 
 Si has ingestado los datos con éxito, deberías ver 3 notificaciones en el explorador MQTT en el tema `origin/a/wis2/<id-centro>/data/weather/surface-weather-observations/synop` para las 3 estaciones de las que informaste datos:
 
-<img width="450" alt="Imagen mostrando el explorador MQTT después de subir AWS" src="../../assets/img/mqtt-explorer-aws-upload.png"/>
+<img width="450" alt="Imagen mostrando el explorador MQTT después de subir AWS" src="/../assets/img/mqtt-explorer-aws-upload.png"/>
 
 ## Ejercicio 2 - Usar la plantilla 'DayCLI'
 
@@ -120,7 +120,7 @@ En el ejercicio anterior usamos el conjunto de datos que creaste con el tipo de 
 
 En el próximo ejercicio usaremos la plantilla 'DayCLI' para convertir datos climáticos diarios a BUFR.
 
-La descripción de la plantilla DAYCLI se puede encontrar [aquí](/csv2bufr-templates/daycli-template).
+La descripción de la plantilla DAYCLI se puede encontrar [aquí](./../csv2bufr-templates/daycli-template.md).
 
 !!! Note "Acerca de la plantilla DAYCLI"
     Ten en cuenta que la secuencia BUFR DAYCLI se actualizará durante 2025 para incluir información adicional y banderas de control de calidad revisadas. La plantilla DAYCLI incluida en wis2box se actualizará para reflejar estos cambios. La OMM comunicará cuando el software de wis2box se actualice para incluir la nueva plantilla DAYCLI, para permitir a los usuarios actualizar sus sistemas en consecuencia.
@@ -129,13 +129,13 @@ La descripción de la plantilla DAYCLI se puede encontrar [aquí](/csv2bufr-temp
 
 Ve al editor de conjuntos de datos en la aplicación web wis2box y crea un nuevo conjunto de datos. Usa el mismo id de centro que en las sesiones prácticas anteriores y selecciona **Tipo de Datos='climate/surface-based-observations/daily'**:
 
-<img alt="Crear un nuevo conjunto de datos en la aplicación web wis2box para DAYCLI" src="../../assets/img/wis2box-webapp-create-dataset-daycli.png"/>
+<img alt="Crear un nuevo conjunto de datos en la aplicación web wis2box para DAYCLI" src="/../assets/img/wis2box-webapp-create-dataset-daycli.png"/>
 
 Haz clic en "CONTINUAR AL FORMULARIO" y añade una descripción para tu conjunto de datos, establece el cuadro delimitador y proporciona la información de contacto para el conjunto de datos. Una vez que hayas terminado de llenar todas las secciones, haz clic en 'VALIDAR FORMULARIO' y revisa el formulario.
 
 Revisa los complementos de datos para los conjuntos de datos. Haz clic en "ACTUALIZAR" al lado del complemento con nombre "Datos CSV convertidos a BUFR" y verás que la plantilla está configurada para **DayCLI**:
 
-<img alt="Actualizar el complemento de datos para el conjunto de datos para usar la plantilla DAYCLI" src="../../assets/img/wis2box-webapp-update-data-plugin-daycli.png"/>
+<img alt="Actualizar el complemento de datos para el conjunto de datos para usar la plantilla DAYCLI" src="/../assets/img/wis2box-webapp-update-data-plugin-daycli.png"/>
 
 Cierra la configuración del complemento y envía el formulario usando el token de autenticación que creaste en la sesión práctica anterior.
 
@@ -145,7 +145,7 @@ Ahora deberías tener un segundo conjunto de datos en la aplicación web wis2box
 
 Descarga el ejemplo para este ejercicio desde el enlace a continuación:
 
-[daycli-example.csv](/sample-data/daycli-example.csv)
+[daycli-example.csv](./../../sample-data/daycli-example.csv)
 
 Abre el archivo que descargaste en un editor e inspecciona el contenido:
 
@@ -163,13 +163,13 @@ El archivo de ejemplo contiene una fila de datos para cada día en un mes, e inf
 
 Como antes, necesitarás subir los datos al bucket 'wis2box-incoming' en MinIO para ser procesados por el convertidor csv2bufr. Esta vez necesitarás crear una nueva carpeta en el bucket de MinIO que coincida con el id de conjunto de datos para el conjunto de datos que creaste con la plantilla='climate/surface-based-observations/daily' que será diferente del id de conjunto de datos que usaste en el ejercicio anterior:
 
-<img alt="Imagen mostrando la Interfaz de Usuario de MinIO con DAYCLI-example subido" src="../../assets/img/minio-upload-daycli-example.png"/></center>
+<img alt="Imagen mostrando la Interfaz de Usuario de MinIO con DAYCLI-example subido" src="/../assets/img/minio-upload-daycli-example.png"/></center>
 
 Después de subir los datos, verifica que no haya ADVERTENCIAS o ERRORES en el tablero de Grafana y revisa el explorador MQTT para ver si recibes notificaciones de datos WIS2.
 
 Si has ingestado los datos con éxito, deberías ver 30 notificaciones en el explorador MQTT en el tema `origin/a/wis2/<id-centro>/data/climate/surface-based-observations/daily` para los 30 días del mes que informaste datos para:
 
-<img width="450" alt="Imagen mostrando el explorador MQTT después de subir DAYCLI" src="../../assets/img/mqtt-daycli-template-success.png"/>
+<img width="450" alt="Imagen mostrando el explorador MQTT después de subir DAYCLI" src="/../assets/img/mqtt-daycli-template-success.png"/>
 
 ## Ejercicio 3 - usando el formulario CSV en wis2box-webapp (opcional)
 
@@ -181,16 +181,16 @@ El uso de este formulario está destinado a propósitos de depuración y validac
 
 Navega al formulario CSV en la aplicación web wis2box
 (``http://<tu-nombre-de-host>/wis2box-webapp/csv2bufr_form``).
-Usa el archivo [aws-example.csv](/sample-data/aws-example.csv) para este ejercicio.
+Usa el archivo [aws-example.csv](../sample-data/aws-example.csv) para este ejercicio.
 Ahora deberías poder hacer clic en siguiente para previsualizar y validar el archivo.
 
-<center><img alt="Imagen mostrando la pantalla de carga de CSV a BUFR" src="../../assets/img/csv2bufr-ex1.png"/></center>
+<center><img alt="Imagen mostrando la pantalla de carga de CSV a BUFR" src="/../assets/img/csv2bufr-ex1.png"/></center>
 
 Al hacer clic en el botón siguiente, se carga el archivo en el navegador y se valida el contenido contra un esquema predefinido.
 Aún no se ha convertido ni publicado ningún dato. En la pestaña de previsualización / validación, se te debería presentar una lista de advertencias
 sobre datos faltantes, pero en este ejercicio se pueden ignorar.
 
-<center><img alt="Imagen mostrando la página de validación de ejemplo de CSV a BUFR con advertencias" src="../../assets/img/csv2bufr-warnings.png"/></center>
+<center><img alt="Imagen mostrando la página de validación de ejemplo de CSV a BUFR con advertencias" src="/../assets/img/csv2bufr-warnings.png"/></center>
 
 Haz clic en *siguiente* para continuar y se te pedirá que proporciones un id de conjunto de datos para los datos a publicar. Selecciona el id de conjunto de datos que creaste anteriormente y haz clic en *siguiente*.
 
@@ -198,16 +198,16 @@ Ahora deberías estar en una página de autorización donde se te pedirá que in
 que has creado previamente. Ingresa este token y haz clic en el interruptor "Publicar en WIS2" para asegurarte
 de que "Publicar en WIS2" esté seleccionado (ver captura de pantalla a continuación).
 
-<center><img alt="pantalla de autenticación y publicación csv2bufr" src="../../assets/img/csv2bufr-toggle-publish.png"/></center>
+<center><img alt="pantalla de autenticación y publicación csv2bufr" src="/../assets/img/csv2bufr-toggle-publish.png"/></center>
 
 Haz clic en siguiente para transformar a BUFR y publicar, luego deberías ver la siguiente pantalla:
 
-<center><img alt="Imagen mostrando la pantalla de éxito de ejemplo de CSV a BUFR" src="../../assets/img/csv2bufr-success.png"/></center>
+<center><img alt="Imagen mostrando la pantalla de éxito de ejemplo de CSV a BUFR" src="/../assets/img/csv2bufr-success.png"/></center>
 
 Al hacer clic en la flecha hacia abajo a la derecha de ``Archivos BUFR de salida`` deberían aparecer los botones ``Descargar`` e ``Inspeccionar``.
 Haz clic en inspeccionar para ver los datos y confirmar que los valores son los esperados.
 
-<center><img alt="Imagen mostrando la inspección de salida de CSV a BUFR" src="../../assets/img/csv2bufr-inspect.png"/></center>
+<center><img alt="Imagen mostrando la inspección de salida de CSV a BUFR" src="/../assets/img/csv2bufr-inspect.png"/></center>
 
 ### Depuración de datos de entrada inválidos
 
@@ -215,7 +215,7 @@ En este ejercicio examinaremos qué sucede con los datos de entrada inválidos. 
 enlace a continuación. Este contiene los mismos datos que el primer archivo pero con las columnas vacías eliminadas.
 Examina el archivo y confirma qué columnas han sido eliminadas y luego sigue el mismo proceso para convertir los datos a BUFR.
 
-[csv2bufr-ex3a.csv](/sample-data/csv2bufr-ex3a.csv)
+[csv2bufr-ex3a.csv](./../../sample-data/csv2bufr-ex3a.csv)
 
 !!! question
     Con las columnas faltantes en el archivo, ¿pudiste convertir los datos a BUFR?
@@ -227,7 +227,7 @@ Examina el archivo y confirma qué columnas han sido eliminadas y luego sigue el
 
 En este siguiente ejemplo se ha añadido una columna adicional al archivo CSV.
 
-[csv2bufr-ex3b.csv](/sample-data/csv2bufr-ex3b.csv)
+[csv2bufr-ex3b.csv](./../../sample-data/csv2bufr-ex3b.csv)
 
 !!! question
     Sin subir ni enviar el archivo, ¿puedes predecir qué sucederá cuando lo hagas?
@@ -241,7 +241,7 @@ Ahora sube y confirma si tu predicción fue correcta.
 
 En el último ejemplo de este ejercicio, los datos han sido modificados. Examina el contenido del archivo CSV.
 
-[csv2bufr-ex3c.csv](/sample-data/csv2bufr-ex3c.csv)
+[csv2bufr-ex3c.csv](./../../sample-data/csv2bufr-ex3c.csv)
 
 !!! question
     ¿Qué ha cambiado en el archivo y qué crees que sucederá?

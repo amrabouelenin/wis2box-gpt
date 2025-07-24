@@ -74,13 +74,13 @@ MQTT Explorer 是一个有用的工具，用于浏览和查看给定 MQTT 代理
 - 用户名：everyone
 - 密码：everyone
 
-<img alt="mqtt-explorer-global-broker-connection" src="../../assets/img/mqtt-explorer-global-broker-connection.png" width="800">
+<img alt="mqtt-explorer-global-broker-connection" src="/../assets/img/mqtt-explorer-global-broker-connection.png" width="800">
 
 点击 'ADVANCED' 按钮，删除预配置的主题并添加以下主题进行订阅：
 
 - `origin/a/wis2/#`
 
-<img alt="mqtt-explorer-global-broker-advanced" src="../../assets/img/mqtt-explorer-global-broker-sub-origin.png" width="800">
+<img alt="mqtt-explorer-global-broker-advanced" src="/../assets/img/mqtt-explorer-global-broker-sub-origin.png" width="800">
 
 !!! note
     设置 MQTT 订阅时，您可以使用以下通配符：
@@ -94,7 +94,7 @@ MQTT Explorer 是一个有用的工具，用于浏览和查看给定 MQTT 代理
 
 消息应该开始在您的 MQTT Explorer 会话中出现，如下所示：
 
-<img alt="mqtt-explorer-global-broker-topics" src="../../assets/img/mqtt-explorer-global-broker-msg-origin.png" width="800">
+<img alt="mqtt-explorer-global-broker-topics" src="/../assets/img/mqtt-explorer-global-broker-msg-origin.png" width="800">
 
 现在您已经准备好开始探索 WIS2 的主题和消息结构。
 
@@ -135,7 +135,7 @@ MQTT Explorer 是一个有用的工具，用于浏览和查看给定 MQTT 代理
 * `origin/a/wis2/+/data/core/weather/surface-based-observations/synop`
 * `cache/a/wis2/+/data/core/weather/surface-based-observations/synop`
 
-<img alt="mqtt-explorer-global-broker-topics-exercise2" src="../../assets/img/mqtt-explorer-global-broker-sub-origin-cache-synop.png" width="800">
+<img alt="mqtt-explorer-global-broker-topics-exercise2" src="/../assets/img/mqtt-explorer-global-broker-sub-origin-cache-synop.png" width="800">
 
 !!! note
     `+` 通配符用于订阅所有 WIS 中心。
@@ -154,7 +154,7 @@ MQTT Explorer 是一个有用的工具，用于浏览和查看给定 MQTT 代理
 
     数据收集的时间戳包含在消息的 `properties` 部分，键为 `datetime`。
 
-    <img alt="mqtt-explorer-global-broker-msg-properties" src="../../assets/img/mqtt-explorer-global-broker-msg-properties.png" width="800">
+    <img alt="mqtt-explorer-global-broker-msg-properties" src="/../assets/img/mqtt-explorer-global-broker-msg-properties.png" width="800">
 
 !!! question
 

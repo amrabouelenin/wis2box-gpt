@@ -20,7 +20,7 @@ Les plugins de données définissent les modules Python qui sont chargés par le
 
 Dans l'exercice précédent, vous deviez avoir créé un ensemble de données en utilisant le modèle `surface-based-observations/synop` qui incluait les plugins de données suivants :
 
-<img alt="mappages de données" src="../../assets/img/wis2box-data-mappings.png" width="800">
+<img alt="mappages de données" src="/../assets/img/wis2box-data-mappings.png" width="800">
 
 Lorsqu'un fichier est téléchargé sur MinIO, wis2box associera le fichier à un ensemble de données lorsque le chemin du fichier contient l'identifiant de l'ensemble de données (`metadata_id`) et il déterminera les plugins de données à utiliser en fonction de l'extension du fichier et du modèle de fichier défini dans les mappages de l'ensemble de données.
 
@@ -138,7 +138,7 @@ Lors de la session précédente, nous avons utilisé le formulaire SYNOP dans l'
 
 Lors de la session précédente, vous deviez avoir créé un ensemble de données qui incluait le plugin 'FM-12 data converted to BUFR' pour les mappages de l'ensemble de données :
 
-<img alt="mappages de l'ensemble de données" src="../../assets/img/wis2box-data-mappings.png" width="800">
+<img alt="mappages de l'ensemble de données" src="/../assets/img/wis2box-data-mappings.png" width="800">
 
 Ce plugin charge le module `wis2box.data.synop2bufr.ObservationDataSYNOP2BUFR` pour ingérer les données.
 
@@ -189,7 +189,7 @@ Pour accéder à MinIO via SFTP, vous pouvez utiliser n'importe quel logiciel cl
 
 En utilisant WinSCP, votre connexion ressemblerait à ceci :
 
-<img alt="connexion sftp-winscp" src="../../assets/img/winscp-sftp-connection.png" width="400">
+<img alt="connexion sftp-winscp" src="/../assets/img/winscp-sftp-connection.png" width="400">
 
 Pour le nom d'utilisateur et le mot de passe, utilisez les valeurs des variables d'environnement `WIS2BOX_STORAGE_USERNAME` et `WIS2BOX_STORAGE_PASSWORD` de votre fichier `wis2box.env`. Cliquez sur 'enregistrer' pour sauvegarder la session puis sur 'connexion' pour vous connecter.
 

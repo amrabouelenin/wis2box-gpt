@@ -2,7 +2,7 @@
 title: Plantilla AWS
 ---
 
-# Plantilla csv2bufr para Estaciones Meteorológicas Automáticas que reportan datos horarios GBON
+# Plantilla csv2bufr para Estaciones Meteorológicas Automáticas que reportan datos horarios de GBON
 
 La **Plantilla AWS** utiliza un formato CSV estandarizado para ingresar datos de Estaciones Meteorológicas Automáticas en apoyo a los requisitos de reporte de GBON. Esta plantilla de mapeo convierte datos CSV a la secuencia BUFR 301150, 307096.
 
@@ -14,4 +14,4 @@ El formato está destinado para uso con estaciones meteorológicas automáticas 
 
 ## Ejemplo
 
-Archivo CSV de ejemplo que se ajusta a la plantilla AWS: [aws-example.csv](/sample-data/aws-example.csv).
+Archivo CSV de ejemplo que se ajusta a la plantilla AWS: [aws-example.csv](./../../sample-data/aws-example.csv).

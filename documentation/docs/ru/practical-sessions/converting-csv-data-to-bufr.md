@@ -39,13 +39,13 @@ title: Преобразование данных CSV в BUFR
 
 Шаблон 'AWS' предоставляет предопределенный шаблон сопоставления для преобразования данных CSV с метеостанций AWS в поддержку требований отчетности GBON.
 
-Описание шаблона AWS можно найти [здесь](/csv2bufr-templates/aws-template).
+Описание шаблона AWS можно найти [здесь](./../csv2bufr-templates/aws-template.md).
 
 ### Просмотрите пример входных данных aws
 
 Загрузите пример для этого упражнения по ссылке ниже:
 
-[aws-example.csv](/sample-data/aws-example.csv)
+[aws-example.csv](./../sample-data/aws-example.csv)
 
 Откройте загруженный файл в редакторе и изучите содержимое:
 
@@ -88,15 +88,15 @@ title: Преобразование данных CSV в BUFR
 
 Перейдите в **wis2box-incoming** и нажмите кнопку "Создать новый путь":
 
-<img alt="Изображение, показывающее интерфейс MinIO с выделенной кнопкой создания папки" src="../../assets/img/minio-create-new-path.png"/>
+<img alt="Изображение, показывающее интерфейс MinIO с выделенной кнопкой создания папки" src="/../assets/img/minio-create-new-path.png"/>
 
 Создайте новую папку в корзине MinIO, которая соответствует идентификатору набора данных для набора данных, который вы создали с template='weather/surface-weather-observations/synop':
 
-<img alt="Изображение, показывающее интерфейс MinIO с выделенной кнопкой создания папки" src="../../assets/img/minio-create-new-path-metadata_id.png"/>
+<img alt="Изображение, показывающее интерфейс MinIO с выделенной кнопкой создания папки" src="/../assets/img/minio-create-new-path-metadata_id.png"/>
 
 Загрузите пример файла, который вы загрузили, в папку, которую вы создали в корзине MinIO:
 
-<img alt="Изображение, показывающее интерфейс MinIO с загруженным aws-example" src="../../assets/img/minio-upload-aws-example.png"/></center>
+<img alt="Изображение, показывающее интерфейс MinIO с загруженным aws-example" src="/../assets/img/minio-upload-aws-example.png"/></center>
 
 Проверьте панель управления Grafana по адресу `http://<your-host>:3000`, чтобы увидеть, есть ли какие-либо ПРЕДУПРЕЖДЕНИЯ или ОШИБКИ. Если вы видите какие-либо, попробуйте их исправить и повторите упражнение.
 
@@ -104,7 +104,7 @@ title: Преобразование данных CSV в BUFR
 
 Если вы успешно загрузили данные, вы должны увидеть 3 уведомления в MQTT Explorer на тему `origin/a/wis2/<centre-id>/data/weather/surface-weather-observations/synop` для 3 станций, о которых вы сообщили данные:
 
-<img width="450" alt="Изображение, показывающее MQTT explorer после загрузки AWS" src="../../assets/img/mqtt-explorer-aws-upload.png"/>
+<img width="450" alt="Изображение, показывающее MQTT explorer после загрузки AWS" src="/../assets/img/mqtt-explorer-aws-upload.png"/>
 
 ## Упражнение 2 - Использование шаблона 'DayCLI'
 
@@ -112,7 +112,7 @@ title: Преобразование данных CSV в BUFR
 
 В следующем упражнении мы будем использовать шаблон 'DayCLI' для преобразования ежедневных климатических данных в BUFR.
 
-Описание шаблона DAYCLI можно найти [здесь](/csv2bufr-templates/daycli-template).
+Описание шаблона DAYCLI можно найти [здесь](./../csv2bufr-templates/daycli-template.md).
 
 !!! Note "О шаблоне DAYCLI"
     Обратите внимание, что последовательность DAYCLI BUFR будет обновлена в 2025 году для включения дополнительной информации и пересмотренных флагов КК. Шаблон DAYCLI, включенный в wis2box, будет обновлен, чтобы отразить эти изменения. ВМО сообщит, когда программное обеспечение wis2box будет обновлено для включения нового шаблона DAYCLI, чтобы пользователи могли обновить свои системы соответственно.
@@ -121,13 +121,13 @@ title: Преобразование данных CSV в BUFR
 
 Перейдите в редактор наборов данных в wis2box-webapp и создайте новый набор данных. Используйте тот же centre-id, что и в предыдущих практических занятиях, и выберите **Data Type='climate/surface-based-observations/daily'**:
 
-<img alt="Создайте новый набор данных в wis2box-webapp для DAYCLI" src="../../assets/img/wis2box-webapp-create-dataset-daycli.png"/>
+<img alt="Создайте новый набор данных в wis2box-webapp для DAYCLI" src="/../assets/img/wis2box-webapp-create-dataset-daycli.png"/>
 
 Нажмите "CONTINUE TO FORM" и добавьте описание для вашего набора данных, установите ограничивающий прямоугольник и предоставьте контактную информацию для набора данных. Как только вы закончите заполнять все разделы, нажмите 'VALIDATE FORM' и проверьте форму.
 
 Просмотрите плагины данных для наборов данных. Нажмите "UPDATE" рядом с плагином с именем "CSV data converted to BUFR", и вы увидите, что шаблон установлен на **DayCLI**:
 
-<img alt="Обновите плагин данных для набора данных, чтобы использовать шаблон DAYCLI" src="../../assets/img/wis2box-webapp-update-data-plugin-daycli.png"/>
+<img alt="Обновите плагин данных для набора данных, чтобы использовать шаблон DAYCLI" src="/../assets/img/wis2box-webapp-update-data-plugin-daycli.png"/>
 
 Закройте конфигурацию плагина и отправьте форму, используя токен аутентификации, который вы создали на предыдущем практическом занятии.
 
@@ -137,7 +137,7 @@ title: Преобразование данных CSV в BUFR
 
 Загрузите пример для этого упражнения по ссылке ниже:
 
-[daycli-example.csv](/sample-data/daycli-example.csv)
+[daycli-example.csv](./../../sample-data/daycli-example.csv)
 
 Откройте загруженный файл в редакторе и изучите содержимое:
 
@@ -155,13 +155,13 @@ title: Преобразование данных CSV в BUFR
 
 Как и раньше, вам нужно будет загрузить данные в корзину 'wis2box-incoming' в MinIO для обработки конвертером csv2bufr. На этот раз вам нужно будет создать новую папку в корзине MinIO, которая соответствует идентификатору набора данных для набора данных, который вы создали с template='climate/surface-based-observations/daily', который будет отличаться от идентификатора набора данных, который вы использовали в предыдущем упражнении:
 
-<img alt="Изображение, показывающее интерфейс MinIO с загруженным DAYCLI-example" src="../../assets/img/minio-upload-daycli-example.png"/></center>
+<img alt="Изображение, показывающее интерфейс MinIO с загруженным DAYCLI-example" src="/../assets/img/minio-upload-daycli-example.png"/></center>
 
 После загрузки данных проверьте, нет ли ПРЕДУПРЕЖДЕНИЙ или ОШИБОК на панели управления Grafana, и проверьте MQTT Explorer, чтобы увидеть, получаете ли вы уведомления о данных WIS2.
 
 Если вы успешно загрузили данные, вы должны увидеть 30 уведомлений в MQTT Explorer на тему `origin/a/wis2/<centre-id>/data/climate/surface-based-observations/daily` за 30 дней в месяце, о которых вы сообщили данные:
 
-<img width="450" alt="Изображение, показывающее MQTT explorer после загрузки DAYCLI" src="../../assets/img/mqtt-daycli-template-success.png"/>
+<img width="450" alt="Изображение, показывающее MQTT explorer после загрузки DAYCLI" src="/../assets/img/mqtt-daycli-template-success.png"/>
 
 ## Упражнение 3 - использование формы CSV в wis2box-webapp (необязательно)
 

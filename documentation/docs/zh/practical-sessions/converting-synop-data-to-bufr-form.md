@@ -47,7 +47,7 @@ AAXX 27031
 - 确保“在WIS2上发布”已开启
 - 点击“提交”
 
-<center><img alt="显示synop2bufr页面的对话框，包括切换按钮" src="../../assets/img/synop2bufr-toggle.png"></center>
+<center><img alt="显示synop2bufr页面的对话框，包括切换按钮" src="/../assets/img/synop2bufr-toggle.png"></center>
 
 点击提交。您将收到一个警告消息，因为站点未在wis2box中注册。转到station-editor并导入以下站点：
 
@@ -70,7 +70,7 @@ AAXX 27031
     检查按钮运行一个过程来转换和提取BUFR中的数据。
 
     <center><img alt="显示成功提交消息的对话框"
-         src="../../assets/img/synop2bufr-ex2-success.png"></center>
+         src="/../assets/img/synop2bufr-ex2-success.png"></center>
 
 !!! question
     FM-12 SYNOP输入数据未包括站点位置、海拔或气压计高度。
@@ -80,7 +80,7 @@ AAXX 27031
     点击检查按钮应显示如下所示的对话框。
 
     <center><img alt="检查按钮结果显示基本站点元数据、站点位置和观测属性"
-         src="../../assets/img/synop2bufr-ex2.png"></center>
+         src="/../assets/img/synop2bufr-ex2.png"></center>
 
     这包括在地图上显示的站点位置和基本元数据，以及消息中的观测结果。
     
@@ -177,7 +177,7 @@ AAXX 27031
 在本次会议的练习中，您将导入几个文件到您的站点列表中。导航到站点列表页面并点击垃圾桶图标删除站点。您可能需要刷新页面才能在删除后从列表中移除站点。
 
 <center><img alt="站点元数据查看器"
-         src="../../assets/img/synop2bufr-trash.png" width="600"></center>
+         src="/../assets/img/synop2bufr-trash.png" width="600"></center>
 
 ## 结论
 

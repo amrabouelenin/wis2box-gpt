@@ -47,7 +47,7 @@ Abre la aplicación web wis2box y navega a la página synop2bufr usando el cajó
 - Asegúrate de que "Publicar en WIS2" esté activado
 - Haz clic en "ENVIAR"
 
-<center><img alt="Diálogo mostrando la página synop2bufr, incluyendo el botón de alternancia" src="../../assets/img/synop2bufr-toggle.png"></center>
+<center><img alt="Diálogo mostrando la página synop2bufr, incluyendo el botón de alternancia" src="/../assets/img/synop2bufr-toggle.png"></center>
 
 Haz clic en enviar. Recibirás un mensaje de advertencia ya que la estación no está registrada en wis2box. Ve al editor de estaciones e importa la siguiente estación:
 
@@ -70,7 +70,7 @@ Asegúrate de que la estación esté asociada con el tema que seleccionaste en e
     El botón de inspección ejecuta un proceso para convertir y extraer los datos de BUFR.
 
     <center><img alt="Diálogo mostrando el resultado de enviar un mensaje exitosamente"
-         src="../../assets/img/synop2bufr-ex2-success.png"></center>
+         src="/../assets/img/synop2bufr-ex2-success.png"></center>
 
 !!! question
     Los datos de entrada FM-12 SYNOP no incluían la ubicación de la estación, la elevación o la altura del barómetro.
@@ -80,7 +80,7 @@ Asegúrate de que la estación esté asociada con el tema que seleccionaste en e
     Hacer clic en el botón de inspección debería mostrar un diálogo como el que se muestra a continuación.
 
     <center><img alt="Resultados del botón de inspección mostrando los metadatos básicos de la estación, la ubicación de la estación y las propiedades observadas"
-         src="../../assets/img/synop2bufr-ex2.png"></center>
+         src="/../assets/img/synop2bufr-ex2.png"></center>
 
     Esto incluye la ubicación de la estación mostrada en un mapa y metadatos básicos, así como las observaciones en el mensaje.
     
@@ -187,7 +187,7 @@ Durante los ejercicios en esta sesión habrás importado varios archivos en tu l
 página de lista de estaciones y haz clic en los iconos de basura para eliminar las estaciones. Puede que necesites actualizar la página para que las estaciones se eliminen de la lista después de borrar.
 
 <center><img alt="Visor de metadatos de estación"
-         src="../../assets/img/synop2bufr-trash.png" width="600"></center>
+         src="/../assets/img/synop2bufr-trash.png" width="600"></center>
 
 ## Conclusión
 

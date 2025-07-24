@@ -22,18 +22,22 @@ Ensure you have SSH access to your student VM and that your wis2box instance is 
 
 Make sure you are connected to the MQTT broker of your wis2box instance using MQTT Explorer. You can use the public credentials `everyone/everyone` to connect to the broker.
 
-Ensure you have a web browser open with the wis2box-webapp for your instance by going to `http://<your-host>/wis2box-webapp`.
+Ensure you have a web browser open with the wis2box-webapp for your instance by going to `http://YOUR-HOST/wis2box-webapp`.
 
-## Exercise 1: create a new dataset with data policy 'recommended'
+## Create a new dataset with data policy 'recommended'
 
-Go to the 'dataset editor' page in the wis2box-webapp and create a new dataset. Use the same centre-id as in the previous practical sessions and use the template='surface-weather-observations/synop'. 
+Go to the 'dataset editor' page in the wis2box-webapp and create a new dataset. Select the Data Type = 'weather/surface-weather-observations/synop'. 
 
-Click 'OK' to proceed.
+<img alt="create-dataset-recommended" src="/../assets/img/create-dataset-template.png" width="800">
+
+For "Centre ID", use the same as you used in the previous practical sessions.
+
+Click 'CONTINUE To FORM' to proceed.
 
 In the dataset editor, set the data policy to 'recommended' (note that changing the data-policy will update the 'Topic Hierarchy').
 Replace the auto-generated 'Local ID' with a descriptive name for the dataset, e.g. 'recommended-data-with-access-control':
 
-<img alt="create-dataset-recommended" src="../../assets/img/create-dataset-recommended.png" width="800">
+<img alt="create-dataset-recommended" src="/../assets/img/create-dataset-recommended.png" width="800">
 
 Continue to fill the required fields for Spatial Properties and Contact Information, and 'Validate form' to check for any errors.
 
@@ -41,12 +45,12 @@ Finally submit the dataset, using the previously create authentication token, an
 
 Check MQTT-explorer to see that you receive the WIS2 Notification Message announcing the new Discovery Metadata record on the topic `origin/a/wis2/<your-centre-id>/metadata`.	
 
-## Exercise 2: add an access token to the dataset
+## Add an access token to the dataset
 
 Login to the wis2box-management container,
 
 ```bash
-cd ~/wis2box-1.0.0rc1
+cd ~/wis2box
 python3 wis2box-ctl.py login
 ```
 
@@ -64,35 +68,35 @@ Exit the wis2box-management container:
 exit
 ```
 
-## Exercise 3: publish some data to the dataset
+## Publish some data to the dataset
 
-Copy the file `exercise-materials/access-control-exercises/aws-example2.csv` to the directory defined by `WIS2BOX_HOST_DATADIR` in your `wis2box.env`:
+Copy the file `exercise-materials/access-control-exercises/aws-example.csv` to the directory defined by `WIS2BOX_HOST_DATADIR` in your `wis2box.env`:
 
 ```bash
-cp ~/exercise-materials/access-control-exercises/aws-example2.csv ~/wis2box-data
+cp ~/exercise-materials/access-control-exercises/aws-example.csv ~/wis2box-data
 ```
 
-Then use WinSCP or a command line editor to edit the file `aws-example2.csv` and update the WIGOS-station-identifiers in the input-data to match the stations you have in your wis2box instance. 
+Then use WinSCP or a command line editor to edit the file `aws-example.csv` and update the WIGOS-station-identifiers in the input-data to match the stations you have in your wis2box instance. 
 
-Next, go to the station-editor in the wis2box-webapp. For each station you used in `aws-example2.csv`, update the 'topic' field to match the 'topic' of the dataset you created in the previous exercise.
+Next, go to the station-editor in the wis2box-webapp. For each station you used in `aws-example.csv`, update the 'topic' field to match the 'topic' of the dataset you created in the previous exercise.
 
 This station will now be associated to 2 topics, one for the 'core' dataset and one for the 'recommended' dataset:
 
-<img alt="edit-stations-add-topics" src="../../assets/img/edit-stations-add-topics.png" width="600">
+<img alt="edit-stations-add-topics" src="/../assets/img/edit-stations-add-topics.png" width="600">
 
 You will need to use your token for `collections/stations` to save the updated station data.
 
 Next, login to the wis2box-management container:
 
 ```bash
-cd ~/wis2box-1.0.0rc1
+cd ~/wis2box
 python3 wis2box-ctl.py login
 ```
 
-From the wis2box command line we can ingest the sample data file `aws-example2.csv` into a specific dataset as follows:
+From the wis2box command line we can ingest the sample data file `aws-example.csv` into a specific dataset as follows:
 
 ```bash
-wis2box data ingest -p /data/wis2box/aws-example2.csv --metadata-id urn:wmo:md:not-my-centre:reco.surface-based-observations.synop
+wis2box data ingest -p /data/wis2box/aws-example.csv --metadata-id urn:wmo:md:not-my-centre:reco.surface-based-observations.synop
 ```
 
 Make sure to provide the correct metadata-identifier for your dataset and **check that you receive WIS2 data-notifications in MQTT Explorer**, on the topic `origin/a/wis2/<your-centre-id>/data/recommended/surface-based-observations/synop`.
@@ -101,7 +105,7 @@ Check the canonical link in the WIS2 Notification Message and copy/paste the lin
 
 You should see a 403 Forbidden error.
 
-## Exercise 4: add the access token to HTTP headers to access the dataset
+## Add the access token to HTTP headers to access the dataset
 
 In order to demonstrate that the access token is required to access the dataset we will reproduce the error you saw in the browser using the command line function `wget`.
 

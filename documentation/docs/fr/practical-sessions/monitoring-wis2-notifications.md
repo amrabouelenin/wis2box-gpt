@@ -95,7 +95,7 @@ ls -lh /data/wis2box/aws-example.csv
 
 Allez dans la console MinIO dans votre navigateur et vérifiez si le fichier `aws-example.csv` a été téléchargé dans le seau `wis2box-incoming`. Vous devriez voir qu'il y a un nouveau répertoire avec le nom du jeu de données que vous avez fourni dans l'option `--metadata-id` :
 
-<img alt="minio-wis2box-incoming-dataset-folder" src="../../assets/img/minio-wis2box-incoming-dataset-folder.png" width="800">
+<img alt="minio-wis2box-incoming-dataset-folder" src="/../assets/img/minio-wis2box-incoming-dataset-folder.png" width="800">
 
 !!! note
     La commande `wis2box data ingest` a téléchargé le fichier dans le seau `wis2box-incoming` de MinIO dans un répertoire nommé d'après l'identifiant de métadonnées que vous avez fourni.
@@ -130,7 +130,7 @@ Allez dans le tableau de bord Grafana dans votre navigateur et vérifiez l'état
     
     Si cela a réussi, vous devriez voir ce qui suit :
 
-    <img alt="grafana_success" src="../../assets/img/grafana_success.png" width="800">
+    <img alt="grafana_success" src="/../assets/img/grafana_success.png" width="800">
 
 !!! question "Exercice 4 : vérifier le courtier MQTT pour les notifications WIS2"
     
@@ -156,7 +156,7 @@ Vous pouvez utiliser le **wis2box-webapp** pour visualiser le contenu des notifi
 
 Ouvrez le **wis2box-webapp** dans votre navigateur en naviguant sur `http://<your-host>/wis2box-webapp` et sélectionnez l'onglet **Monitoring** :
 
-<img alt="wis2box-webapp-monitor" src="../../assets/img/wis2box-webapp-monitor.png" width="220">
+<img alt="wis2box-webapp-monitor" src="/../assets/img/wis2box-webapp-monitor.png" width="220">
 
 Dans l'onglet de surveillance, sélectionnez votre identifiant de jeu de données et cliquez sur "UPDATE"
 

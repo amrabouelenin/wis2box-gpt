@@ -47,7 +47,7 @@ Ouvrez l'application web wis2box et naviguez jusqu'à la page synop2bufr en util
 - Assurez-vous que "Publier sur WIS2" est activé
 - Cliquez sur "SOUMETTRE"
 
-<center><img alt="Dialogue montrant la page synop2bufr, incluant le bouton bascule" src="../../assets/img/synop2bufr-toggle.png"></center>
+<center><img alt="Dialogue montrant la page synop2bufr, incluant le bouton bascule" src="/../assets/img/synop2bufr-toggle.png"></center>
 
 Cliquez sur soumettre. Vous recevrez un message d'avertissement car la station n'est pas enregistrée dans le wis2box. Allez à l'éditeur de station et importez la station suivante :
 
@@ -70,7 +70,7 @@ Assurez-vous que la station est associée au sujet que vous avez sélectionné �
     Le bouton d'inspection lance un processus pour convertir et extraire les données du BUFR.
 
     <center><img alt="Dialogue montrant le résultat de la soumission réussie d'un message"
-         src="../../assets/img/synop2bufr-ex2-success.png"></center>
+         src="/../assets/img/synop2bufr-ex2-success.png"></center>
 
 !!! question
     Les données d'entrée FM-12 SYNOP n'incluaient pas la localisation de la station, l'élévation ou la hauteur du baromètre.
@@ -80,7 +80,7 @@ Assurez-vous que la station est associée au sujet que vous avez sélectionné �
     Cliquer sur le bouton d'inspection devrait afficher un dialogue comme celui montré ci-dessous.
 
     <center><img alt="Résultats du bouton d'inspection montrant les métadonnées de base de la station, la localisation de la station et les propriétés observées"
-         src="../../assets/img/synop2bufr-ex2.png"></center>
+         src="/../assets/img/synop2bufr-ex2.png"></center>
 
     Cela inclut la localisation de la station affichée sur une carte et les métadonnées de base, ainsi que les observations dans le message.
     
@@ -195,7 +195,7 @@ page de la liste des stations et cliquez sur les icônes de poubelle pour suppri
 les stations soient retirées de la liste après leur suppression.
 
 <center><img alt="Visualisateur de métadonnées de station"
-         src="../../assets/img/synop2bufr-trash.png" width="600"></center>
+         src="/../assets/img/synop2bufr-trash.png" width="600"></center>
 
 ## Conclusion
 

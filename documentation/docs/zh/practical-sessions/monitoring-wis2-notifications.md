@@ -95,7 +95,7 @@ ls -lh /data/wis2box/aws-example.csv
 
 转到您的浏览器中的 MinIO 控制台并检查 `aws-example.csv` 文件是否已上传到 `wis2box-incoming` 存储桶。您应该看到一个以您在 `--metadata-id` 选项中提供的数据集名称命名的新目录：
 
-<img alt="minio-wis2box-incoming-dataset-folder" src="../../assets/img/minio-wis2box-incoming-dataset-folder.png" width="800">
+<img alt="minio-wis2box-incoming-dataset-folder" src="/../assets/img/minio-wis2box-incoming-dataset-folder.png" width="800">
 
 !!! note
     `wis2box data ingest` 命令将文件上传到 MinIO 中名为您提供的元数据标识符的 `wis2box-incoming` 存储桶中的目录。
@@ -130,7 +130,7 @@ ls -lh /data/wis2box/aws-example.csv
     
     如果成功，您应该看到以下内容：
 
-    <img alt="grafana_success" src="../../assets/img/grafana_success.png" width="800">
+    <img alt="grafana_success" src="/../assets/img/grafana_success.png" width="800">
 
 !!! question "练习 4: 检查 MQTT 代理以获取 WIS2 通知"
     
@@ -156,7 +156,7 @@ ls -lh /data/wis2box/aws-example.csv
 
 通过在浏览器中导航到 `http://<your-host>/wis2box-webapp` 并选择 **Monitoring** 标签来打开 **wis2box-webapp**：
 
-<img alt="wis2box-webapp-monitor" src="../../assets/img/wis2box-webapp-monitor.png" width="220">
+<img alt="wis2box-webapp-monitor" src="/../assets/img/wis2box-webapp-monitor.png" width="220">
 
 在监控标签中选择您的数据集 ID 并点击 "UPDATE"
 

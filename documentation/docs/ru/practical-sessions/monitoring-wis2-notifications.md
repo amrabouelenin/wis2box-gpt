@@ -95,7 +95,7 @@ ls -lh /data/wis2box/aws-example.csv
 
 Перейдите в консоль MinIO в вашем браузере и проверьте, был ли загружен файл `aws-example.csv` в корзину `wis2box-incoming`. Вы должны увидеть новый каталог с именем набора данных, который вы указали в опции `--metadata-id`:
 
-<img alt="minio-wis2box-incoming-dataset-folder" src="../../assets/img/minio-wis2box-incoming-dataset-folder.png" width="800">
+<img alt="minio-wis2box-incoming-dataset-folder" src="/../assets/img/minio-wis2box-incoming-dataset-folder.png" width="800">
 
 !!! note
     Команда `wis2box data ingest` загрузила файл в корзину `wis2box-incoming` в MinIO в каталог, названный в соответствии с идентификатором метаданных, который вы предоставили.
@@ -130,7 +130,7 @@ ls -lh /data/wis2box/aws-example.csv
     
     Если успешно, вы должны увидеть следующее:
 
-    <img alt="grafana_success" src="../../assets/img/grafana_success.png" width="800">
+    <img alt="grafana_success" src="/../assets/img/grafana_success.png" width="800">
 
 !!! question "Упражнение 4: проверьте брокер MQTT на наличие уведомлений WIS2"
     
@@ -156,7 +156,7 @@ ls -lh /data/wis2box/aws-example.csv
 
 Откройте **wis2box-webapp** в вашем браузере, перейдя по адресу `http://<your-host>/wis2box-webapp` и выберите вкладку **Monitoring**:
 
-<img alt="wis2box-webapp-monitor" src="../../assets/img/wis2box-webapp-monitor.png" width="220">
+<img alt="wis2box-webapp-monitor" src="/../assets/img/wis2box-webapp-monitor.png" width="220">
 
 На вкладке мониторинга выберите идентификатор вашего набора данных и нажмите "UPDATE"
 

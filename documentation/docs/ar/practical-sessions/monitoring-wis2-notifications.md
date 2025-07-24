@@ -95,7 +95,7 @@ ls -lh /data/wis2box/aws-example.csv
 
 انتقل إلى وحدة تحكم MinIO في متصفحك وتحقق مما إذا تم تحميل ملف `aws-example.csv` في دلو `wis2box-incoming`. يجب أن ترى دليلًا جديدًا باسم مجموعة البيانات التي قدمتها في خيار `--metadata-id`:
 
-<img alt="minio-wis2box-incoming-dataset-folder" src="../../assets/img/minio-wis2box-incoming-dataset-folder.png" width="800">
+<img alt="minio-wis2box-incoming-dataset-folder" src="/../assets/img/minio-wis2box-incoming-dataset-folder.png" width="800">
 
 !!! note
     قام الأمر `wis2box data ingest` بتحميل الملف إلى دلو `wis2box-incoming` في MinIO في دليل يحمل اسم المعرف الوصفي الذي قدمته.
@@ -130,7 +130,7 @@ ls -lh /data/wis2box/aws-example.csv
     
     إذا نجحت، يجب أن ترى ما يلي:
 
-    <img alt="grafana_success" src="../../assets/img/grafana_success.png" width="800">
+    <img alt="grafana_success" src="/../assets/img/grafana_success.png" width="800">
 
 !!! question "تمرين 4: التحقق من وسيط MQTT لإشعارات WIS2"
     
@@ -156,7 +156,7 @@ ls -lh /data/wis2box/aws-example.csv
 
 افتح **wis2box-webapp** في متصفحك بالانتقال إلى `http://<your-host>/wis2box-webapp` واختر علامة التبويب **Monitoring**:
 
-<img alt="wis2box-webapp-monitor" src="../../assets/img/wis2box-webapp-monitor.png" width="220">
+<img alt="wis2box-webapp-monitor" src="/../assets/img/wis2box-webapp-monitor.png" width="220">
 
 في علامة التبويب monitoring، حدد معرف مجموعة البيانات الخاصة بك وانقر على "UPDATE"
 

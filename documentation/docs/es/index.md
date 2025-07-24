@@ -2,52 +2,52 @@
 title: Inicio
 ---
 
-<img alt="Logotipo de la OMM" src="../assets/img/wmo-logo.png" width="200">
-# Entrenamiento de "WIS2-in-a-box"
+<img alt="Logo de la OMM" src="/assets/img/wmo-logo.png" width="200">
+# Capacitación de WIS2 in a box
 
-"WIS2-in-a-box" ([wis2box](https://docs.wis2box.wis.wmo.int)) es una Implementación de Referencia de Código Abierto (FOSS) y gratuita de un Nodo WMO WIS2. El proyecto proporciona un conjunto de herramientas plug and play para ingerir, procesar y publicar datos meteorológicos/climáticos/hidrológicos utilizando enfoques basados en estándares alineados con los principios de WIS2. wis2box también proporciona acceso a todos los datos en la red de WIS2. wis2box está diseñado para tener una barrera de entrada baja para los proveedores de datos, ofreciendo infraestructura y servicios habilitadores para la búsqueda, acceso y visualización de datos.
+WIS2 in a box ([wis2box](https://docs.wis2box.wis.wmo.int)) es una Implementación de Referencia de Código Abierto y Gratuita de un Nodo WIS2 de la OMM. El proyecto proporciona un conjunto de herramientas plug and play para ingerir, procesar y publicar datos de clima, agua y meteorología utilizando enfoques basados en estándares alineados con los principios de WIS2. wis2box también proporciona acceso a todos los datos en la red WIS2. wis2box está diseñado para tener una baja barrera de entrada para los proveedores de datos, proporcionando infraestructura y servicios habilitantes para el descubrimiento, acceso y visualización de datos.
 
-Este entrenamiento proporciona explicaciones paso a paso de varios aspectos del proyecto wis2box, así como una serie de ejercicios para ayudarte a publicar y descargar datos de WIS2. El entrenamiento se proporciona en forma de presentaciones generales y también de ejercicios prácticos.
+Esta capacitación proporciona explicaciones paso a paso de varios aspectos del proyecto wis2box, así como una serie de ejercicios para ayudarte a publicar y descargar datos de WIS2. La capacitación se ofrece en forma de presentaciones generales y ejercicios prácticos.
 
-Los participantes podrán trabajar con datos de prueba y metadatos, así como integrar sus propios datos y metadatos.
+Los participantes podrán trabajar con datos de prueba y metadatos de muestra, así como integrar sus propios datos y metadatos.
 
-Este entrenamiento cubre una amplia gama de temas (instalación/configuración, publicación/descarga de datos, etc.).
+Esta capacitación cubre una amplia gama de temas (instalación/configuración/configuración, publicación/descarga de datos, etc.).
 
 ## Objetivos y resultados de aprendizaje
 
-Los objetivos de este entrenamiento son familiarizarse con lo siguiente:
+Los objetivos de esta capacitación son familiarizarse con lo siguiente:
 
 - Conceptos y componentes centrales de la arquitectura de WIS2
 - Formatos de datos y metadatos utilizados en WIS2 para descubrimiento y acceso
 - Arquitectura y entorno de wis2box
 - Funciones principales de wis2box:
-    - Gestión de metadatos
-    - Ingesta de datos y transformación al formato BUFR
-    - Broker MQTT para la publicación de mensajes de WIS2
-    - Punto final HTTP para descarga de datos
-    - Punto final de API para acceso programático a datos
+    - gestión de metadatos
+    - ingestión de datos y transformación al formato BUFR
+    - broker MQTT para la publicación de mensajes de WIS2
+    - Punto final HTTP para la descarga de datos
+    - Punto final de API para acceso programático a los datos
 
 ## Navegación
 
-La navegación a la izquierda proporciona una tabla de contenido para todo el entrenamiento.
+La navegación de la mano izquierda proporciona una tabla de contenidos para toda la capacitación.
 
-La navegación a la derecha proporciona una tabla de contenido para una página específica.
+La navegación de la mano derecha proporciona una tabla de contenidos para una página específica.
 
-## Requisitos previos
+## Prerrequisitos
 
 ### Conocimientos
 
-- Comandos básicos de Linux (consulta la [hoja de trucos](cheatsheets/linux.md))
+- Comandos básicos de Linux (ver la [cheatsheet](./cheatsheets/linux.md))
 - Conocimientos básicos de redes y protocolos de Internet
 
 ### Software
 
-Este entrenamiento requiere las siguientes herramientas:
+Esta capacitación requiere las siguientes herramientas:
 
-- Una instancia que ejecute el sistema operativo Ubuntu (proporcionado por los instructores de la OMM durante las sesiones de entrenamiento locales) consulta [Accediendo a tu VM de estudiante](practical-sessions/accessing-your-student-vm.md#introduction)
+- Una instancia ejecutando el sistema operativo Ubuntu (proporcionada por los entrenadores de la OMM durante las sesiones de capacitación locales) ver [Accediendo a tu VM de estudiante](./practical-sessions/accessing-your-student-vm.md#introduction)
 - Cliente SSH para acceder a tu instancia
-- Explorador MQTT en tu máquina local
-- Cliente SCP y FTP para copiar archivos desde tu máquina local
+- MQTT Explorer en tu máquina local
+- Cliente SCP y SFTP para copiar archivos desde tu máquina local
 
 ## Convenciones
 
@@ -59,49 +59,50 @@ También notarás secciones de consejos y notas dentro del texto:
 
 !!! tip
 
-    Los consejos ofrecen ayuda sobre cómo lograr mejor las tareas.
+    Los consejos comparten ayuda sobre cómo lograr mejor las tareas.
 
 !!! note
 
-    Las notas proporcionan información adicional sobre el tema cubierto por la sesión práctica, así como la mejor manera de lograr tareas.
+    Las notas proporcionan información adicional sobre el tema cubierto por la sesión práctica, así como cómo lograr mejor las tareas.
 
 Los ejemplos se indican de la siguiente manera:
 
 Configuración
 ``` {.yaml linenums="1"}
-mi-colección-definida-en-yaml:
+my-collection-defined-in-yaml:
     type: collection
-    title: mi título definido como un atributo yaml llamado title
-    description: mi descripción como un atributo yaml llamado description
+    title: my title defined as a yaml attribute named title
+    description: my description as a yaml attribute named description
 ```
 
-Fragmentos que deben escribirse en una terminal/consola se indican como:
+Los fragmentos que necesitan ser escritos en un terminal/consola se indican como:
 
 ```bash
 echo 'Hello world'
 ```
 
-Los nombres de los contenedores (imágenes en ejecución) se indican en **negrita**.
+Los nombres de contenedores (imágenes en ejecución) se denotan en **negrita**.
 
-## Ubicación y materiales de entrenamiento
+## Ubicación y materiales de la capacitación
 
-Los contenidos del entrenamiento, la wiki y el rastreador de problemas son gestionados en GitHub en [https://github.com/wmo-im/wis2box-training](https://github.com/wmo-im/wis2box-training).
+Los contenidos de la capacitación, el wiki y el rastreador de problemas se gestionan en GitHub en [https://github.com/World-Meteorological-Organization/wis2box-training](https://github.com/World-Meteorological-Organization/wis2box-training).
 
-## Imprimir el material
+## Imprimiendo el material
 
-Este entrenamiento se puede exportar a PDF. Para guardar o imprimir este material de entrenamiento, ve a la [página de impresión](print_page) y selecciona Archivo > Imprimir > Guardar como PDF.
+Esta capacitación puede ser exportada a PDF. Para guardar o imprimir este material de capacitación, ve a la [página de impresión](./print_page/), y selecciona
+Archivo > Imprimir > Guardar como PDF.
 
-## Materiales de ejercicio
+## Materiales de los ejercicios
 
-Los materiales de ejercicio se pueden descargar desde el archivo [exercise-materials.zip](/exercise-materials.zip) zipfile.
+Los materiales de los ejercicios se pueden descargar desde el archivo [exercise-materials.zip](/exercise-materials.zip).
 
 ## Soporte
 
-Para problemas/errores/sugerencias o mejoras/contribuciones a este entrenamiento, utiliza el [rastreador de problemas de GitHub](https://github.com/wmo-im/wis2box-training/issues).
+Para problemas/bugs/sugerencias o mejoras/contribuciones a esta capacitación, por favor usa el [rastreador de problemas de GitHub](https://github.com/World-Meteorological-Organization/wis2box-training/issues).
 
-Todos los errores, mejoras y problemas de wis2box se pueden reportar en [GitHub](https://github.com/wmo-im/wis2box/issues).
+Todos los bugs, mejoras y problemas de wis2box pueden ser reportados en [GitHub](https://github.com/World-Meteorological-Organization/wis2box/issues).
 
-Para soporte adicional o preguntas, por favor contacta a wis@wmo.int.
+Para soporte adicional o preguntas, por favor contacta a wis2-support@wmo.int.
 
 Como siempre, la documentación principal de wis2box siempre se puede encontrar en [https://docs.wis2box.wis.wmo.int](https://docs.wis2box.wis.wmo.int).
 

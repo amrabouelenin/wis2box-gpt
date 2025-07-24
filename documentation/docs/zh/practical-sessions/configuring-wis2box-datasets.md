@@ -29,7 +29,7 @@ wis2box使用与发现元数据和数据映射相关联的数据集。
 
 不要使用您的内部代理凭据，而是使用公共凭据`everyone/everyone`：
 
-<img alt="MQTT Explorer: Connect to broker" src="../../assets/img/mqtt-explorer-wis2box-broker-everyone-everyone.png" width="800">
+<img alt="MQTT Explorer: Connect to broker" src="/../assets/img/mqtt-explorer-wis2box-broker-everyone-everyone.png" width="800">
 
 !!! Note
 
@@ -41,7 +41,7 @@ wis2box使用与发现元数据和数据映射相关联的数据集。
     
 打开浏览器并打开页面`http://YOUR-HOST/wis2box-webapp`。确保您已登录并可以访问"数据集编辑器"页面。
 
-如果您需要回顾如何连接到代理或访问wis2box-webapp，请参阅[初始化wis2box](/practical-sessions/initializing-wis2box)部分。
+如果您需要回顾如何连接到代理或访问wis2box-webapp，请参阅[初始化wis2box](./initializing-wis2box.md)部分。
 
 ## 为processes/wis2box创建授权令牌
 
@@ -80,7 +80,7 @@ exit
 
 在"数据集编辑器"页面的"数据集"标签下，点击"创建新..."：
 
-<img alt="Create New Dataset" src="../../assets/img/wis2box-create-new-dataset.png" width="800">
+<img alt="Create New Dataset" src="/../assets/img/wis2box-create-new-dataset.png" width="800">
 
 将出现一个弹出窗口，要求您提供：
 
@@ -103,7 +103,7 @@ exit
 
 对于**Data Type**，选择**weather/surface-based-observations/synop**：
 
-<img alt="Create New Dataset Form: Initial information" src="../../assets/img/wis2box-create-new-dataset-form-initial.png" width="450">
+<img alt="Create New Dataset Form: Initial information" src="/../assets/img/wis2box-create-new-dataset-form-initial.png" width="450">
 
 点击*继续填写表单*以继续，您现在将看到**数据集编辑器表单**。
 
@@ -117,7 +117,7 @@ exit
 
 请确保将自动生成的'Local ID'替换为您数据集的描述性名称，例如'synop-dataset-wis2training'：
 
-<img alt="Metadata Editor: title, description, keywords" src="../../assets/img/wis2box-metadata-editor-part1.png" width="800">
+<img alt="Metadata Editor: title, description, keywords" src="/../assets/img/wis2box-metadata-editor-part1.png" width="800">
 
 检查标题和关键词，根据需要更新它们，并为您的数据集提供描述。
 
@@ -125,23 +125,23 @@ exit
 
 接下来，检查定义'时间属性'和'空间属性'的部分。您可以通过更新'北纬'、'南纬'、'东经'和'西经'字段来调整边界框：
 
-<img alt="Metadata Editor: temporal properties, spatial properties" src="../../assets/img/wis2box-metadata-editor-part2.png" width="800">
+<img alt="Metadata Editor: temporal properties, spatial properties" src="/../assets/img/wis2box-metadata-editor-part2.png" width="800">
 
 接下来，填写定义'数据提供者联系信息'的部分：
 
-<img alt="Metadata Editor: contact information" src="../../assets/img/wis2box-metadata-editor-part3.png" width="800">
+<img alt="Metadata Editor: contact information" src="/../assets/img/wis2box-metadata-editor-part3.png" width="800">
 
 最后，填写定义'数据质量信息'的部分：
 
 填写完所有部分后，点击'验证表单'并检查表单是否有错误：
 
-<img alt="Metadata Editor: validation" src="../../assets/img/wis2box-metadata-validation-error.png" width="800">
+<img alt="Metadata Editor: validation" src="/../assets/img/wis2box-metadata-validation-error.png" width="800">
 
 如果有任何错误，请更正它们并再次点击'验证表单'。
 
 确保没有错误，并且您会看到一个弹出提示，表明您的表单已通过验证：
 
-<img alt="Metadata Editor: validation success" src="../../assets/img/wis2box-metadata-validation-success.png" width="800">
+<img alt="Metadata Editor: validation success" src="/../assets/img/wis2box-metadata-validation-success.png" width="800">
 
 接下来，在提交数据集之前，检查数据集的数据映射。
 
@@ -149,7 +149,7 @@ exit
 
 由于您使用模板创建数据集，数据集映射已预填充了'weather/surface-based-observations/synop'数据类型的默认插件。数据插件在wis2box中用于在使用WIS2通知发布数据之前转换数据。
 
-<img alt="Data Mappings: update plugin" src="../../assets/img/wis2box-data-mappings.png" width="800">
+<img alt="Data Mappings: update plugin" src="/../assets/img/wis2box-data-mappings.png" width="800">
 
 请注意，您可以点击"更新"按钮来更改插件的设置，如文件扩展名和文件模式，现在您可以保留默认设置。在后面的课程中，您将了解更多关于BUFR和数据转换为BUFR格式的内容。
 
@@ -161,17 +161,17 @@ exit
 
 提交数据集后，检查是否收到以下消息，表明数据集已成功提交：
 
-<img alt="Submit Dataset Success" src="../../assets/img/wis2box-submit-dataset-success.png" width="400">
+<img alt="Submit Dataset Success" src="/../assets/img/wis2box-submit-dataset-success.png" width="400">
 
 点击'确定'后，您将被重定向到数据集编辑器主页。现在如果您点击'数据集'标签，应该能看到您的新数据集列表：
 
-<img alt="Dataset Editor: new dataset" src="../../assets/img/wis2box-dataset-editor-new-dataset.png" width="800">
+<img alt="Dataset Editor: new dataset" src="/../assets/img/wis2box-dataset-editor-new-dataset.png" width="800">
 
 ## 查看发现元数据的WIS2通知
 
 转到MQTT Explorer，如果您已连接到代理，应该能看到在主题`origin/a/wis2/<your-centre-id>/metadata`上发布的新WIS2通知：
 
-<img alt="MQTT Explorer: WIS2 notification" src="../../assets/img/mqtt-explorer-wis2-notification-metadata.png" width="800">
+<img alt="MQTT Explorer: WIS2 notification" src="/../assets/img/mqtt-explorer-wis2-notification-metadata.png" width="800">
 
 检查您发布的WIS2通知的内容。您应该看到一个符合WIS通知消息（WNM）格式的JSON结构。
 
@@ -193,7 +193,7 @@ exit
     
     相反，请尝试在WIS2通知的"links"部分中查找规范链接：
 
-    <img alt="WIS2 notification for metadata, links sections" src="../../assets/img/wis2-notification-metadata-links.png" width="800">
+    <img alt="WIS2 notification for metadata, links sections" src="/../assets/img/wis2-notification-metadata-links.png" width="800">
 
     **WIS2通知包含指向已发布WCMP2记录的规范链接。**
     

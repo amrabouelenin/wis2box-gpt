@@ -155,13 +155,13 @@ WinSCP不是培训所必需的，但如果您想使用本地PC上的文本编辑
 
 打开WinSCP并点击"New Site"。您可以按如下方式创建到虚拟机的新SCP连接：
 
-<img alt="winscp-student-vm-scp.png" src="../../assets/img/winscp-student-vm-scp.png" width="400">
+<img alt="winscp-student-vm-scp.png" src="/../assets/img/winscp-student-vm-scp.png" width="400">
 
 点击'Save'然后点击'Login'以连接到您的虚拟机。
 
 您应该能够看到以下内容：
 
-<img alt="winscp-student-vm-exercise-materials.png" src="../../assets/img/winscp-student-vm-exercise-materials.png" width="600">
+<img alt="winscp-student-vm-exercise-materials.png" src="/../assets/img/winscp-student-vm-exercise-materials.png" width="600">
 
 ## 结论
 

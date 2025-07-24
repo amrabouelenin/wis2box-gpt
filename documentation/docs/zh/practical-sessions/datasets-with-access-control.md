@@ -28,7 +28,7 @@ title: 设置带访问控制的推荐数据集
 
 转到 wis2box-webapp 中的"数据集编辑器"页面并创建新数据集。选择 Data Type = 'weather/surface-weather-observations/synop'。
 
-<img alt="create-dataset-recommended" src="../../assets/img/create-dataset-template.png" width="800">
+<img alt="create-dataset-recommended" src="/../assets/img/create-dataset-template.png" width="800">
 
 对于"Centre ID"，使用与之前实践课程中相同的 ID。
 
@@ -37,7 +37,7 @@ title: 设置带访问控制的推荐数据集
 在数据集编辑器中，将数据策略设置为"recommended"（注意更改数据策略将更新"主题层次结构"）。
 用描述性名称替换自动生成的"Local ID"，例如"recommended-data-with-access-control"：
 
-<img alt="create-dataset-recommended" src="../../assets/img/create-dataset-recommended.png" width="800">
+<img alt="create-dataset-recommended" src="/../assets/img/create-dataset-recommended.png" width="800">
 
 继续填写空间属性和联系信息的必填字段，并"验证表单"以检查是否有错误。
 
@@ -82,7 +82,7 @@ cp ~/exercise-materials/access-control-exercises/aws-example.csv ~/wis2box-data
 
 此站点现在将关联到 2 个主题，一个用于"核心"数据集，另一个用于"推荐"数据集：
 
-<img alt="edit-stations-add-topics" src="../../assets/img/edit-stations-add-topics.png" width="600">
+<img alt="edit-stations-add-topics" src="/../assets/img/edit-stations-add-topics.png" width="600">
 
 您需要使用 `collections/stations` 的令牌来保存更新的站点数据。
 

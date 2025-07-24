@@ -70,11 +70,11 @@ Token successfully created
 
 在浏览器中打开 **wis2box-webapp**,导航到 `http://YOUR-HOST/wis2box-webapp`,并选择站点:
 
-<img alt="wis2box-webapp-select-stations" src="../../assets/img/wis2box-webapp-select-stations.png" width="250">
+<img alt="wis2box-webapp-select-stations" src="/../assets/img/wis2box-webapp-select-stations.png" width="250">
 
 当您点击"添加新站点"时,系统会要求您提供要添加的站点的 WIGOS 站点标识符:
 
-<img alt="wis2box-webapp-import-station-from-oscar" src="../../assets/img/wis2box-webapp-import-station-from-oscar.png" width="800">
+<img alt="wis2box-webapp-import-station-from-oscar" src="/../assets/img/wis2box-webapp-import-station-from-oscar.png" width="800">
 
 !!! note "添加 3 个或更多站点的元数据"
     请为您的 wis2box 的站点元数据集合添加三个或更多站点。
@@ -91,13 +91,13 @@ Token successfully created
 
 检查 OSCAR/Surface 返回的数据,并在需要时添加缺失的数据。为站点选择一个主题,提供您的 `collections/stations` 端点的授权令牌,然后点击"保存":
 
-<img alt="wis2box-webapp-create-station-save" src="../../assets/img/wis2box-webapp-create-station-save.png" width="800">
+<img alt="wis2box-webapp-create-station-save" src="/../assets/img/wis2box-webapp-create-station-save.png" width="800">
 
-<img alt="wis2box-webapp-create-station-success" src="../../assets/img/wis2box-webapp-create-station-success.png" width="500">
+<img alt="wis2box-webapp-create-station-success" src="/../assets/img/wis2box-webapp-create-station-success.png" width="500">
 
 返回站点列表,您将看到您添加的站点:
 
-<img alt="wis2box-webapp-stations-with-one-station" src="../../assets/img/wis2box-webapp-stations-with-one-station.png" width="800">
+<img alt="wis2box-webapp-stations-with-one-station" src="/../assets/img/wis2box-webapp-stations-with-one-station.png" width="800">
 
 重复此过程,直到您配置了至少 3 个站点。
 
@@ -135,7 +135,7 @@ Token successfully created
 
 如果您打开浏览器并导航到 `http://YOUR-HOST/oapi/collections/stations/items`,您将看到您添加的站点元数据:
 
-<img alt="wis2box-api-stations" src="../../assets/img/wis2box-api-stations.png" width="800">
+<img alt="wis2box-api-stations" src="/../assets/img/wis2box-api-stations.png" width="800">
 
 !!! note "检查您的站点元数据"
 

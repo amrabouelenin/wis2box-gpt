@@ -20,7 +20,7 @@ title: 自动化数据摄取
 
 在上一个练习中，您应该使用模板 `surface-based-observations/synop` 创建了一个数据集，其中包括以下数据插件：
 
-<img alt="数据映射" src="../../assets/img/wis2box-data-mappings.png" width="800">
+<img alt="数据映射" src="/../assets/img/wis2box-data-mappings.png" width="800">
 
 当文件被上传到 MinIO 时，wis2box 将根据文件路径包含的数据集 id (`metadata_id`) 匹配文件到一个数据集，并根据在数据集映射中定义的文件扩展名和文件模式确定使用哪些数据插件。
 
@@ -138,7 +138,7 @@ wis2box 可以使用 `wis2box.data.bufr4.ObservationDataBUFR` 插件摄取 BUFR 
 
 在上一次会话中，您应该已经创建了一个包括插件 'FM-12 数据转换为 BUFR' 的数据集：
 
-<img alt="数据集映射" src="../../assets/img/wis2box-data-mappings.png" width="800">
+<img alt="数据集映射" src="/../assets/img/wis2box-data-mappings.png" width="800">
 
 此插件加载模块 `wis2box.data.synop2bufr.ObservationDataSYNOP2BUFR` 来摄取数据。
 
@@ -190,7 +190,7 @@ wis2box 堆栈中启用的 MinIO 服务在端口 8022 上启用了 SFTP。您可
 
 使用 WinSCP，您的连接如下所示：
 
-<img alt="winscp-sftp-connection" src="../../assets/img/winscp-sftp-connection.png" width="400">
+<img alt="winscp-sftp-connection" src="/../assets/img/winscp-sftp-connection.png" width="400">
 
 对于用户名和密码，请使用您的 `wis2box.env` 文件中的 `WIS2BOX_STORAGE_USERNAME` 和 `WIS2BOX_STORAGE_PASSWORD` 环境变量的值。点击 'save' 保存会话，然后点击 'login' 连接。
 

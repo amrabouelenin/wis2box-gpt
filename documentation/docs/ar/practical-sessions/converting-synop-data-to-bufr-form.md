@@ -47,7 +47,7 @@ AAXX 27031
 - تأكد من تفعيل "نشر على WIS2"
 - انقر على "إرسال"
 
-<center><img alt="حوار يظهر صفحة synop2bufr، بما في ذلك زر التبديل" src="../../assets/img/synop2bufr-toggle.png"></center>
+<center><img alt="حوار يظهر صفحة synop2bufr، بما في ذلك زر التبديل" src="/../assets/img/synop2bufr-toggle.png"></center>
 
 انقر على إرسال. ستتلقى رسالة تحذير لأن المحطة غير مسجلة في wis2box. اذهب إلى محرر المحطات واستورد المحطة التالية:
 
@@ -70,7 +70,7 @@ AAXX 27031
     يقوم زر الفحص بتشغيل عملية لتحويل واستخراج البيانات من BUFR.
 
     <center><img alt="حوار يظهر نتيجة إرسال رسالة بنجاح"
-         src="../../assets/img/synop2bufr-ex2-success.png"></center>
+         src="/../assets/img/synop2bufr-ex2-success.png"></center>
 
 !!! question
     بيانات SYNOP FM-12 المدخلة لم تتضمن موقع المحطة، الارتفاع أو ارتفاع البارومتر.
@@ -80,7 +80,7 @@ AAXX 27031
     يجب أن يظهر النقر على زر الفحص حوارًا مشابهًا لما هو موضح أدناه.
 
     <center><img alt="نتائج زر الفحص تظهر بيانات المحطة الأساسية، موقع المحطة والخصائص الملاحظة"
-         src="../../assets/img/synop2bufr-ex2.png"></center>
+         src="/../assets/img/synop2bufr-ex2.png"></center>
 
     يتضمن ذلك موقع المحطة المعروض على خريطة والبيانات الأساسية، بالإضافة إلى الملاحظات في الرسالة.
     

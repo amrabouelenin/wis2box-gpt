@@ -20,7 +20,7 @@ title: أتمتة استقبال البيانات
 
 في التمرين السابق يجب أن تكون قد أنشأت مجموعة بيانات باستخدام القالب `surface-based-observations/synop` والذي يشمل الإضافات التالية:
 
-<img alt="تعيينات البيانات" src="../../assets/img/wis2box-data-mappings.png" width="800">
+<img alt="تعيينات البيانات" src="/../assets/img/wis2box-data-mappings.png" width="800">
 
 عندما يتم تحميل ملف إلى MinIO، سيقوم wis2box بمطابقة الملف مع مجموعة البيانات عندما يحتوي مسار الملف على معرف مجموعة البيانات (`metadata_id`) وسيحدد الإضافات المستخدمة بناءً على امتداد الملف ونمط الملف المحدد في تعيينات المجموعة.
 
@@ -138,7 +138,7 @@ python3 copy_file_to_incoming.py csv-aws-example.csv
 
 في الجلسة السابقة يجب أن تكون قد أنشأت مجموعة بيانات تشمل الإضافة 'FM-12 data converted to BUFR' لتعيينات المجموعة:
 
-<img alt="تعيينات المجموعة" src="../../assets/img/wis2box-data-mappings.png" width="800">
+<img alt="تعيينات المجموعة" src="/../assets/img/wis2box-data-mappings.png" width="800">
 
 يقوم هذا الإضافة بتحميل الوحدة البرمجية `wis2box.data.synop2bufr.ObservationDataSYNOP2BUFR` لاستقبال البيانات.
 
