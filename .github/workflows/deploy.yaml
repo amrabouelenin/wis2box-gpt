@@ -33,7 +33,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           echo "Running translation script..."
-          python documentation/translate_changed_files.py --changed-only
+          python translate_changed_files.py --changed-only
           
           # Check if there are new changes to commit
           git config user.name github-actions
