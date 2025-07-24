@@ -73,7 +73,6 @@ def get_changed_files():
         check=True
     )
     valid_exts = ('.md', '.pages')
-    
     return [line.strip() for line in result.stdout.splitlines() if line.strip().endswith(valid_exts)]
 
 def estimate_token_count(text):
@@ -234,7 +233,6 @@ def main():
     if '--changed-only' in sys.argv:
         changed = get_changed_files()
         print(f"Changed files: {changed}")
-        exit()
         md_files = [Path(f) for f in changed if f.startswith(str(EN_DIR))]
     else:
         # translate all files in the EN_DIR
