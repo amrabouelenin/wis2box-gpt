@@ -67,7 +67,7 @@ def estimate_token_count(text, model="gpt-4-turbo"):
 
 def get_changed_files():
     result = subprocess.run(
-        ['git', 'diff', '--name-only', 'HEAD'],
+        ['git', 'diff', '--name-only', 'HEAD^..HEAD'],
         stdout=subprocess.PIPE,
         text=True,
         check=True
